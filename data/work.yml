@@ -1,0 +1,49 @@
+projects:
+  
+  skedx:
+    title:
+      - Skedx
+    description: 
+      - <a href='skedx.com'>skedx.com</a> is an online scheduling solution for retailers and related businesses. It's a web-based subscription service (SaaS), and it's built on Ruby on Rails. SkedX's differenciator is that it integrates elements of social networking to increase employee engagement and improve workspace culture.  
+    my_input:
+      - I'm currently the lead interface designer at Skedx, which means I'm mainly responsible for interface design and front-end development of the software.
+    gallery_images:
+        - 'skedx_1.png'
+          - This is an image caption.
+        
+        - 'skedx_2.png'
+          - This is an another image caption.
+
+
+  moovylist:
+    title:
+      - Moovylist 
+    description:  
+      - Moovylist.com is your online movie collection. It's a catalogue of all the films you own. 
+    my_input: 
+      - I built the damn thing.
+    gallery_images:
+      - 'mdki_1.jpg'
+      - 'mdki_2.jpg'
+
+  MDKI:
+    title:
+      - Mass Destroy Kindle Items
+    description: 
+      - mdki.com is a bookmarklet that lets you delete multiple kindle items at once. 
+    my_input:
+      - I built the damn thing.
+    gallery_images:
+      - 'mdki_1.jpg'
+      - 'mdki_2.jpg'
+  
+  skype:
+    title:
+      - Garamondieu Mac Skype Theme
+    description: 
+      - This is a chat theme for skype for mac. 
+    my_input:
+      - I built the damn thing. 
+    gallery_images:
+      - 'skype_1.png'
+      - 'skype_2.png'

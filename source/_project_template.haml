@@ -1,0 +1,32 @@
+=render_partial 'project_selector'
+
+- project = data.work.projects[@project[0]]
+
+
+#project_wallpaper{:style=>'background-image:url(/images/project_wallpapers/'+@project[0]+'.jpg);'}
+  %h2  
+    =project.title 
+  
+%h3.subhead
+  what it is
+%p
+  =project.description
+%h3.subhead
+  what I've Done
+%p
+  =project.my_input
+
+#project_gallery
+  - if project.gallery_images
+    - project.gallery_images.each do |image|
+      
+      %img{:src=>'/images/project_galleries/'+image, :id=>'slide_'+image.to_s, :class=>'gallery_large'} 
+      
+      =image.caption
+      
+      //- if image == project.gallery_images.first
+      //  - first = 'first'
+      //%div{:class=>'gallery_image '+first.to_s}
+      //  %a{:href=>'#slide_'+image.to_s}
+      //    %img{:src=>'/images/project_galleries/'+image, :class=>'gallery_thumbnail'}
+      //  %img{:src=>'/images/project_galleries/'+image, :id=>'slide_'+image.to_s, :class=>'gallery_large'} 

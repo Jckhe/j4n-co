@@ -1,0 +1,24 @@
+#project_selector
+
+  - data.work.projects.each_with_index do |project, index|
+    - is_last = nil;  
+    - if index == data.work.projects.length-1
+      - is_last = 'last'
+
+    %div{:class => 'project_preview '+is_last.to_s}
+      - is_current = false
+      - if request.env['REQUEST_PATH'].match(project[0]+'.html')
+        - is_current = 'current' 
+
+      %a{:href=>'/work/'+project[0]+'.html#slide_'+project[1].gallery_images.first, :class=>'project_thumbnail '+is_current.to_s+is_last.to_s}  
+        %canvas.project_thumbnail_canvas
+        %img{:class=>'project_thumbnail_image', :src=>'/images/project_thumbnails/'+project[0]+'.jpg'}
+      
+      %h2{:class => 'title '+is_current.to_s}
+        =project[1].title
+
+  #pointer
+    %img{:src=>'/images/pointer.svg'}
+    %small  
+      %i
+        = data.site.project_details_link

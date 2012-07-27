@@ -1,0 +1,16 @@
+- content_for :head do
+  %title
+    Jan Drewniak - UI Design & Development
+ 
+
+- data.blog.articles[0...1].each do |article|
+  %article
+    %h1
+      %a{:href=>article.url}
+        = article.title
+
+    = article.body
+
+    %time
+      = article.date.strftime('%b %e %Y')
+    
