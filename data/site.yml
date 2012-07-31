@@ -1,14 +1,41 @@
+meta:
+  title:
+    - "Jan Drewniak | Art & Code For Fun And Profit"
+  keywords:
+    - "Jan Drewniak UX Design front-end development"
+  description:
+    - "So You're looking for a UX Design Ninja™? I eat ninjas for breakfast."
+
 title:
-  - Jan Drewniak
+  - "Jan Drewniak"
 
 tagline:
-  - ART & CODE FOR FUN AND PROFIT
+  - "ART & CODE FOR FUN AND PROFIT"
 
 about_me: 
-  - et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+  - "Proprietor of the finest internetting since 2007. Hailing from Toronto, I currently habitate in Warsaw. I focus on Interface Design & Development and I'm passionate about all things web... and bicycles."
 
 work_link:
-  - Go to the work
+  - "Go to the work"
 
 project_details_link:
-  - click on a project for more details
+  - "click on a project for more details"
+
+work:
+  title:
+    - "So, what is it you do again, Jan?"
+  parents:
+    title:
+      - "When my parents ask me"
+    text:
+      - "I say I make websites.( <i>But that's like saying 'I work with computers'. More specifically, I make those kinds of websites where you have an account and log-in and do stuff </i>)"
+  clients:
+    title:
+      - "When potential clients ask me"
+    text:
+      - "I say I make people fall in love with your product. That means making it intuitive and enjoyable to use, not just making it look pretty."
+  developers:
+    title:
+      - "When other developers ask me"
+    text:
+      - "I say I'm an interface designer and front-end developer. I play well with back-end developers and I'm familiar with Ruby, but I prefer to focus on the HTML/CSS/JS, increasingly the JS. <i> (And yes I use all cool kid tools like Git, Rails, SASS, mongoDB etc.) </i>"

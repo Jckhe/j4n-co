@@ -38,16 +38,18 @@ $content_bg: white;
 $monospace: 'Lucida Console', 'Monaco', 'Courier New', 'Courier';
 
 body {
-  font-family: 'Asap', sans-serif;   
+  font-family: 'PT Sans', sans-serif;   
   color: $p_color; 
   line-height: 1.2em;
-  //background: url('/images/polonez_car.png') repeat 0 0 transparent; 
+  background-image: url('/images/bg/bg_s.png'), url('/images/bg/bg_m.png'), url('/images/bg/bg_l.png');
+  background-repeat: repeat; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;   
+  font-weight: 700;   
   color: $h_color;
   line-height: 1em;
+  margin-bottom: 0.5em;
 }
 
 h1{
@@ -78,6 +80,11 @@ h6{
   text-transform: uppercase;
   letter-spacing: 2px; 
   font-weight: 700;
+}
+
+.small_header{
+  font-size: 18px;  
+  margin-bottom: 0;
 }
 
 p {
@@ -126,7 +133,7 @@ cite {
 }
 
 em {
-  font-weight: 700; 
+  font-weight:400; 
   font-style: italic; 
 }
 
@@ -264,6 +271,9 @@ body{
     font-family: $monospace;   
     font-size: 36px;
     background-color: $body_bg; 
+    padding-left: 5px;
+    padding-bottom: 0em;
+    margin-bottom: 0;
   }
 
   #prevnext {
@@ -376,6 +386,7 @@ body{
 
   #logo{
     float: left;
+    margin-bottom: 0; 
   }
 
   #main{
@@ -557,7 +568,10 @@ body{
   background-color: transparent;
   display: block;
   position:relative;
-  box-shadow:none;
+  box-shadow:0px 0px 2px 0px grey;
+  border-width: 5px 5px 10px 5px;
+  border-style: solid;
+  border-color: white;
   @include vendor-prefix('transition','all 0.15s ease-in');
   &.current{
     z-index:1;
@@ -577,10 +591,13 @@ body{
 }
 
 .project_preview{
-  width: 75px;
+  width: 85px;
   display: block;
   float: left;
   cursor: pointer;
+  margin: 0 10px;
+  @include vendor-prefix('transition','all 0.3s');
+  
   .title{
     font-size: 14px;
     left: 0;
@@ -600,6 +617,9 @@ body{
     color: $warning; 
   }
 }
+.project_preview.current{
+  @include vendor_prefix('transform','rotate(0deg)!important');   
+}
 
 .project_preview.last{
   margin-right: 10px;   
@@ -608,10 +628,9 @@ body{
 #project_selector{
   height: 100px; 
   position: relative;
-  
+  margin-bottom: 1em; 
   #pointer {    
     position: relative; 
-    opacity: 0;
     left: 10px; 
     @include vendor_prefix('transition','all 0.3s')
   }
@@ -620,16 +639,11 @@ body{
   .title.current{
     opacity: 0; 
   }
-  
-  #pointer {
-    opacity: 1; 
-    left: 0; 
-  }
 } 
 
 .project_preview:hover{
   top:2px;
-  bottom:2px;
+  @include vendor_prefix('transform','rotate(0deg)!important');      
   .title{
     opacity: 1;
     visibility: visible;
@@ -693,4 +707,31 @@ body{
   opacity: 1;
   position: fixed;
   z-index: 4;
+}
+
+
+.gallery_link{
+  cursor:pointer;
+  opacity: 0.7; 
+  float: left; 
+  position: relative;
+  text-align: center; 
+  .expand_hint{
+    display: inline-block; 
+    position: absolute; 
+    top: 50%; 
+    background-color: rgba(120,120,120,0.7); 
+    border-radius: 10px;
+    padding: 10px; 
+    color: white; 
+    opacity: 0;  
+  }
+}
+
+.gallery_link:hover{
+  opacity: 1;
+  
+  .expand_hint{
+    opacity: 1; 
+  }
 }

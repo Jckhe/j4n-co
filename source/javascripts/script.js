@@ -16,7 +16,7 @@ var pixel_matrix = [];
 
 var new_pixel_matrix = [];  
 var c;
-var pixel_size = 5
+var pixel_size = 3
 var timer; 
 var is_active = false; 
 var white = 'rgba(0,0,0,0)'
@@ -57,7 +57,7 @@ canvas.addEventListener('mouseout', function(){
 function pixelate_image(c){
   var imageData = c.getImageData(0, 0, canvas_width, canvas_height);
   var data = imageData.data
-  var contrast_level = 490;
+  var contrast_level = 400;
 
   for(y=0; y<canvas_height; y++){   
     var pixel_row = [];
@@ -145,20 +145,22 @@ function game_of_life(pixel_matrix){
   }
 }
 
-
-function numberOfNeighbors(pixel_matrix, y, x) {
-
-  return n;
+function desaturate(r, g, b) {
+  var intensity = 0.3 * r + 0.59 * g + 0.11 * b;
+  var k = 1;
+  r = Math.floor(intensity * k + r * (1 - k));
+  g = Math.floor(intensity * k + g * (1 - k));
+  b = Math.floor(intensity * k + b * (1 - k));
+  return [r, g, b];
 }
-
 
 //##########################
 // project thumbnail canvas
 //##########################
 
 
-var thumbnails = document.getElementsByClassName('project_thumbnail_image');
-var thumb_canvases = document.getElementsByClassName('project_thumbnail_canvas');
+var thumbnails = $('.project_thumbnail_image');
+var thumb_canvases = $('.project_thumbnail_canvas');
 
 var run_thumbs = function(){
  for(i=0; i<thumb_canvases.length; i++){
@@ -166,16 +168,16 @@ var run_thumbs = function(){
     thumb_canvases[i].height = 75; 
     c_ctx = thumb_canvases[i].getContext('2d');  
     
-    thumbnails[i].onLoad = (function(value){
-    c_ctx.drawImage(thumbnails[i], 0,0, thumbnails[i].width,thumbnails[i].height);      
-      bw_pixelate_image(thumb_canvases[value].getContext('2d'));
+    thumbnails[i].onLoad = (function(i){
+      c_ctx.drawImage(thumbnails[i], 0,0, thumbnails[i].width,thumbnails[i].height);      
+      bw_pixelate_image(thumb_canvases[i].getContext('2d'));
     })(i);
   }
 }
 run_thumbs(); 
 
 function bw_pixelate_image(c){
-  var pixel_size =7; 
+  var pixel_size =5; 
   var imageData = c.getImageData(0, 0, 75,75);
   var data = imageData.data
   
@@ -195,16 +197,6 @@ function bw_pixelate_image(c){
     y=y+(pixel_size-1)    
   }
   
-}
-
-
-function desaturate(r, g, b) {
-  var intensity = 0.3 * r + 0.59 * g + 0.11 * b;
-  var k = 0.2;
-  r = Math.floor(intensity * k + r * (1 - k));
-  g = Math.floor(intensity * k + g * (1 - k));
-  b = Math.floor(intensity * k + b * (1 - k));
-  return [r, g, b];
 }
 
 });

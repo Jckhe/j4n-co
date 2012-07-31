@@ -3,9 +3,11 @@
   %head
     %meta{:charset=>"utf-8"}
     %meta{:content=>"IE=edge,chrome=1", :'http-equiv'=>"X-UA-Compatible"}
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic&subset=latin,latin-ext'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Geo'
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900'
+    %meta{:name=>"ROBOTS", :content=>"INDEX, FOLLOW"}
+    %meta{:title => data.site.meta.title}
+    %meta{:keywords => data.site.meta.keywords}
+    %meta{:description => data.site.meta.description}
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Geo|PT+Sans'
     = stylesheet_link_tag "site.css"
     = yield_content :head
   

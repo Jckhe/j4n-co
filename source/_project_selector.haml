@@ -3,14 +3,16 @@
   - data.work.projects.each_with_index do |project, index|
     - is_last = nil;  
     - if index == data.work.projects.length-1
-      - is_last = 'last'
+      - is_last = ' last'
+    - r = [-5,-4,-3,3,4,5].choice.to_s
+    
+    - is_current = nil
+    - if request.env['REQUEST_PATH'].match(project[0]+'.html')
+      - is_current = ' current' 
 
-    %div{:class => 'project_preview '+is_last.to_s}
-      - is_current = false
-      - if request.env['REQUEST_PATH'].match(project[0]+'.html')
-        - is_current = 'current' 
+    %div{:class => 'project_preview '+is_last.to_s+is_current.to_s, :style=>'-webkit-transform:rotate('+r+'deg);-moz-transform:rotate('+r+'deg);-o-transform:rotate('+r+'deg);transform:rotate('+r+'deg);'}
 
-      %a{:href=>'/work/'+project[0]+'.html#slide_'+project[1].gallery_images.first, :class=>'project_thumbnail '+is_current.to_s+is_last.to_s}  
+      %a{:href=>'/work/'+project[0]+'.html', :class=>'project_thumbnail '+is_current.to_s+is_last.to_s}  
         %canvas.project_thumbnail_canvas
         %img{:class=>'project_thumbnail_image', :src=>'/images/project_thumbnails/'+project[0]+'.jpg'}
       

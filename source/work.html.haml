@@ -1,1 +1,16 @@
 = render_partial 'project_selector'
+
+%h1
+  = data.site.work.title
+%h2.small_header
+  = data.site.work.parents.title
+%p
+  = data.site.work.parents.text
+%h2.small_header
+  = data.site.work.clients.title
+%p
+  = data.site.work.parents.text
+%h2.small_header
+  = data.site.work.developers.title
+%p
+  = data.site.work.developers.text  
