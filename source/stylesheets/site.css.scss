@@ -290,6 +290,27 @@ body{
   max-width: 150px; 
 }
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
 //##############
 // MAIN CONTENT
 //###############
@@ -329,7 +350,7 @@ body{
 @media screen and (max-width : 566px){
 
   #site_header{
-    width: auto;
+    width: 100%;
     header{
       width: 40%;
       margin: 0 auto 0 auto;
@@ -379,7 +400,7 @@ body{
         z-index: 3;
         position: absolute;
         top: -120px;
-        right: 19%;
+        right: 10%;
       }
     }
   }
@@ -391,7 +412,7 @@ body{
 
   #main{
     margin-left: 0; 
-    width: auto; 
+    width: 100%; 
   }
   #main.work{
     padding: 0;
@@ -626,9 +647,11 @@ body{
 }
 
 #project_selector{
-  height: 100px; 
   position: relative;
   margin-bottom: 1em; 
+  float: left;
+  width: 100%; 
+  
   #pointer {    
     position: relative; 
     left: 10px; 
@@ -684,6 +707,7 @@ body{
   border: 2px solid lightgrey;
   height: 120px;
   margin-bottom: 1em;
+  clear: both; 
   @include vendor-prefix('background-size', 'cover');
   h2{
     color: $body_bg;   
@@ -713,9 +737,9 @@ body{
 .gallery_link{
   cursor:pointer;
   opacity: 0.7; 
-  float: left; 
   position: relative;
   text-align: center; 
+  display: block; 
   .expand_hint{
     display: inline-block; 
     position: absolute; 
@@ -725,6 +749,7 @@ body{
     padding: 10px; 
     color: white; 
     opacity: 0;  
+    left: 36%; 
   }
 }
 

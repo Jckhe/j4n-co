@@ -7,6 +7,8 @@
     %meta{:title => data.site.meta.title}
     %meta{:keywords => data.site.meta.keywords}
     %meta{:description => data.site.meta.description}
+    %meta{:name => "viewport", :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
+    
     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Geo|PT+Sans'
     = stylesheet_link_tag "site.css"
     = yield_content :head
