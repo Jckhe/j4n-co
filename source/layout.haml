@@ -29,8 +29,8 @@
             =image_tag "avatar.jpg", :id=>'avatar'
         %figcaption#about_me
           = data.site.about_me
-          %a#work_button.button{:href=>'/work.html'}
-            = data.site.work_link
+          
+          = link_to(data.site.work_link, '/work.html', :class=>'work_button button')
           
           %a#about_me_button.button{:href=>'#about_me'}
             about me

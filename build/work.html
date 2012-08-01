@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <meta content='INDEX, FOLLOW' name='ROBOTS' />
+    <meta title='Jan Drewniak | Art &amp; Code For Fun And Profit' />
+    <meta keywords='Jan Drewniak UX Design front-end development' />
+    <meta description="So You're looking for a UX Design Ninja™? I eat ninjas for breakfast." />
+    <link type="text/css" href="http://fonts.googleapis.com/css?family=Geo|PT+Sans" rel="stylesheet" media="screen" />
+    <link type="text/css" href="/stylesheets/site.css" rel="stylesheet" media="screen" />
+    
+  </head>
+  <body class='work'>
+    <div id='site_header'>
+      <header>
+        <h1 id='logo'>
+          <a href='/'>
+            <span>
+              Jan Drewniak
+            </span>
+            <!-- /=image_tag "logo.svg", :class => 'site_logo' -->
+          </a>
+        </h1>
+        <p class='clear tag_line'>
+          ART & CODE FOR FUN AND PROFIT
+        </p>
+      </header>
+      <aside id='aside'>
+        <canvas id='canvas'>
+          <figure>
+            <img id="avatar" src="/images/avatar.jpg" />
+          </figure>
+        </canvas>
+        <figcaption id='about_me'>
+          Proprietor of the finest internetting since 2007. Hailing from Toronto, I currently habitate in Warsaw. I focus on Interface Design & Development and I'm passionate about all things web... and bicycles.
+          <a class="work_button button" href="/work.html">Go to the work</a>
+          <a class='button' href='#about_me' id='about_me_button'>
+            about me
+          </a>
+          <a class='button' href='#nav' id='blog_button'>
+            blog
+          </a>
+        </figcaption>
+      </aside>
+    </div>
+    <section class='work' id='main' role='main'>
+      <div id='project_selector'>
+  <!-- /- if request.env['REQUEST_PATH'].match(project[0]+'.html') -->
+  <!-- /- is_current = ' current' -->
+  <div class='project_preview ' style='-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-o-transform:rotate(-3deg);transform:rotate(-3deg);'>
+    <a class='project_thumbnail ' href='/work/skype.html'>
+      <canvas class='project_thumbnail_canvas'></canvas>
+      <img class='project_thumbnail_image' src='/images/project_thumbnails/skype.jpg' />
+    </a>
+    <h2 class='title '>
+      Garamondieu Mac Skype Theme
+    </h2>
+  </div>
+  <!-- /- if request.env['REQUEST_PATH'].match(project[0]+'.html') -->
+  <!-- /- is_current = ' current' -->
+  <div class='project_preview ' style='-webkit-transform:rotate(4deg);-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);'>
+    <a class='project_thumbnail ' href='/work/skedx.html'>
+      <canvas class='project_thumbnail_canvas'></canvas>
+      <img class='project_thumbnail_image' src='/images/project_thumbnails/skedx.jpg' />
+    </a>
+    <h2 class='title '>
+      Skedx
+    </h2>
+  </div>
+  <!-- /- if request.env['REQUEST_PATH'].match(project[0]+'.html') -->
+  <!-- /- is_current = ' current' -->
+  <div class='project_preview ' style='-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-o-transform:rotate(-3deg);transform:rotate(-3deg);'>
+    <a class='project_thumbnail ' href='/work/moovylist.html'>
+      <canvas class='project_thumbnail_canvas'></canvas>
+      <img class='project_thumbnail_image' src='/images/project_thumbnails/moovylist.jpg' />
+    </a>
+    <h2 class='title '>
+      Moovylist
+    </h2>
+  </div>
+  <!-- /- if request.env['REQUEST_PATH'].match(project[0]+'.html') -->
+  <!-- /- is_current = ' current' -->
+  <div class='project_preview  last' style='-webkit-transform:rotate(4deg);-moz-transform:rotate(4deg);-o-transform:rotate(4deg);transform:rotate(4deg);'>
+    <a class='project_thumbnail  last' href='/work/MDKI.html'>
+      <canvas class='project_thumbnail_canvas'></canvas>
+      <img class='project_thumbnail_image' src='/images/project_thumbnails/MDKI.jpg' />
+    </a>
+    <h2 class='title '>
+      Mass Destroy Kindle Items
+    </h2>
+  </div>
+  <div id='pointer'>
+    <img src='/images/pointer.svg' />
+    <small>
+      <i>
+        click on a project for more details
+      </i>
+    </small>
+  </div>
+</div>
+<h1>
+  So, what is it you do again, Jan?
+</h1>
+<h2 class='small_header'>
+  When my parents ask me
+</h2>
+<p>
+  I say I make websites.( <i>But that's like saying 'I work with computers'. More specifically, I make those kinds of websites where you have an account and log-in and do stuff </i>)
+</p>
+<h2 class='small_header'>
+  When potential clients ask me
+</h2>
+<p>
+  I say I make people fall in love with your product. That means making it intuitive and enjoyable to use, not just making it look pretty.
+</p>
+<h2 class='small_header'>
+  When other developers ask me
+</h2>
+<p>
+  I say I'm an interface designer and front-end developer. I play well with back-end developers and I'm familiar with Ruby, but I prefer to focus on the HTML/CSS/JS, increasingly the JS. <i> (And yes I use all cool kid tools like Git, Rails, SASS, mongoDB etc.) </i>
+</p>
+    </section>
+    <nav id='nav'>
+      <h3 class='header'>
+        BL<wbr>OG
+      </h3>
+      <div id='prevnext'>
+        <a href='/blog/hello_world.html' id='prev'>
+          -prev
+        </a>
+        <a href='/blog/hello_world.html' id='next'>
+          next+
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a class='article_link' href='/blog/hello_world.html'>
+            Hello World
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/script.js"></script>
+</html>

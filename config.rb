@@ -69,9 +69,9 @@
 # set :images_dir, "alternative_image_directory"
 require "pry"
 
-activate :blog
-set :blog_layout_engine, "haml"
-set :blog_permalink, "blog/:title.html"
+ activate :blog
+ set :blog_layout_engine, "haml"
+ set :blog_permalink, "blog/:title.html"
 
 module Sass::Script::Functions
   module MyRandom
@@ -83,7 +83,7 @@ module Sass::Script::Functions
 end
 
 data.work.projects.each do |project|
-  page "/work/#{project[0]}.html", :proxy => "_project_template.html", :ignore => true do
+  page "/work/#{project[0]}.html", :proxy => "_project_template.html" do
     @project = project
   end
 end
@@ -91,10 +91,10 @@ end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
-  
+  activate :minify_css
+  # activate :directory_indexes
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
   
   # Enable cache buster
   # activate :cache_buster
