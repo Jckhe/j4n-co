@@ -1,9 +1,12 @@
 %article
-  %h1
-    = current_article_title
+%h1
+  %span.blog_title
+    = current_article.title
 
-  = yield_content :blog_article
+%h2
+  %span.subhead
 
-  %time
-    = current_article_date.strftime('%b %e %Y')
-    
+= current_article.body
+
+%time
+  = current_article.date.strftime('%b %e %Y')

@@ -7,22 +7,22 @@
     - r = [-5,-4,-3,3,4,5].choice.to_s
     
     - is_current = nil
-    //- if request.env['REQUEST_PATH'].match(project[0]+'.html')
-    //- is_current = ' current' 
-
+      - if @current_path.match(project[0]+'.html')
+      - is_current = ' current' 
+  
     %div{:class => 'project_preview '+is_last.to_s+is_current.to_s, :style=>'-webkit-transform:rotate('+r+'deg);-moz-transform:rotate('+r+'deg);-o-transform:rotate('+r+'deg);transform:rotate('+r+'deg);'}
-
+  
       %a{:href=>'/work/'+project[0]+'.html', :class=>'project_thumbnail '+is_current.to_s+is_last.to_s}  
         %canvas.project_thumbnail_canvas
         %img{:class=>'project_thumbnail_image', :src=>'/images/project_thumbnails/'+project[0]+'.jpg'}
       
       %h2{:class => 'title '+is_current.to_s}
         =project[1].title
-
+  
   #pointer
     %img{:src=>'/images/pointer.svg'}
     %small  
       %i
         = data.site.project_details_link
   
-  .clearfix
+.clearfix

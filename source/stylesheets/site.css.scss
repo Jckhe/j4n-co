@@ -38,7 +38,7 @@ $content_bg: white;
 $monospace: 'Lucida Console', 'Monaco', 'Courier New', 'Courier';
 
 body {
-  font-family: 'PT Sans', sans-serif;   
+  font-family: 'PT Sans', sans-serif;  
   color: $p_color; 
   line-height: 1.2em;
   background-image: url('/images/bg/bg_s.png'), url('/images/bg/bg_m.png'), url('/images/bg/bg_l.png');
@@ -91,6 +91,7 @@ p {
   color: $p_color; 
   line-height: 1.5em;
   margin: 0.2em 0 1em 0;
+  font-size: 14px; 
 }
 
 a {
@@ -151,7 +152,7 @@ small, .small {
 
 strong, .strong {
   font-weight: bold; 
-  color: $highlight; 
+  color: inherit; 
 }
 
 blockquote {
@@ -203,6 +204,12 @@ figcaption {
   font-style: italic; 
 }
 
+.blog_title {
+  margin-left: -0.7em;
+  padding: 0.2em;
+  background-color: $medium_grey;
+  color: white;
+}
 //###########
 //  layout
 //###########
@@ -255,7 +262,7 @@ body{
   padding:2em 1.5em 1.5em 1.5em; 
   position: relative;
   top: -0.5em; 
-  box-shadow: 0px 0px 20px -5px black, inset 0px 10px 20px -15px black;
+  box-shadow: 0px 0px 20px -5px black;
 }
 
 #main.work{

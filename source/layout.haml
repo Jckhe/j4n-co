@@ -1,4 +1,3 @@
-!!!
 %html
   %head
     %meta{:charset=>"utf-8"}
@@ -9,12 +8,14 @@
     %meta{:description => data.site.meta.description}
     %meta{:name => "viewport", :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
     
-    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Geo|PT+Sans'
-    = stylesheet_link_tag "site.css"
+    %link{:rel=>"icon", :type=>"image/png", :href=>"/images/favicon.png"}
+   
+    = stylesheet_link_tag 'site'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Geo'
     = yield_content :head
-  
+
   %body{:class=> page_classes}
-      
+    
     #site_header 
       %header
         %h1#logo
@@ -25,63 +26,58 @@
         %p.clear.tag_line 
           = data.site.tagline
       
-      %aside#aside
-        %canvas#canvas
-          %figure
-            =image_tag "avatar.jpg", :id=>'avatar'
-        %figcaption#about_me
-          = data.site.about_me
-          
-          = link_to(data.site.work_link, '/work.html', :class=>'work_button button')
-          
-          %a#about_me_button.button{:href=>'#about_me'}
-            about me
-          
-          %a#blog_button.button{:href=>'#nav'}
-            blog
-
+        %aside#aside
+          %canvas#canvas
+            %figure
+              =image_tag "avatar.jpg", :id=>'avatar'
+          %figcaption#about_me
+            = data.site.about_me
+            
+            = link_to(data.site.work_link, '/work.html', :class=>'work_button button')
+            
+            %a#about_me_button.button{:href=>'#about_me'}
+              about me
+            
+            %a#blog_button.button{:href=>'#nav'}
+              blog
+      
     - if is_blog_article?
       %section#main{:role=>"main"}      
-        - content_for :blog_article, yield
-        = partial settings.blog_article_template
+        = partial "article_template"
     - elsif request.path.match(/work\/.|work.html|_project_template.html/)
       %section#main.work{:role=>"main"}            
         = yield
     - else 
       %section#main{:role=>"main"}      
         = yield   
-
+   
     %nav#nav
       %h3.header
         BL<wbr>OG
       #prevnext
-        - current = data.blog.articles.find_index{|article| article.title == data.page.title}
-        
-        - prev_link = data.blog.articles[current.to_i-1].url
-
-        -if (data.blog.articles[current.to_i+1] == nil)
-          - next_link = data.blog.articles[0].url
+        - current = blog.articles.find_index{|article| article.url == @current_path}
+        - prev_link = blog.articles[current.to_i-1].url
+     
+        - if (blog.articles[current.to_i+1] == nil)
+          - next_link = blog.articles[0].url
         - else 
-          - next_link = data.blog.articles[current.to_i+1].url
-          
-
+          - next_link = blog.articles[current.to_i+1].url
+         
         %a#prev{:href=>prev_link}
           \-prev
         %a#next{:href=>next_link}
           next+
-        
-      
+       
       %ul
-        - data.blog.articles[0...10].each do |article|
+        - blog.articles[0...10].each do |article|
           %li
-            -if current_article_title == article.title
+            -if article.url == @current_path
               %a.article_link.current{:href=>article.url}
-                =article.title
+                = article.title
             - else
               %a.article_link{:href=>article.url}
-                =article.title
+                = article.title
+ 
 
-
-  = javascript_include_tag "jquery.min.js"    
-  = javascript_include_tag "script.js"    
-
+= javascript_include_tag "jquery.min.js"    
+= javascript_include_tag "script.js"   
