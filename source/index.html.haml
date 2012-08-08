@@ -1,5 +1,4 @@
 - content_for :head do
   %title
     Jan Drewniak - UI Design & Development
-
-= partial "article_template", :locals => {:current_article => blog.articles[-1]}
+= partial "article_template", :locals => {:current_article => blog.articles.first}
