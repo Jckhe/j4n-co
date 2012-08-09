@@ -27,6 +27,7 @@ $highlight: #00D57F;
 $warning: #CF882E; 
 $warning_highlight: #FFAC44;
 
+$light_grey: #DADADA; 
 $medium_grey: #999; 
 $dark_grey: #666;
 $body_bg: #F5F2F2;
@@ -204,12 +205,8 @@ figcaption {
   font-style: italic; 
 }
 
-.blog_title {
-  margin-left: -0.7em;
-  padding: 0.2em;
-  background-color: $medium_grey;
-  color: white;
-}
+
+
 //###########
 //  layout
 //###########
@@ -451,6 +448,38 @@ html[xmlns] .clearfix {
   }
 }
 
+.blog_header{
+  margin-bottom: 2em;   
+  float: left; 
+  width: 100%; 
+
+  h1,h2,h3,h4,h5,h5{
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .blog_title {
+    margin-left: -0.7em;
+    padding: 0.2em;
+    background-color: $medium_grey;
+    color: white;
+    float: left;
+  }
+
+  .blog_subtitle{
+    font-size: 16px; 
+    background-color: $light_grey;   
+    color: $dark_grey;
+    font-weight: 400; 
+    font-style: italic;
+    padding: 0.2em 1em;
+    float: left; 
+    line-height: 1em;
+  }
+
+}
 
 //##########
 //   LOGO

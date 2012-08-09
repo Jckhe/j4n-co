@@ -26,20 +26,20 @@
         %p.clear.tag_line 
           = data.site.tagline
       
-        %aside#aside
-          %canvas#canvas
-            %figure
-              =image_tag "avatar.jpg", :id=>'avatar'
-          %figcaption#about_me
-            = data.site.about_me
+      %aside#aside
+        %canvas#canvas
+          %figure
+            =image_tag "avatar.jpg", :id=>'avatar'
+        %figcaption#about_me
+          = data.site.about_me
+          
+          = link_to(data.site.work_link, '/work.html', :class=>'work_button button')
+          
+          %a#about_me_button.button{:href=>'#about_me'}
+            about me
             
-            = link_to(data.site.work_link, '/work.html', :class=>'work_button button')
-            
-            %a#about_me_button.button{:href=>'#about_me'}
-              about me
-            
-            %a#blog_button.button{:href=>'#nav'}
-              blog
+          %a#blog_button.button{:href=>'#nav'}
+            blog
       
     - if is_blog_article?
       %section#main{:role=>"main"}      

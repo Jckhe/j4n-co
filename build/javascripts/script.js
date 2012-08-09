@@ -1,1 +1,203 @@
-$(document).ready(function(){function n(a){h=a.getContext("2d");var d=new Image;d.src="/images/avatar.jpg",d.height=c,d.width=b,d.onload=function(){h.drawImage(d,0,0,b,c),o(h)}}function o(a){var d=a.getImageData(0,0,b,c),e=d.data,g=400;for(y=0;y<c;y++){var h=[];for(x=0;x<b;x++){var i=Math.floor(Math.random()*255),k=(y*b+x)*4,l=e[k],n=e[k+1],o=e[k+2],p=m,q="rgb("+Math.floor(Math.random()*255).toString()+","+Math.floor(Math.random()*255).toString()+","+Math.floor(Math.random()*255).toString()+")";l<200&&n<115&&o<140&&(p=q);var r=180,s=0;l>s&&l<r&&n>s&&n<r&&o>s&&o<r&&(p=q);var r=180,s=140;l>s&&l<r&&n>s&&n<r&&o>s&&o<r&&(p=m);var t=!0;p==m&&(t=!1),h.push([[x],t]),a.fillStyle=p,t?a.fillRect(x,y,j,j):a.clearRect(x,y,j,j),x+=j-1}f.push(h),y+=j-1}}function p(a){function f(){k=window.setTimeout(function(){for(y=0;y<b.length;y++)for(x=0;x<b[0].length;x++){var a=b[y][x][1],g="rgb("+Math.floor(Math.random()*255).toString()+","+Math.floor(Math.random()*255).toString()+","+Math.floor(Math.random()*255).toString()+")",i=0;b[y-1]&&b[y-1][x-1]&&b[y-1][x-1][1]&&i++,b[y-1]&&b[y-1][x]&&b[y-1][x][1]&&i++,b[y-1]&&b[y-1][x+1]&&b[y-1][x+1][1]&&i++,b[y]&&b[y][x-1]&&b[y][x-1][1]&&i++,b[y]&&b[y][x+1]&&b[y][x+1][1]&&i++,b[y+1]&&b[y+1][x-1]&&b[y+1][x-1][1]&&i++,b[y+1]&&b[y+1][x]&&b[y+1][x][1]&&i++,b[y+1]&&b[y+1][x+1]&&b[y+1][x+1][1]&&i++;var k=i;c[y][x][1]=!1;if(a==1){if(k===d||k===e)c[y][x][1]=!0}else k===e&&(c[y][x][1]=!0);c[y][x][1]==1?(h.fillStyle=g,h.fillRect(x*j,y*j,j,j)):h.clearRect(x*j,y*j,j,j)}b=c,f()},100)}var b=a,c=a,d=2,e=3;l=!0,f()}function q(a,b,c){var d=.3*a+.59*b+.11*c,e=1;return a=Math.floor(d*e+a*(1-e)),b=Math.floor(d*e+b*(1-e)),c=Math.floor(d*e+c*(1-e)),[a,b,c]}function u(a){var b=5,c=a.getImageData(0,0,75,75),d=c.data;for(y=0;y<75;y++){for(x=0;x<75;x++){var e=(y*75+x)*4,f=Math.floor(d[e]),g=Math.floor(d[e+1]),h=Math.floor(d[e+2]),i=q(f,g,h);a.fillStyle="rgb("+i[0]+","+i[1]+","+i[2]+")",a.fillRect(x,y,b,b),x+=b-1}y+=b-1}}var a=document.getElementById("canvas"),b=150,c=150;a.width=b,a.height=c;var d=[],e=[],f=[],g=[],h,j=3,k,l=!1,m="rgba(0,0,0,0)";a&&a.getContext&&n(a),a.addEventListener("mouseover",function(){l||p(f)}),a.addEventListener("mouseout",function(){if(l=!0)l=!1;window.setTimeout(function(){l=!1,window.clearTimeout(k)},2e3)});var r=$(".project_thumbnail_image"),s=$(".project_thumbnail_canvas"),t=function(){for(i=0;i<s.length;i++)s[i].width=75,s[i].height=75,c_ctx=s[i].getContext("2d"),r[i].onLoad=function(a){c_ctx.drawImage(r[a],0,0,r[a].width,r[a].height),u(s[a].getContext("2d"))}(i)};t()});
+$(document).ready(function(){
+
+//###############
+//  face canvas
+//###############
+
+var canvas = document.getElementById('canvas');
+var canvas_width = 150; 
+var canvas_height =150; 
+
+canvas.width = canvas_width; 
+canvas.height = canvas_height; 
+var next_gen = [];
+var changed = [];
+var pixel_matrix = [];
+
+var new_pixel_matrix = [];  
+var c;
+var pixel_size = 3
+var timer; 
+var is_active = false; 
+var white = 'rgba(0,0,0,0)'
+
+if (canvas && canvas.getContext){
+  runCanvas(canvas); 
+}
+
+function runCanvas(canvas){
+  c = canvas.getContext('2d');
+  var image = new Image(); 
+  image.src = '/images/avatar.jpg';
+  image.height = canvas_height; 
+  image.width = canvas_width; 
+  image.onload = function(){
+    c.drawImage(image, 0,0, canvas_width, canvas_height)
+    pixelate_image(c);     
+  }
+}//runCanvas()
+
+canvas.addEventListener('mouseover',function(){
+  if(!is_active){
+    game_of_life(pixel_matrix);
+  }
+});
+
+canvas.addEventListener('mouseout', function(){
+  if (is_active=true){
+    is_active=false  
+  }
+  window.setTimeout(function(){
+    is_active=false      
+    window.clearTimeout(timer)  
+  }, 2000)
+
+})
+
+function pixelate_image(c){
+  var imageData = c.getImageData(0, 0, canvas_width, canvas_height);
+  var data = imageData.data
+  var contrast_level = 400;
+
+  for(y=0; y<canvas_height; y++){   
+    var pixel_row = [];
+    for(x=0; x<canvas_width; x++){
+      var rand=Math.floor(Math.random()*255)
+      var index = (y * canvas_width + x) * 4;
+      var r = data[index];
+      var g = data[index+1];
+      var b = data[index+2];
+      var fill_style = white
+      var rand_color = 'rgb('+Math.floor(Math.random()*255).toString()+','+Math.floor(Math.random()*255).toString()+','+Math.floor(Math.random()*255).toString()+')';
+      
+      if(r<200 && g< 115 && b<140){fill_style = rand_color};
+      var mid = 180
+      var low = 0
+      if(r>low && r<mid && g>low && g<mid && b>low && b<mid ){fill_style = rand_color};
+      
+      var mid = 180
+      var low = 140
+      if(r>low && r<mid && g>low && g<mid && b>low && b<mid ){fill_style=white};
+      
+      var is_active = true 
+      if(fill_style==white){is_active = false;}
+      
+      pixel_row.push([[x],is_active]);
+      
+      c.fillStyle =fill_style 
+      if (is_active){c.fillRect( x, y, pixel_size, pixel_size )} 
+      else{c.clearRect( x, y, pixel_size, pixel_size )};
+      x=x+(pixel_size-1)
+    }
+    pixel_matrix.push(pixel_row)
+    y=y+(pixel_size-1)    
+  }
+}
+
+function game_of_life(pixel_matrix){ 
+  var old_matrix = pixel_matrix;
+  var new_matrix = pixel_matrix; 
+  var min = 2;
+  var max = 3; 
+  is_active = true; 
+  stepThrough()
+  function stepThrough(){
+    timer = window.setTimeout(function(){
+        for(y=0; y<old_matrix.length; y++){
+          for(x=0; x<old_matrix[0].length; x++){
+            var old_state = old_matrix[y][x][1];
+            
+            var rand_color = 'rgb('+Math.floor(Math.random()*255).toString()+','+Math.floor(Math.random()*255).toString()+','+Math.floor(Math.random()*255).toString()+')';
+            
+            var n = 0;
+            if (old_matrix[y-1] && old_matrix[y-1][x-1] && old_matrix[y-1][x-1][1])	n++;
+            if (old_matrix[y-1] && old_matrix[y-1][x  ] && old_matrix[y-1][x  ][1])	n++;
+            if (old_matrix[y-1] && old_matrix[y-1][x+1] && old_matrix[y-1][x+1][1])	n++;
+            if (old_matrix[y  ] && old_matrix[y  ][x-1] && old_matrix[y  ][x-1][1])	n++;
+            if (old_matrix[y  ] && old_matrix[y  ][x+1] && old_matrix[y  ][x+1][1])	n++;
+            if (old_matrix[y+1] && old_matrix[y+1][x-1] && old_matrix[y+1][x-1][1])	n++;
+            if (old_matrix[y+1] && old_matrix[y+1][x  ] && old_matrix[y+1][x  ][1])	n++;
+            if (old_matrix[y+1] && old_matrix[y+1][x+1] && old_matrix[y+1][x+1][1])	n++;
+            
+            var live_neighbors = n; 
+  
+            new_matrix[y][x][1]=false;  
+            
+            if(old_state==true){
+              if (live_neighbors === min || live_neighbors === max){
+                new_matrix[y][x][1]=true;  
+              }
+            } else if(live_neighbors === max){
+                new_matrix[y][x][1]=true;                 
+            } 
+
+            if(new_matrix[y][x][1] == true){
+              c.fillStyle = rand_color
+              c.fillRect(x*pixel_size, y*pixel_size, pixel_size, pixel_size)                    
+            } else {
+              c.clearRect(x*pixel_size, y*pixel_size, pixel_size, pixel_size) 
+            }
+          }
+        }
+        old_matrix = new_matrix      
+        stepThrough(); 
+    }, 100); //setTimeout
+  }
+}
+
+function desaturate(r, g, b) {
+  var intensity = 0.3 * r + 0.59 * g + 0.11 * b;
+  var k = 1;
+  r = Math.floor(intensity * k + r * (1 - k));
+  g = Math.floor(intensity * k + g * (1 - k));
+  b = Math.floor(intensity * k + b * (1 - k));
+  return [r, g, b];
+}
+
+//##########################
+// project thumbnail canvas
+//##########################
+
+
+var thumbnails = $('.project_thumbnail_image');
+var thumb_canvases = $('.project_thumbnail_canvas');
+
+var run_thumbs = function(){
+ for(i=0; i<thumb_canvases.length; i++){
+    thumb_canvases[i].width = 75; 
+    thumb_canvases[i].height = 75; 
+    c_ctx = thumb_canvases[i].getContext('2d');  
+    
+    thumbnails[i].onLoad = (function(i){
+      c_ctx.drawImage(thumbnails[i], 0,0, thumbnails[i].width,thumbnails[i].height);      
+      bw_pixelate_image(thumb_canvases[i].getContext('2d'));
+    })(i);
+  }
+}
+run_thumbs(); 
+
+function bw_pixelate_image(c){
+  var pixel_size =5; 
+  var imageData = c.getImageData(0, 0, 75,75);
+  var data = imageData.data
+  
+  for(y=0; y<75; y++){   
+    for(x=0; x<75; x++){
+      var index = (y * 75 + x) * 4;
+      var r = Math.floor(data[index]);
+      var g = Math.floor(data[index+1]);
+      var b = Math.floor(data[index+2]);
+      var rgb = desaturate(r,g,b)
+
+      c.fillStyle = "rgb("+rgb[0]+","+rgb[1]+","+rgb[2]+")";
+      c.fillRect( x, y, pixel_size, pixel_size);
+
+      x=x+(pixel_size-1)
+    }
+    y=y+(pixel_size-1)    
+  }
+  
+}
+
+});
+
