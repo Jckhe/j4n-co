@@ -26,6 +26,8 @@ data.work.projects.each do |project|
   end
 end
 
+ignore "project_template.html"
+
 ### 
 # Compass
 ###

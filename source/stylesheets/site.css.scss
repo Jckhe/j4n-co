@@ -174,8 +174,8 @@ button, a.button, .button {
   font-weight: normal; 
   font-style: normal;
   padding: 2px 5px; 
-  border: 1px solid;
   cursor: pointer; 
+  margin: 0 0 0 5px; 
   @include vendor-prefix('transition', 'bsite_ackground-color, 0.1s');  
 }
 
@@ -200,8 +200,8 @@ input[type='text'], textarea {
   @include vendor-prefix('box-shadow', 'inset 0px 1px 6px -1px'+$medium_grey);
 }
 
-figcaption {
-  font-size: 12px;
+figcaption, .caption {
+  font-size: 14px;
   font-style: italic; 
 }
 
@@ -240,17 +240,12 @@ body{
   width: $header_width; 
   padding: 0.5em; 
   min-width: 11em;
+  margin-bottom: 1em; 
 }
 
-#aside {
-  text-align: center; 
-  color: $medium_grey; 
-  p,figcaption{
-    text-align: left;   
-    font-family: 'Geo';
-    font-size: 18px;
-    font-style: normal;
-  }
+#site_header .button {
+  margin: 0 5px 0 0;
+  font-family: 'Geo'; 
 }
 
 #main{
@@ -269,22 +264,24 @@ body{
 
 #nav {
   width: 8em; 
-  background-color: $medium_grey; 
+  background-color: transparent; 
+  @include vendor-prefix('transition', 'background-color 0.5s ease-out');     
   
   .header{
     font-family: $monospace;   
     font-size: 36px;
-    background-color: $body_bg; 
     padding-left: 5px;
     padding-bottom: 0em;
     margin-bottom: 0;
   }
 
   #prevnext {
-    background-color: $body_bg;     
     font-family: $monospace; 
     font-size: 13px; 
   }
+}
+#nav:target{
+  background-color: yellow; 
 }
 
 #avatar {
@@ -318,13 +315,22 @@ html[xmlns] .clearfix {
 //##############
 // MAIN CONTENT
 //###############
-#about_me_button{
-  display: none; 
+
+#about_me{
+  opacity: 0;
+  height: 0; 
+  overflow: hidden; 
+  @include vendor-prefix('transition', 'all 1s');     
 }
 
-#blog_button{
-  display: none; 
+#about_me:target{
+  opacity: 1; 
+  height: auto;
+  margin-top: 0.5em; 
+  margin-bottom: 1em; 
 }
+    
+
 @media screen and (max-width : 855px){
   #main{
     float: right;   
@@ -356,62 +362,16 @@ html[xmlns] .clearfix {
   #site_header{
     width: 100%;
     header{
-      width: 40%;
       margin: 0 auto 0 auto;
-      padding-right: 140px;
       z-index: 5; 
-    }
-    
-    #about_me{
-      position:relative;
-      clear: both; 
-      visibility:hidden;
-      padding-top: 2em;  
-      height: 1em; 
-      display: block; 
-      overflow: hidden; 
-      
-      .button{
-        visibility:visible;
-        position:absolute;
-        top:0;
-        left:0;
-        z-index: 5; 
-      }
-      
-      #about_me_button{
-        display: block;
-        left: 7em; 
-      }
-      #blog_button{
-        display: block; 
-        left: 11.9em; 
-      }
-    }
-
-    #about_me:target{
-      visibility: visible;
-      height: auto; 
-      margin-top: 0.5em; 
-      margin-bottom: 1em; 
-    }
-    
-    #aside{
-      position: relative;
-      
-      #canvas{
-        height: 100px;
-        z-index: 3;
-        position: absolute;
-        top: -120px;
-        right: 10%;
-      }
     }
   }
 
   #logo{
-    float: left;
     margin-bottom: 0; 
+    a{
+      font-size: 42px;  
+    }
   }
 
   #main{
@@ -444,6 +404,15 @@ html[xmlns] .clearfix {
     }
     li:nth-child(even){
       background-color: $dark_grey; 
+    }
+  }
+}
+
+@media screen and (max-width : 320px){
+    #logo{
+    margin-bottom: 0; 
+    a{
+      font-size: 36px;  
     }
   }
 }
@@ -492,6 +461,7 @@ html[xmlns] .clearfix {
     letter-spacing: 1px;
     color:$warning;    
     margin-left: 4px; 
+    margin-bottom: 0.5em; 
   }
 
 #logo {
@@ -500,27 +470,40 @@ html[xmlns] .clearfix {
   letter-spacing: -1px;
   line-height: 31px;
   text-indent: -8px;
+  margin: 0; 
+  
+  a {
+    display: block; 
+    color: $dark_grey; 
+  }
 
   span{
     display: block; 
-      float: left; 
-      @include vendor-prefix('transition', 'all 0.3s ');     
-      @include vendor-prefix('transform','rotate(0deg)');    
-      cursor: pointer; 
-      position: relative; 
-      color:$dark_grey;  
-      margin-bottom: 5px;   
-    }
+    @include vendor-prefix('transition', 'all 0.3s ');     
+    @include vendor-prefix('transform','rotate(0deg)');    
+    cursor: pointer; 
+    position: relative; 
+    color:$dark_grey;  
+    margin-bottom: 5px;   
+  }
   
-  span:hover{
+  a:hover{
     color: $highlight; 
     @include vendor-prefix('transform','rotate(2deg)');
+  }
+  canvas{
+    @include vendor-prefix('transform','rotate(0deg)');      
   }
 }
  
 .site_logo{
   width: 100%; 
   max-width: 230px; 
+}
+
+#site_nav *{
+  margin-left: 0; 
+  display: inline; 
 }
 
 .ui_icon{

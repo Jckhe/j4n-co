@@ -5,8 +5,8 @@ $(document).ready(function(){
 //###############
 
 var canvas = document.getElementById('canvas');
-var canvas_width = 150; 
-var canvas_height =150; 
+var canvas_width = 100; 
+var canvas_height =100; 
 
 canvas.width = canvas_width; 
 canvas.height = canvas_height; 
@@ -16,7 +16,7 @@ var pixel_matrix = [];
 
 var new_pixel_matrix = [];  
 var c;
-var pixel_size = 3
+var pixel_size = 2
 var timer; 
 var is_active = false; 
 var white = 'rgba(0,0,0,0)'

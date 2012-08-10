@@ -3,7 +3,7 @@
     <meta charset='utf-8' />
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
     <meta content='INDEX, FOLLOW' name='ROBOTS' />
-    <meta title='Jan Drewniak | Art &amp; Code For Fun And Profit' />
+    <meta title=' - Jan Drewniak || Design &amp; Development' />
     <meta keywords='Jan Drewniak UX Design front-end development' />
     <meta description="So You're looking for a UX Design Ninja™? I eat ninjas for breakfast." />
     <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
@@ -17,37 +17,43 @@
       <header>
         <h1 id='logo'>
           <a href='/'>
-            <span>
-              Jan Drewniak
-            </span>
-            <!-- /=image_tag "logo.svg", :class => 'site_logo' -->
+            Jan
+            <canvas id='canvas'>
+              <img id="avatar" src="/images/avatar.jpg" />
+            </canvas>
+            Drewniak
           </a>
         </h1>
         <p class='clear tag_line'>
           ART & CODE FOR FUN AND PROFIT
         </p>
       </header>
-      <aside id='aside'>
-        <canvas id='canvas'>
-          <figure>
-            <img id="avatar" src="/images/avatar.jpg" />
-          </figure>
-        </canvas>
-        <figcaption id='about_me'>
-          Proprietor of the finest internetting since 2007. Hailing from Toronto, currently habitating in Warsaw. Mainly focusing on Interface Design & Development. passionate about all things web... and bicycles.
-          <a class="work_button button" href="/work.html">Go to the work</a>
-          <a class='button' href='#about_me' id='about_me_button'>
-            about me
-          </a>
-          <a class='button' href='#nav' id='blog_button'>
-            blog
-          </a>
-        </figcaption>
+      <nav id='site_nav'>
+        <ul>
+          <li>
+            <a class='work_button button' href='/work.html'>
+              work
+            </a>
+          </li>
+          <li>
+            <a class='button' href='#about_me' id='about_me_button'>
+              me
+            </a>
+          </li>
+          <li>
+            <a class='button' href='#nav' id='blog_button'>
+              blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <aside class='caption' id='about_me'>
+        Proprietor of fine internettings since 2007. Hailing from Toronto, currently habitating in Warsaw. Mainly focusing on Interface Design & Development. passionate about all things web... and bicycles.
       </aside>
     </div>
     <section class='work' id='main' role='main'>
       <div id='project_selector'>
-  <div class='project_preview ' style='-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-o-transform:rotate(-5deg);transform:rotate(-5deg);'>
+  <div class='project_preview ' style='-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg);'>
     <a class='project_thumbnail ' href='/work/skype.html'>
       <canvas class='project_thumbnail_canvas'></canvas>
       <img class='project_thumbnail_image' src='/images/project_thumbnails/skype.jpg' />
@@ -56,7 +62,7 @@
       Garamondieu Mac Skype Theme
     </h2>
   </div>
-  <div class='project_preview  current' style='-webkit-transform:rotate(3deg);-moz-transform:rotate(3deg);-o-transform:rotate(3deg);transform:rotate(3deg);'>
+  <div class='project_preview  current' style='-webkit-transform:rotate(-4deg);-moz-transform:rotate(-4deg);-o-transform:rotate(-4deg);transform:rotate(-4deg);'>
     <a class='project_thumbnail  current' href='/work/skedx.html'>
       <canvas class='project_thumbnail_canvas'></canvas>
       <img class='project_thumbnail_image' src='/images/project_thumbnails/skedx.jpg' />
@@ -65,7 +71,7 @@
       Skedx
     </h2>
   </div>
-  <div class='project_preview ' style='-webkit-transform:rotate(-5deg);-moz-transform:rotate(-5deg);-o-transform:rotate(-5deg);transform:rotate(-5deg);'>
+  <div class='project_preview ' style='-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg);'>
     <a class='project_thumbnail ' href='/work/moovylist.html'>
       <canvas class='project_thumbnail_canvas'></canvas>
       <img class='project_thumbnail_image' src='/images/project_thumbnails/moovylist.jpg' />
@@ -74,7 +80,7 @@
       Moovylist
     </h2>
   </div>
-  <div class='project_preview  last' style='-webkit-transform:rotate(5deg);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg);'>
+  <div class='project_preview  last' style='-webkit-transform:rotate(-3deg);-moz-transform:rotate(-3deg);-o-transform:rotate(-3deg);transform:rotate(-3deg);'>
     <a class='project_thumbnail  last' href='/work/MDKI.html'>
       <canvas class='project_thumbnail_canvas'></canvas>
       <img class='project_thumbnail_image' src='/images/project_thumbnails/MDKI.jpg' />
