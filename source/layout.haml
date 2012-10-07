@@ -1,13 +1,14 @@
-%html
+%html{:lang => 'en'}
   %head
     %meta{:charset=>"utf-8"}
     %meta{:content=>"IE=edge,chrome=1", :'http-equiv'=>"X-UA-Compatible"}
-    %meta{:name=>"ROBOTS", :content=>"INDEX, FOLLOW"}
-    %meta{:title => current_page.data.title.to_s+data.site.meta.title.to_s}
-    %meta{:keywords => data.site.meta.keywords}
-    %meta{:description => data.site.meta.description}
-    %meta{:name => "viewport", :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
-    
+    %title
+      = yield_content(:title) && yield_content(:title)+data.site.meta.title.to_s || current_page.data.title.to_s+data.site.meta.title.to_s
+
+    %meta{:name=>"ROBOTS",        :content=>"INDEX, FOLLOW"}    
+    %meta{:name => 'keywords',    :content => yield_content(:keywords) || current_page.data.keywords || data.site.meta.keywords}
+    %meta{:name => 'description', :content => yield_content(:description) || current_page.data.description  || data.site.meta.description}
+    %meta{:name => "viewport",    :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
     %link{:rel=>"icon", :type=>"image/png", :href=>"/images/favicon.png"}
    
     = stylesheet_link_tag 'site'
@@ -21,12 +22,11 @@
       %header
         %h1#logo
           %a{:href => '/'}
-            Jan
-            
+            = image_tag 'logo/jan.svg', :id => 'logo_jan'            
             %canvas#canvas
               =image_tag "avatar.jpg", :id=>'avatar'
+            = image_tag 'logo/drewniak.svg', :id => 'logo_drewniak'
       
-            Drewniak 
         %p.clear.tag_line 
           = data.site.tagline
 
@@ -42,12 +42,24 @@
             %a#blog_button.button{:href=>'#nav'}
               blog
 
-      %aside#about_me.caption
+      %aside#about_me
         = data.site.about_me
+        %p.web_links
+          %a{:href => "http://facebook.com/jan.drewniak.5", :class=>'facebook', :target => "BLANK" }
+            <span class='first_letter'>f</span><span class="rest">acebook</span>
+          
+          %a{:href => "http://linkedin.com/profile/view?id=50567911", :class=>'linkedin', :target => "BLANK"}
+            <span class="first_letter">l</span><span class="rest">inkedin</span>
+          
+          %a{:href => "https://twitter.com/jan_drewniak", :class => 'twitter', :target => "BLANK"}
+            <span class="first_letter">t</span><span class="rest">witter</span>
+          
+          %a{:href => "https://gimmebar.com/collection/4e5fce6c2f0aaa1971000027/firehose", :class => 'gimmebar', :target => "BLANK"}
+            <span class="first_letter">g</span><span class="rest">immebar</span>
 
     - if is_blog_article?
       %section#main{:role=>"main"}      
-        = partial "article_template"
+        = partial :article_template
     - elsif request.path.match(/work\/.|work.html|_project_template.html/)
       %section#main.work{:role=>"main"}            
         = yield
@@ -59,14 +71,14 @@
       %h3.header
         BL<wbr>OG
       #prevnext
-        - current = blog.articles.find_index{|article| article.url == @current_path}
+        - current = blog.articles.find_index{|article| article.url == "/"+@current_path}
         - prev_link = blog.articles[current.to_i-1].url
      
         - if (blog.articles[current.to_i+1] == nil)
           - next_link = blog.articles[0].url
         - else 
           - next_link = blog.articles[current.to_i+1].url
-         
+        
         %a#prev{:href=>prev_link}
           \-prev
         %a#next{:href=>next_link}
@@ -75,7 +87,7 @@
       %ul
         - blog.articles[0...10].each do |article|
           %li
-            -if article.url == @current_path
+            -if article.url == "/"+@current_path
               %a.article_link.current{:href=>article.url}
                 = article.title
             - else

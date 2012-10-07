@@ -4,7 +4,7 @@
     - is_last = nil;  
     - if index == data.work.projects.length-1
       - is_last = ' last'
-    - r = [-5,-4,-3,3,4,5].choice.to_s
+    - r = [-5,-4,-3,3,4,5].sample.to_s
     
     - is_current = nil
       - if @current_path.match(project[0]+'.html')
@@ -14,7 +14,9 @@
   
       %a{:href=>'/work/'+project[0]+'.html', :class=>'project_thumbnail '+is_current.to_s+is_last.to_s}  
         %canvas.project_thumbnail_canvas
-        %img{:class=>'project_thumbnail_image', :src=>'/images/project_thumbnails/'+project[0]+'.jpg'}
+        - base_src =  Base64.encode64(open(root+"/source/images/project_thumbnails/"+project[0]+".jpg").to_a.join)
+
+        %img{:class=>'project_thumbnail_image', :src=>'data:image/jpg;base64,'+base_src}
       
       %h2{:class => 'title '+is_current.to_s}
         =project[1].title

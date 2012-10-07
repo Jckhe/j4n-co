@@ -1,8 +1,2 @@
----
-title: "Hi There"
----
-
-- content_for :head do
-  %title
-    Jan Drewniak - UI Design & Development
+- content_for(:title, 'Hi There') 
 = partial "article_template", :locals => {:current_article => blog.articles.first}

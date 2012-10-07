@@ -1,5 +1,6 @@
 --- 
 title: Hello World
+description: Hi there, this is Jan Drewniak's First blog post on jandrewniak.com
 ---
 I'm not much of a writer (yet) so when it came time to write this first post, I did what any self respecting hacker would. I googled it. To be sure, there's no shortage of tips and tricks, advice, how-to's and simple steps. 
 

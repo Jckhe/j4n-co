@@ -1,8 +1,12 @@
+---
+title: "Portfolio of Recent Work -"
+---
+
 = partial "project_selector"
 
 - project = data.work.projects[@project[0]]
-
-
+- content_for(:title, project.title)
+- content_for(:description, project.meta_description)
 #project_wallpaper{:style=>'background-image:url(/images/project_wallpapers/'+@project[0]+'.jpg);'}
   %h2  
     =project.title 

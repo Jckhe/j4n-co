@@ -1,0 +1,176 @@
+#canvas{
+  margin: 0 auto;
+}
+
+
+#about_me{
+  opacity: 0;
+  height: 0; 
+  overflow: hidden; 
+  @include vendor-prefix('transition', 'all 1s');     
+  font-size: 13px; 
+  
+  .web_links .facebook{
+    color: #3B5998;   
+    .first_letter{
+      background-color:  #3B5998;     
+    }
+  }
+  
+  .web_links .twitter{
+    color: #33CCFF; 
+    .first_letter{
+      background-color: #33CCFF;  
+    }
+  }  
+  
+  .web_links .linkedin{
+    color: #4875B4;
+    .first_letter{
+      background-color: #4875B4;   
+    }
+  }
+  .web_links .gimmebar{
+    color: #D6156C; 
+    .first_letter{
+      background-color: #D6156C;   
+    }
+  }
+
+  .web_links a {
+    display: inline-block; 
+
+    .first_letter{
+      background-color: blue;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      color: white;
+      line-height: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .rest{
+      opacity: 0;  
+      @include vendor-prefix('transition', 'opacity 0.2s ease-out');         
+    }
+  }
+  .web_links a:hover{
+    .rest{
+      opacity: 1;   
+    } 
+  }
+
+}
+
+
+#about_me:target{
+  opacity: 1; 
+  height: auto;
+  margin-top: 0.5em; 
+  margin-bottom: 1em; 
+}
+    
+
+.blog_header{
+  margin-bottom: 2em;   
+  float: left; 
+  width: 100%; 
+
+  h1,h2,h3,h4,h5,h5{
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .blog_title {
+    margin-left: -0.7em;
+    padding: 0.2em;
+    background-color: $medium_grey;
+    color: white;
+    float: left;
+  }
+
+  .blog_subtitle{
+    font-size: 16px; 
+    background-color: $light_grey;   
+    color: $dark_grey;
+    font-weight: 400; 
+    font-style: italic;
+    padding: 0.2em 1em;
+    float: left; 
+    line-height: 1em;
+  }
+
+}
+
+//##########
+//   LOGO
+//##########
+
+  .tag_line {
+    font-family: 'PixelMaz';
+    font-size: 26px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color:$warning;    
+    margin-left: 4px; 
+    margin-bottom: 0.5em; 
+  }
+
+#logo_jan{
+max-width: 38%;
+}
+
+#logo_drewniak{
+max-width: 100%; 
+}
+
+#logo {
+  font-family: 'Geo';
+  font-size: 48px;
+  letter-spacing: -1px;
+  line-height: 31px;
+  text-indent: -8px;
+  margin: 0; 
+  max-width:100%;
+  a {
+    display: block; 
+    color: $dark_grey; 
+  }
+
+  span{
+    display: block; 
+    @include vendor-prefix('transition', 'all 0.3s ');     
+    @include vendor-prefix('transform','rotate(0deg)');    
+    cursor: pointer; 
+    position: relative; 
+    color:$dark_grey;  
+    margin-bottom: 5px;   
+  }
+  
+  a:hover{
+    color: $highlight; 
+    @include vendor-prefix('transform','rotate(2deg)');
+  }
+  canvas{
+    @include vendor-prefix('transform','rotate(0deg)');      
+  }
+}
+ 
+.site_logo{
+  width: 100%; 
+  max-width: 230px; 
+}
+
+#site_nav *{
+  margin-left: 0; 
+  display: inline; 
+}
+
+.ui_icon{
+  vertical-align: text-top; 
+}
+

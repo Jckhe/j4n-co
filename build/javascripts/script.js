@@ -162,18 +162,34 @@ function desaturate(r, g, b) {
 var thumbnails = $('.project_thumbnail_image');
 var thumb_canvases = $('.project_thumbnail_canvas');
 
+
+// here: remove the for loop. add an i argument to the function, draw the images on load, then iterate i+1 inside the onload event and recursively call the function again until i = length
 var run_thumbs = function(){
  for(i=0; i<thumb_canvases.length; i++){
     thumb_canvases[i].width = 75; 
     thumb_canvases[i].height = 75; 
-    c_ctx = thumb_canvases[i].getContext('2d');  
     
-    thumbnails[i].onLoad = (function(i){
-      c_ctx.drawImage(thumbnails[i], 0,0, thumbnails[i].width,thumbnails[i].height);      
-      bw_pixelate_image(thumb_canvases[i].getContext('2d'));
-    })(i);
+    thumb_canvases[i]
+    .getContext('2d')
+    .drawImage(thumbnails[i], 0,0, thumbnails[i].width, thumbnails[i].height);
+    
+    bw_pixelate_image(thumb_canvases[i].getContext('2d'));
   }
 }
+
+// new run_thumbs()
+/*
+  var start = 0; 
+  function run_thumbs(i){
+    thumb_canvases[i].width = 75; 
+    thumb_canvases[i].height = 75; 
+    
+    thumb_
+    
+  }
+
+  run_thumbs(start);
+*/
 run_thumbs(); 
 
 function bw_pixelate_image(c){

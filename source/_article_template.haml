@@ -1,16 +1,16 @@
-%article
-  %header.blog_header
-    %hgroup
-      %h1
-        %span.blog_title
-          = current_article.data.title
-      %h2
-        %span.blog_subtitle
-          = current_article.data.subtitle
-  
+%header.blog_header
+  %hgroup
+    %h1
+      %span.blog_title
+        = current_article.data.title
+    %h2
+      %span.blog_subtitle
+        = current_article.data.subtitle
+
+%article.blog_article
   = current_article.body
 
 %footer
-  %time{'pubdate', :datetime=>current_article.date.strftime('%m-%d-%Y')}
+  %time{:class => 'pubdate', :datetime=>current_article.date.strftime('%m-%d-%Y')}
     = current_article.date.strftime('%b %e %Y')
 

@@ -1,0 +1,100 @@
+
+
+//floats
+html {
+  height: 100%;   
+}
+//columns
+body, #site_header, #main, #nav{  
+  @include vendor-prefix('box-sizing', 'border-box'); 
+  float: left;   
+}
+
+
+body{
+  height: 100%;
+  width: 100%;
+  background-color: $body_bg; 
+  padding: 0.5em;  
+}
+
+#wrapper {
+  margin: 1em;
+  height: 100%; 
+}
+
+#site_header{
+  width: $header_width; 
+  padding: 0.5em; 
+  min-width: 11em;
+  margin-bottom: 1em; 
+}
+
+#site_header .button {
+  margin: 0 5px 0 0;
+  font-family: 'Geo'; 
+}
+
+#main{
+  width: 60%;
+  background-color: $content_bg;
+  padding:2em 1.5em 1.5em 1.5em; 
+  position: relative;
+  top: -0.5em; 
+  box-shadow: 0px 0px 20px -5px black;
+}
+
+#main.work{
+  background-color: transparent; 
+  box-shadow: none; 
+}
+
+#nav {
+  width: 8em; 
+  background-color: transparent; 
+  @include vendor-prefix('transition', 'background-color 0.5s ease-out');     
+  
+  .header{
+    font-family: $monospace;   
+    font-size: 36px;
+    padding-left: 5px;
+    padding-bottom: 0em;
+    margin-bottom: 0;
+  }
+
+  #prevnext {
+    font-family: $monospace; 
+    font-size: 13px; 
+  }
+}
+#nav:target{
+  background-color: yellow; 
+}
+
+#avatar {
+  width: 80%; 
+  display: block; 
+  margin: 0 auto; 
+  max-width: 150px; 
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
