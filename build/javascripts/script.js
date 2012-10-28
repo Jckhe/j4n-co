@@ -177,19 +177,6 @@ var run_thumbs = function(){
   }
 }
 
-// new run_thumbs()
-/*
-  var start = 0; 
-  function run_thumbs(i){
-    thumb_canvases[i].width = 75; 
-    thumb_canvases[i].height = 75; 
-    
-    thumb_
-    
-  }
-
-  run_thumbs(start);
-*/
 run_thumbs(); 
 
 function bw_pixelate_image(c){

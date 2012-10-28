@@ -1,7 +1,7 @@
 @media screen and (max-width : 855px){
   #main{
-    float: right;   
-    width: 75%; 
+    float: left;   
+    width: 70%; 
   }
   #nav{
     background-color:transparent;
@@ -18,8 +18,7 @@
 
 @media screen and (max-width : 719px){
   #main{
-    width: 70%;
-    margin-left: -25%;
+    width: 69%;
     padding-right: 0; 
   }
 }
@@ -47,7 +46,7 @@
   
   #main{
     margin-left: 0; 
-    width: 100%; 
+    width: 85%;
     padding: 0.2em;    
     
     .blog_title{

@@ -57,7 +57,32 @@
           %a{:href => "https://gimmebar.com/collection/4e5fce6c2f0aaa1971000027/firehose", :class => 'gimmebar', :target => "BLANK"}
             <span class="first_letter">g</span><span class="rest">immebar</span>
 
-    - if is_blog_article?
+
+      %nav#nav{:class => (is_blog_article? )? 'visible' : ''}  
+        %ul
+          - blog.articles[0...10].each do |article|
+            %li
+              -if article.url == "/"+@current_path
+                %a.article_link.current{:href=>article.url}
+                  = article.title
+              - else
+                %a.article_link{:href=>article.url}
+                  = article.title
+
+
+    - current = blog.articles.find_index{|article| article.url == "/"+@current_path}
+    - prev_link = blog.articles[current.to_i-1].url
+ 
+    - if (blog.articles[current.to_i+1] == nil)
+      - next_link = blog.articles[0].url
+    - else 
+      - next_link = blog.articles[current.to_i+1].url
+    
+    - if is_blog_article? or page_classes == 'index' 
+      %a#prev{:href=>prev_link}
+        &lt;
+
+    - if is_blog_article? 
       %section#main{:role=>"main"}      
         = partial :article_template
     - elsif request.path.match(/work\/.|work.html|_project_template.html/)
@@ -66,34 +91,10 @@
     - else 
       %section#main{:role=>"main"}      
         = yield   
-   
-    %nav#nav
-      %h3.header
-        BL<wbr>OG
-      #prevnext
-        - current = blog.articles.find_index{|article| article.url == "/"+@current_path}
-        - prev_link = blog.articles[current.to_i-1].url
-     
-        - if (blog.articles[current.to_i+1] == nil)
-          - next_link = blog.articles[0].url
-        - else 
-          - next_link = blog.articles[current.to_i+1].url
-        
-        %a#prev{:href=>prev_link}
-          \-prev
-        %a#next{:href=>next_link}
-          next+
-       
-      %ul
-        - blog.articles[0...10].each do |article|
-          %li
-            -if article.url == "/"+@current_path
-              %a.article_link.current{:href=>article.url}
-                = article.title
-            - else
-              %a.article_link{:href=>article.url}
-                = article.title
- 
+    
+    - if is_blog_article? or page_classes == 'index'    
+      %a#next{:href=>next_link}
+        &gt; 
 
 = javascript_include_tag "jquery.min.js"    
 = javascript_include_tag "script.js"   

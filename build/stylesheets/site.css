@@ -294,46 +294,23 @@ body {
   padding: 2em 1.5em 1.5em 1.5em;
   position: relative;
   top: -0.5em;
-  box-shadow: 0px 0px 20px -5px black; }
+  box-shadow: 0px 0px 20px -5px black;
+  z-index: 1;
+  max-width: 790px; }
 
-/* line 47, _layout.scss */
+/* line 49, _layout.scss */
 #main.work {
   background-color: transparent;
   box-shadow: none; }
 
-/* line 52, _layout.scss */
-#nav {
-  width: 8em;
-  background-color: transparent;
-  -webkit-transition: background-color 0.5s ease-out;
-  -moz-transition: background-color 0.5s ease-out;
-  -o-transition: background-color 0.5s ease-out;
-  -ms-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out; }
-  /* line 57, _layout.scss */
-  #nav .header {
-    font-family: "Lucida Console", "Monaco", "Courier New", "Courier";
-    font-size: 36px;
-    padding-left: 5px;
-    padding-bottom: 0em;
-    margin-bottom: 0; }
-  /* line 65, _layout.scss */
-  #nav #prevnext {
-    font-family: "Lucida Console", "Monaco", "Courier New", "Courier";
-    font-size: 13px; }
-
-/* line 70, _layout.scss */
-#nav:target {
-  background-color: yellow; }
-
-/* line 74, _layout.scss */
+/* line 55, _layout.scss */
 #avatar {
   width: 80%;
   display: block;
   margin: 0 auto;
   max-width: 150px; }
 
-/* line 81, _layout.scss */
+/* line 62, _layout.scss */
 .clearfix:after {
   content: ".";
   display: block;
@@ -342,15 +319,15 @@ body {
   line-height: 0;
   height: 0; }
 
-/* line 90, _layout.scss */
+/* line 71, _layout.scss */
 .clearfix {
   display: inline-block; }
 
-/* line 94, _layout.scss */
+/* line 75, _layout.scss */
 html[xmlns] .clearfix {
   display: block; }
 
-/* line 98, _layout.scss */
+/* line 79, _layout.scss */
 * html .clearfix {
   height: 1%; }
 
@@ -426,36 +403,7 @@ html[xmlns] .clearfix {
   margin-top: 0.5em;
   margin-bottom: 1em; }
 
-/* line 76, _sidebar.scss */
-.blog_header {
-  margin-bottom: 2em;
-  float: left;
-  width: 100%; }
-  /* line 81, _sidebar.scss */
-  .blog_header h1, .blog_header h2, .blog_header h3, .blog_header h4, .blog_header h5, .blog_header h5 {
-    clear: both;
-    float: left;
-    width: 100%;
-    margin-bottom: 0; }
-  /* line 88, _sidebar.scss */
-  .blog_header .blog_title {
-    margin-left: -0.7em;
-    padding: 0.2em;
-    background-color: #999999;
-    color: white;
-    float: left; }
-  /* line 96, _sidebar.scss */
-  .blog_header .blog_subtitle {
-    font-size: 16px;
-    background-color: #dadada;
-    color: #666666;
-    font-weight: 400;
-    font-style: italic;
-    padding: 0.2em 1em;
-    float: left;
-    line-height: 1em; }
-
-/* line 113, _sidebar.scss */
+/* line 79, _sidebar.scss */
 .tag_line {
   font-family: 'PixelMaz';
   font-size: 26px;
@@ -465,15 +413,15 @@ html[xmlns] .clearfix {
   margin-left: 4px;
   margin-bottom: 0.5em; }
 
-/* line 123, _sidebar.scss */
+/* line 89, _sidebar.scss */
 #logo_jan {
   max-width: 38%; }
 
-/* line 127, _sidebar.scss */
+/* line 93, _sidebar.scss */
 #logo_drewniak {
   max-width: 100%; }
 
-/* line 131, _sidebar.scss */
+/* line 97, _sidebar.scss */
 #logo {
   font-family: 'Geo';
   font-size: 48px;
@@ -482,11 +430,11 @@ html[xmlns] .clearfix {
   text-indent: -8px;
   margin: 0;
   max-width: 100%; }
-  /* line 139, _sidebar.scss */
+  /* line 105, _sidebar.scss */
   #logo a {
     display: block;
     color: #666666; }
-  /* line 144, _sidebar.scss */
+  /* line 110, _sidebar.scss */
   #logo span {
     display: block;
     -webkit-transition: all 0.3s ;
@@ -503,7 +451,7 @@ html[xmlns] .clearfix {
     position: relative;
     color: #666666;
     margin-bottom: 5px; }
-  /* line 154, _sidebar.scss */
+  /* line 120, _sidebar.scss */
   #logo a:hover {
     color: #00d57f;
     -webkit-transform: rotate(2deg);
@@ -511,7 +459,7 @@ html[xmlns] .clearfix {
     -o-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg); }
-  /* line 158, _sidebar.scss */
+  /* line 124, _sidebar.scss */
   #logo canvas {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -519,17 +467,17 @@ html[xmlns] .clearfix {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg); }
 
-/* line 163, _sidebar.scss */
+/* line 129, _sidebar.scss */
 .site_logo {
   width: 100%;
   max-width: 230px; }
 
-/* line 168, _sidebar.scss */
+/* line 134, _sidebar.scss */
 #site_nav * {
   margin-left: 0;
   display: inline; }
 
-/* line 173, _sidebar.scss */
+/* line 139, _sidebar.scss */
 .ui_icon {
   vertical-align: text-top; }
 
@@ -737,65 +685,125 @@ html[xmlns] .clearfix {
 /* line 2, _blog.scss */
 #main .blog_article img {
   max-width: 100%; }
-/* line 7, _blog.scss */
+/* line 6, _blog.scss */
 #main .blog_article p:first-child {
-  font-weight: 700; }
-  /* line 11, _blog.scss */
-  #main .blog_article p:first-child:first-letter {
-    color: white;
-    font-size: 24px;
-    background-color: #999999;
-    padding: 0px 5px; }
+  font-weight: 700;
+  text-indent: 0em; }
+/* line 11, _blog.scss */
+#main .blog_article p {
+  text-indent: 1em; }
 
-/* line 24, _blog.scss */
+/* line 21, _blog.scss */
 #nav {
+  opacity: 0;
+  display: none;
+  background-color: transparent;
+  margin-top: 1em;
+  -webkit-transition: background-color 0.5s ease-out, opacity 0.3s ease-in;
+  -moz-transition: background-color 0.5s ease-out, opacity 0.3s ease-in;
+  -o-transition: background-color 0.5s ease-out, opacity 0.3s ease-in;
+  -ms-transition: background-color 0.5s ease-out, opacity 0.3s ease-in;
+  transition: background-color 0.5s ease-out, opacity 0.3s ease-in;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
-  /* line 26, _blog.scss */
-  #nav .header, #nav #prevnext {
-    padding-left: 5px; }
-
-/* line 32, _blog.scss */
-#nav ul {
-  margin: 0;
-  position: relative; }
-  /* line 35, _blog.scss */
-  #nav ul li {
-    list-style: none;
+  /* line 28, _blog.scss */
+  #nav ul {
     margin: 0;
-    paddin-bottom: 0.5em; }
+    position: relative; }
+    /* line 31, _blog.scss */
+    #nav ul li {
+      list-style: none;
+      margin: 0; }
+      /* line 35, _blog.scss */
+      #nav ul li .article_link {
+        display: block;
+        min-height: 2em;
+        color: #999999;
+        font-family: "Lucida Console", "Monaco", "Courier New", "Courier";
+        font-size: 12px;
+        padding: 5px 5px 5px 0;
+        line-height: 1.2em;
+        border-bottom: 1px solid #cf882e; }
+      /* line 46, _blog.scss */
+      #nav ul li .article_link.current {
+        background-color: #fff;
+        color: #cf882e; }
+      /* line 51, _blog.scss */
+      #nav ul li .article_link:hover {
+        background-color: #ffac44;
+        color: #fff; }
 
-/* line 43, _blog.scss */
-.article_link {
-  display: block;
-  min-height: 2em;
-  background-color: #999999;
-  color: #fff;
-  font-family: "Lucida Console", "Monaco", "Courier New", "Courier";
-  font-size: 12px;
-  padding: 5px;
-  line-height: 1.2em; }
+/* line 59, _blog.scss */
+#nav.visible {
+  opacity: 1;
+  display: block; }
 
-/* line 54, _blog.scss */
-.article_link.current {
-  background-color: #fff;
-  color: #cf882e;
-  margin-left: -10px;
-  padding-left: 15px; }
+/* line 64, _blog.scss */
+#nav:target {
+  opacity: 1; }
 
-/* line 61, _blog.scss */
-.article_link:hover {
-  background-color: #ffac44;
-  color: #fff; }
+/* line 68, _blog.scss */
+.blog_header {
+  margin-bottom: 1em;
+  float: left;
+  width: 100%; }
+  /* line 73, _blog.scss */
+  .blog_header h1, .blog_header h2, .blog_header h3, .blog_header h4, .blog_header h5, .blog_header h5 {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 0; }
+  /* line 80, _blog.scss */
+  .blog_header .blog_title {
+    color: #999999;
+    font-size: 32px;
+    line-height: 1em;
+    letter-spacing: 0; }
+  /* line 87, _blog.scss */
+  .blog_header .blog_subtitle {
+    font-size: 16px;
+    color: #999999;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1em; }
+
+/* line 97, _blog.scss */
+#prev, #next {
+  height: 50%;
+  float: left;
+  position: relative;
+  top: 5%;
+  background-color: #dadada;
+  color: #666666;
+  text-align: center;
+  width: 1em;
+  padding-top: 10%;
+  font-weight: 800;
+  -webkit-transition: width 0.1s ease-in, background-color 0.1s ease-in;
+  -moz-transition: width 0.1s ease-in, background-color 0.1s ease-in;
+  -o-transition: width 0.1s ease-in, background-color 0.1s ease-in;
+  -ms-transition: width 0.1s ease-in, background-color 0.1s ease-in;
+  transition: width 0.1s ease-in, background-color 0.1s ease-in;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 112, _blog.scss */
+#prev:hover, #next:hover {
+  width: 2em;
+  color: white;
+  background-color: #999999; }
 
 @media screen and (max-width: 855px) {
   /* line 2, _responsive.scss */
   #main {
-    float: right;
-    width: 75%; }
+    float: left;
+    width: 70%; }
 
   /* line 6, _responsive.scss */
   #nav {
@@ -811,99 +819,98 @@ html[xmlns] .clearfix {
 @media screen and (max-width: 719px) {
   /* line 20, _responsive.scss */
   #main {
-    width: 70%;
-    margin-left: -25%;
+    width: 69%;
     padding-right: 0; } }
 @media screen and (max-width: 566px) {
-  /* line 29, _responsive.scss */
+  /* line 28, _responsive.scss */
   body {
     padding: 0; }
 
-  /* line 33, _responsive.scss */
+  /* line 32, _responsive.scss */
   #site_header {
     width: 100%; }
-    /* line 35, _responsive.scss */
+    /* line 34, _responsive.scss */
     #site_header header {
       margin: 0 auto 0 auto;
       z-index: 5; }
 
-  /* line 41, _responsive.scss */
+  /* line 40, _responsive.scss */
   #logo {
     margin-bottom: 0; }
-    /* line 43, _responsive.scss */
+    /* line 42, _responsive.scss */
     #logo a {
       font-size: 42px; }
 
-  /* line 48, _responsive.scss */
+  /* line 47, _responsive.scss */
   #main {
     margin-left: 0;
-    width: 100%;
+    width: 85%;
     padding: 0.2em; }
-    /* line 53, _responsive.scss */
+    /* line 52, _responsive.scss */
     #main .blog_title {
       margin-left: 0; }
 
-  /* line 58, _responsive.scss */
+  /* line 57, _responsive.scss */
   #main.work {
     padding: 0;
     float: left; }
 
-  /* line 62, _responsive.scss */
+  /* line 61, _responsive.scss */
   #nav {
     width: 100%; }
-    /* line 64, _responsive.scss */
+    /* line 63, _responsive.scss */
     #nav .article_link {
       float: left; }
-    /* line 67, _responsive.scss */
+    /* line 66, _responsive.scss */
     #nav .article_link {
       background-color: transparent; }
-    /* line 70, _responsive.scss */
+    /* line 69, _responsive.scss */
     #nav .article_link.current {
       padding-left: 5px;
       margin-left: 0;
       background-color: white; }
-    /* line 75, _responsive.scss */
+    /* line 74, _responsive.scss */
     #nav li {
       background-color: #999999;
       float: left; }
-    /* line 79, _responsive.scss */
+    /* line 78, _responsive.scss */
     #nav li:nth-child(odd) {
       background-color: #999999; }
-    /* line 82, _responsive.scss */
+    /* line 81, _responsive.scss */
     #nav li:nth-child(even) {
       background-color: #666666; } }
 @media screen and (max-width: 320px) {
-  /* line 89, _responsive.scss */
+  /* line 88, _responsive.scss */
   #logo {
     margin-bottom: 0; }
-    /* line 91, _responsive.scss */
+    /* line 90, _responsive.scss */
     #logo a {
       font-size: 36px; } }
 @media screen and (min-width: 1000px) {
-  /* line 101, _responsive.scss */
+  /* line 100, _responsive.scss */
   #site_header {
     width: 250px; } }
 @media screen and (max-width: 1000px) {
-  /* line 107, _responsive.scss */
+  /* line 106, _responsive.scss */
   .tag_line {
     letter-spacing: 0px; } }
 @media screen and (max-width: 970px) {
-  /* line 113, _responsive.scss */
+  /* line 112, _responsive.scss */
   .tag_line {
     letter-spacing: 2px; } }
 @media screen and (max-width: 768px) {
-  /* line 119, _responsive.scss */
+  /* line 118, _responsive.scss */
   #logo {
     letter-spacing: -3px; } }
 @media screen and (max-width: 762px) {
-  /* line 125, _responsive.scss */
+  /* line 124, _responsive.scss */
   .tag_line {
     letter-spacing: 4px; } }
 @media screen and (max-width: 450px) {
-  /* line 131, _responsive.scss */
+  /* line 130, _responsive.scss */
   .tag_line {
     letter-spacing: 3px; } }
 @media screen and (max-width: 450px) {
-  /* line 137, _responsive.scss */
+  /* line 136, _responsive.scss */
   .tag_line {
     letter-spacing: 0px; } }
