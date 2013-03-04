@@ -1,0 +1,96 @@
+$light_grey: #DDD;
+$dark_grey: #535353;
+$yellow: #E5CE49;
+$aqua: #71C2C4;
+$redish: #A74843;
+$light_green: #9FBE67;
+
+$dark_grey_h: saturate(lighten($dark_grey, 10%), 10%);
+$yellow_h: saturate(lighten($yellow, 10%), 10%);
+$aqua_h: saturate(lighten($aqua, 10%), 10%);
+$redish_h: saturate(lighten($redish, 10%), 10%);
+$light_green_h: saturate(lighten($light_green, 10%), 10%);
+
+.dark_grey{
+	background-color: $dark_grey;	
+}
+
+.yellow{
+	background-color: $yellow;	
+}
+.yellow:hover{
+	background-color: $yellow_h;
+}
+
+.dark_yellow_text{
+	color:#793500;	
+}
+.aqua{
+	background-color: $aqua;	
+}
+.aqua:hover{
+	background-color: $aqua_h;
+}
+
+.redish{
+	background-color: $redish;
+}
+.redish:hover{
+	background-color: $redish_h;
+}
+.redish_text{
+	color: $redish_h !important;
+}
+
+.light_green{
+	background-color: $light_green;
+}
+
+.light_green:hover{
+	background-color: $light_green_h;
+}
+
+.pad{
+	padding: 1em;
+}
+.iblock{
+	display: inline-block;
+	vertical-align: top; 
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.hide{
+}
+.small_heading{
+	font-family: '04b';
+	text-transform: uppercase; 
+}
+.white_pixel_font{
+	font-family: '04b';
+	color: white;
+	@include text-shadow(1px 1px 0 black);
+}
+.pixel_font{
+	font-family: '04b';	
+	@include text-shadow(1px 1px 0 white);
+}
+.has_shadow{
+	@include box-shadow(0 1px 7px -2px rgba(0, 0, 0, 0.52));
+}
+.text_shadow{
+	@include text-shadow(1px 1px 0 black);
+}
+.right{
+	float: right;
+	vertical-align: middle;
+}
+
+.fb-like{
+	padding: 5px;
+}
+
+.clear{
+	clear: both;
+	width: 100%;
+}

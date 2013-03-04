@@ -1,0 +1,82 @@
+#my_face{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 0 5px;
+}
+.sitenav {
+	margin-left: 2.5rem;
+	margin-right: 1rem;
+	a {
+		text-decoration: none;
+		border: none;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	> .section_link{
+		float: left;
+		height: 3.5rem;
+		width: 2rem;
+		font-size: 0;
+		position: relative;
+	}
+
+	> .section_link + .section{
+		display: none;
+		padding: 0.5em;
+		position: absolute;
+		overflow: hidden;
+		font-size: 1rem;
+		color: white;
+		z-index: -2;
+		min-width: 10rem;
+		@include text-shadow(1px 1px 0 black);
+		//@include transition(all 0.2s ease-out);
+	}
+
+	.section{
+		max-width: 20em;
+	}
+
+	> .section_link + .section.yellow{
+		left: 2.5rem;
+		background-color: $yellow_h;
+	}
+
+	> .section_link + .section.aqua{
+		left: 4.5rem;
+		background-color: $aqua_h;
+	}
+	
+	> .section_link + .section.redish{
+		left: 6.5rem;
+		background-color: $redish_h;
+	}
+
+	> .section_link + .section.light_green{
+		left: 8.5rem;
+		background-color: $light_green_h;
+	}
+
+	> .section_link:hover + .section, .section_link + .section:hover{
+		top: 3.5rem;
+		bottom: initial;
+		display: block;
+	}
+
+	.section_link.yellow + .section.yellow:hover {
+		background-color: $yellow_h; 	
+	}
+
+	.background_mask{
+		height: 3.5rem;
+		width: 100%;
+		background-color: $dark_grey;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}

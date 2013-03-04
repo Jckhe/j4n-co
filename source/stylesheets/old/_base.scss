@@ -1,0 +1,175 @@
+body {
+  //font-family: 'PT Sans', sans-serif;  
+  color: $p_color; 
+  line-height: 1.2em;
+//  background-image: url('/images/bg/bg_s.png'), url('/images/bg/bg_m.png'), url('/images/bg/bg_l.png');
+  background-repeat: repeat; 
+}
+
+*:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;   
+  color: $h_color;
+  line-height: 1.2em;
+  margin-bottom: 0.1em;
+  //text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'PixelMaz';
+}
+
+h1{
+  font-size: $h1_size; 
+}
+h2 {
+  font-size: round($h1_size/$phi);   
+}
+
+h3{
+  font-size: round($h1_size/$phi)/$phi;  
+}
+
+h4{
+  font-size: round(($h1_size/$phi)/$phi)/$phi;  
+}
+
+h5{
+  font-size: round(( ($h1_size/$phi)/$phi )/$phi)/$phi;  
+}
+
+h6{
+  font-size: round((( ($h1_size/$phi)/$phi )/$phi)/$phi) /$phi;  
+}
+
+.subhead {
+  font-size: 14px; 
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  font-weight: 700;
+}
+
+.small_header{
+  font-size: 18px;  
+  margin-bottom: 0;
+}
+
+p {
+  color: $p_color; 
+  line-height: 1.5em;
+  margin: 0.2em 0 1em 0;
+  font-size: 14px; 
+}
+
+a {
+  color: $link_color;
+  text-decoration: none; 
+  cursor: pointer; 
+  @include vendor-prefix('transition', 'color, 0.1s');    
+}
+
+a:hover {
+  color: $highlight; 
+}
+
+ul {
+  list-style: circle;
+  margin-left: 2em;  
+}
+
+ol {
+  list-style: decimal; 
+  margin: 0em 0em 0em 2em;  
+}
+
+li {
+  margin-bottom: 0.5em;   
+}
+
+code {
+  font-family:$monospace; 
+  font-weight: 200; 
+  background-color: #E4E4E4;  
+}
+
+abbr {
+  text-transform: uppercase;    
+}
+
+cite {
+  font-style: italic;   
+}
+
+em {
+  font-weight:400; 
+  font-style: italic; 
+}
+
+b{ 
+  font-weight: 700; 
+}
+
+i {
+  font-style: italic; 
+}
+
+small, .small {
+  font-size: 12px;   
+}
+
+strong, .strong {
+  font-weight: bold; 
+  color: inherit; 
+}
+
+blockquote {
+  margin: 1.2em 2em 1.2em 2em;
+  font-style: italic; 
+}
+.clear {
+  clear: both;   
+}
+
+.hidden{
+  display: none !important; 
+}
+
+button, a.button, .button {
+  background-color: $link_color; 
+  color: white; 
+  font-weight: normal; 
+  font-style: normal;
+  padding: 2px 5px; 
+  cursor: pointer; 
+  margin: 0 0 0 5px; 
+  @include vendor-prefix('transition', 'bsite_ackground-color, 0.1s');  
+}
+
+button:hover, a.button:hover, .button {
+  background-color: $highlight; 
+}
+
+input[type='reset'] {
+  background-color: $warning;
+  border: none; 
+  color: white; 
+  @include vendor-prefix('transition', 'background-color, 0.1s');  
+}
+
+input[type='reset']:hover {
+  background-color: $warning_highlight;  
+}
+
+input[type='text'], textarea {
+  border: 1px solid $medium_grey;
+  padding: 0.3em;  
+  @include vendor-prefix('box-shadow', 'inset 0px 1px 6px -1px'+$medium_grey);
+}
+
+figcaption, .caption {
+  font-size: 14px;
+  font-style: italic; 
+}
+

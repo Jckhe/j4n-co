@@ -1,0 +1,75 @@
+%header.top_bar.dark_grey
+  %nav.sitenav.iblock
+    
+    %a.section_link.yellow{:href=>'#portfolio', :alt=>"portfolio"} portfolio
+    .section.yellow.has_shadow
+      
+      .work_section
+        - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
+        
+        - if pages.length > 0 
+          %p.white_pixel_font.small_heading
+            stuff
+
+        - pages.each do |page|
+          %a.work_link.has_shadow{:href=>page.url.chomp('/')}
+            %img{:src=>page.data.icon}
+            %span.pixel_font.dark_yellow_text
+              = page.data.title 
+      
+      .work_section
+        - pages = sitemap.resources.find_all{|p| p.url.match(/^\/sketches\/.*\/$/)  }
+        
+        - if pages.length > 0
+          %p.white_pixel_font
+            sketches  
+
+        - pages.each do |page|
+          %a.work_link.has_shadow{:href=>page.url.chomp('/')}
+            %img{:src=>page.data.icon}
+            %span.pixel_font.dark_yellow_text
+              = page.data.title 
+    
+      .work_section
+        %span.pixel_font.dark_yellow_text
+          I'll be adding more <br/>
+          stuff here real soon, <br/>
+          pinky swear. 
+
+    %a.section_link.aqua{:href=>'#', :alt=>"blog"} blog
+    .section.aqua.has_shadow
+      //%a.right.white_pixel_font.redish_text{:href=>"#"}
+      //  archive
+      %p.small_heading.white_pixel_font
+        My two cents
+      .recent_articles
+        %a.prev.white_pixel_font
+          &#9650;
+        
+        - blog.articles[0...5].each do |article|
+          .articles
+            %a.article_title{:href=>article.url}
+              = article.title
+        
+        %a.next.white_pixel_font
+          &#9660;
+    
+    %a.section_link.redish.has_shadow{:href=>'#', :alt=>"about"} about
+    .section.redish.has_shadow
+      %p.small_heading.white_pixel_font
+        what is this? 
+
+      %p
+        %canvas#my_face
+          %img#my_face_avatar{:src=>'/images/avatar.png'}
+        %small
+          This is a website, silly. The real question is <em>Who am I</em>? I'm <a rel="author" href="https://plus.google.com/104672941806561920576/about?rel=author">Jan</a> and I make web-stuff. By day I'm an interface designer at a startup in Toronto, by night I'm... probably sleeping. 
+          
+    //%a.section_link.light_green{:href=>'#', :alt=>"contact"} contact
+    //.section.light_green.has_shadow
+    //  %p.small_heading.white_pixel_font
+    //    contact 
+    
+    .background_mask.has_shadow
+  %a.tagline.iblock{:href=>'/'}
+    Art + Code for fun and pr

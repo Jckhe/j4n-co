@@ -1,2 +1,6 @@
 - content_for(:title, 'Hi There') 
-= partial "article_template", :locals => {:current_article => blog.articles.first}
+
+- content_for :javascript do 
+	= javascript_include_tag "three.min.js"   
+	= javascript_include_tag "escaping_flatland.js"    
+

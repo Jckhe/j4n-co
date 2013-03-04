@@ -1,0 +1,45 @@
+.work_section{
+	float: left;
+	margin-left: 1em;
+	padding-bottom: 1em;
+}
+
+.work_link{
+	padding: 2px;
+	display: inline-block;
+	background-color: transparent;
+	box-shadow: none;
+	position: relative;
+
+}
+.work_link img{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	opacity: 0.5;
+	border: 2px darken($yellow, 20%) solid;
+}
+
+.work_link span{
+	position: absolute;
+	bottom: -1.2rem;
+	font-size: 0;
+}
+
+.work_link:hover img{
+	//wanted to do a transition: scale(1.2); but css transitions 
+	//causes the container to lose hover focus during the transition
+	/*
+	width: 58px;
+	height: 58px;
+	margin: -4px;
+	top: -2px;
+	z-index: 4;
+	*/
+	opacity: 1;
+}
+
+.work_link:hover span {
+	font-size: 1rem;
+}

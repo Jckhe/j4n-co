@@ -2,31 +2,25 @@
 # Blog settings
 ###
 
+page "portfolio/*", :layout => "project"
+
 activate :blog do |blog|
-  # blog.permalink = ":year/:month/:day/:title.html"
-  # blog.sources = ":year-:month-:day-:title.html"
+  blog.permalink = "/thoughts/:title.html"
+  blog.sources = "/thoughts/:title.html"
   # blog.taglink = "tags/:tag.html"
-  # blog.layout = "layout"
+  blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = ":year.html"
   # blog.month_link = ":year/:month.html"
   # blog.day_link = ":year/:month/:day.html"
   # blog.default_extension = ".markdown"
-
+  # blog.prefix = ""
   # blog.tag_template = "tag.html"
   # blog.calendar_template = "calendar.html"
 end
 
 page "/feed.xml", :layout => false
-
-data.work.projects.each do |project|
-  page "/work/#{project[0]}.html", :proxy => "project_template.html" do
-    @project = project
-  end
-end
-
-ignore "project_template.html"
 
 ### 
 # Compass

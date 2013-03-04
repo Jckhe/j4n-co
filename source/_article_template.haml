@@ -14,3 +14,18 @@
   %time{:class => 'pubdate', :datetime=>current_article.date.strftime('%m-%d-%Y')}
     = current_article.date.strftime('%b %e %Y')
 
+
+  - current = blog.articles.find_index{|article| article.url == "/"+@current_path}
+  - prev_link = blog.articles[current.to_i-1].url
+  
+  - if (blog.articles[current.to_i+1] == nil)
+    - next_link = blog.articles[0].url
+  - else 
+    - next_link = blog.articles[current.to_i+1].url
+  
+  - if is_blog_article? or page_classes == 'index' 
+    %a#prev{:href=>prev_link}
+      &l
+  - if is_blog_article? or page_classes == 'index'    
+    %a#next{:href=>next_link}
+      &gt; 

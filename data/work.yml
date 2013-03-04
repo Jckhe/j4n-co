@@ -1,5 +1,5 @@
 projects:
-  
+
   skedx:
     meta_description: "The Skedx Web Application Interface Design"
     title: "Skedx"
@@ -57,7 +57,7 @@ projects:
         href:
           '/images/project_galleries/moovylist_2.png'
 
-    
+
   MDKI:
     title: Mass Destroy Kindle Items
     description: <a href='http://massdestroykindleitems.com/'>massdestroykindleitems.com</a> is a bookmarklet that lets you delete multiple kindle items at once from you amazon library. 

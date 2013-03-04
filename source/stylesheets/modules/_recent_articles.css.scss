@@ -1,0 +1,30 @@
+.recent_articles {
+
+	a {
+		color: white;
+	}
+	> .prev, > .next {
+		display: block;
+		text-align: center;
+		font-size: 0.8em;
+	}
+	.prev{
+	}
+	> .articles{
+		max-height: 5em;
+		overflow: auto;
+	}
+	.article_title{
+		display: block;
+		font-size: 0.8em;
+		@include text-shadow(none);
+		color: darken($aqua, 40%);
+		border-bottom: 1px solid $aqua;
+		padding-bottom: 0.5em;
+		padding-top: 0.5em;
+	}
+
+	.article_title:hover{
+		background-color: $aqua;
+	}
+}

@@ -1,0 +1,62 @@
+*::selection { 
+	background: rgba(0, 155, 175, 0.24);
+	color: #A32C2C;
+}
+
+h1{
+	font-size: 3em;
+	font-weight: normal;
+	padding-top: 0.7em;
+	padding-bottom: 0.5em;
+	padding-left: 0.6em;
+	font-family: '04b_25';
+	text-transform: uppercase; 
+	margin-bottom: 1em;
+	color: $dark_grey;
+}
+
+small{
+	font-size: 0.75em;
+	line-height: 1.5em;
+}
+
+em{
+	font-style: italic;
+}
+
+a{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	color: saturate(darken($aqua, 20%), 20%);
+}
+a:hover{
+	color: $aqua_h;
+}
+p, ul {
+	margin-top: 0.7em;
+	margin-bottom: 1em;
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+strong{
+	font-weight: bold;
+}
+
+ul {
+	text-indent: 2em;
+}
+li{
+	margin-bottom: 0.5em;
+	list-style: inside square;
+}
+
+article{
+	padding: 0 2rem;
+}
+
+address{
+	text-align: right;
+	float: right;
+}

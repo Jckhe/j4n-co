@@ -1,15 +1,11 @@
 @import "compass";
 
-@import "fonts/pixel_maz/pixel_maz.css.scss";
+@import "fonts/pixel_maz/fonts.css.scss";
 
 @include global-reset;
 
-@import "vars";
-@import "mixins";
-@import "base";
+@import "colors";
+@import "all_ur_base";
 @import "layout";
-@import "sidebar";
-@import "work";
-@import "blog"; 
-
-@import "responsive";
+@import "modules/*";
+//@import "responsive";

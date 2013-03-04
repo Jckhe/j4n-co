@@ -1,0 +1,18 @@
+%head
+  %meta{:charset=>"utf-8"}
+  %meta{:content=>"IE=edge,chrome=1", :'http-equiv'=>"X-UA-Compatible"}
+  %title
+    = yield_content(:title) && yield_content(:title)+data.site.meta.title.to_s || current_page.data.title.to_s+data.site.meta.title.to_s
+  
+  %meta{:name=>"author",        :content=>"Jan Drewniak"}
+  %meta{:name=>"robots",        :content=>"INDEX, FOLLOW"}    
+  %meta{:name => "keywords",    :content => yield_content(:keywords) || current_page.data.keywords || data.site.metakeywords}
+  %meta{:name => "description", :content => yield_content(:description) || current_page.data.meta_description  || data.site.meta.description}
+  %meta{:name => "viewport",    :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
+  %link{:rel=>"icon", :type=>"image/png", :href=>"/images/favicon.png"}
+ 
+  %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'}
+
+  = stylesheet_link_tag 'site'
+  
+  = yield_content :head
