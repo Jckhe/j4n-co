@@ -10,8 +10,8 @@ date: 2012/09/1
 ---
 <style>
 .blue_block{
-  width: 200px; 
-  height: 200px; 
+  width: 150px; 
+  height: 150px; 
   margin:1em; 
   float: left; 
 }

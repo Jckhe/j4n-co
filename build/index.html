@@ -5,180 +5,113 @@
     <title>
       Hi There | Jan Drewniak - User Experience Design & Development
     </title>
-    <meta content='INDEX, FOLLOW' name='ROBOTS' />
-    <meta content='Jan Drewniak UX Design front-end development Toronto' name='keywords' />
+    <meta content='Jan Drewniak' name='author' />
+    <meta content='INDEX, FOLLOW' name='robots' />
+    <meta name='keywords' />
     <meta content="So You're looking for a UX Design Ninja™... I eat ninjas for breakfast." name='description' />
     <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
     <link href='/images/favicon.png' rel='icon' type='image/png' />
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css' />
     <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Geo" media="screen" rel="stylesheet" type="text/css" />
     
   </head>
   <body class='index'>
-    <div id='site_header'>
-      <header>
-        <h1 id='logo'>
-          <a href='/'>
-            <img id="logo_jan" src="/images/logo/jan.svg" />
-            <canvas id='canvas'>
-              <img id="avatar" src="/images/avatar.jpg" />
-            </canvas>
-            <img id="logo_drewniak" src="/images/logo/drewniak.svg" />
-          </a>
-        </h1>
-        <p class='clear tag_line'>
-          ART & CODE FOR FUN AND PROFIT
+    <header class='top_bar dark_grey'>
+  <nav class='sitenav iblock'>
+    <a alt='portfolio' class='section_link yellow' href='#portfolio'>portfolio</a>
+    <div class='section yellow has_shadow'>
+      <div class='work_section'>
+        <p class='white_pixel_font small_heading'>
+          stuff
         </p>
-      </header>
-      <nav id='site_nav'>
-        <ul>
-          <li>
-            <a class='work_button button' href='/work.html'>
-              work
-            </a>
-          </li>
-          <li>
-            <a class='button' href='#about_me' id='about_me_button'>
-              me
-            </a>
-          </li>
-          <li>
-            <a class='button' href='#nav' id='blog_button'>
-              blog
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <aside id='about_me'>
-        I'm a webcraftsman currently working at <a href='http://skedx.com'>skedx.com</a>. I'm originally from Toronto and I currently live in Warsaw. I mainly focus on interface design & development and I'm passionate about all things web... and bicycles.
-        <p class='web_links'>
-          <a class='facebook' href='http://facebook.com/jan.drewniak.5' target='BLANK'>
-            <span class='first_letter'>f</span><span class="rest">acebook</span>
-          </a>
-          <a class='linkedin' href='http://linkedin.com/profile/view?id=50567911' target='BLANK'>
-            <span class="first_letter">l</span><span class="rest">inkedin</span>
-          </a>
-          <a class='twitter' href='https://twitter.com/jan_drewniak' target='BLANK'>
-            <span class="first_letter">t</span><span class="rest">witter</span>
-          </a>
-          <a class='gimmebar' href='https://gimmebar.com/collection/4e5fce6c2f0aaa1971000027/firehose' target='BLANK'>
-            <span class="first_letter">g</span><span class="rest">immebar</span>
-          </a>
-        </p>
-      </aside>
-      <nav class='' id='nav'>
-        <ul>
-          <li>
-            <a class='article_link' href='/2012/10/28/the_internet_blues.html'>
-              The Internet Blues
-            </a>
-          </li>
-          <li>
-            <a class='article_link' href='/2012/09/13/google_drive.html'>
-              Dear Google, How is this supposed to be useful to me in any way?
-            </a>
-          </li>
-          <li>
-            <a class='article_link' href='/2012/08/31/what_is_a_web_app_part_2.html'>
-              Understanding Web Apps part 2
-            </a>
-          </li>
-          <li>
-            <a class='article_link' href='/2012/08/08/what_is_a_web_app.html'>
-              Understanding Webapps part 1
-            </a>
-          </li>
-          <li>
-            <a class='article_link' href='/2012/07/31/hello_world.html'>
-              Hello World
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <a class='work_link has_shadow' href='/portfolio/skedx'>
+          <img src='/portfolio/skedx/icon.jpg' />
+          <span class='pixel_font dark_yellow_text'>
+            Skedx
+          </span>
+        </a>
+      </div>
+      <div class='work_section'>
+      </div>
+      <div class='work_section'>
+        <span class='pixel_font dark_yellow_text'>
+          I'll be adding more <br/>
+          stuff here real soon, <br/>
+          pinky swear.
+        </span>
+      </div>
     </div>
-    <a href='/2012/07/31/hello_world.html' id='prev'>
-      &lt;
-    </a>
-    <section id='main' role='main'>
-      <header class='blog_header'>
-  <hgroup>
-    <h1>
-      <span class='blog_title'>
-        The Internet Blues
-      </span>
-    </h1>
-    <h2>
-      <span class='blog_subtitle'>
-        Web companies that use the color blue.
-      </span>
-    </h2>
-  </hgroup>
+    <a alt='blog' class='section_link aqua' href='#'>blog</a>
+    <div class='section aqua has_shadow'>
+      <!-- /%a.right.white_pixel_font.redish_text{:href=>"#"} -->
+      <!-- /  archive -->
+      <p class='small_heading white_pixel_font'>
+        My two cents
+      </p>
+      <div class='recent_articles'>
+        <a class='prev white_pixel_font'>
+          &#9650;
+        </a>
+        <div class='articles'>
+          <a class='article_title' href='/thoughts/google_drive.html'>
+            Google Drive
+          </a>
+        </div>
+        <div class='articles'>
+          <a class='article_title' href='/thoughts/the_internet_blues.html'>
+            The Internet Blues
+          </a>
+        </div>
+        <div class='articles'>
+          <a class='article_title' href='/thoughts/what_is_a_web_app_part_2.html'>
+            Understanding Web Apps part 2
+          </a>
+        </div>
+        <div class='articles'>
+          <a class='article_title' href='/thoughts/what_is_a_web_app.html'>
+            Understanding Webapps part 1
+          </a>
+        </div>
+        <div class='articles'>
+          <a class='article_title' href='/thoughts/hello_world.html'>
+            Hello World
+          </a>
+        </div>
+        <a class='next white_pixel_font'>
+          &#9660;
+        </a>
+      </div>
+    </div>
+    <a alt='about' class='section_link redish has_shadow' href='#'>about</a>
+    <div class='section redish has_shadow'>
+      <p class='small_heading white_pixel_font'>
+        what is this?
+      </p>
+      <p>
+        <canvas id='my_face'>
+          <img id='my_face_avatar' src='/images/avatar.png' />
+        </canvas>
+        <small>
+          This is a website, silly. The real question is <em>Who am I</em>? I'm <a rel="author" href="https://plus.google.com/104672941806561920576/about?rel=author">Jan</a> and I make web-stuff. By day I'm an interface designer at a startup in Toronto, by night I'm... probably sleeping.
+        </small>
+      </p>
+    </div>
+    <!-- /%a.section_link.light_green{:href=>'#', :alt=>"contact"} contact -->
+    <!-- /.section.light_green.has_shadow -->
+    <!-- /  %p.small_heading.white_pixel_font -->
+    <!-- /    contact -->
+    <div class='background_mask has_shadow'></div>
+  </nav>
+  <a class='tagline iblock' href='/'>
+    Art + Code for fun and pr
+  </a>
 </header>
-<article class='blog_article'>
-  <style>
-.blue_block{
-  width: 200px; 
-  height: 200px; 
-  margin:1em; 
-  float: left; 
-}
-.blue_block > *{
-  opacity: 0;   
-  -webkit-transition: opacity 0.1s ease-in; 
-  -moz-transition: opacity 0.1s ease-in; 
-  -o-transition: opacity 0.1s ease-in; 
-  transition: opacity 0.1s ease-in; 
-}
-
-.blue_block:hover > *{
-  opacity: 1;   
-}
-.blue_block p{
-  margin:0;  
-}
-
-.blue_block img{
-  max-width: 100%;   
-}
-</style><p>
-Can you guess which blue belongs to which tech company? 
-I sure as hell can't. 
-</p><div class='blue_block' style='background-color: #1eb9ea'>
-  <p>
-    <img src='/images/blog/windows8-logo.png' style='margin-top:62px;' /> 
-  </p> 
-</div><div class='blue_block' style='background-color: #00aced'>
-  <p>
-    <img src='https://twitter.com/images/resources/twitter-bird-white-on-blue.png' /> 
-  </p> 
-</div><div class='blue_block' style='background-color: #3079f0'>
-  <p>
-    <img src='https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAs7Y/yFVd0T5kw-o/photo.jpg' />
-  </p> 
-</div><div class='blue_block' style='background-color: #007dc6'>
-  <p> 
-  <img src='images/blog/bingLogo_lg-transparent.png' style='margin-top:50px;' /> 
-  </p> 
-</div><div class='blue_block' style='background-color: #1b6cb5'>
-  <img src='https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.png' style='margin-top:62px;' /> 
-</div><div class='blue_block' style='background-color:#315499'>
-  <img src='http://1.bp.blogspot.com/_wICHhTiQmrA/TUBWbCpI5eI/AAAAAAAAE0Y/fhSI1bGZOTc/s1600/facebook-logo.jpg' style='margin-top:55px;' /> 
-</div><div class='blue_block' style='background-color:  #006699'>
-  <img src='/images/blog/LinkedIn-Logo.png' style='margin-top: 62px;' />
-</div><div class='blue_block' style='background-color: #43546b'>
-  <img src='/images/blog/tumblr_on_dark.png' style='margin-top: 62px;' /> 
-</div><div class='clear' />
-</article>
-<footer>
-  <time class='pubdate' datetime='10-28-2012'>
-    Oct 28 2012
-  </time>
-</footer>
+    <section class='main has_shadow'>
+      
     </section>
-    <a href='/2012/09/13/google_drive.html' id='next'>
-      &gt;
-    </a>
   </body>
+  <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/my_face.js" type="text/javascript"></script>
+  <script src="/javascripts/three.min.js" type="text/javascript"></script>
+  <script src="/javascripts/escaping_flatland.js" type="text/javascript"></script>
 </html>
-<script src="/javascripts/jquery.min.js" type="text/javascript"></script>
-<script src="/javascripts/script.js" type="text/javascript"></script>

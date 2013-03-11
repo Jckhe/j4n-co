@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/Volumes/sandbox/root/jandrewniak"
+		},
+		{
+			"path": "build"
 		}
 	]
 }
