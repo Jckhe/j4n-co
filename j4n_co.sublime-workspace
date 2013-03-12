@@ -60,47 +60,6 @@
 			}
 		},
 		{
-			"file": "source/blog/google_drive.md",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "source/layout/layout.haml",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "source/layout/project.haml",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "",
-			"file": "source/layout/blog.haml",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "source/index.html.haml",
 			"settings":
 			{
@@ -139,6 +98,14 @@
 				"buffer_size": 191,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "source/javascripts/escaping_flatland.js",
+			"settings":
+			{
+				"buffer_size": 3326,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -165,6 +132,10 @@
 	},
 	"file_history":
 	[
+		"/Volumes/sandbox/root/jandrewniak/source/layout/blog.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/project.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/blog/google_drive.md",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/layout.haml",
 		"/Volumes/sandbox/root/kirbycms/.htaccess",
 		"/Volumes/sandbox/root/jandrewniak/source/portfolio/skedx/index.html.md",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/site.css.scss",
@@ -173,10 +144,8 @@
 		"/Volumes/sandbox/root/jandrewniak/source/javascripts/drafts/canvas.js",
 		"/Volumes/sandbox/root/jandrewniak/build/javascripts/script.js",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/_header_element.haml",
-		"/Volumes/sandbox/root/jandrewniak/source/layout/layout.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_recent_articles.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_portfolio.css.scss",
-		"/Volumes/sandbox/root/jandrewniak/source/layout/project.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_sitenav.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_menu_portfolio.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_colors.css.scss",
@@ -290,9 +259,7 @@
 		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/footer.tpl",
 		"/Volumes/ego_eco/root/opencart/catalog/controller/information/sitemap.php",
 		"/Volumes/ego_eco/root/opencart/catalog/controller/common/footer.php",
-		"/Volumes/ego_eco/root/opencart/catalog/language/english/information/sitemap.php",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/stylesheet/cart.css",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/stylesheet/layout.css"
+		"/Volumes/ego_eco/root/opencart/catalog/language/english/information/sitemap.php"
 	],
 	"find":
 	{
@@ -475,7 +442,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 260.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -508,113 +475,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "source/blog/google_drive.md",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/layout/layout.haml",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "source/layout/project.haml",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "source/layout/blog.haml",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "source/index.html.haml",
 					"settings":
 					{
@@ -640,7 +500,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 3,
 					"file": "config.rb",
 					"settings":
 					{
@@ -651,8 +511,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								916,
+								916
 							]
 						],
 						"settings":
@@ -668,7 +528,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
 					"file": "source/stylesheets/_all_ur_base.css.scss",
 					"settings":
 					{
@@ -695,7 +555,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 5,
 					"file": "source/stylesheets/_colors.css.scss",
 					"settings":
 					{
@@ -722,7 +582,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 6,
 					"file": "source/stylesheets/site.css.scss",
 					"settings":
 					{
@@ -740,6 +600,34 @@
 						"settings":
 						{
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "source/javascripts/escaping_flatland.js",
+					"settings":
+					{
+						"buffer_size": 3326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -9,6 +9,7 @@ $(document).ready(function(){
     var rayCaster = new THREE.Raycaster( camera.position, vector.sub( camera.position ).normalize() );
     var shapes = [];
     var shapesPosition = [];
+    var cubeVelocity = 5
 
     var pi = {}
     pi.num = 1
@@ -21,17 +22,31 @@ $(document).ready(function(){
     $(renderer.domElement).addClass('escapingflatland_canvas')
     $('body').append(renderer.domElement)
 
-    document.addEventListener('mousemove', onDocumentMouseMove, false);
-    
-    function onDocumentMouseMove(event){
-        if ( event.target === renderer.domElement ) {
-            mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-            mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-            updateRayCaster()
-            addCube();
-        }
+    if ('ontouchstart' in window){ 
+        document.addEventListener('touchmove', onDocumentTouchMove, false);    
+        cubeVelocity = 15;
+    } 
+    else {
+        document.addEventListener('mousemove', onDocumentMouseMove, false);    
     }
 
+    function onDocumentMouseMove(event){
+        if ( event.target === renderer.domElement ) {
+                mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+                mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+                updateRayCaster()
+                addCube();
+        }
+    }
+    function onDocumentTouchMove(event){
+        if ( event.target === renderer.domElement ) {
+            event.preventDefault()
+            mouse.x = ( event.touches[0].pageX / window.innerWidth ) * 2 - 1;
+            mouse.y = - ( event.touches[0].pageY / window.innerHeight ) * 2 + 1;
+            updateRayCaster()
+            addCube();               
+        }
+    }
     function addCube(){
         var rand =  Math.random(0.5, 0.8)
         var geometry = new THREE.CubeGeometry(rand*20, rand*20, 0 );
@@ -40,7 +55,7 @@ $(document).ready(function(){
         shape.position.set( Math.round( rayCaster.ray.direction.x*1000 /19 )*19, Math.round( rayCaster.ray.direction.y*1000/19 )*19, 0  );
         shape.custom_rotation_x = Math.random()/50
         shape.custom_rotation_y = Math.random()/50
-        shape.custom_velocity = Math.random()*5
+        shape.custom_velocity = Math.random()*cubeVelocity
 
         scene.add( shape );
 
