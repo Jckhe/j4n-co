@@ -5,11 +5,13 @@
   %body{:class=> page_classes}
 
     = partial "layouts/site_nav"
-
-    %section.main.blog.has_shadow
-      %h1
+    
+    %section.main.blog
+      %h1.article_title
         = current_page.data.title
-      %article
+
+      
+      %article.article_wrapper.has_shadow.clear
         = yield   
       
       %footer.post_meta

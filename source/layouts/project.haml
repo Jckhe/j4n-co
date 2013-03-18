@@ -7,20 +7,28 @@
     = partial "layouts/site_nav"
 
     %section.main.projects.has_shadow  
-      %h1.text_shadow{:style=>'background-image: url('+current_page.data.header_bg+')'}
-        =current_page.data.title
+
+      %header
+        %h1.text_shadow{:style=>'background-image: url('+current_page.data.header_bg+')'}
+          =current_page.data.title
+        
+        .next
+          =image_tag 'arrow_next-tiny.svg'
+        .previous
+          =image_tag 'arrow_previous-tiny.svg'
+
+      - if current_page.data.gallery_images
+        .project_gallery        
+          - current_page.data.gallery_images.each do |img|
+            %figure 
+              %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
+
+            %figcaption
+              =img.caption
 
       %article
         = yield   
-   
-      - if current_page.data.gallery_images
-        #project_gallery        
-        - current_page.data.gallery_images.each do |img|
-          %figure 
-            %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
 
-          %figcaption
-            =img.caption
 
 
   = javascript_include_tag "jquery.min.js"  

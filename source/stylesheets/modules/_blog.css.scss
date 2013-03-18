@@ -1,6 +1,12 @@
 .main.blog{
-	h1{
+	background-color: transparent;
+	.article_title{
 		margin-bottom: 0;
-		padding-bottom: 0.5em;
+		padding-bottom: 0;
+		float: left;
+	}
+	.article_wrapper {
+		background-color: white;
+		padding-top: 3em;
 	}
 }

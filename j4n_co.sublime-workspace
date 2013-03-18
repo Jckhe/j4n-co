@@ -47,15 +47,7 @@
 			"file": "source/stylesheets/_layout.css.scss",
 			"settings":
 			{
-				"buffer_size": 808,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_blog.css.scss",
-			"settings":
-			{
-				"buffer_size": 66,
+				"buffer_size": 840,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +71,7 @@
 			"file": "source/stylesheets/_all_ur_base.css.scss",
 			"settings":
 			{
-				"buffer_size": 791,
+				"buffer_size": 812,
 				"line_ending": "Unix"
 			}
 		},
@@ -100,10 +92,26 @@
 			}
 		},
 		{
-			"file": "source/javascripts/escaping_flatland.js",
+			"file": "source/layouts/blog.haml",
 			"settings":
 			{
-				"buffer_size": 3326,
+				"buffer_size": 603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/layouts/project.haml",
+			"settings":
+			{
+				"buffer_size": 881,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/modules/_nav_arrows.css.scss",
+			"settings":
+			{
+				"buffer_size": 328,
 				"line_ending": "Unix"
 			}
 		}
@@ -132,6 +140,12 @@
 	},
 	"file_history":
 	[
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/nav_arrows.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/work.html.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_blog.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/javascripts/escaping_flatland.js",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/blog.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/project.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/blog/google_drive.md",
@@ -253,13 +267,7 @@
 		"/Volumes/ego_eco/root/opencart/admin/controller/module/news.php",
 		"/Volumes/ego_eco/root/opencart/admin/model/catalog/news.php",
 		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/home.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/information/sitemap.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/header.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/language/polish/information/sitemap.php",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/footer.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/controller/information/sitemap.php",
-		"/Volumes/ego_eco/root/opencart/catalog/controller/common/footer.php",
-		"/Volumes/ego_eco/root/opencart/catalog/language/english/information/sitemap.php"
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/information/sitemap.tpl"
 	],
 	"find":
 	{
@@ -280,6 +288,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blog",
 			"des",
 			"desa",
 			"bw_pi",
@@ -417,7 +426,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -425,15 +434,15 @@
 					"file": "source/stylesheets/_layout.css.scss",
 					"settings":
 					{
-						"buffer_size": 808,
+						"buffer_size": 840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								840,
+								840
 							]
 						],
 						"settings":
@@ -442,39 +451,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 125.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "source/stylesheets/modules/_blog.css.scss",
-					"settings":
-					{
-						"buffer_size": 66,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "source/index.html.haml",
 					"settings":
 					{
@@ -500,7 +483,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "config.rb",
 					"settings":
 					{
@@ -528,19 +511,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "source/stylesheets/_all_ur_base.css.scss",
 					"settings":
 					{
-						"buffer_size": 791,
+						"buffer_size": 812,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								738,
+								738
 							]
 						],
 						"settings":
@@ -549,13 +532,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 244.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "source/stylesheets/_colors.css.scss",
 					"settings":
 					{
@@ -582,7 +565,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "source/stylesheets/site.css.scss",
 					"settings":
 					{
@@ -593,8 +576,8 @@
 						"selection":
 						[
 							[
-								164,
-								164
+								146,
+								146
 							]
 						],
 						"settings":
@@ -608,26 +591,80 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "source/javascripts/escaping_flatland.js",
+					"buffer": 6,
+					"file": "source/layouts/blog.haml",
 					"settings":
 					{
-						"buffer_size": 3326,
+						"buffer_size": 603,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1013,
-								1013
+								268,
+								268
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "source/layouts/project.haml",
+					"settings":
+					{
+						"buffer_size": 881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "source/stylesheets/modules/_nav_arrows.css.scss",
+					"settings":
+					{
+						"buffer_size": 328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

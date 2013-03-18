@@ -1,0 +1,33 @@
+.next, .previous{
+	position: absolute;
+	top: 400%;
+	width: 40px;
+	height: 40px;
+	opacity: 0.5;
+	img{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.next{
+	right: -40px;
+}
+
+.previous{
+	left: -40px;
+}
+
+.next:hover, .previous:hover{
+	opacity: 1;
+}
+
+.next:hover{
+	right: -60px;
+	width: 50px;
+}
+
+.previous:hover{
+	left: -50px;
+	width: 50px;
+}

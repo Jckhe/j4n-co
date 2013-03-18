@@ -1,7 +1,0 @@
-@mixin vendor-prefix($property, $value) {
-  -webkit-#{$property}: unquote($value); 
-  -moz-#{$property}: unquote($value);
-  -o-#{$property}: unquote($value);
-  -ms-#{$property}: unquote($value);
-  #{$property}: unquote($value); 
-}
