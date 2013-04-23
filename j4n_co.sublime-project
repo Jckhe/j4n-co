@@ -6,6 +6,9 @@
 		},
 		{
 			"path": "build"
+		},
+		{
+			"path": "/Volumes/sandbox/root/supersalon_spree"
 		}
 	]
 }

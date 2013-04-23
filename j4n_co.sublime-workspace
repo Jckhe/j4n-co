@@ -103,7 +103,7 @@
 			"file": "source/layouts/project.haml",
 			"settings":
 			{
-				"buffer_size": 881,
+				"buffer_size": 1081,
 				"line_ending": "Unix"
 			}
 		},
@@ -112,6 +112,22 @@
 			"settings":
 			{
 				"buffer_size": 328,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/layouts/_site_nav.haml",
+			"settings":
+			{
+				"buffer_size": 2531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/portfolio/ego_eco/index.html.md",
+			"settings":
+			{
+				"buffer_size": 500,
 				"line_ending": "Unix"
 			}
 		}
@@ -140,6 +156,7 @@
 	},
 	"file_history":
 	[
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/ego & eco/index.html.md",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/nav_arrows.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.scss",
@@ -266,8 +283,7 @@
 		"/Volumes/ego_eco/root/opencart/admin/view/template/module/news/list.tpl",
 		"/Volumes/ego_eco/root/opencart/admin/controller/module/news.php",
 		"/Volumes/ego_eco/root/opencart/admin/model/catalog/news.php",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/home.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/information/sitemap.tpl"
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/home.tpl"
 	],
 	"find":
 	{
@@ -426,7 +442,6 @@
 	"groups":
 	[
 		{
-			"selected": 8,
 			"sheets":
 			[
 				{
@@ -623,15 +638,15 @@
 					"file": "source/layouts/project.haml",
 					"settings":
 					{
-						"buffer_size": 881,
+						"buffer_size": 1081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								439,
-								439
+								465,
+								465
 							]
 						],
 						"settings":
@@ -664,7 +679,63 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "source/layouts/_site_nav.haml",
+					"settings":
+					{
+						"buffer_size": 2531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								188,
+								275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "source/portfolio/ego_eco/index.html.md",
+					"settings":
+					{
+						"buffer_size": 500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -1,9 +1,7 @@
 %header.top_bar.dark_grey
   %nav.sitenav.iblock
     
-    %a.section_link.yellow{:href=>'#portfolio', :alt=>"portfolio"} portfolio
-    .section.yellow.has_shadow
-      
+    .section_link.portfolio.yellow{:href=>'#portfolio', :alt=>"portfolio"} 
       .work_section
         - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
         

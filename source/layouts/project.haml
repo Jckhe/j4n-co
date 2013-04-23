@@ -1,3 +1,6 @@
+- pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
+- index = pages.index(current_page)
+
 %html{:lang => 'en'}
   
   = partial "layouts/header_element"
@@ -11,11 +14,14 @@
       %header
         %h1.text_shadow{:style=>'background-image: url('+current_page.data.header_bg+')'}
           =current_page.data.title
+
+        - unless (index == pages.length-1 )
+          .next
+            =image_tag 'arrow_next-tiny.svg'
         
-        .next
-          =image_tag 'arrow_next-tiny.svg'
-        .previous
-          =image_tag 'arrow_previous-tiny.svg'
+        - unless (index == 0 )
+          .previous
+            =image_tag 'arrow_previous-tiny.svg'
 
       - if current_page.data.gallery_images
         .project_gallery        
