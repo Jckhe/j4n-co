@@ -11,9 +11,8 @@
 
     %section.main.projects.has_shadow  
 
-      %header
-        %h1.text_shadow{:style=>'background-image: url('+current_page.data.header_bg+')'}
-          =current_page.data.title
+      %h1.text_shadow
+        =current_page.data.title
 
         - unless (index == pages.length-1 )
           .next
@@ -23,16 +22,16 @@
           .previous
             =image_tag 'arrow_previous-tiny.svg'
 
-      - if current_page.data.gallery_images
-        .project_gallery        
-          - current_page.data.gallery_images.each do |img|
-            %figure 
-              %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
-
-            %figcaption
-              =img.caption
-
       %article
+        - if current_page.data.gallery_images
+          .project_gallery        
+            - current_page.data.gallery_images.each do |img|
+              %figure 
+                %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
+
+              %figcaption
+                =img.caption
+
         = yield   
 
 

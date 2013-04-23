@@ -6,13 +6,14 @@
 h1{
 	font-size: 3em;
 	font-weight: normal;
-	padding-top: 0.7em;
-	padding-bottom: 0.5em;
-	padding-left: 0.6em;
 	font-family: '04b_25';
 	text-transform: uppercase; 
-	margin-bottom: 1em;
-	color: $dark_grey;
+	color: white;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	line-height: 0.7em;
+	z-index: -1;
 }
 
 small{
@@ -55,6 +56,7 @@ li{
 article{
 	padding: 1rem 2rem;
 	font-size: 16px;
+	background-color: #FFF;
 }
 
 address{
