@@ -76,7 +76,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	@include text-shadow(1px 1px 0 white);
 }
 .has_shadow{
-	@include box-shadow(0 1px 7px -2px rgba(0, 0, 0, 0.52));
+	@include box-shadow(0 4px 7px -2px rgba(0, 0, 0, 0.52));
 }
 .text_shadow{
 	@include text-shadow(1px 1px 0 black);

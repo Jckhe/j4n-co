@@ -1,33 +1,53 @@
-.next, .previous{
-	position: absolute;
-	top: 400%;
-	width: 40px;
+.nav_flipper{
+	position: relative;
+	width: 50%;
 	height: 40px;
-	opacity: 0.5;
+	-webkit-perspective: 400;
+  	-webkit-transform-style: preserve-3d;
+  	-webkit-backface-visibility: visible;
+  	float: left;
+}
+.next, .previous{
+	position: relative;
+	width: 100%;
+	height: 40px;	
+	background-image:-webkit-linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(10, 140, 250) 70%); 
+ 	-webkit-transition: all 0.2s ease-in-out;
+	background-size:500% 1px; 
+	padding: 10px;
 	img{
-		width: 40px;
-		height: 40px;
+		height: 20px;
+		vertical-align: middle;
 	}
 }
 
 .next{
-	right: -40px;
+	text-align: right;
+	-webkit-transform-origin: 0px 0px;
+	background-image:-webkit-linear-gradient(0deg, #A7A7A7 0%, #CCC 100%);
+	background-position: 50% 0;
 }
 
 .previous{
-	left: -40px;
+	text-align: left;
+	-webkit-transform-origin: 100% 0;
+	background-image:-webkit-linear-gradient(0deg, #CCC 00%, #A7A7A7 100%); 
+	background-position: 50% 0;
 }
 
-.next:hover, .previous:hover{
-	opacity: 1;
-}
+.nav_flipper:hover{
+	z-index: 1;
+	.next{
+		-webkit-transform: rotatey(-5deg);
+		box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.4); 
+		background-position: 20% 0;
+		background-size:150% 1px; 
+	}
+	.previous{
+		-webkit-transform: rotatey(5deg);
+		box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.4); 
+		background-position: 80% 0;
+		background-size:150% 1px; 
+	}
 
-.next:hover{
-	right: -60px;
-	width: 50px;
-}
-
-.previous:hover{
-	left: -50px;
-	width: 50px;
 }

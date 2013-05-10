@@ -9,20 +9,12 @@
 
     = partial "layouts/site_nav"
 
-    %section.main.projects.has_shadow  
+    %section.main.projects  
 
       %h1.text_shadow
         =current_page.data.title
 
-        - unless (index == pages.length-1 )
-          .next
-            =image_tag 'arrow_next-tiny.svg'
-        
-        - unless (index == 0 )
-          .previous
-            =image_tag 'arrow_previous-tiny.svg'
-
-      %article
+      %article.has_shadow
         - if current_page.data.gallery_images
           .project_gallery        
             - current_page.data.gallery_images.each do |img|
@@ -33,8 +25,17 @@
                 =img.caption
 
         = yield   
+      
+      .nav_flipper
+        .previous
+          =image_tag 'arrow_previous-tiny.svg'
+          %span.pixel_font retreat
 
-
+      .nav_flipper
+        .next
+          %span.pixel_font onward
+          =image_tag 'arrow_next-tiny.svg'
+       
 
   = javascript_include_tag "jquery.min.js"  
   = javascript_include_tag "my_face.js"  
