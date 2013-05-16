@@ -9,18 +9,41 @@ header_bg: /portfolio/skedx/skedx.jpg
 
 gallery_images:
   -
-    url: '/portfolio/skedx/skedx_gallery_1.jpg' 
-    caption: ''
+    url: '/portfolio/skedx/skedx.jpg' 
+    caption: 'this is an image caption'
+  -
+    url: '/portfolio/skedx/skedx_1.png' 
+    caption: 'this is an image caption'
+  -
+    url: '/portfolio/skedx/skedx_2.png' 
+    caption: 'this is an image caption'
 ---
 
-**WHAT IT IS -** Skedx is an web-based staff scheduling tool for the retail/hospitality industry. It lets managers manage all aspects of staff scheduling, including things like: 
-- managing employee vacations 
-- employee time-clocking
-- managing daily employee availability
-- budgeting 
-- reporting 
+<aside>
+skedx.com was my first big <dfn title="User Interface">UI</dfn> project. I worked on it for two years, both designing and implementing the app. 
+</aside>
+<hr/>
 
-Employees on the other hand can check their weekly schedules, book vacations, receive SMS alerts, and communicate with other staff members, all from the comfort of a web-browser.   
+<dl>
+	<dt>WHAT IT IS</dt>
+	<dd>	
+ 		Skedx is an web-based staff scheduling tool for retail/hospitality. It lets managers manage all aspects of staff scheduling, including: 
+		<ul>		
+			<li>employee vacations </li>
+			<li>time + attendance</li>
+			<li>daily employee availability</li>
+			<li>budgeting</li> 
+			<li>reporting </li>
+		</ul>
+		For employees on the other hand, skedx provides alerts for schedule updates, vacation requests, shift-swapping etc. all from the comfort of a web-browser.   
+	</dd>
+</dl>
 
-**WHAT I DID -** Interface design & front-end development. Skedx is a Ruby on Rails application. I worked on designing the interface, then I implemented it in CSS/HTML/JS. I also made the website, [skedx.com](http://skedx.com). 
+<dl>
+	<dt>WHAT I DID</dt>
+	<dd>
+		Interface design + front-end development. Skedx is a Ruby on Rails application. I worked on designing the interface, then I implemented it in <dfn title="This is the stuff the internet is made of.">CSS/HTML/JS</dfn>. I also made the website, <a href="http://skedx.com">skedx.com</a>. 
+	</dd>
+</dl>
+
 

@@ -10,7 +10,7 @@ header_bg: /portfolio/skedx/skedx.jpg
 gallery_images:
   -
     url: '/portfolio/skedx/skedx_gallery_1.jpg' 
-    caption: ''
+    caption: 'egoeco.eu'
 ---
 
 **WHAT IT IS -** Ego & Eco is a design boutique in Warsaw. They promote local designers and sell a variety of jewelery, accessories, clothing and linens. 

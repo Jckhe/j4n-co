@@ -13,6 +13,7 @@
 	height: 40px;	
 	background-image:-webkit-linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(10, 140, 250) 70%); 
  	-webkit-transition: all 0.2s ease-in-out;
+	
 	background-size:500% 1px; 
 	padding: 10px;
 	img{
@@ -39,13 +40,11 @@
 	z-index: 1;
 	.next{
 		-webkit-transform: rotatey(-5deg);
-		box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.4); 
 		background-position: 20% 0;
 		background-size:150% 1px; 
 	}
 	.previous{
 		-webkit-transform: rotatey(5deg);
-		box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.4); 
 		background-position: 80% 0;
 		background-size:150% 1px; 
 	}

@@ -1,30 +1,24 @@
 %header.top_bar.dark_grey
   %nav.sitenav
     
-    .section.work.yellow{:alt=>"portfolio"} 
+    .section.work.yellow{:alt=>"portfolio", :class => current_page.url.match(/^\/portfolio\/.*\/$/) ? "current_section" : '' } 
       - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
       - pages.each do |page|
-        %a{:href=>page.url.chomp('/')}>
+        %a{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
           %img{:src=>page.data.icon}>
+
     
     .section.tools.aqua 
       - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
-      /- pages = sitemap.resources.find_all{|p| p.url.match(/^\/sketches\/.*\/$/)  }
       - pages.each do |page|
         %a{:href=>page.url.chomp('/')}>
           %img{:src=>page.data.icon}>
 
-    .section.blog.redish{:alt=>"blog"} 
+    .section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 
 
-      /%a.prev.white_pixel_font
-      /  &#9650;
-        
       - blog.articles[0...1].each do |article|
-        %a.small_heading.white_pixel_font{:href=>article.url}
+        %a.small_heading.white_pixel_font{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
           = article.title
-        
-      /%a.next.white_pixel_font
-      /  &#9660;
     
     .section.light_green.about
       %p.small_heading.white_pixel_font

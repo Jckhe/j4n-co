@@ -6,7 +6,6 @@
 }
 
 .sitenav{
-	float: left;
 	margin-right: 2em;
 }
 .top_bar{
@@ -19,6 +18,11 @@
 	}
 
 }
+
+.section.current_section {
+	max-width: 10em;
+}
+
 .section {
 	float: left;
 	height: 3em;
@@ -61,13 +65,20 @@
 .section a {
 	display: inline-block;
 	cursor: pointer;
-	min-width: 3em;
+	width: 3em;
+	overflow: hidden;
 }
+
 .section a img {
 	opacity: 0.5;
 	height: 100%;
 	cursor: pointer;
 }
+
+.section a.current_page img{
+	opacity: 1
+}
+
 .section a:hover img {
 	opacity: 1;
 }

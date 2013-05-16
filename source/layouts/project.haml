@@ -1,6 +1,5 @@
 - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
 - index = pages.index(current_page)
-
 %html{:lang => 'en'}
   
   = partial "layouts/header_element"
@@ -14,28 +13,41 @@
       %h1.text_shadow
         =current_page.data.title
 
-      %article.has_shadow
+      %article
         - if current_page.data.gallery_images
           .project_gallery        
-            - current_page.data.gallery_images.each do |img|
-              %figure 
+            - current_page.data.gallery_images.each_with_index do |img, index|
+              .gallery_operator{:id => "gallery_#{index}"}
+            
+            - current_page.data.gallery_images.each_with_index do |img, index|
+              
+              %figure.project_gallery_item 
+                .spacer
                 %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
+                
+            .project_gallery_nav.pixel_font
+              - current_page.data.gallery_images.each_with_index do |img, index|
+                %a{:href=>"#gallery_#{index}"} &#9632
 
-              %figcaption
-                =img.caption
+        .article_content.white_bg.has_shadow
+          .centered_measure
+            = yield   
+        
+          .nav_flipper
+            .previous
+              =image_tag 'arrow_previous-tiny.svg'
+              - prev_page = pages[index-1]
+              - prev_page.nil? ? prev_page = pages.last : '' ;
+              %a.pixel_font{:href=>prev_page.url} retreat
 
-        = yield   
-      
-      .nav_flipper
-        .previous
-          =image_tag 'arrow_previous-tiny.svg'
-          %span.pixel_font retreat
-
-      .nav_flipper
-        .next
-          %span.pixel_font onward
-          =image_tag 'arrow_next-tiny.svg'
-       
+          .nav_flipper
+            .next
+              - next_page = pages[index+1]
+              - next_page.nil? ? next_page = pages.last : '' ;
+              %a.pixel_font{:href=>next_page.url} onward
+              =image_tag 'arrow_next-tiny.svg'
+          
+          .clear 
 
   = javascript_include_tag "jquery.min.js"  
   = javascript_include_tag "my_face.js"  

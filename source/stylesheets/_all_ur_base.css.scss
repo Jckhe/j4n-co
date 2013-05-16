@@ -27,18 +27,20 @@ em{
 
 a{
 	text-decoration: none;
-	border-bottom: 1px dashed;
-	color: saturate(darken($aqua, 20%), 20%);
 }
+
+a:visited{
+	color: $dark_grey;
+}
+
 a:hover{
 	color: $aqua_h;
 }
+
 p, ul {
 	margin-top: 0.7em;
 	margin-bottom: 1em;
 	line-height: 1.5em;
-	margin-left: 2em;
-	margin-right: 2em;
 }
 
 strong{
@@ -54,12 +56,76 @@ li{
 }
 
 article{
-	padding: 1rem 2rem;
 	font-size: 16px;
-	background-color: #FFF;
 }
-
+article a {
+	color: saturate(darken($aqua, 20%), 20%);
+}
 address{
 	text-align: right;
 	float: right;
 }
+
+aside{
+	line-height: 1.5em;
+	font-size: 0.9em;
+	text-indent: 0;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+aside:first-child:first-letter{
+	font-size: 2em;
+	font-family: Georgia;
+}
+
+figure{
+	position: relative;
+}
+
+figcaption{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 1em;
+	font-size: 0.7em;
+}
+
+dl {
+	display: table;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+
+	dt{
+		display: table-cell;
+		min-width: 6em;
+		font-weight: bold;
+	}
+
+	dd {
+		display: table-cell;
+		line-height: 1.5em;
+	}
+
+}
+
+hr{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+dfn{
+	cursor: help;
+	border-bottom: 1px dashed;
+}
+dfn:hover{
+	border-bottom: none;
+}
+dfn:hover:after{
+	background-color: #AEFEFF;
+	content: " (" attr(title) ") ";
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	border-bottom: none;
+	font-style: italic;
+}
+
+
+

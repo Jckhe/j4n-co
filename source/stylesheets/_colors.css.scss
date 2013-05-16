@@ -71,6 +71,10 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	color: white;
 	@include text-shadow(1px 1px 0 black);
 }
+
+.white_bg{
+	background-color: white;
+}
 .pixel_font{
 	font-family: '04b';	
 	@include text-shadow(1px 1px 0 white);

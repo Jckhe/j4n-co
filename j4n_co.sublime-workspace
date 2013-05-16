@@ -52,106 +52,18 @@
 	"buffers":
 	[
 		{
-			"file": "source/layouts/_site_nav.haml",
+			"file": "source/layouts/project.haml",
 			"settings":
 			{
-				"buffer_size": 1483,
+				"buffer_size": 1039,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/stylesheets/modules/_sitenav.css.scss",
+			"file": "source/stylesheets/modules/_nav_arrows.css.scss",
 			"settings":
 			{
-				"buffer_size": 1199,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_menu_portfolio.css.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/site.css.scss",
-			"settings":
-			{
-				"buffer_size": 191,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_layout.css.scss",
-			"settings":
-			{
-				"buffer_size": 1053,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_recent_articles.css.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_blog.css.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_project_gallery.css.scss",
-			"settings":
-			{
-				"buffer_size": 79,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/post_meta.css.scss",
-			"settings":
-			{
-				"buffer_size": 82,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_all_ur_base.css.scss",
-			"settings":
-			{
-				"buffer_size": 825,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/modules/_portfolio.css.scss",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/layouts/blog.haml",
-			"settings":
-			{
-				"buffer_size": 601,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/stylesheets/_helpers.css.scss",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 1187,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,14 +72,6 @@
 			"settings":
 			{
 				"buffer_size": 1485,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "source/layouts/project.haml",
-			"settings":
-			{
-				"buffer_size": 1011,
 				"line_ending": "Unix"
 			}
 		}
@@ -196,25 +100,30 @@
 	},
 	"file_history":
 	[
-		"/Users/jan/secure_notes.txt",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_colors.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_blog.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_layout.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_menu_portfolio.css.scss",
-		"/Volumes/sandbox/root/jandrewniak/source/layouts/_site_nav.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_nav_arrows.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_portfolio.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_recent_articles.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_sitenav.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/post_meta.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_colors.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/layouts/project.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_helpers.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/layouts/blog.haml",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/site.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_all_ur_base.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/site.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/layouts/_site_nav.haml",
+		"/Users/jan/secure_notes.txt",
 		"/Volumes/sandbox/root/jandrewniak/config.rb",
 		"/Volumes/sandbox/root/jandrewniak/source/index.html.haml",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_layout.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/portfolio/ego_eco/index.html.md",
 		"/Volumes/sandbox/root/jandrewniak/source/portfolio/ego & eco/index.html.md",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/nav_arrows.css.scss",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/work.html.haml",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_blog.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/javascripts/escaping_flatland.js",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/blog.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/project.haml",
@@ -226,16 +135,12 @@
 		"/Volumes/sandbox/root/jandrewniak/source/javascripts/drafts/canvas.js",
 		"/Volumes/sandbox/root/jandrewniak/build/javascripts/script.js",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/_header_element.haml",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_recent_articles.css.scss",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_portfolio.css.scss",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_sitenav.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/source/layout/_site_nav.haml",
 		"/Volumes/sandbox/root/jandrewniak/source/javascripts/my_face.js",
 		"/Volumes/sandbox/root/jandrewniak/source/images/pointer.svg",
 		"/Volumes/sandbox/root/jandrewniak/source/javascripts/script.js",
 		"/Volumes/sandbox/root/jandrewniak/source/layout.haml",
 		"/Users/jan/Downloads/webfontkit-20130228-060707/stylesheet.css",
-		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_helpers.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/data/work.yml",
 		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/fonts/pixel_maz/pixel_maz.css.scss",
 		"/Volumes/sandbox/root/jandrewniak/Gemfile",
@@ -322,8 +227,7 @@
 		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/javascript/script.js",
 		"/Volumes/ego_eco/root/opencart/catalog/controller/store/main.php",
 		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/store/main.tpl",
-		"/Volumes/ego_eco/root/opencart/catalog/model/checkout/sales_promotion.php",
-		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/product/product.tpl"
+		"/Volumes/ego_eco/root/opencart/catalog/model/checkout/sales_promotion.php"
 	],
 	"find":
 	{
@@ -331,9 +235,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Volumes/sandbox/root/jandrewniak/source/stylesheets",
 			"/Volumes/ego_eco/root/opencart/catalog/controller",
 			"/Volumes/ego_eco/root/opencart/admin",
 			"/Volumes/ego_eco/root/opencart/catalog"
@@ -344,6 +249,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"has_shadow",
 			"has_sh",
 			"green",
 			"iblog",
@@ -486,23 +392,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/layouts/_site_nav.haml",
+					"file": "source/layouts/project.haml",
 					"settings":
 					{
-						"buffer_size": 1483,
+						"buffer_size": 1039,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								886,
-								886
+								800,
+								800
 							]
 						],
 						"settings":
@@ -519,18 +425,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "source/stylesheets/modules/_sitenav.css.scss",
+					"file": "source/stylesheets/modules/_nav_arrows.css.scss",
 					"settings":
 					{
-						"buffer_size": 1199,
+						"buffer_size": 1187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1158,
-								1158
+								820,
+								820
 							]
 						],
 						"settings":
@@ -539,306 +445,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 146.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "source/stylesheets/modules/_menu_portfolio.css.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "source/stylesheets/site.css.scss",
-					"settings":
-					{
-						"buffer_size": 191,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "source/stylesheets/_layout.css.scss",
-					"settings":
-					{
-						"buffer_size": 1053,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								628,
-								628
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "source/stylesheets/modules/_recent_articles.css.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "source/stylesheets/modules/_blog.css.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "source/stylesheets/modules/_project_gallery.css.scss",
-					"settings":
-					{
-						"buffer_size": 79,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "source/stylesheets/modules/post_meta.css.scss",
-					"settings":
-					{
-						"buffer_size": 82,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "source/stylesheets/_all_ur_base.css.scss",
-					"settings":
-					{
-						"buffer_size": 825,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								774,
-								774
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "source/stylesheets/modules/_portfolio.css.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "source/layouts/blog.haml",
-					"settings":
-					{
-						"buffer_size": 601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								168,
-								168
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "source/stylesheets/_helpers.css.scss",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
 					"file": "source/stylesheets/_colors.css.scss",
 					"settings":
 					{
@@ -849,8 +462,8 @@
 						"selection":
 						[
 							[
-								1325,
-								1313
+								128,
+								116
 							]
 						],
 						"settings":
@@ -859,35 +472,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "source/layouts/project.haml",
-					"settings":
-					{
-						"buffer_size": 1011,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								571,
-								571
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 884.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
