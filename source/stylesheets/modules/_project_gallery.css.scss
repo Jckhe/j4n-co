@@ -2,7 +2,8 @@
 	height: 200px;
 	margin-top: -5rem;
 	overflow: hidden;
-	transition: height 0.3s;	
+	transition: height 0.5s;
+	transition-delay: 1s;	
 	figure{
 		max-height: 100%;
 	}
@@ -22,29 +23,42 @@
 	height: 500px;
 }
 
-.project_gallery_item:first-child{
-	display: block;
-}
-
 .project_gallery_item{
 	display: none;
+}
+.project_gallery .project_gallery_item:first-of-type {
+	display: block;
 }
 
 .gallery_operator {
 	display: none;
 }
 
-.gallery_operator:nth-of-type(1):target ~ figure:nth-of-type(1){
+div:nth-of-type(1):target ~ figure:not(:nth-of-type(1)) {
+	display: none;
+}
+
+div:nth-of-type(2):target ~ figure:not(:nth-of-type(2)) {
+	display: none;
+}
+
+div:nth-of-type(3):target ~ figure:not(:nth-of-type(3)) {
+	display: none;
+}
+
+div:nth-of-type(1):target ~ figure:nth-of-type(1){
 	display: block;
 }
 
-.gallery_operator:nth-of-type(2):target ~ figure:nth-of-type(2){
+div:nth-of-type(2):target ~ figure:nth-of-type(2){
 	display: block;
 }
 
-.gallery_operator:nth-of-type(3):target ~ figure:nth-of-type(3){
+div:nth-of-type(3):target ~ figure:nth-of-type(3){
 	display: block;
 }
+
+
 
 .spacer{
 	height: 80px;
