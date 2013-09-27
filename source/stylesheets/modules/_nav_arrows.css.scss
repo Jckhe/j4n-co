@@ -1,40 +1,63 @@
 .nav_flipper{
-	position: relative;
-	width: 50%;
-	height: 40px;
-	-webkit-perspective: 400;
+	position: absolute;
+	width: 40px;
+	height: 100%;
+	top: 0;
+	-webkit-perspective: 200;
   	-webkit-transform-style: preserve-3d;
   	-webkit-backface-visibility: visible;
-  	float: left;
 }
+.nav_flipper.right{
+	right: 0px; 
+}
+
+.nav_flipper.left{
+	left: 0px; 
+}
+
 .next, .previous{
 	position: relative;
 	width: 100%;
-	height: 40px;	
-	background-image:-webkit-linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(10, 140, 250) 70%); 
+	height: 100%;	
+	background-image:-webkit-linear-gradient(0deg, rgb(10, 100, 200) 30%, rgb(10, 140, 250) 70%); 
  	-webkit-transition: all 0.2s ease-in-out;
-	
 	background-size:500% 1px; 
-	padding: 10px;
+	padding: 2px; 
+	overflow: hidden; 
 	img{
 		height: 20px;
 		vertical-align: middle;
+	}
+	a {
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		cursor: inherit;
+		word-break: break-all;
+		font-size: 3.5em;
+		color: white;
+		line-height: 1em;
+		text-align: center;
 	}
 }
 
 .next{
 	text-align: right;
 	-webkit-transform-origin: 0px 0px;
-	background-image:-webkit-linear-gradient(0deg, #A7A7A7 0%, #CCC 100%);
-	background-position: 50% 0;
+	background-image:-webkit-linear-gradient(0deg,#F0F0F0  0%,#FFFFFF  100%);
+	background-position: 100% 0;
+	cursor: url('/images/arrow_next-tiny.png');
 }
 
 .previous{
 	text-align: left;
 	-webkit-transform-origin: 100% 0;
-	background-image:-webkit-linear-gradient(0deg, #CCC 00%, #A7A7A7 100%); 
-	background-position: 50% 0;
+	background-image:-webkit-linear-gradient(0deg, #FFFFFF 0%, #F0F0F0 100%); 
+	background-position: 0 0;
+	cursor: url('/images/arrow_previous-tiny.png');
 }
+
+
 
 .nav_flipper:hover{
 	z-index: 1;

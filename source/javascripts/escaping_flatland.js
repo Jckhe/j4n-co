@@ -1,6 +1,8 @@
 $(document).ready(function(){
+    
 
-    var renderer = new THREE.CanvasRenderer({antialias:true});
+    var renderer = new THREE.CanvasRenderer();
+
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera( 45, $(window).width() / $(window).height(), 0.1, 2000);
     var mouse = { x: 0, y: 0 };

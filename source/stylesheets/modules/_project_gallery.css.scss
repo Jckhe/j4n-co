@@ -1,31 +1,69 @@
 .project_gallery{
-	height: 200px;
+	height: 300px;
 	margin-top: -5rem;
 	overflow: hidden;
 	transition: height 0.5s;
-	transition-delay: 1s;	
+
 	figure{
 		max-height: 100%;
+		text-align: center;
 	}
-
+	img{
+		max-width: 95%;
+		transition: -webkit-transform 0.3s; 
+		-webkit-transform: rotate(0);	
+		-webkit-transform-origin: top center;
+	}
 	figcaption{
-		position: absolute;
-		top: 290px;
 		width: 100%;
-		padding-bottom: 4em;
 		background-color: #FFF;
-		text-align: right;
+		background-color: rgba(134, 134, 134, 0.64);
+		text-align: left;
+		position: absolute; 
+		color: white;
+		bottom: -2.6em; 
+		transition: all 0.3s; 
 	}
 }
+
+.scroll_wrapper {
+	overflow: hidden; 
+	height: 100%; 
+	position: relative; 
+	padding-top: 83px; 
+}
+
 
 .project_gallery:hover{
-	overflow: auto;
-	height: 500px;
+	img{
+		-webkit-transform: rotate(-1deg);	
+	}
+	figcaption{
+		top: auto; 
+		bottom: 0; 
+	}
 }
+
+.project_gallery.active{
+	overflow: hidden;
+	height: 600px;
+
+	.scroll_wrapper{
+		overflow: auto; 
+	}
+
+	img{
+		-webkit-transform: rotate(0);	
+	}
+
+}
+
 
 .project_gallery_item{
 	display: none;
+	cursor: pointer; 
 }
+
 .project_gallery .project_gallery_item:first-of-type {
 	display: block;
 }
@@ -46,6 +84,15 @@ div:nth-of-type(3):target ~ figure:not(:nth-of-type(3)) {
 	display: none;
 }
 
+div:nth-of-type(4):target ~ figure:not(:nth-of-type(4)) {
+	display: none;
+}
+
+div:nth-of-type(5):target ~ figure:not(:nth-of-type(5)) {
+	display: none;
+}
+
+
 div:nth-of-type(1):target ~ figure:nth-of-type(1){
 	display: block;
 }
@@ -58,19 +105,26 @@ div:nth-of-type(3):target ~ figure:nth-of-type(3){
 	display: block;
 }
 
+div:nth-of-type(4):target ~ figure:nth-of-type(4){
+	display: block;
+}
 
+div:nth-of-type(5):target ~ figure:nth-of-type(5){
+	display: block;
+}
 
 .spacer{
 	height: 80px;
 	width: 100%;
 }
 .project_gallery_nav{
-background-color: #FFF;
-font-size: 0.8em;
-padding: 1em;
-position: absolute;
-text-align: center;
-width: 100%;
+	background-color: #FFF;
+	font-size: 0.8em;
+	padding: 1em;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1; 
 }
 
 .project_gallery_nav a{

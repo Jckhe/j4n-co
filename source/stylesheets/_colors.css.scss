@@ -19,7 +19,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	background-color: $yellow;	
 }
 .yellow:hover{
-	background-color: $yellow_h;
+//	background-color: $yellow_h;
 }
 
 .dark_yellow_text{
@@ -29,14 +29,14 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	background-color: $aqua;	
 }
 .aqua:hover{
-	background-color: $aqua_h;
+//	background-color: $aqua_h;
 }
 
 .redish{
 	background-color: $redish;
 }
 .redish:hover{
-	background-color: $redish_h;
+//	background-color: $redish_h;
 }
 .redish_text{
 	color: $redish_h !important;
@@ -47,7 +47,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 }
 
 .light_green:hover{
-	background-color: $light_green_h;
+//	background-color: $light_green_h;
 }
 
 .pad{
@@ -81,6 +81,9 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 }
 .has_shadow{
 	@include box-shadow(0 4px 7px -2px rgba(0, 0, 0, 0.52));
+}
+.has_top_shadow{
+	@include box-shadow(0 -2px 4px -2px rgba(0, 0, 0, 0.52));	
 }
 .text_shadow{
 	@include text-shadow(1px 1px 0 black);

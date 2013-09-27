@@ -3,15 +3,16 @@
     
     .section.work.yellow{:alt=>"portfolio", :class => current_page.url.match(/^\/portfolio\/.*\/$/) ? "current_section" : '' } 
       - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
+      - pages = pages.sort{|a,b| a.data.order - b.data.order }
       - pages.each do |page|
         %a{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
           %img{:src=>page.data.icon}>
 
     
-    .section.tools.aqua 
-      - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
-      - pages.each do |page|
-        %a{:href=>page.url.chomp('/')}>
+    .section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : ''}  
+      - projects = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
+      - projects.each do |page|
+        %a{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
           %img{:src=>page.data.icon}>
 
     .section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 

@@ -21,11 +21,13 @@
             
             - current_page.data.gallery_images.each_with_index do |img, index|
               
-              %figure.project_gallery_item 
-                .spacer
-                %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
-                
-            .project_gallery_nav.pixel_font
+              %figure.project_gallery_item
+                .scroll_wrapper
+                  %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
+                %figcaption
+                  = img.caption
+
+            .project_gallery_nav.pixel_font.has_top_shadow
               - current_page.data.gallery_images.each_with_index do |img, index|
                 %a{:href=>"#gallery_#{index}"} &#9632
 
@@ -33,20 +35,20 @@
           .centered_measure
             = yield   
         
-          .nav_flipper
+          .nav_flipper.left
             .previous
-              =image_tag 'arrow_previous-tiny.svg'
+              //=image_tag 'arrow_previous-tiny.svg'
               - prev_page = pages[index-1]
               - prev_page.nil? ? prev_page = pages.last : '' ;
-              %a.pixel_font{:href=>prev_page.url} retreat
+              %a.pixel_font{:href=>prev_page.url} previous
 
-          .nav_flipper
+          .nav_flipper.right
             .next
               - next_page = pages[index+1]
               - next_page.nil? ? next_page = pages.last : '' ;
-              %a.pixel_font{:href=>next_page.url} onward
-              =image_tag 'arrow_next-tiny.svg'
-          
+              //=image_tag 'arrow_next-tiny.svg'
+              %a.pixel_font{:href=>prev_page.url} next
+
           .clear 
 
   = javascript_include_tag "jquery.min.js"  

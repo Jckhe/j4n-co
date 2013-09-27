@@ -20,7 +20,7 @@
 }
 
 .section.current_section {
-	max-width: 10em;
+	max-width: 20em;
 }
 
 .section {
@@ -30,8 +30,9 @@
 	max-width: 0em;
 	overflow: hidden;
 	white-space: nowrap;
-	background-image: url('/images/icons.png');
+	background-image: url('/images/menu_icons.png');
 	background-repeat: no-repeat;
+	background-size: 1.5em auto;
 	background-position:  6px 12px; 
 	transition: max-width 0.5s ease-out;
 	-webkit-backface-visibility: hidden;
@@ -39,48 +40,52 @@
 }
 
 .section.work{
-	background-position: 8px  -100px; 
+	background-position: 3px  20px; 
 }
 
 .section.tools{
-	background-position: 8px 23px; 
+	background-position: 3px -68px; 
 }
 
 .section.blog{
-	background-position: 8px -37px; 	
+	background-position: 3px -156px; 	
 }
 .section.about{
-	background-position: 8px -163px;
+	background-position: 3px -245px;
 }
 .section img {
 	display: block;
 	transition: opacity 0.1s ease-in;
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
+	opacity: 0.5;
 }
 .section:hover{
-	max-width: 10em;
+	max-width: 20em;
 }
 
 .section a {
 	display: inline-block;
 	cursor: pointer;
-	width: 3em;
+	min-width: 3em;
 	overflow: hidden;
 }
 
 .section a img {
-	opacity: 0.5;
-	height: 100%;
+	height: 80%;
 	cursor: pointer;
+	margin-top: 10%;
+	transition: all 0.2s;
+	margin: 10% auto;
 }
 
-.section a.current_page img{
-	opacity: 1
-}
-
-.section a:hover img {
-	opacity: 1;
+.section a:hover img,  .section a.current_page img{
+	position: relative;
+	top: -2px; 
+	left: -2px; 
+	z-index: 3; 
+	box-shadow: 2px 2px 7px -3px rgba(0,0,0,0.4); 
+	opacity: 1; 
 }
 
 .section.blog > a {
