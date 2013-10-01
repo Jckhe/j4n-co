@@ -1,0 +1,14 @@
+- pages = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
+
+%H1
+  Experiments
+
+%p
+  This is a selection of stuff I've made professionally. 
+
+
+- pages.each do |page|
+  %a.thumbnail.large_thumbnail.has_shadow{:href=>page.url.chomp('/') }>
+    %p.page_description.white_pixel_font.large
+      =page.data.title
+    %img{:src=>page.url+"icon.png"}>

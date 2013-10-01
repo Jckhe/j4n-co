@@ -12,7 +12,7 @@ date: 2012/09/1
 .blue_block{
   width: 150px; 
   height: 150px; 
-  margin:1em; 
+  margin:0; 
   float: left; 
 }
 .blue_block > *{
@@ -35,12 +35,6 @@ date: 2012/09/1
 }
 </style>
 
-<p>
-Can you guess which shade of blue belongs to which startup? 
-I sure as hell can't. 
-</p> 
-
-
 <div class="blue_block" style="background-color: #1eb9ea">
   <p>
     <img style="margin-top:62px;" src="/images/blog/windows8-logo.png" /> 
@@ -53,10 +47,16 @@ I sure as hell can't.
   </p> 
 </div> 
 
+
 <div class="blue_block" style="background-color: #3079f0">
   <p>
     <img src="https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAs7Y/yFVd0T5kw-o/photo.jpg"/>
   </p> 
+</div> 
+
+
+<div class="blue_block" style="background-color:#315499">
+  <img style="margin-top:55px;" src="http://1.bp.blogspot.com/_wICHhTiQmrA/TUBWbCpI5eI/AAAAAAAAE0Y/fhSI1bGZOTc/s1600/facebook-logo.jpg"/> 
 </div> 
 
 <div class="blue_block" style="background-color: #007dc6">
@@ -64,17 +64,17 @@ I sure as hell can't.
   <img style="margin-top:50px;" src="images/blog/bingLogo_lg-transparent.png"/> 
   </p> 
 </div> 
+
+
+
 <div class="blue_block" style="background-color: #1b6cb5">
   <img style="margin-top:62px;" src="https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.png"/> 
 </div> 
-<div class="blue_block" style="background-color:#315499">
-  <img style="margin-top:55px;" src="http://1.bp.blogspot.com/_wICHhTiQmrA/TUBWbCpI5eI/AAAAAAAAE0Y/fhSI1bGZOTc/s1600/facebook-logo.jpg"/> 
-</div> 
+
 
 <div class="blue_block" style="background-color:  #006699">
   <img style="margin-top: 62px;" src="/images/blog/LinkedIn-Logo.png"/>
 </div> 
-
 
 <div class="blue_block" style="background-color: #43546b">
   <img  style="margin-top: 62px;" src="/images/blog/tumblr_on_dark.png"/> 

@@ -5,23 +5,21 @@ order: 3
 
 meta_description: "Ego & Eco is an design boutique specializing in Polish Design."
 
-icon: /portfolio/ego_eco/icon.png
-
 gallery_images:
   -
-    url: '/portfolio/ego_eco/ego_eco_1.png' 
+    url: 'ego_eco_1.png' 
     caption: 'egoeco.eu'
   -
-    url: '/portfolio/ego_eco/ego_eco_2.png' 
+    url: 'ego_eco_2.png' 
     caption: 'this is an image caption'
   -
-    url: '/portfolio/ego_eco/ego_eco_3.png' 
+    url: 'ego_eco_3.png' 
     caption: 'this is an image caption'
   -
-    url: '/portfolio/ego_eco/ego_eco_4.png' 
+    url: 'ego_eco_4.png' 
     caption: 'this is an image caption'
   -
-    url: '/portfolio/ego_eco/ego_eco_5.png' 
+    url: 'ego_eco_5.png' 
     caption: 'this is an image caption'
 ---
 

@@ -1,12 +1,14 @@
 ###
 # Blog settings
 ###
-
-page "portfolio/*", :layout => "project"
+page "work/*", :layout => "project"
+page "work", :layout => "index"
+page "lab", :layout => "index"
+page "/", :layout => "fullscreen"
 
 activate :blog do |blog|
   blog.permalink = "/thoughts/:title.html"
-  blog.sources = "/thoughts/:title.html"
+  blog.sources = "/thoughts/:title/index.html"
   # blog.taglink = "tags/:tag.html"
   blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
@@ -17,7 +19,7 @@ activate :blog do |blog|
   # blog.default_extension = ".markdown"
   # blog.prefix = ""
   # blog.tag_template = "tag.html"
-  # blog.calendar_template = "calendar.html"
+ blog.calendar_template = "/thoughts/calendar.html"
 end
 
 page "/feed.xml", :layout => false

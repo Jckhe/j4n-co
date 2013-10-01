@@ -1,8 +1,8 @@
 body * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body{
-	background: url('../images/grid.png') repeat 0 0 #DDD;
-	font-family: 'Asap';
+	background: url('../images/grid.png') repeat 0 0 #FFF;
+	font-family: 'Titillium Web', sans-serif;;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -36,8 +36,12 @@ body{
 	background-color: white;
 	font-size: 0.8em;
 	position:relative;
+	padding: 0.1px; 
 }
 
+.main.index_page{
+	background-color: transparent;
+}
 
 .main * {
 	max-width: 100%;
@@ -76,8 +80,10 @@ header{
 }
 
 .centered_measure{
-	max-width: 33em;
+	max-width: 38em;
 	margin: 0 auto;
 	margin-bottom: 8em;
 	margin-top: 4em;
+	padding: 0.1px; 
+	font-size: 16px; 
 }

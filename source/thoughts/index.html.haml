@@ -1,0 +1,19 @@
+.centered_measure
+
+	%h1
+		Thoughts
+
+	%ul.year_list
+		- blog.articles.group_by {|y| y.date.year }.each do |year, articles|
+			%li.year_item
+				.dotted_underline.redish_text
+					= year
+				%ul.month_list
+					-articles.group_by {|a| a.date.month}.each do |month, month_articles|
+						%li.month_item
+							%strong
+								= month_articles.first.date.strftime("%B")
+							%ul.article_list
+								- month_articles.each do |article|
+									%li.article_item
+										= link_to article.data.title, article

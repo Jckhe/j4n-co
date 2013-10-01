@@ -1,4 +1,5 @@
 $light_grey: #DDD;
+$medium_grey: #B3B3B3; 
 $dark_grey: #535353;
 $yellow: #E5CE49;
 $aqua: #71C2C4;
@@ -19,7 +20,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	background-color: $yellow;	
 }
 .yellow:hover{
-//	background-color: $yellow_h;
+	background-color: $yellow_h;
 }
 
 .dark_yellow_text{
@@ -29,14 +30,14 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	background-color: $aqua;	
 }
 .aqua:hover{
-//	background-color: $aqua_h;
+	background-color: $aqua_h;
 }
 
 .redish{
 	background-color: $redish;
 }
 .redish:hover{
-//	background-color: $redish_h;
+	background-color: $redish_h;
 }
 .redish_text{
 	color: $redish_h !important;
@@ -47,7 +48,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 }
 
 .light_green:hover{
-//	background-color: $light_green_h;
+	background-color: $light_green_h;
 }
 
 .pad{
@@ -100,4 +101,14 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 .clear{
 	clear: both;
 	width: 100%;
+}
+
+a.white{
+	color: white; 
+}
+a.white:hover{
+	color: inherit;
+}
+a.white:visited{
+	color: white; 
 }

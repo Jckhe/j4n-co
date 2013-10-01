@@ -1,4 +1,4 @@
-- pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
+- pages = sitemap.resources.find_all{|p| p.url.match(/^\/work\/.*\/$/)  }
 - index = pages.index(current_page)
 %html{:lang => 'en'}
   
@@ -10,9 +10,6 @@
 
     %section.main.projects  
 
-      %h1.text_shadow
-        =current_page.data.title
-
       %article
         - if current_page.data.gallery_images
           .project_gallery        
@@ -23,7 +20,7 @@
               
               %figure.project_gallery_item
                 .scroll_wrapper
-                  %img{:src=>img.url, :id=>'slide_', :class=>'gallery_large'} 
+                  %img{:src=>current_page.url+img.url, :id=>'slide_', :class=>'gallery_large'} 
                 %figcaption
                   = img.caption
 
@@ -32,26 +29,32 @@
                 %a{:href=>"#gallery_#{index}"} &#9632
 
         .article_content.white_bg.has_shadow
+
           .centered_measure
+
+            %h1.text_shadow
+              =current_page.data.title
+              
             = yield   
         
           .nav_flipper.left
             .previous
-              //=image_tag 'arrow_previous-tiny.svg'
+              /=image_tag 'arrow_previous-tiny.svg'
               - prev_page = pages[index-1]
               - prev_page.nil? ? prev_page = pages.last : '' ;
-              %a.pixel_font{:href=>prev_page.url} previous
+              %a.pixel_font{:href=>prev_page.url}
+                <
 
           .nav_flipper.right
             .next
               - next_page = pages[index+1]
               - next_page.nil? ? next_page = pages.last : '' ;
-              //=image_tag 'arrow_next-tiny.svg'
-              %a.pixel_font{:href=>prev_page.url} next
+              /=image_tag 'arrow_next-tiny.svg'
+              %a.pixel_font{:href=>prev_page.url} 
+                >
 
           .clear 
 
   = javascript_include_tag "jquery.min.js"  
-  = javascript_include_tag "my_face.js"  
  
   = yield_content(:javascript)

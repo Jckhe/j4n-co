@@ -1,22 +1,14 @@
 ---
-title: "Skedx"
+title: "Studio 111"
 
-order: 2
+order: 4
 
-meta_description: "The Skedx Web Application Interface Design"
-
-icon: /portfolio/skedx/icon.png
+meta_description: "Studio 111"
 
 gallery_images:
   -
-    url: '/portfolio/skedx/skedx_1.png' 
+    url: 'studio111_1.png' 
     caption: 'The Skedx schedule creation tool is fully drag & drop, features weekly and daily views, and dynamically calculates labour costs, breaks and overtime.'
-  -
-    url: '/portfolio/skedx/skedx_2.png' 
-    caption: 'this is an image caption'
-  -
-    url: '/portfolio/skedx/skedx_3.png' 
-    caption: 'this is an image caption'
 ---
 
 <aside>

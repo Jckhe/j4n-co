@@ -1,36 +1,48 @@
 %header.top_bar.dark_grey
   %nav.sitenav
     
-    .section.work.yellow{:alt=>"portfolio", :class => current_page.url.match(/^\/portfolio\/.*\/$/) ? "current_section" : '' } 
-      - pages = sitemap.resources.find_all{|p| p.url.match(/^\/portfolio\/.*\/$/)  }
+    .section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '' } 
+      %a.index_link{:href=>"/work"}
+        work
+      - pages = sitemap.resources.find_all{|p| p.url.match(/^\/work\/.*\/$/)  }
       - pages = pages.sort{|a,b| a.data.order - b.data.order }
-      - pages.each do |page|
-        %a{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-          %img{:src=>page.data.icon}>
+      .dropdown
+        %h2.small_heading.white_pixel_font
+          work 
+        - pages.each do |page|
+          %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
+            %img{:src=>page.url+"icon.png"}>
 
     
     .section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : ''}  
+      %a.index_link{:href=>"/lab"}
+        lab
       - projects = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
-      - projects.each do |page|
-        %a{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-          %img{:src=>page.data.icon}>
+      .dropdown
+        %h2.small_heading.white_pixel_font
+          experiments 
+        - projects.each do |page|
+          %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
+            %img{:src=>page.url+"icon.png"}>
 
     .section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 
-
-      - blog.articles[0...1].each do |article|
-        %a.small_heading.white_pixel_font{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
-          = article.title
+      %a.index_link{:href=>"/thoughts"}
+        thoughts
+      .dropdown
+        %h2.small_heading.white_pixel_font
+          recent posts 
+        - blog.articles[0...5].each do |article|
+          %a.white{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
+            = article.title
     
     .section.light_green.about
-      %p.small_heading.white_pixel_font
-        what is this? 
-
-      %p
-        %canvas#my_face
-          %img#my_face_avatar{:src=>'/images/avatar.png'}
-        %small
-          This is a website, silly. The real question is <em>Who am I</em>? I'm <a rel="author" href="https://plus.google.com/104672941806561920576/about?rel=author">Jan</a> and I make web-stuff. By day I'm an interface designer at a startup in Toronto, by night I'm... probably sleeping. 
-          
+      .dropdown
+        %h2.small_heading.white_pixel_font
+          Jan Drewniak (that's me)
+        %img#my_face_avatar{:src=>'/images/avatar.png'}
+        %p.about_me
+          I make the netting in your internettings. UI Design, front-end development & such. Residing in WAW and hailing from YYZ. 
+            
     .background_mask.has_shadow
   %a.tagline.iblock{:href=>'/'}
-    Art + Code for fun and pr
+    Art + Code for fun and profit

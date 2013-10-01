@@ -5,15 +5,10 @@ order: 1
 
 meta_description: "Bridge Stuff."
 
-icon: /portfolio/bridge/icon.png
-
 gallery_images:
   -
-    url: '/portfolio/bridge/bridge_1.png' 
+    url: 'bridge_1.png' 
     caption: 'egoeco.eu'
-  -
-    url: '/portfolio/bridge/bridge_2.png' 
-    caption: 'this is an image caption'
 ---
 
 **WHAT IT IS -** 

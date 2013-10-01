@@ -7,6 +7,7 @@
 
 .sitenav{
 	margin-right: 2em;
+	margin-left: 2em;
 }
 .top_bar{
 	a {
@@ -24,17 +25,16 @@
 }
 
 .section {
+	position: relative;
 	float: left;
 	height: 3em;
 	padding-left: 2em;
 	max-width: 0em;
-	overflow: hidden;
 	white-space: nowrap;
 	background-image: url('/images/menu_icons.png');
 	background-repeat: no-repeat;
 	background-size: 1.5em auto;
 	background-position:  6px 12px; 
-	transition: max-width 0.5s ease-out;
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
 }
@@ -49,6 +49,8 @@
 
 .section.blog{
 	background-position: 3px -156px; 	
+	white-space: normal;
+	width: 200px;	
 }
 .section.about{
 	background-position: 3px -245px;
@@ -60,25 +62,55 @@
 	-webkit-perspective: 1000;
 	opacity: 0.5;
 }
-.section:hover{
-	max-width: 20em;
+
+.dropdown{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	max-width: 500px;
+	background-color: inherit;
+	padding: 0.5em;
+	border-radius: 0 0 10px 10px; 
 }
 
-.section a {
+.blog .dropdown{
+	width: 400px;
+}
+.blog .dropdown a{
+	display: block;
+}
+
+.section:hover .dropdown, .dropdown:hover{
+	display: block;
+}
+.section a.thumbnail {
 	display: inline-block;
 	cursor: pointer;
-	min-width: 3em;
 	overflow: hidden;
+	position: relative;
 }
-
+.section a.index_link{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+	color: transparent;
+}
 .section a img {
-	height: 80%;
+	height: 40px;
 	cursor: pointer;
 	margin-top: 10%;
 	transition: all 0.2s;
 	margin: 10% auto;
 }
+.thumbnail {
+	min-width: 3em;
 
+}
 .section a:hover img,  .section a.current_page img{
 	position: relative;
 	top: -2px; 
@@ -88,9 +120,22 @@
 	opacity: 1; 
 }
 
-.section.blog > a {
-	vertical-align: middle;
-	margin-top: 1.5em;
-	margin-right: 1em;
-	color: #FFF;
+.section.about{
+	white-space: normal;
+}
+
+#my_face_avatar{
+	height: 40px;
+	opacity: 1;
+	display: inline;
+	vertical-align: top;
+	float: left;
+	margin-right: 0.5em;
+}
+
+.about_me{
+	position: relative;
+	width: 400px;
+	margin: 0;
+	font-family: monospace;
 }

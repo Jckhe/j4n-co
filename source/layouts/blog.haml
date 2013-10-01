@@ -6,14 +6,32 @@
 
     = partial "layouts/site_nav"
     
-    %section.main.blog
-      %h1.text_shadow
-        = current_page.data.title
+    %section.main.has_shadow
+      %article
+        .centered_measure
+          %h1.text_shadow
+            = current_page.data.title
+          = yield   
 
-      
-      %article.article_wrapper.has_shadow.clear
-        = yield   
-      
+
+      .nav_flipper.right
+        .next
+          /=image_tag 'arrow_previous-tiny.svg'
+          - prev_page = current_article.previous_article
+          - unless prev_page.nil?
+            %a.pixel_font{:href=>prev_page.url}
+              >
+
+      .nav_flipper.left
+        .previous
+          - next_page = current_article.next_article
+          - unless next_page.nil? 
+            %a.pixel_font{:href=>next_page.url} 
+              <
+
+
+      .clear
+
       %footer.post_meta
         %address
           by Jan Drewniak
@@ -23,6 +41,5 @@
           = current_page.data.date
 
   = javascript_include_tag "jquery.min.js"  
-  = javascript_include_tag "my_face.js"  
     
   = yield_content(:javascript)
