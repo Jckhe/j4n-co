@@ -4,8 +4,9 @@
     .section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '' } 
       %a.index_link{:href=>"/work"}
         work
-      - pages = sitemap.resources.find_all{|p| p.url.match(/^\/work\/.*\/$/)  }
-      - pages = pages.sort{|a,b| a.data.order - b.data.order }
+      - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
+
+
       .dropdown
         %h2.small_heading.white_pixel_font
           work 

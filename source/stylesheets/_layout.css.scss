@@ -82,8 +82,18 @@ header{
 .centered_measure{
 	max-width: 38em;
 	margin: 0 auto;
-	margin-bottom: 8em;
-	margin-top: 4em;
 	padding: 0.1px; 
 	font-size: 16px; 
+}
+
+.centered_measure.with_bottom_margin{
+	margin-bottom: 8em;
+}
+
+.centered_measure.with_top_margin{
+	margin-top: 4em;
+}
+
+.project_title{
+	margin-bottom: 0; 
 }

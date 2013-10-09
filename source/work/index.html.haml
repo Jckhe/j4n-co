@@ -1,4 +1,4 @@
-- pages = sitemap.resources.find_all{|p| p.url.match(/^\/work\/.*\/$/)  }
+- pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
 
 %H1
   Work
