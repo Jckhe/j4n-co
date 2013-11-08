@@ -5,7 +5,7 @@
       %a.index_link{:href=>"/work"}
         work
       - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
-
+      - pages.sort!{|a, b| a.data.order <=> b.data.order}
 
       .dropdown
         %h2.small_heading.white_pixel_font

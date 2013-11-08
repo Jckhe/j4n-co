@@ -1,10 +1,10 @@
-- pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
+- pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }.sort!{|a, b| a.data.order <=> b.data.order}
 
 %H1
   Work
 
 %p
-  This is a selection of stuff I've made for fun. 
+  This is the kind of stuff I do for a living. 
 
 
 - pages.each do |page|

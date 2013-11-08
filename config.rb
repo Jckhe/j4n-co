@@ -6,6 +6,8 @@ page "work", :layout => "index"
 page "lab", :layout => "index"
 page "/", :layout => "fullscreen"
 
+activate :livereload
+
 activate :blog do |blog|
   blog.permalink = "/thoughts/:title.html"
   blog.sources = "/thoughts/:title/index.html"

@@ -1,7 +1,7 @@
 ---
 title: "Ego & Eco"
 
-order: 3
+order: 2
 
 meta_description: "Ego & Eco is an design boutique specializing in Polish Design."
 
@@ -25,6 +25,7 @@ gallery_images:
 
 <div class="centered_measure">
 <strong>Polish Design Boutique in Warsaw.</strong> 
+<hr/>  
   <dl>
     <dt>WHAT IT IS</dt>
     <dd>
@@ -35,9 +36,16 @@ gallery_images:
   <dl>
     <dt>WHAT I DID</dt>
     <dd>
-      I did the development of their e-commerce site, egoeco.eu
+      I developed the e-commerce site, egoeco.eu. The site was developed using openCart. It featured a blog, a special section for featured designers, product zooming and a smooth two step checkout process. 
     </dd>
   </dl>
+
+  <dl>
+    <dt>HOW I DID IT</dt>
+    <dd>
+      HTML/CSS/JS on OpenCart. Standard Apache/PHP/MySQL stack.  
+    </dd>
+  </dl>  
 </div> 
 
 <figure class="gifcast">

@@ -1,7 +1,7 @@
 ---
 title: "Skedx"
 
-order: 2
+order: 3
 
 meta_description: "The Skedx Web Application Interface Design"
 
@@ -12,7 +12,6 @@ gallery_images:
 
 ---
 
-<div class="centered_measure">
 <strong>Employee scheduling made easy.</strong> 
 <p>
 Remember your first job? At that clothing shop or restaurant? 
@@ -44,10 +43,18 @@ Remember how people would constantly be posting changes, trading shifts, or call
 <dl>
 	<dt>WHAT I DID</dt>
 	<dd>
-		I designed all aspects of the interface, then I made it real, using <dfn title="With my bare hands!">CSS/HTML/JS</dfn>. Skedx is built using <dfn title="I had a deep dive in that too">Ruby on Rails</dfn>.I was also responsible for the marketing website: <a href="http://skedx.com">skedx.com</a>. 
-	</dd>
+		I designed all aspects of the interface, then I turned it into reality.  
+    I also designed and built the marketing website: <a href="http://skedx.com">skedx.com</a>.
+  </dd>
 </dl>
-</div> 
+
+<dl>
+  <dt>HOW I DID IT</dt>
+  <dd>
+      <dfn title="With my bare hands!">CSS/HTML/JS</dfn>. Skedx is built on <dfn title="I had a deep dive in that too">Ruby on Rails</dfn>.  
+    </dd>
+</dl>
+
 
 <figure class="gifcast">
 	<img id="anim_target_skedxgifcast" src="skedx/skedx_gifcast/skedxgifcast.jpg" width="700" height="525"/>

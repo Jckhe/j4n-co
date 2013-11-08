@@ -36,7 +36,8 @@ body{
 	background-color: white;
 	font-size: 0.8em;
 	position:relative;
-	padding: 0.1px; 
+	//prevent border collapse
+	padding: 1px; 
 }
 
 .main.index_page{
