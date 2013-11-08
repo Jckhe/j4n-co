@@ -11,99 +11,74 @@
     <meta content="So You're looking for a UX Design Ninja™... I eat ninjas for breakfast." name='description' />
     <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
     <link href='/images/favicon.png' rel='icon' type='image/png' />
-    <link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css' />
+    <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
     <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascripts/script.js" type="text/javascript"></script>
     
   </head>
   <body class='base'>
     <header class='top_bar dark_grey'>
-  <nav class='sitenav iblock'>
-    <a alt='portfolio' class='section_link yellow' href='#portfolio'>portfolio</a>
-    <div class='section yellow has_shadow'>
-      <div class='work_section'>
-        <p class='white_pixel_font small_heading'>
-          stuff
+  <nav class='sitenav'>
+    <div alt='portfolio' class='section work yellow'>
+      <a class='index_link' href='/work'>
+        work
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          work
+        </h2><a class='thumbnail' href='/work/bridge'><img src='/work/bridge/icon.png' /></a><a class='thumbnail' href='/work/ego_eco'><img src='/work/ego_eco/icon.png' /></a><a class='thumbnail' href='/work/skedx'><img src='/work/skedx/icon.png' /></a></div>
+    </div>
+    <div alt='lab' class='aqua section tools'>
+      <a class='index_link' href='/lab'>
+        lab
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          experiments
+        </h2><a class='thumbnail' href='/lab/flatland'><img src='/lab/flatland/icon.png' /></a><a class='thumbnail' href='/lab/game_of_life'><img src='/lab/game_of_life/icon.png' /></a></div>
+    </div>
+    <div alt='blog' class='blog redish section'>
+      <a class='index_link' href='/thoughts'>
+        thoughts
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          recent posts
+        </h2>
+        <a class='white' href='/thoughts/google_drive.html'>
+          Google Drive
+        </a>
+        <a class='white' href='/thoughts/the_internet_blues.html'>
+          The Internet Blues
+        </a>
+        <a class='white' href='/thoughts/what_is_a_web_app_part_2.html'>
+          Understanding Web Apps part 2
+        </a>
+        <a class='white' href='/thoughts/What_is_a_web_app.html'>
+          Understanding Webapps part 1
+        </a>
+        <a class='white' href='/thoughts/hello_world.html'>
+          Hello World
+        </a>
+      </div>
+    </div>
+    <div class='section light_green about'>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          Jan Drewniak (that's me)
+        </h2>
+        <img id='my_face_avatar' src='/images/avatar.png' />
+        <p class='about_me'>
+          I make the netting in your internettings. UI Design, front-end development & such. Residing in WAW and hailing from YYZ.
         </p>
-        <a class='work_link has_shadow' href='/portfolio/skedx'>
-          <img src='/portfolio/skedx/icon.jpg' />
-          <span class='pixel_font dark_yellow_text'>
-            Skedx
-          </span>
-        </a>
-      </div>
-      <div class='work_section'>
-      </div>
-      <div class='work_section'>
-        <span class='pixel_font dark_yellow_text'>
-          I'll be adding more <br/>
-          stuff here real soon, <br/>
-          pinky swear.
-        </span>
       </div>
     </div>
-    <a alt='blog' class='section_link aqua' href='#'>blog</a>
-    <div class='section aqua has_shadow'>
-      <!-- /%a.right.white_pixel_font.redish_text{:href=>"#"} -->
-      <!-- /  archive -->
-      <p class='small_heading white_pixel_font'>
-        My two cents
-      </p>
-      <div class='recent_articles'>
-        <a class='prev white_pixel_font'>
-          &#9650;
-        </a>
-        <div class='articles'>
-          <a class='article_title' href='/thoughts/google_drive.html'>
-            Google Drive
-          </a>
-        </div>
-        <div class='articles'>
-          <a class='article_title' href='/thoughts/the_internet_blues.html'>
-            The Internet Blues
-          </a>
-        </div>
-        <div class='articles'>
-          <a class='article_title' href='/thoughts/what_is_a_web_app_part_2.html'>
-            Understanding Web Apps part 2
-          </a>
-        </div>
-        <div class='articles'>
-          <a class='article_title' href='/thoughts/what_is_a_web_app.html'>
-            Understanding Webapps part 1
-          </a>
-        </div>
-        <div class='articles'>
-          <a class='article_title' href='/thoughts/hello_world.html'>
-            Hello World
-          </a>
-        </div>
-        <a class='next white_pixel_font'>
-          &#9660;
-        </a>
-      </div>
-    </div>
-    <a alt='about' class='section_link redish has_shadow' href='#'>about</a>
-    <div class='section redish has_shadow'>
-      <p class='small_heading white_pixel_font'>
-        what is this?
-      </p>
-      <p>
-        <canvas id='my_face'>
-          <img id='my_face_avatar' src='/images/avatar.png' />
-        </canvas>
-        <small>
-          This is a website, silly. The real question is <em>Who am I</em>? I'm <a rel="author" href="https://plus.google.com/104672941806561920576/about?rel=author">Jan</a> and I make web-stuff. By day I'm an interface designer at a startup in Toronto, by night I'm... probably sleeping.
-        </small>
-      </p>
-    </div>
-    <!-- /%a.section_link.light_green{:href=>'#', :alt=>"contact"} contact -->
-    <!-- /.section.light_green.has_shadow -->
-    <!-- /  %p.small_heading.white_pixel_font -->
-    <!-- /    contact -->
     <div class='background_mask has_shadow'></div>
   </nav>
   <a class='tagline iblock' href='/'>
-    Art + Code for fun and pr
+    Art + Code for fun and profit
   </a>
 </header>
     <section class='main has_shadow'>
@@ -573,6 +548,5 @@
     </section>
   </body>
   <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
-  <script src="/javascripts/my_face.js" type="text/javascript"></script>
   
 </html>
