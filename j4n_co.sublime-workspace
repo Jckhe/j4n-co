@@ -1,0 +1,549 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"backgroun",
+				"background-repeat"
+			],
+			[
+				"title",
+				"haxisTitle"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tool",
+				"toolbar_bg"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"getFront",
+				"getFrontPageDescriptions"
+			],
+			[
+				"front",
+				"front_page_description"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"center",
+				"center_banner_container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/layouts/project.haml",
+			"settings":
+			{
+				"buffer_size": 1039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/modules/_nav_arrows.css.scss",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/_colors.css.scss",
+			"settings":
+			{
+				"buffer_size": 1485,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 112.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_blog.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_layout.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_menu_portfolio.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_nav_arrows.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_portfolio.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_recent_articles.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_sitenav.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/post_meta.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_colors.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/layouts/project.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_helpers.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/layouts/blog.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/_all_ur_base.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/site.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/layouts/_site_nav.haml",
+		"/Users/jan/secure_notes.txt",
+		"/Volumes/sandbox/root/jandrewniak/config.rb",
+		"/Volumes/sandbox/root/jandrewniak/source/index.html.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/ego_eco/index.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/ego & eco/index.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/nav_arrows.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_project_gallery.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/work.html.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/javascripts/escaping_flatland.js",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/blog.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/project.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/blog/google_drive.md",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/layout.haml",
+		"/Volumes/sandbox/root/kirbycms/.htaccess",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/skedx/index.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/fonts/pixel_maz/_fonts.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/source/javascripts/drafts/canvas.js",
+		"/Volumes/sandbox/root/jandrewniak/build/javascripts/script.js",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/_header_element.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/layout/_site_nav.haml",
+		"/Volumes/sandbox/root/jandrewniak/source/javascripts/my_face.js",
+		"/Volumes/sandbox/root/jandrewniak/source/images/pointer.svg",
+		"/Volumes/sandbox/root/jandrewniak/source/javascripts/script.js",
+		"/Volumes/sandbox/root/jandrewniak/source/layout.haml",
+		"/Users/jan/Downloads/webfontkit-20130228-060707/stylesheet.css",
+		"/Volumes/sandbox/root/jandrewniak/data/work.yml",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/fonts/pixel_maz/pixel_maz.css.scss",
+		"/Volumes/sandbox/root/jandrewniak/Gemfile",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/web+UI/skedx/index.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/web+UI/skedx.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/portfolio/web & UI/skedx.html.md",
+		"/Volumes/sandbox/root/jandrewniak/source/stylesheets/modules/_work_link.css.scss",
+		"/Volumes/sandbox/root/skedx/Gemfile",
+		"/Volumes/sandbox/root/skedx/Guardfile",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/wall.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_post.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_edit_tags.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_first_post.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/reports/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/reports.js",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/bridge.css.scss",
+		"/Volumes/sandbox/root/skedx/app/views/companies/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/wall.css.scss",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_wall.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_threads.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/company.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/reports/_stats.html.haml",
+		"/Users/jan/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_quick_add_user.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_stats.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/resources/resources.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_new_reply.html.haml",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_messages_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/views/api/v1/wall_messages/_message.json.rabl",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_hash_tag_filter.html.haml",
+		"/Volumes/sandbox/root/skedx/app/mailers/account_mailer.rb",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/account_mailer.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/wall_mailer/new_wall_reply.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/wall_mailer/new_wall_post.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_reply.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_new_post.html.haml",
+		"/Volumes/sandbox/root/skedx/log/development.log",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/frameworks.js",
+		"/Volumes/sandbox/root/skedx/public/500.html",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account.html.erb",
+		"/Volumes/sandbox/root/skedx/app/controllers/password_resets_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/mailers/wall_mailer.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/wall_messages_controller.rb",
+		"/Volumes/sandbox/root/skedx/config/routes.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/user_sessions_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/email.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/change_password.html.erb",
+		"/Volumes/sandbox/root/skedx/config/locales/en.yml",
+		"/Volumes/sandbox/root/skedx/config/locales/en2.yml",
+		"/Volumes/sandbox/root/skedx/config/locales/simple_form.en.yml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/account.js",
+		"/Volumes/sandbox/root/skedx/app/views/account/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/controllers/companies_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/account_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/signing.js",
+		"/Volumes/sandbox/root/skedx/app/controllers/application_controller.rb",
+		"/Volumes/sandbox/root/skedx/config/environments/development.rb",
+		"/Volumes/sandbox/root/skedx/app/mailers/mail_preview.rb",
+		"/Users/jan/Downloads/basic-email-template/stylesheets/email.css",
+		"/Users/jan/Downloads/basic-email-template/basic.html",
+		"/Volumes/sandbox/root/skedx/app/views/user_sessions/new.html.erb",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/login_page.css.scss.erb",
+		"/Volumes/sandbox/root/skedx/config/environments/production.rb",
+		"/Volumes/sandbox/root/skedx/app/views/wall/manage_tags.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_edit_profile.html.haml",
+		"/Volumes/sandbox/root/skedx/Gemfile.lock",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/layout.css.scss",
+		"/Volumes/sandbox/root/skedx/app/controllers/wall_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_layout.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_profile.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/jquery.tagify.js",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/bridge.html.haml",
+		"/Volumes/sandbox/root/skedx/.gitignore",
+		"/Volumes/sandbox/root/skedx/config/database.yml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_nav.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_wall.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/bridge.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/partials/_nav.scss",
+		"/Volumes/sandbox/root/skedx/config/application.rb",
+		"/Volumes/ego_eco/root/opencart/catalog/controller/checkout/simplecheckout_payment.php",
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/checkout/checkout.tpl",
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/common/success.tpl",
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/javascript/script.js",
+		"/Volumes/ego_eco/root/opencart/catalog/controller/store/main.php",
+		"/Volumes/ego_eco/root/opencart/catalog/view/theme/ego_eco/template/store/main.tpl",
+		"/Volumes/ego_eco/root/opencart/catalog/model/checkout/sales_promotion.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/sandbox/root/jandrewniak/source/stylesheets",
+			"/Volumes/ego_eco/root/opencart/catalog/controller",
+			"/Volumes/ego_eco/root/opencart/admin",
+			"/Volumes/ego_eco/root/opencart/catalog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"has_shadow",
+			"has_sh",
+			"green",
+			"iblog",
+			"work_se",
+			"blog",
+			"des",
+			"desa",
+			"bw_pi",
+			"div",
+			"WALL",
+			"checked",
+			"handleTagSe",
+			"postTags",
+			"postTagsg",
+			"postTags",
+			"postTag",
+			"repeat",
+			"available_tags",
+			"tag",
+			"p ",
+			"font-family",
+			"small",
+			"subtle",
+			"thread.tag_list",
+			"thread",
+			"overlay",
+			"over",
+			"hide",
+			"save",
+			"addUser",
+			"main",
+			"save",
+			".post",
+			"post",
+			"save",
+			"postTags",
+			"error",
+			".* ",
+			".*",
+			"newTag",
+			"\n		",
+			"file",
+			"clear",
+			"{",
+			" wall.tag",
+			" wall .tag",
+			".tag",
+			"available_tags.wa",
+			"basic",
+			"sign_in",
+			"vertia",
+			"content",
+			"post_",
+			"post_tag",
+			"opacity",
+			"includ",
+			"audienceCountParameters",
+			"audienceCoun",
+			"startTimer",
+			"handle",
+			"true",
+			"drop",
+			"handleTagSelect",
+			"handlePost",
+			"postTag",
+			"availableTag",
+			"availableTags",
+			"animat",
+			"handleTag",
+			"tagChecked",
+			"postTag",
+			"layout",
+			"height",
+			"padding",
+			"thin",
+			"json",
+			"multi",
+			"edit_pro",
+			"textarea",
+			"available",
+			"availab",
+			"overlay",
+			"textarea",
+			"post_button",
+			"input",
+			"edit_pro",
+			"box",
+			"main",
+			"tag",
+			"main_nam",
+			"total",
+			"load",
+			"image",
+			"/template/common/success.tpl",
+			"success",
+			"contact",
+			"submit",
+			"contact_submit",
+			"contact",
+			"success",
+			"Promot",
+			"price",
+			"special",
+			"model",
+			"load",
+			"id",
+			"price",
+			"getBanner",
+			"front_page_description",
+			"banner",
+			"nowy",
+			"214",
+			" rgb(82, 214, 255)",
+			"red",
+			"pink/red",
+			"pink",
+			"transparen",
+			"transparent",
+			"scroll",
+			"nav",
+			"center",
+			">",
+			"scrollTop",
+			"banner"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/layouts/project.haml",
+					"settings":
+					{
+						"buffer_size": 1039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								800
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/stylesheets/modules/_nav_arrows.css.scss",
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								820,
+								820
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 146.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/stylesheets/_colors.css.scss",
+					"settings":
+					{
+						"buffer_size": 1485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 884.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"development",
+				"config/environments/development.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true
+}

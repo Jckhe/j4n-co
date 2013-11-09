@@ -1,0 +1,45 @@
+%html{:lang => 'en'}
+  
+  = partial "layouts/header_element"
+
+  %body{:class=> page_classes}
+
+    = partial "layouts/site_nav"
+    
+    %section.main.has_shadow
+      %article
+        .centered_measure.with_top_margin.with_bottom_margin
+          %h1.text_shadow
+            = current_page.data.title
+          = yield   
+
+
+      .nav_flipper.right
+        .next
+          /=image_tag 'arrow_previous-tiny.svg'
+          - prev_page = current_article.previous_article
+          - unless prev_page.nil?
+            %a.pixel_font{:href=>prev_page.url}
+              >
+
+      .nav_flipper.left
+        .previous
+          - next_page = current_article.next_article
+          - unless next_page.nil? 
+            %a.pixel_font{:href=>next_page.url} 
+              <
+
+
+      .clear
+
+      %footer.post_meta
+        %address
+          by Jan Drewniak
+
+        %time{:datetime=>current_page.data.date}
+          originally published: 
+          = current_page.data.date
+
+  = javascript_include_tag "jquery.min.js"  
+    
+  = yield_content(:javascript)
