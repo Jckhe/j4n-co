@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Skype 5.0 for Mac Simulator</title>
+  <link rel="stylesheet" href="stylesheets/default.css" type="text/css">
+  <script type="text/javascript" charset="utf-8" src="javascripts/jquery-1.5.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+      jQuery.fn.centerLayer = function(){
+        var window_scrolltop = Math.round($(window).scrollTop());
+        var window_height    = Math.round($(window).height());
+        var window_width     = Math.round($(window).width());
+        var layer_height     = Math.round($(this).height());
+        var layer_width      = Math.round($(this).width());
+
+        $(this).css({
+          'top': window_scrolltop + ((window_height - layer_height)/2),
+          'left': (window_width - layer_width) / 2
+        });
+      };
+      
+      $('a.highlight').bind('click', function(){
+        $(this).blur();        
+        var overlay = $('<div id="overlay" style="display:none;"></div>');
+        overlay.bind('click', function(){
+          $('body').removeClass('highlight');
+          $(this).fadeOut('fast', function(){
+            $(this).remove();
+          });
+        });
+        $('body').append(overlay);
+        overlay.fadeIn('fast', function(){
+          $('body').addClass('highlight');
+          $('iframe#chat').centerLayer();
+        });
+        return false;
+      });
+    });
+  </script>
+</head>
+<body>
+  
+  <div id="mainwindow" class="fade">
+    
+    <div id="user">
+      <div id="avatar" style="background-image:url(images/avatar_ralph_28x28.png);"><img src="images/user_avatar_border.png"></div>
+      <div id="name">Ralph Taylor</div>
+      <div id="balance">$4.20</div>
+    </div>
+    
+    <div id="sidebar">
+      <div id="contact">
+        <div id="avatar"></div>
+        <div id="name">Lucia Ferne, Jennifer Taylor</div>
+      </div>
+    </div>
+    
+    <div id="conversation">
+      <div id="contacts">
+        <div id="avatar"></div>
+        <div id="name">Lucia Ferne, Jennifer Taylor</div>
+        <div id="status">2 people</div>
+        <ul id="participants">
+          <li><span>Lucia Ferne</span><i></i></li>
+          <li><span>Jennifer Taylor</span><i></i></li>
+        </ul>
+      </div>
+      <iframe id="chat" src="../index.html">
+    </div>
+    
+  </div>
+  
+</body>
+</html>

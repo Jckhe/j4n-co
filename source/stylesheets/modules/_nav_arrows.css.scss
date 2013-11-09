@@ -1,0 +1,30 @@
+.nav_flipper{
+	position: fixed;
+	top: 210px;
+	width: 22px;
+	-webkit-perspective: 200;
+  	-webkit-transform-style: preserve-3d;
+  	-webkit-backface-visibility: visible;
+  	z-index: 2;
+}
+.nav_flipper.right{
+	right: 15px; 
+}
+
+.nav_flipper.left{
+	left: 15px; 
+}
+
+.next, .previous{
+	text-align: right;
+	img{
+		height: 20px;
+		vertical-align: middle;
+	}
+	a {
+		font-size: 3.5em;
+		line-height: 1em;
+		text-align: center;
+		z-index: 2;
+	}
+}

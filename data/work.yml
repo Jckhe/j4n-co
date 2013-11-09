@@ -1,0 +1,87 @@
+projects:
+
+  skedx:
+    meta_description: "The Skedx Web Application Interface Design"
+    title: "Skedx"
+    description: "<a href='skedx.com'>skedx.com</a> is an online scheduling solution for retailers and related businesses. It's a web-based subsrciption service (SaaS), and it's built on Ruby on Rails. SkedX's differenciator is that it integrates elements of social networking to increase employee engagement and improve workspace culture."  
+    meta_description: "Skedx is an online scheduling tool for retailers."
+    my_input: "I'm currently the lead interface designer at Skedx, which means I'm mainly responsible for interface design and front-end development of the software."
+    gallery_images:
+      - 
+        src:
+          "skedx_1.png"
+        caption:
+          "The employee dashboard shows the current schedule as well a message wall where employees can post messages to each other."
+        href:
+          "/images/project_galleries/skedx_1.png"
+      - 
+        src:
+          'skedx_2.png'
+        caption:
+          'Creating the schedule in SkedX is as easy as dragging a slider.'
+        href:
+          '/images/project_galleries/skedx_1.png'
+      - 
+        src:
+          'skedx_3.png'
+        caption:
+          'SkedX offers detailed reporting, letting you track your scheduling expenses and optimize your budget.'
+        href:
+          '/images/project_galleries/skedx_1.png'
+      - 
+        src:
+          'skedx_4.png'
+        caption:
+          'You can manage your company by dragging and dropping employees into different locations in your company.'
+        href:
+          '/images/project_galleries/skedx_1.png'
+
+  moovylist:
+    title: Moovylist 
+    description: Moovylist.com is your movie collection, online. It's a catalogue of all the films you own that you can easily share with friends. 
+    meta_description: "moovylist is your online movie catalogue."
+    my_input: I designed and built it. It's a Sinatra app with MongoDB storage. The Ruby part functions mostly as an API since most of business logic, including template rendering, happens through javascript on the client-side. 
+    gallery_images:  
+      - 
+        src:
+          'moovylist_1.png'
+        caption:
+          'An online catalogue of all your movies.'
+        href:
+          'http://moovylist.com/jan'
+      -  
+        src:
+          'moovylist_2.png'
+        caption:
+          'You can watch trailers and see reviews from youtube, rottentomatoes and IMDB.'
+        href:
+          '/images/project_galleries/moovylist_2.png'
+
+
+  MDKI:
+    title: Mass Destroy Kindle Items
+    description: <a href='http://massdestroykindleitems.com/'>massdestroykindleitems.com</a> is a bookmarklet that lets you delete multiple kindle items at once from you amazon library. 
+    meta_description: "Mass Destroy Kindle Items is a bookmarket that deletes multiple items from your kindle library."
+    my_input: I built the thing. It's a javascript bookmarklet.
+    gallery_images:
+      - 
+        src:
+          'mdki_1.png'
+        caption:
+          'Mass Destroy Kindle Items is a simple bookmarklet for deleting multiple kindle items from your library.'
+        href:
+          'http://massdestroykindleitems.com'
+
+  skype:
+    title: Garamondieu Mac Skype Theme
+    description: Garamondieu is a chat Theme for the mac version of skype. It was created for a competition organized by skype. It's made to look like an antique printed book, the title referencing Claude Garamond.   
+    meta_description: "Garamondieu is a skype chat theme for the mac version of skype."
+    my_input: I designed and built it. The chat area in the skype app is really a web view, so the theme is built purely on HTML/CSS.  
+    gallery_images:
+      - 
+        src:
+          'garamondieu.png'
+        caption:
+          'This is what the theme looks like in a skype simulator.'
+        href:
+          '/images/garamondieu/simulator/index.html'

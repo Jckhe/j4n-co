@@ -1,0 +1,153 @@
+.article_content{
+	//-webkit-transform: translate3d(0, 0, 0);
+	//position: inherit; 
+}
+
+.project_gallery{
+	height: 600px;
+	margin-top: -5rem;
+	overflow: hidden;
+	-webkit-transition: height 0.01s;
+	transition: height 0.01s;
+	-webkit-transform: translate3d(0, 0, 0);
+	 
+	figure{
+		max-height: 100%;
+		text-align: center;
+	}
+	img{
+		max-width: 95%;
+		//transition: -webkit-transform 0.3s; 
+		//-webkit-transform: rotate(0);	
+		//-webkit-transform-origin: top center;
+	}
+	figcaption{
+		width: 100%;
+		background-color: #FFF;
+		background-color: rgba(134, 134, 134, 0.64);
+		text-align: left;
+		position: absolute; 
+		color: white;
+		bottom: -2.6em; 
+		transition: all 0.3s; 
+	}
+}
+
+.scroll_wrapper {
+	overflow: hidden; 
+	height: 100%; 
+	position: relative; 
+	padding-top: 83px; 
+}
+
+
+.project_gallery:hover{
+	img{
+		//-webkit-transform: rotate(-1deg);	
+	}
+	figcaption{
+		top: auto; 
+		bottom: 0; 
+	}
+}
+
+.project_gallery.active{
+	overflow: hidden;
+	height: 600px !important;
+
+	.scroll_wrapper{
+		overflow: auto; 
+	}
+
+	img{
+		//-webkit-transform: rotate(0);	
+	}
+
+}
+
+
+.project_gallery_item{
+	display: none;
+	cursor: pointer; 
+}
+
+.project_gallery .project_gallery_item:first-of-type {
+	display: block;
+}
+
+.gallery_operator {
+	display: none;
+}
+
+div:nth-of-type(1):target ~ figure:not(:nth-of-type(1)) {
+	display: none;
+}
+
+div:nth-of-type(2):target ~ figure:not(:nth-of-type(2)) {
+	display: none;
+}
+
+div:nth-of-type(3):target ~ figure:not(:nth-of-type(3)) {
+	display: none;
+}
+
+div:nth-of-type(4):target ~ figure:not(:nth-of-type(4)) {
+	display: none;
+}
+
+div:nth-of-type(5):target ~ figure:not(:nth-of-type(5)) {
+	display: none;
+}
+
+
+div:nth-of-type(1):target ~ figure:nth-of-type(1){
+	display: block;
+}
+
+div:nth-of-type(2):target ~ figure:nth-of-type(2){
+	display: block;
+}
+
+div:nth-of-type(3):target ~ figure:nth-of-type(3){
+	display: block;
+}
+
+div:nth-of-type(4):target ~ figure:nth-of-type(4){
+	display: block;
+}
+
+div:nth-of-type(5):target ~ figure:nth-of-type(5){
+	display: block;
+}
+
+.spacer{
+	height: 80px;
+	width: 100%;
+}
+.project_gallery_nav{
+	background-color: #FFF;
+	font-size: 38px; 
+	padding: 12px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 1; 
+	overflow: hidden;
+}
+
+.project_gallery_nav a{
+	padding: 0;
+}
+
+.gifcast{
+	margin-top: 1em;
+	margin-bottom: 1em; 
+	display: block;
+
+	canvas{
+		margin: 0 auto;
+		border: 6px solid white;
+		box-shadow: 0 2px 15px -3px black;
+		border-radius: 10px;
+	}
+}

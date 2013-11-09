@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2012-09-13T00:00:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Google Drive</title>
+    <link rel="alternate" href="/thoughts/google_drive.html"/>
+    <id>/thoughts/google_drive.html</id>
+    <published>2012-09-13T00:00:00Z</published>
+    <updated>2012-09-13T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I just downloaded Google Drive today. I know I&amp;#8217;m a little late to the party, but I thought that maybe having my Google Documents on my computer would motivate me to write more.&lt;/p&gt;
+
+&lt;p&gt;Well, it turns out, Google Drive is not about having your Google Documents on your computer at all. Instead of true document syncing a la dropbox, Google decided that it would be enough to sync bookmarks to your Google Documents.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;I just downloaded Google Drive today. I know I&amp;#8217;m a little late to the party, but I thought that maybe having my Google Documents on my computer would motivate me to write more.&lt;/p&gt;
+
+&lt;p&gt;Well, it turns out, Google Drive is not about having your Google Documents on your computer at all. Instead of true document syncing a la dropbox, Google decided that it would be enough to sync bookmarks to your Google Documents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Google Drive Document' src='/images/blog/google_drive.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;The .gdoc, gsheet files are just urls pointing to the file on the internet, which basically means that you can only edit them with Google Drive in your web browser, which also means you can forget about offline editing.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>The Internet Blues</title>
+    <link rel="alternate" href="/thoughts/the_internet_blues.html"/>
+    <id>/thoughts/the_internet_blues.html</id>
+    <published>2012-09-01T00:00:00Z</published>
+    <updated>2012-09-01T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;style&gt;
+.blue_block{
+  width: 150px; 
+  height: 150px; 
+  margin:0; 
+  float: left; 
+}
+.blue_block &gt; *{
+  opacity: 0;   
+  -webkit-transition: opacity 0.1s ease-in; 
+  -moz-transition: opacity 0.1s ease-in; 
+  -o-transition: opacity 0.1s ease-in; 
+  transition: opacity 0.1s ease-in; 
+</summary>
+    <content type="html">&lt;style&gt;
+.blue_block{
+  width: 150px; 
+  height: 150px; 
+  margin:0; 
+  float: left; 
+}
+.blue_block &gt; *{
+  opacity: 0;   
+  -webkit-transition: opacity 0.1s ease-in; 
+  -moz-transition: opacity 0.1s ease-in; 
+  -o-transition: opacity 0.1s ease-in; 
+  transition: opacity 0.1s ease-in; 
+}
+
+.blue_block:hover &gt; *{
+  opacity: 1;   
+}
+.blue_block p{
+  margin:0;  
+}
+
+.blue_block img{
+  max-width: 100%;   
+}
+&lt;/style&gt;
+
+&lt;div class="blue_block" style="background-color: #1eb9ea"&gt;
+  &lt;p&gt;
+    &lt;img style="margin-top:62px;" src="/images/blog/windows8-logo.png" /&gt; 
+  &lt;/p&gt; 
+&lt;/div&gt; 
+
+&lt;div class="blue_block" style="background-color: #00aced"&gt;
+  &lt;p&gt;
+    &lt;img src="https://twitter.com/images/resources/twitter-bird-white-on-blue.png" /&gt; 
+  &lt;/p&gt; 
+&lt;/div&gt; 
+
+
+&lt;div class="blue_block" style="background-color: #3079f0"&gt;
+  &lt;p&gt;
+    &lt;img src="https://lh4.googleusercontent.com/-v0soe-ievYE/AAAAAAAAAAI/AAAAAAAAs7Y/yFVd0T5kw-o/photo.jpg"/&gt;
+  &lt;/p&gt; 
+&lt;/div&gt; 
+
+
+&lt;div class="blue_block" style="background-color:#315499"&gt;
+  &lt;img style="margin-top:55px;" src="http://1.bp.blogspot.com/_wICHhTiQmrA/TUBWbCpI5eI/AAAAAAAAE0Y/fhSI1bGZOTc/s1600/facebook-logo.jpg"/&gt; 
+&lt;/div&gt; 
+
+&lt;div class="blue_block" style="background-color: #007dc6"&gt;
+  &lt;p&gt; 
+  &lt;img style="margin-top:50px;" src="images/blog/bingLogo_lg-transparent.png"/&gt; 
+  &lt;/p&gt; 
+&lt;/div&gt; 
+
+
+
+&lt;div class="blue_block" style="background-color: #1b6cb5"&gt;
+  &lt;img style="margin-top:62px;" src="https://playfoursquare.s3.amazonaws.com/press/logo/foursquare-logo.png"/&gt; 
+&lt;/div&gt; 
+
+
+&lt;div class="blue_block" style="background-color:  #006699"&gt;
+  &lt;img style="margin-top: 62px;" src="/images/blog/LinkedIn-Logo.png"/&gt;
+&lt;/div&gt; 
+
+&lt;div class="blue_block" style="background-color: #43546b"&gt;
+  &lt;img  style="margin-top: 62px;" src="/images/blog/tumblr_on_dark.png"/&gt; 
+&lt;/div&gt;
+
+&lt;div class="clear"&gt;&lt;/div&gt; 
+</content>
+  </entry>
+  <entry>
+    <title>Understanding Web Apps part 2</title>
+    <link rel="alternate" href="/thoughts/what_is_a_web_app_part_2.html"/>
+    <id>/thoughts/what_is_a_web_app_part_2.html</id>
+    <published>2012-08-31T00:00:00Z</published>
+    <updated>2012-08-31T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;In &lt;a href='http://jandrewniak.com/2012/08/08/what_is_a_web_app.html'&gt;the first part&lt;/a&gt; of this article, I explained what a webapp is and how it&amp;#8217;s different from a web-page. Today, we&amp;#8217;re going to dive deep and dissect the structure of a webapp, all in an effort to get closer to an answer to the question of what it is I do for a living.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;In &lt;a href='http://jandrewniak.com/2012/08/08/what_is_a_web_app.html'&gt;the first part&lt;/a&gt; of this article, I explained what a webapp is and how it&amp;#8217;s different from a web-page. Today, we&amp;#8217;re going to dive deep and dissect the structure of a webapp, all in an effort to get closer to an answer to the question of what it is I do for a living.&lt;/p&gt;
+
+&lt;p&gt;In it&amp;#8217;s most basic terms the structure of a webapp is analogous to an old &lt;a href='http://en.wikipedia.org/wiki/Pendulum_clock'&gt;grandfather clock&lt;/a&gt;. The clock has to have a &lt;a href='http://en.wikipedia.org/wiki/Pendulum'&gt;pendulum&lt;/a&gt; and gravity to power it, a bunch &lt;a href='http://en.wikipedia.org/wiki/Clockwork'&gt;gears&lt;/a&gt; to make it tick, a &lt;a href='http://en.wikipedia.org/wiki/Clock_face'&gt;face&lt;/a&gt; to make it make sense and hands present the latest information.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='clock webapp diagram' src='/images/blog/web_app_clock_diagram.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;These parts of a clock are analogous to the parts of a webapp. The pendulum being the &amp;#8216;persistence layer&amp;#8217;, the gears being the &amp;#8216;business logic&amp;#8217;, the face being the &amp;#8216;presentation layer&amp;#8217; and the hands being the &amp;#8216;interaction layer&amp;#8217;, as is illustrated by this diagram.&lt;/p&gt;
+
+&lt;p&gt;What&amp;#8217;s really happening in this clock scenario is that the gears are taking information from the pendulum, modifying it, and presenting it to the clock face with the help of the clock hands.&lt;/p&gt;
+
+&lt;p&gt;Here the pendulum is providing the information (gravity in this case), the gears are getting information from the pendulum, translating it into circular motion, and executing different commands based on that information (for example: turn the second hand every second, if you&amp;#8217;ve turned the second hand 60 times, then turn the minute hand, etc). The face is then presenting this information, and the clock hands are giving you &amp;#8216;real-time&amp;#8217; updates directly from the gears.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;#8217;s dive a little deeper into each of these sections.&lt;/p&gt;
+
+&lt;h3 id='the_persistance_layer'&gt;The Persistance Layer&lt;/h3&gt;
+
+&lt;p&gt;As we said in the last &lt;a href='http://#link'&gt;article&lt;/a&gt;, a webapp is the software that makes web-pages, and web-pages are html files. Lets say your creating a file in Microsoft Word. When you hit the save button, that file gets saved to your hard-drive. when you post or upload something to Facebook, Facebook needs a place to save that stuff too. That place is called a database. In the webapp world, this is the bottom layer, and it&amp;#8217;s called the &amp;#8216;persistence layer&amp;#8217; because it makes sure the stuff you save will still be there when you get back.&lt;/p&gt;
+
+&lt;h3 id='the_business_logic'&gt;The Business Logic&lt;/h3&gt;
+
+&lt;p&gt;The next level up in the webapp takes care of creating, reading, updating and destroying stuff in that database, i.e. the &lt;a href='http://en.wikipedia.org/wiki/Create,_read,_update_and_delete'&gt;CRUD&lt;/a&gt; actions. This layer makes all the decisions about what to show you and when, and tells the database when to save, edit or destroy something. This layer is called the &amp;#8216;business logic&amp;#8217; because it&amp;#8217;s the CEO of the webapp which decides what do to when. It&amp;#8217;s the part that&amp;#8217;s &lt;a href='http://www.youtube.com/watch?v=NCIUf8eYPqA'&gt;takin&amp;#8217; care of business&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='the_presentation_layer'&gt;The Presentation Layer&lt;/h3&gt;
+
+&lt;p&gt;The top level of the webapp is called the &amp;#8216;presentation layer&amp;#8217; because it presents the information in the database to the end-user. This is the only part of the webapp that the user actually sees and interacts with. Sometimes it&amp;#8217;s called the &lt;a href='http://en.wikipedia.org/wiki/User_interface'&gt;user interface&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because webapps are web-based, the presentation layer takes the form of a web-page that is rendered by your web-browser. This web-page is created by the business logic, which gets it&amp;#8217;s information from the database. The business logic creates a new web-page every time you request it, so whenever something in the database changes, the business logic updates the page with with latest information.&lt;/p&gt;
+
+&lt;h3 id='the_interaction_layer'&gt;The Interaction Layer&lt;/h3&gt;
+
+&lt;p&gt;In between the presentation layer and the business logic is something I call the &amp;#8216;interaction layer&amp;#8217;. This is not really part of the traditional &lt;a href='http://en.wikipedia.org/wiki/Three-tier'&gt;three tier architecture&lt;/a&gt; but in the case of modern-day webapps it&amp;#8217;s playing an ever-increasing role. This layer is brought into existence by something called javascript, which is a language that is run on a web-page, just like html. What makes javascript special is that it can talk directly to the business logic as well as change things on the web-page that it&amp;#8217;s being run on. This means that instead of hitting a submit button and waiting for the page to reload, we can hit a submit button and only part of a page will reload with fresh content. Effectively this allows us to create much more &lt;a href='http://searchsoftwarequality.techtarget.com/definition/native-application-native-app'&gt;native&lt;/a&gt; looking webapps, like this &lt;a href='http://www.akshell.com/ide/'&gt;text editor&lt;/a&gt; that looks like a mac desktop application.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;This is basically the structure of almost all webapps. Now for the question of what I do for a living.&lt;/strong&gt; When more than one person is programming a webapp, the developer roles are usually split into &lt;a href='http://en.wikipedia.org/wiki/Front_and_back_ends'&gt;front and back end&lt;/a&gt; developers. The back-end developers take care of the persistence layer and business logic, and the front-end developers take care of the presentation and interaction layers. I usually stick to the front-end development as well as design (I did go to art school after all), but many web-developers (including myself) are competent in both front and back-end technologies.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Understanding Webapps part 1</title>
+    <link rel="alternate" href="/thoughts/What_is_a_web_app.html"/>
+    <id>/thoughts/What_is_a_web_app.html</id>
+    <published>2012-08-08T00:00:00Z</published>
+    <updated>2012-08-08T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;There was a time when the internet was a much simpler place. When you could explain to someone what a web page was in a single sentence. But that time is not now. We do so much online that that the term &amp;#8216;web page&amp;#8217; really only applies only to a small number of the sites we visit on a daily basis. So, before we get to explaining webapps, we should clarify what a web page is. The one sentence answer is: &lt;strong&gt;It&amp;#8217;s an html file&lt;/strong&gt;.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;There was a time when the internet was a much simpler place. When you could explain to someone what a web page was in a single sentence. But that time is not now. We do so much online that that the term &amp;#8216;web page&amp;#8217; really only applies only to a small number of the sites we visit on a daily basis. So, before we get to explaining webapps, we should clarify what a web page is. The one sentence answer is: &lt;strong&gt;It&amp;#8217;s an html file&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;The slightly longer answer is that in the olden days, you could (and still can) create a website by opening up a text-editor and creating an html file. Then, you would upload the file to a server and voila, you&amp;#8217;re riding the information super-highway. If you wanted to change your website, you would go in and edit this file. If you wanted to add more pages to your site, then you would go in and add more files, just like you would add pages to a book. As you can see, this web &amp;#8216;page&amp;#8217; analogy was spot on in this context.&lt;/p&gt;
+
+&lt;p&gt;Then things got complicated. You began to be able to &amp;#8216;do&amp;#8217; stuff on the internet. This is pretty much where the &amp;#8216;page&amp;#8217; analogy breaks down. You don&amp;#8217;t really &amp;#8216;do&amp;#8217; stuff to a book right? You &lt;em&gt;read&lt;/em&gt; it, your brain absorbs it, end of story. But do you just &lt;em&gt;read&lt;/em&gt; your email? Facebook? no. You reply to it and post stuff. That&amp;#8217;s the one sentence explanation of a webapp. &lt;strong&gt;It&amp;#8217;s a website where you do stuff&lt;/strong&gt;, like log-in and keep a profile or an account or upload photos.&lt;/p&gt;
+
+&lt;p&gt;&amp;#8216;Doing&amp;#8217; stuff on a website is much more complicated than just a bunch of html files. It requires software. The &amp;#8216;app&amp;#8217; (i.e application, i.e. software) part of &amp;#8216;webapp&amp;#8217; refers to exactly that: the software that makes the web pages (as for the web part, that&amp;#8217;s the internet). With a webapp, you can make changes to one thing on your site, and if need be, the webapp applies those changes to the rest of your site automatically.&lt;/p&gt;
+
+&lt;p&gt;Most sites on the internet these days are powered by webapps. Take the blogging engine &lt;a href='http://wordpress.org/'&gt;wordpress&lt;/a&gt; for example. Wordpress is a webapp. When you create a blog in wordpress, you can change the theme of your blog and wordpress will apply that theme to every single page of your blog, automatically. Most other sites you visit are also webapps - facebook, gmail, twitter, pinterest are all webapps. Sometime handling hundreds of millions of requests and generating hundreds of millions of pages per day&amp;#8230; webapps are very busy robots indeed.&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <link rel="alternate" href="/thoughts/hello_world.html"/>
+    <id>/thoughts/hello_world.html</id>
+    <published>2012-07-31T00:00:00Z</published>
+    <updated>2012-07-31T00:00:00Z</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <summary type="html">&lt;p&gt;I&amp;#8217;m not much of a writer (yet) so when it came time to write this first post, I did what any self respecting hacker would. I googled it. To be sure, there&amp;#8217;s no shortage of tips and tricks, advice, how-to&amp;#8217;s and simple steps.&lt;/p&gt;
+
+&lt;p&gt;Most posts offer advice like &lt;a href='http://www.fuelyourblogging.com/what-to-write-for-your-very-first-blog-post/'&gt;start with a mission statement&lt;/a&gt;, some even instruct you on the slightly creepy approach of &lt;a href='http://www.incomediary.com/step-by-step-guide-writing-blog-post'&gt;conducting keyword research&lt;/a&gt; before you start writing, because nothing could be more important than achieving that &lt;a href='http://www.seo.com/blog/keyword-density-frequency-prominence-proximity/'&gt;optimal keyword density&lt;/a&gt;, right?&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;I&amp;#8217;m not much of a writer (yet) so when it came time to write this first post, I did what any self respecting hacker would. I googled it. To be sure, there&amp;#8217;s no shortage of tips and tricks, advice, how-to&amp;#8217;s and simple steps.&lt;/p&gt;
+
+&lt;p&gt;Most posts offer advice like &lt;a href='http://www.fuelyourblogging.com/what-to-write-for-your-very-first-blog-post/'&gt;start with a mission statement&lt;/a&gt;, some even instruct you on the slightly creepy approach of &lt;a href='http://www.incomediary.com/step-by-step-guide-writing-blog-post'&gt;conducting keyword research&lt;/a&gt; before you start writing, because nothing could be more important than achieving that &lt;a href='http://www.seo.com/blog/keyword-density-frequency-prominence-proximity/'&gt;optimal keyword density&lt;/a&gt;, right?&lt;/p&gt;
+
+&lt;p&gt;After looking through what google had to offer on this topic, I came to the only logical conclusion that anyone would: &lt;em&gt;That some things in life you just can&amp;#8217;t google&lt;/em&gt;, and those are the important things, the things you just have to figure out for yourself.&lt;/p&gt;
+
+&lt;p&gt;So I invite you to join me in this little experiment. I&amp;#8217;m probably going to be write about web-related things, some from a bird&amp;#8217;s-eye view, some from a worm&amp;#8217;s-eye view, some designy things, or maybe bicycles things. We&amp;#8217;ll figure it out as we go along.&lt;/p&gt;</content>
+  </entry>
+</feed>

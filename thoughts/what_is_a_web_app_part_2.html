@@ -1,0 +1,154 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title>
+      Understanding Web Apps part 2 | Jan Drewniak - User Experience Design & Development
+    </title>
+    <meta content='Jan Drewniak' name='author' />
+    <meta content='INDEX, FOLLOW' name='robots' />
+    <meta name='keywords' />
+    <meta content="So You're looking for a UX Design Ninja™... I eat ninjas for breakfast." name='description' />
+    <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
+    <link href='/images/favicon.png' rel='icon' type='image/png' />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css' />
+    <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
+    <link href="/stylesheets/site.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/javascripts/script.js" type="text/javascript"></script>
+    
+  </head>
+  <body class='thoughts thoughts_what_is_a_web_app_part_2'>
+    <header class='top_bar dark_grey'>
+  <nav class='sitenav'>
+    <div alt='portfolio' class='section work yellow'>
+      <a class='index_link' href='/work'>
+        work
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          work
+        </h2><a class='thumbnail' href='/work/bridge'><img src='/work/bridge/icon.png' /></a><a class='thumbnail' href='/work/ego_eco'><img src='/work/ego_eco/icon.png' /></a><a class='thumbnail' href='/work/skedx'><img src='/work/skedx/icon.png' /></a></div>
+    </div>
+    <div alt='lab' class='aqua section tools'>
+      <a class='index_link' href='/lab'>
+        lab
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          experiments
+        </h2><a class='thumbnail' href='/lab/flatland'><img src='/lab/flatland/icon.png' /></a><a class='thumbnail' href='/lab/game_of_life'><img src='/lab/game_of_life/icon.png' /></a></div>
+    </div>
+    <div alt='blog' class='blog redish section'>
+      <a class='index_link' href='/thoughts'>
+        thoughts
+      </a>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          recent posts
+        </h2>
+        <a class='white' href='/thoughts/google_drive.html'>
+          Google Drive
+        </a>
+        <a class='white' href='/thoughts/the_internet_blues.html'>
+          The Internet Blues
+        </a>
+        <a class='current_page white' href='/thoughts/what_is_a_web_app_part_2.html'>
+          Understanding Web Apps part 2
+        </a>
+        <a class='white' href='/thoughts/What_is_a_web_app.html'>
+          Understanding Webapps part 1
+        </a>
+        <a class='white' href='/thoughts/hello_world.html'>
+          Hello World
+        </a>
+      </div>
+    </div>
+    <div class='section light_green about'>
+      <div class='dropdown'>
+        <h2 class='small_heading white_pixel_font'>
+          Jan Drewniak (that's me)
+        </h2>
+        <img id='my_face_avatar' src='/images/avatar.png' />
+        <p class='about_me'>
+          I make the netting in your internettings. UI Design, front-end development & such. Residing in WAW and hailing from YYZ.
+        </p>
+      </div>
+    </div>
+    <div class='background_mask has_shadow'></div>
+  </nav>
+  <a class='tagline iblock' href='/'>
+    Art + Code for fun and profit
+  </a>
+</header>
+    <section class='main has_shadow'>
+      <article>
+        <div class='centered_measure with_top_margin with_bottom_margin'>
+          <h1 class='text_shadow'>
+            Understanding Web Apps part 2
+          </h1>
+          <p>In <a href='http://jandrewniak.com/2012/08/08/what_is_a_web_app.html'>the first part</a> of this article, I explained what a webapp is and how it&#8217;s different from a web-page. Today, we&#8217;re going to dive deep and dissect the structure of a webapp, all in an effort to get closer to an answer to the question of what it is I do for a living.</p>
+
+<p>In it&#8217;s most basic terms the structure of a webapp is analogous to an old <a href='http://en.wikipedia.org/wiki/Pendulum_clock'>grandfather clock</a>. The clock has to have a <a href='http://en.wikipedia.org/wiki/Pendulum'>pendulum</a> and gravity to power it, a bunch <a href='http://en.wikipedia.org/wiki/Clockwork'>gears</a> to make it tick, a <a href='http://en.wikipedia.org/wiki/Clock_face'>face</a> to make it make sense and hands present the latest information.</p>
+
+<p><img alt='clock webapp diagram' src='/images/blog/web_app_clock_diagram.jpg' /></p>
+
+<p>These parts of a clock are analogous to the parts of a webapp. The pendulum being the &#8216;persistence layer&#8217;, the gears being the &#8216;business logic&#8217;, the face being the &#8216;presentation layer&#8217; and the hands being the &#8216;interaction layer&#8217;, as is illustrated by this diagram.</p>
+
+<p>What&#8217;s really happening in this clock scenario is that the gears are taking information from the pendulum, modifying it, and presenting it to the clock face with the help of the clock hands.</p>
+
+<p>Here the pendulum is providing the information (gravity in this case), the gears are getting information from the pendulum, translating it into circular motion, and executing different commands based on that information (for example: turn the second hand every second, if you&#8217;ve turned the second hand 60 times, then turn the minute hand, etc). The face is then presenting this information, and the clock hands are giving you &#8216;real-time&#8217; updates directly from the gears.</p>
+
+<p>Now let&#8217;s dive a little deeper into each of these sections.</p>
+
+<h3 id='the_persistance_layer'>The Persistance Layer</h3>
+
+<p>As we said in the last <a href='http://#link'>article</a>, a webapp is the software that makes web-pages, and web-pages are html files. Lets say your creating a file in Microsoft Word. When you hit the save button, that file gets saved to your hard-drive. when you post or upload something to Facebook, Facebook needs a place to save that stuff too. That place is called a database. In the webapp world, this is the bottom layer, and it&#8217;s called the &#8216;persistence layer&#8217; because it makes sure the stuff you save will still be there when you get back.</p>
+
+<h3 id='the_business_logic'>The Business Logic</h3>
+
+<p>The next level up in the webapp takes care of creating, reading, updating and destroying stuff in that database, i.e. the <a href='http://en.wikipedia.org/wiki/Create,_read,_update_and_delete'>CRUD</a> actions. This layer makes all the decisions about what to show you and when, and tells the database when to save, edit or destroy something. This layer is called the &#8216;business logic&#8217; because it&#8217;s the CEO of the webapp which decides what do to when. It&#8217;s the part that&#8217;s <a href='http://www.youtube.com/watch?v=NCIUf8eYPqA'>takin&#8217; care of business</a>.</p>
+
+<h3 id='the_presentation_layer'>The Presentation Layer</h3>
+
+<p>The top level of the webapp is called the &#8216;presentation layer&#8217; because it presents the information in the database to the end-user. This is the only part of the webapp that the user actually sees and interacts with. Sometimes it&#8217;s called the <a href='http://en.wikipedia.org/wiki/User_interface'>user interface</a>.</p>
+
+<p>Because webapps are web-based, the presentation layer takes the form of a web-page that is rendered by your web-browser. This web-page is created by the business logic, which gets it&#8217;s information from the database. The business logic creates a new web-page every time you request it, so whenever something in the database changes, the business logic updates the page with with latest information.</p>
+
+<h3 id='the_interaction_layer'>The Interaction Layer</h3>
+
+<p>In between the presentation layer and the business logic is something I call the &#8216;interaction layer&#8217;. This is not really part of the traditional <a href='http://en.wikipedia.org/wiki/Three-tier'>three tier architecture</a> but in the case of modern-day webapps it&#8217;s playing an ever-increasing role. This layer is brought into existence by something called javascript, which is a language that is run on a web-page, just like html. What makes javascript special is that it can talk directly to the business logic as well as change things on the web-page that it&#8217;s being run on. This means that instead of hitting a submit button and waiting for the page to reload, we can hit a submit button and only part of a page will reload with fresh content. Effectively this allows us to create much more <a href='http://searchsoftwarequality.techtarget.com/definition/native-application-native-app'>native</a> looking webapps, like this <a href='http://www.akshell.com/ide/'>text editor</a> that looks like a mac desktop application.</p>
+<hr />
+<p><strong>This is basically the structure of almost all webapps. Now for the question of what I do for a living.</strong> When more than one person is programming a webapp, the developer roles are usually split into <a href='http://en.wikipedia.org/wiki/Front_and_back_ends'>front and back end</a> developers. The back-end developers take care of the persistence layer and business logic, and the front-end developers take care of the presentation and interaction layers. I usually stick to the front-end development as well as design (I did go to art school after all), but many web-developers (including myself) are competent in both front and back-end technologies.</p>
+        </div>
+      </article>
+      <div class='nav_flipper right'>
+        <div class='next'>
+          <!-- =image_tag 'arrow_previous-tiny.svg' -->
+          <a class='pixel_font' href='/thoughts/What_is_a_web_app.html'>
+            >
+          </a>
+        </div>
+      </div>
+      <div class='nav_flipper left'>
+        <div class='previous'>
+          <a class='pixel_font' href='/thoughts/the_internet_blues.html'>
+            <
+          </a>
+        </div>
+      </div>
+      <div class='clear'></div>
+      <footer class='post_meta'>
+        <address>
+          by Jan Drewniak
+        </address>
+        <time datetime='2012/08/31'>
+          originally published:
+          2012/08/31
+        </time>
+      </footer>
+    </section>
+  </body>
+  <script src="/javascripts/jquery.min.js" type="text/javascript"></script>
+  
+</html>

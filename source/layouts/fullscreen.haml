@@ -1,0 +1,13 @@
+%html{:lang => 'en'}
+  
+  = partial "layouts/header_element"
+
+  %body{:class=> page_classes}
+
+    = partial "layouts/site_nav"
+
+    = yield
+    
+  = javascript_include_tag "jquery.min.js"  
+ 
+  = yield_content(:javascript)
