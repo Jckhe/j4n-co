@@ -833,9 +833,10 @@ div:nth-of-type(5):target ~ figure:nth-of-type(5) {
   display: inline;
   vertical-align: top;
   float: left;
-  margin-right: 0.5em; }
+  margin: 0;
+  position: relative; }
 
-/* line 136, modules/_sitenav.css.scss */
+/* line 137, modules/_sitenav.css.scss */
 .about_me {
   position: relative;
   width: 400px;
