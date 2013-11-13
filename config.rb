@@ -27,8 +27,6 @@ activate :blog do |blog|
  blog.calendar_template = "/thoughts/calendar.html"
 end
 
-page "/feed.xml", :layout => false
-
 ### 
 # Compass
 ###
