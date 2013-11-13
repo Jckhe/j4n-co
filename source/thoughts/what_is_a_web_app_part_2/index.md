@@ -10,6 +10,7 @@ summary: Here we disect the anatomy of a webapp. Look at the different parts of 
 
 date: 2012/08/31
 
+published: false
 ---
 
 In [the first part](http://jandrewniak.com/2012/08/08/what_is_a_web_app.html) of this article, I explained what a webapp is and how it's different from a web-page. Today, we're going to dive deep and dissect the structure of a webapp, all in an effort to get closer to an answer to the question of what it is I do for a living. 

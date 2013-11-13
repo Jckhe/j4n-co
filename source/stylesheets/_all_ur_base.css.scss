@@ -6,6 +6,7 @@
 body {
 	line-height: 1.4em;
 	color: #535353;
+
 }
 
 body.lab *::selection {
@@ -33,6 +34,10 @@ h1{
 	text-shadow: 1px 1px 0 black;
 }
 
+h2{
+	font-size: 1.2em;
+	font-weight: bold;
+}
 small{
 	font-size: 0.75em;
 	line-height: 1.5em;
@@ -59,7 +64,9 @@ p, ul {
 	margin-top: 0.7em;
 	margin-bottom: 1em;
 }
+p{
 
+}
 strong{
 	font-weight: bold;
 }
@@ -74,7 +81,7 @@ li{
 }
 
 article{
-	font-size: 16px;
+	font-size: 18px;
 	padding: 0.1px;
 }
 article a {

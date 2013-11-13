@@ -9,6 +9,7 @@ summary: If you've ever spent any time browsing through tech blogs or know someo
 
 date: 2012/08/08
 
+published: false
 ---
 There was a time when the internet was a much simpler place. When you could explain to someone what a web page was in a single sentence. But that time is not now. We do so much online that that the term 'web page' really only applies only to a small number of the sites we visit on a daily basis. So, before we get to explaining webapps, we should clarify what a web page is. The one sentence answer is: **It's an html file**. 
 

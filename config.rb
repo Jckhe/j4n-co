@@ -7,6 +7,8 @@ page "work", :layout => "index"
 page "lab", :layout => "index"
 page "/", :layout => "fullscreen"
 
+page "/sitemap.xml", :layout => false
+
 activate :livereload
 
 activate :blog do |blog|
@@ -75,6 +77,25 @@ page "/feed.xml", :layout => false
 #     "Helping"
 #   end
 # end
+helpers do
+
+  def article_dir
+    pieces = current_page.url.chomp("/").split("/")
+    pieces[-1] = File.basename(pieces.last, File.extname(pieces.last))
+    pieces.join("/")
+  end
+
+  def article_asset_path(path)
+    File.join(article_dir, path)
+  end
+
+  def article_image_tag(path, *args)
+    args.unshift article_asset_path(path)
+    image_tag(*args)
+  end
+
+end
+
 
 set :css_dir, 'stylesheets'
 
