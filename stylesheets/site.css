@@ -202,20 +202,20 @@ body {
   line-height: 1.4em;
   color: #535353; }
 
-/* line 11, _all_ur_base.css.scss */
+/* line 12, _all_ur_base.css.scss */
 body.lab *::selection {
   background: #8ed9da;
   color: white; }
 
-/* line 15, _all_ur_base.css.scss */
+/* line 16, _all_ur_base.css.scss */
 body.work *::selection {
   background: #e5ce49; }
 
-/* line 18, _all_ur_base.css.scss */
+/* line 19, _all_ur_base.css.scss */
 body.thoughts *::selection {
   background-color: #a74843; }
 
-/* line 22, _all_ur_base.css.scss */
+/* line 23, _all_ur_base.css.scss */
 h1 {
   font-size: 3em;
   font-weight: normal;
@@ -229,111 +229,116 @@ h1 {
   color: white;
   text-shadow: 1px 1px 0 black; }
 
-/* line 36, _all_ur_base.css.scss */
+/* line 37, _all_ur_base.css.scss */
+h2 {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+/* line 41, _all_ur_base.css.scss */
 small {
   font-size: 0.75em;
   line-height: 1.5em; }
 
-/* line 41, _all_ur_base.css.scss */
+/* line 46, _all_ur_base.css.scss */
 em {
   font-style: italic; }
 
-/* line 45, _all_ur_base.css.scss */
+/* line 50, _all_ur_base.css.scss */
 a {
   color: #535353;
   text-decoration: none; }
 
-/* line 50, _all_ur_base.css.scss */
+/* line 55, _all_ur_base.css.scss */
 a:visited {
   color: #b3b3b3; }
 
-/* line 54, _all_ur_base.css.scss */
+/* line 59, _all_ur_base.css.scss */
 a:hover {
   color: #8ed9da; }
 
-/* line 58, _all_ur_base.css.scss */
+/* line 63, _all_ur_base.css.scss */
 p, ul {
   margin-top: 0.7em;
   margin-bottom: 1em; }
 
-/* line 63, _all_ur_base.css.scss */
+/* line 70, _all_ur_base.css.scss */
 strong {
   font-weight: bold; }
 
-/* line 67, _all_ur_base.css.scss */
+/* line 74, _all_ur_base.css.scss */
 ul {
   text-indent: 0;
   padding-left: 2em; }
 
-/* line 71, _all_ur_base.css.scss */
+/* line 78, _all_ur_base.css.scss */
 li {
   margin-bottom: 0.5em;
   list-style: inside square; }
 
-/* line 76, _all_ur_base.css.scss */
+/* line 83, _all_ur_base.css.scss */
 article {
-  font-size: 16px;
+  font-size: 18px;
   padding: 0.1px; }
 
-/* line 80, _all_ur_base.css.scss */
+/* line 87, _all_ur_base.css.scss */
 article a {
   color: #28a4a7; }
 
-/* line 83, _all_ur_base.css.scss */
+/* line 90, _all_ur_base.css.scss */
 address {
   text-align: right;
   float: right; }
 
-/* line 88, _all_ur_base.css.scss */
+/* line 95, _all_ur_base.css.scss */
 aside {
   font-size: 1.2em;
   text-indent: 0;
   letter-spacing: 1px;
   font-style: italic; }
 
-/* line 95, _all_ur_base.css.scss */
+/* line 102, _all_ur_base.css.scss */
 aside:first-child:first-letter {
   font-family: Georgia; }
 
-/* line 99, _all_ur_base.css.scss */
+/* line 106, _all_ur_base.css.scss */
 figure {
   position: relative; }
 
-/* line 103, _all_ur_base.css.scss */
+/* line 110, _all_ur_base.css.scss */
 figcaption {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 1em;
   font-size: 0.7em; }
 
-/* line 109, _all_ur_base.css.scss */
+/* line 116, _all_ur_base.css.scss */
 dl {
   display: table;
   margin-bottom: 1.5em;
   margin-top: 1em; }
-  /* line 114, _all_ur_base.css.scss */
+  /* line 121, _all_ur_base.css.scss */
   dl dt {
     display: table-cell;
     min-width: 6em;
     font-weight: bold; }
-  /* line 120, _all_ur_base.css.scss */
+  /* line 127, _all_ur_base.css.scss */
   dl dd {
     display: table-cell; }
 
-/* line 126, _all_ur_base.css.scss */
+/* line 133, _all_ur_base.css.scss */
 hr {
   margin-top: 2em;
   margin-bottom: 2em; }
 
-/* line 130, _all_ur_base.css.scss */
+/* line 137, _all_ur_base.css.scss */
 dfn {
   cursor: help;
   border-bottom: 1px dashed; }
 
-/* line 134, _all_ur_base.css.scss */
+/* line 141, _all_ur_base.css.scss */
 dfn:hover {
   border-bottom: none; }
 
-/* line 137, _all_ur_base.css.scss */
+/* line 144, _all_ur_base.css.scss */
 dfn:hover:after {
   background-color: #AEFEFF;
   content: " (" attr(title) ") ";
@@ -342,14 +347,14 @@ dfn:hover:after {
   border-bottom: none;
   font-style: italic; }
 
-/* line 146, _all_ur_base.css.scss */
+/* line 153, _all_ur_base.css.scss */
 iframe {
   width: 100%;
   height: 100%;
   position: absolute;
   overflow: hidden; }
 
-/* line 154, _all_ur_base.css.scss */
+/* line 161, _all_ur_base.css.scss */
 p.large, span.large {
   font-size: 2em; }
 
@@ -452,6 +457,12 @@ header {
 /* line 98, _layout.css.scss */
 .project_title {
   margin-bottom: 0; }
+
+/* line 1, modules/_blog.css.scss */
+body.thoughts .centered_measure p:first-of-type {
+  font-size: 19px;
+  color: #555;
+  line-height: 1.5em; }
 
 /* line 1, modules/_blog_index.css.scss */
 .year_item {
