@@ -5,8 +5,6 @@
 
 body {
 	line-height: 1.4em;
-	color: #535353;
-
 }
 
 body.lab *::selection {
@@ -30,8 +28,8 @@ h1{
 	padding: 0;
 	position: relative;
 	line-height: 1em;
-	color: white; 
-	text-shadow: 1px 1px 0 black;
+	color: $dark_grey; 
+	text-shadow: 1px 1px 0 white;
 }
 
 h2{
@@ -150,7 +148,7 @@ dfn:hover:after{
 	font-style: italic;
 }
 
-iframe{
+body.index iframe, body.lab iframe{
 	width: 100%;
 	height: 100%; 
 	position: absolute;

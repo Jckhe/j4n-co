@@ -1,6 +1,6 @@
 - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }.sort!{|a, b| a.data.order <=> b.data.order}
 
-%H1
+%H1.text_shadow
   Work
 
 %p
