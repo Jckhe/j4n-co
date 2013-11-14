@@ -9,6 +9,9 @@
   %meta{:name => "keywords",    :content => yield_content(:keywords) || current_page.data.keywords || data.site.metakeywords}
   %meta{:name => "description", :content => yield_content(:description) || current_page.data.meta_description  || data.site.meta.description}
   %meta{:name => "viewport",    :content => "width = device-width, initial-scale = 1, user-scalable = yes"} 
+
+  %meta{:name=>"msvalidate.01", :content=>"B936EB2BEE226ABAD7EC6968E75B5014"}
+
   %link{:rel=>"icon", :type=>"image/png", :href=>"/images/favicon.png"}
  
   %link{:href=>'http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700', :rel=>'stylesheet', :type=>'text/css'}
