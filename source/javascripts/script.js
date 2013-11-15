@@ -43,11 +43,11 @@ doc.ready(function(){
 			project_gallery.toggleClass('active')
 		})
 
-		doc.scroll(function(e){
-			
-			if (!project_gallery.hasClass('active') &&  doc.scrollTop() < 275){
-				project_gallery[0].style.height = 600 - doc.scrollTop()
-			}
+		//doc.scroll(function(e){
+		//	
+		//	if (!project_gallery.hasClass('active') &&  doc.scrollTop() < 275){
+		//		project_gallery[0].style.height = 600 - doc.scrollTop()
+		//	}
 				
 			/*
 			if (gifcast.visible(true)){
@@ -58,7 +58,7 @@ doc.ready(function(){
 			}	
 			*/
 		
-		})
+		//})
 
 	}
 	

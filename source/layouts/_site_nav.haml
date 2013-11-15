@@ -1,50 +1,55 @@
 %header.top_bar.dark_grey
   %nav.sitenav
-    
-    .section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '' } 
-      %a.index_link{:href=>"/work"}
-        work
-      - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
-      - pages.sort!{|a, b| a.data.order <=> b.data.order}
+    %ul
+      
+      %li.section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '' } 
+        %a.index_link{:href=>"/work"}
+          portfolio
+        - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
+        - pages.sort!{|a, b| a.data.order <=> b.data.order}
 
-      .dropdown
-        %h2.small_heading.white_pixel_font
-          work 
-        - pages.each do |page|
-          %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-            %img{:src=>page.url+"icon.png"}>
+        .dropdown
+          %h2.small_heading.white_pixel_font
+            portfolio 
+          - pages.each do |page|
+            %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
+              %img{:src=>page.url+"icon.png"}>
 
     
-    .section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : ''}  
-      %a.index_link{:href=>"/lab"}
-        lab
-      - projects = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
-      .dropdown
-        %h2.small_heading.white_pixel_font
-          experiments 
-        - projects.each do |page|
-          %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-            %img{:src=>page.url+"icon.png"}>
+      %li.section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : ''}  
+        %a.index_link{:href=>"/lab"}
+          lab
+        - projects = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
+        .dropdown
+          %h2.small_heading.white_pixel_font
+            lab 
+          - projects.each do |page|
+            %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
+              %img{:src=>page.url+"icon.png"}>
 
-    .section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 
-      %a.index_link{:href=>"/thoughts"}
-        thoughts
-      .dropdown
-        %h2.small_heading.white_pixel_font
-          recent posts 
-        - blog.articles[0...5].each do |article|
-          %a.white{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
-            = article.title
-    
-    .section.light_green.about
-      .dropdown
-        %h2.small_heading.white_pixel_font
-          Jan Drewniak (that's me)
-        %p.about_me
-          %a#my_face_avatar{:href=>"https://plus.google.com/+JanDrewniak?rel=author"}
-            %img{:src=>'/images/avatar.png'}
-          I make the netting in your internettings. UI Design, front-end development & such. Residing in the WAW and hailing from the YYZ. 
-            
-    .background_mask.has_shadow
+      %li.section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 
+        %a.index_link{:href=>"/thoughts"}
+          blog
+        .dropdown.white_pixel_font
+          %h2.small_heading.white_pixel_font
+            blog 
+          - blog.articles[0...5].each do |article|
+            %a.white{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
+              = article.title
+      
+      %li.section.light_green.about
+        %a.index_link{:href=>"#about_me"}
+        
+        .dropdown.white_pixel_font
+          %h2.small_heading.white_pixel_font
+            Jan Drewniak (that's me)
+          %p#about_me.about_me.white_pixel_font
+            %a#my_face_avatar{:href=>"https://plus.google.com/+JanDrewniak?rel=author"}
+              %img{:src=>'/images/avatar.png'}
+            I make the netting in your internettings. UI Design, front-end development & such. Residing in the WAW and hailing from the YYZ. 
+              
+      .background_mask.has_shadow
+  
   %a.tagline.iblock{:href=>'/'}
-    Art + Code for fun and profit
+    %h1
+      Jan Drewniak | Art + Code for fun and profit

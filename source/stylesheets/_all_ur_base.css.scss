@@ -18,6 +18,11 @@ body.thoughts *::selection  {
 	background-color: #a74843;
 }
 
+header{
+	position: relative;
+	margin-bottom: 2em; 
+}
+
 h1{
 	font-size: 3em;
 	font-weight: normal;
@@ -36,6 +41,12 @@ h2{
 	font-size: 1.2em;
 	font-weight: bold;
 }
+h3{
+	font-size: 1.2em;
+	font-weight: normal; 
+	letter-spacing: 2px;
+	font-variant: small-caps;
+}
 small{
 	font-size: 0.75em;
 	line-height: 1.5em;
@@ -50,9 +61,9 @@ a{
 	text-decoration: none;
 }
 
-a:visited{
-	color: $medium_grey;
-}
+//a:visited{
+//	color: $medium_grey;
+//}
 
 a:hover{
 	color: $aqua_h;
@@ -118,8 +129,9 @@ dl {
 
 	dt{
 		display: table-cell;
-		min-width: 6em;
+		min-width: 7em;
 		font-weight: bold;
+		padding-right: 1em;
 	}
 
 	dd {

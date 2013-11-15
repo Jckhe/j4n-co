@@ -113,8 +113,9 @@ a.white{
 	color: white; 
 }
 a.white:hover{
-	color: inherit;
+	color: $aqua_h
 }
-a.white:visited{
-	color: white; 
-}
+
+//a.white:visited{
+//	color: inherit; 
+//}
