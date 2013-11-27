@@ -24,7 +24,9 @@
 }
 
 @media screen and (max-width: 460px) {
-
+	.main{
+		width: 100%; 
+	}
 	.nav_flipper{
 		font-size: 10px; 
 	}
