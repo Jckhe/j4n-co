@@ -18,8 +18,10 @@
 	.project_gallery{
 			max-height: 500px;
 	}
+	dl dt, dl dd{
+		display: block;
+	}
 }
-
 
 @media screen and (max-width: 460px) {
 

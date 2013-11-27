@@ -16,14 +16,14 @@
 //	transition: height 0.01s;
 //	-webkit-transform: translate3d(0, 0, 0);
 
-	height: 40%;
+	height: 300px;
 	margin-top: -5rem;
 	overflow: hidden;
 	position: relative;
-	-webkit-transition: height 0.3s ease-in; 
-	-moz-transition: height 0.3s ease-in; 
-	-ms-transition: height 0.3s ease-in; 
-	transition: height 0.3s ease-in; 
+	-webkit-transition: height 0.3s ease-out; 
+	-moz-transition: height 0.3s ease-out; 
+	-ms-transition: height 0.3s ease-out; 
+	transition: height 0.3s ease-out; 
 	max-height: 600px;
 	
 	figure{
@@ -58,6 +58,7 @@
 
 
 .project_gallery:hover{
+	height: 350px;
 	img{
 		//-webkit-transform: rotate(-1deg);	
 	}
@@ -80,7 +81,9 @@
 	}
 
 }
-
+.project_gallery.active:hover{
+	height: 600px !important;
+}
 
 .project_gallery_item{
 	display: none;
