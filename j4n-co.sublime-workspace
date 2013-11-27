@@ -1,0 +1,982 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"favicon",
+				"favicon_link_tag"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"newPostA",
+				"newPostAttachmentForm"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"resp",
+				"response"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"LastMe",
+				"lastMessageID"
+			],
+			[
+				"time",
+				"timeout	setTimeout function"
+			],
+			[
+				"table",
+				"table-row"
+			],
+			[
+				"title",
+				"haxisTitle"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tool",
+				"toolbar_bg"
+			],
+			[
+				"getFront",
+				"getFrontPageDescriptions"
+			],
+			[
+				"front",
+				"front_page_description"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"center",
+				"center_banner_container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "source/thoughts/google_rich_snippet_cheatsheet/index.html.haml",
+			"settings":
+			{
+				"buffer_size": 27812,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/thoughts/google_rich_snippet_cheatsheet/ex-product-min.html.haml",
+			"settings":
+			{
+				"buffer_size": 130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/thoughts/google_rich_snippet_cheatsheet/ref.txt",
+			"settings":
+			{
+				"buffer_size": 13291,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/site.css.scss",
+			"settings":
+			{
+				"buffer_size": 189,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/_all_ur_base.css.scss",
+			"settings":
+			{
+				"buffer_size": 3123,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"urllib.request.install_opener( urllib.request.build_opener( ",
+			"ipp = sublime.installed_packages_path(); ",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/sandbox/root/spree2/app/views/spree/checkout/_delivery.html.erb",
+		"/Volumes/sandbox/root/spree2/app/helpers/spree/base_helper.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_head.html.erb",
+		"/Volumes/sandbox/root/spree2/Gemfile",
+		"/Volumes/sandbox/root/spree2/app/helpers/spree/number_helper_decorator.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/layouts/spree_application.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_footer.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_google_analytics.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_nav_bar.html.erb",
+		"/Volumes/sandbox/root/spree2/app/assets/javascripts/store/all.js",
+		"/Volumes/sandbox/root/spree2/app/assets/javascripts/admin/all.js",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/admin/all.css",
+		"/Volumes/sandbox/root/spree2/Gemfile.lock",
+		"/Volumes/sandbox/root/spree2/config/deploy.rb",
+		"/Volumes/sandbox/root/spree2/config/database.yml",
+		"/Volumes/sandbox/root/spree2/config/initializers/spree.rb",
+		"/Volumes/sandbox/root/spree2/vendor/engines/spree_importer/spree_importer.gemspec",
+		"/Volumes/sandbox/root/spree2/vendor/engines/spree_importer/Gemfile",
+		"/Volumes/sandbox/root/spree2/vendor/engines/spree_importer/Guardfile",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/store/all.css",
+		"/Volumes/sandbox/root/spree2/db/schema.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/admin/import_source_files/index.html.haml",
+		"/Volumes/sandbox/root/spree2/db/datashift/exports/product_properties.xls",
+		"/Volumes/sandbox/root/spree2/db/datashift/templates/product_properties.xls",
+		"/Volumes/sandbox/root/spree2/db/datashift/exports/products.xls",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_prev_page.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_page.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_next_page.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_last_page.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_gap.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/taxons/taxon_overview.html.erb",
+		"/Volumes/sandbox/root/spree2/app/controllers/taxons_controller_decorator.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_small_products.html.erb",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/store/supersalon/layout.css.erb",
+		"/Volumes/sandbox/root/spree2/config/environments/staging.rb",
+		"/Volumes/sandbox/root/spree2/config/heroku.yml",
+		"/Volumes/sandbox/root/spree2/spree_html_invoice/lib/spree_html_invoice.rb",
+		"/Volumes/sandbox/root/spree2/config/initializers/spree_html_invoice.rb",
+		"/Volumes/sandbox/root/spree2/vendor/engines/spree_html_invoice/lib/spree_html_invoice.rb",
+		"/Volumes/sandbox/root/spree2/vendor/engines/spree_html_invoice/lib/spree_html_invoice/engine.rb",
+		"/Volumes/sandbox/root/spree2/app/views/kaminari/_first_page.html.erb",
+		"/Volumes/sandbox/root/spree2/lib/spree_html_invoice/engine.rb",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/store/supersalon/layout.css",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/store/supersalon/layout.css.erb.css",
+		"/Volumes/sandbox/root/spree2/app/assets/images/arrows.png",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/store/spree_core.css",
+		"/Volumes/sandbox/root/spree2/app/views/spree/taxons/show.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/products/show.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/products/_simple_cart_form.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/products/_cart_form.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/checkout/_address.html.erb",
+		"/Volumes/sandbox/root/spree2/app/controllers/spree/home_controller.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_products.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/shared/_order_details.html.erb",
+		"/Volumes/sandbox/root/spree2/db/migrate/20131017133242_add_name_address_to_banks.rb",
+		"/Volumes/sandbox/root/spree2/db/migrate/20131017134527_add_currency_to_banks.rb",
+		"/Volumes/sandbox/root/spree2/app/models/spree/bank.rb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/admin/banks/_form.html.erb",
+		"/Volumes/sandbox/root/spree2/app/assets/stylesheets/application.css",
+		"/Volumes/sandbox/root/spree2/app/views/spree/checkout/payment/_banktransfer.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/checkout/edit.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/order_mailer/confirm_email.text.erb",
+		"/Volumes/sandbox/root/spree2/app/assets/javascripts/store/checkout.js",
+		"/Volumes/sandbox/root/spree2/app/views/spree/admin/payments/source_forms/_transferuj.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/admin/payments/source_views/_transferuj.html.erb",
+		"/Volumes/sandbox/root/spree2/app/views/spree/admin/payments/source_views/transferuj.html.erb",
+		"/Volumes/sandbox/root/spree2/supersalon",
+		"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3/app/assets/stylesheets/store/screen.css.scss",
+		"/Volumes/sandbox/root/spree2/config.ru",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_base.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/bridge.css.scss",
+		"/Volumes/sandbox/root/skedx/config/locales/devise.en.yml",
+		"/Volumes/sandbox/root/skedx/app/controllers/delayed_jobs_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/intro.js",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/account_mailer.html.erb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/wall.js",
+		"/Volumes/sandbox/root/skedx/app/controllers/wall_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/mailers/account_mailer.rb",
+		"/Volumes/sandbox/root/skedx/app/mailers/wall_mailer.rb",
+		"/Volumes/sandbox/root/skedx/app/views/wall_mailer/new_wall_reply.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/wall_mailer/new_wall_post.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/wall_mailer.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/_big_button.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/_social_links.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/change_password.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account_by_user.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/desktop-notify.js",
+		"/Volumes/sandbox/root/skedx/app/mailer_previews/account_mailer_preview.rb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account.html.erb",
+		"/Volumes/sandbox/root/skedx/db/schema.rb",
+		"/Volumes/sandbox/root/skedx/app/mailers/user_account_mailer.rb",
+		"/Volumes/sandbox/root/skedx/app/models/api/v1/authenticated.rb",
+		"/Volumes/sandbox/root/skedx/app/models/worker/new_account.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/api_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/users_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/models/user.rb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account_by_user.html.erb",
+		"/Volumes/sandbox/root/skedx/.env",
+		"/Volumes/sandbox/root/skedx/dev.env",
+		"/Volumes/sandbox/root/skedx/Procfile",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_messages_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/password_reset_instructions.html.erb",
+		"/Volumes/sandbox/root/skedx/app/mailer_previews/wall_mailer_preview.rb",
+		"/Volumes/sandbox/root/skedx/Gemfile",
+		"/Volumes/sandbox/root/skedx/README",
+		"/Volumes/sandbox/root/skedx/config/environments/test.rb",
+		"/Volumes/sandbox/root/skedx/config/environments/development.rb",
+		"/Volumes/sandbox/root/skedx/db/migrate/20130702142128_create_thread_unsubscriptions.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/filters_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/ui/autocomplete.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_filter_form.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_tag_filter.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_first_post.html.haml",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_message_threads_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/parameter_signing.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_edit_profile.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_new_post.html.haml",
+		"/Volumes/sandbox/root/skedx/config/routes.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/resources/resources.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_threads.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/companies/_edit_all_tags.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_wall.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_mini_profile.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/company.js",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_photostream.css.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_wall.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_layout.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/sandbox/root/spree2/app",
+			"/Volumes/sandbox/root/spree2/app/views",
+			"<project>",
+			"/Volumes/sandbox/root/spree2/db/migrate",
+			"/Volumes/sandbox/root/spree2",
+			"/Volumes/sandbox/root/spree2/app",
+			"/Volumes/sandbox/root/spree2",
+			"/Volumes/sandbox/root/spree2/app/views/spree",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_backend-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_cmd-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_core-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_api-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_related_products-3.0.2",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_backend-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_cmd-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_core-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_api-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_related_products-3.0.2,/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_sample-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_api-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_core-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_backend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_sample-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_related_products-3.0.2",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_api-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_core-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_cmd-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_backend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3",
+			"/Volumes/sandbox/usr/lib/ruby/gems/1.9.1/gems/spree_frontend-2.0.3/app",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/models",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers/api/v1",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/views",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/views",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/",
+			"/Volumes/sandbox/root/skedx/app/",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app/assets/javascripts",
+			"/Volumes/ego_eco/root/opencart/catalog/controller",
+			"/Volumes/ego_eco/root/opencart/admin",
+			"/Volumes/ego_eco/root/opencart/catalog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bread",
+			"description",
+			"IfShowCopyrightInFooter",
+			"copy",
+			"posts",
+			"payu",
+			"payui",
+			"payu",
+			"transferuj",
+			"error_url",
+			"transferuj",
+			"number",
+			"google_analytics",
+			"google",
+			":pl",
+			"doma",
+			"import",
+			"data",
+			"searcher",
+			"fixed",
+			"ma-canvas",
+			"pagination",
+			"asset",
+			"ass",
+			"asst",
+			"next",
+			"after",
+			"db",
+			"after",
+			"paperclip",
+			"product",
+			"image",
+			"%>",
+			"sstate",
+			"billing",
+			"submit",
+			"disableSaveOnClick",
+			"disable",
+			"var",
+			"submit",
+			"current",
+			"footer",
+			"body",
+			"taxons-list-children",
+			"current_taxon",
+			"taxons_tree",
+			"current_taxon",
+			"current",
+			"root",
+			"paginate",
+			"pagination",
+			"h6",
+			"new-customer",
+			"data-hook",
+			"data-hook='signup'",
+			"data-hook=\"signup\"",
+			"h6",
+			"Login as Existing Customer",
+			"data-hook=\"login\"",
+			"existing-customer",
+			"large_image",
+			"vailable",
+			"company_admin?",
+			"noti",
+			"request",
+			"146",
+			"notify",
+			"login",
+			"activate",
+			"activale",
+			"callout",
+			"terms",
+			"begin footer",
+			"helpalong",
+			"email",
+			"padding: 15",
+			"link",
+			"twitter",
+			"login",
+			"user",
+			"accessor",
+			"current_api_user",
+			"save",
+			"current_api_user",
+			"send_registration_email",
+			"after_create",
+			"save",
+			"REDISCLOUD_URL",
+			"redis",
+			"font",
+			"at_mention",
+			"new_filter",
+			"show_filter",
+			"edit",
+			"formatAvailable",
+			"edit",
+			"new_filter",
+			"filter",
+			"scope.show_filter",
+			"addFilter",
+			"saveFilter",
+			"Filter",
+			"filter",
+			"show",
+			"filterItem",
+			"format",
+			"$scope.availableTags",
+			"formatFilters",
+			"formatFil",
+			"forFilt",
+			"formatFor",
+			"filters",
+			"availableFilterTag",
+			"availableFilterTags",
+			"formatAvailable",
+			"format",
+			"availableFilterTags",
+			"availableFilterTag",
+			"push",
+			"autoCom",
+			"handleFilterChange",
+			"$scope.filterItems",
+			"filterItems",
+			"items",
+			"filter",
+			"ng-model",
+			"scope",
+			"new_filter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "source/thoughts/google_rich_snippet_cheatsheet/index.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27812,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/thoughts/google_rich_snippet_cheatsheet/ex-product-min.html.haml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/thoughts/google_rich_snippet_cheatsheet/ref.txt",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 13291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/stylesheets/site.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/stylesheets/_all_ur_base.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								832,
+								832
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"project": "j4n-co.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"development",
+				"config/environments/development.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/sandbox/root/skedx/bridge_web_app.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -46,6 +46,8 @@ h3{
 	font-weight: normal; 
 	letter-spacing: 2px;
 	font-variant: small-caps;
+	margin-bottom: 0.5em; 
+	margin-top: 0.2em;
 }
 small{
 	font-size: 0.75em;
@@ -170,4 +172,54 @@ body.index iframe, body.lab iframe{
 
 p.large, span.large{
 	font-size: 2em;
+}
+
+pre {
+
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ background-color: lighten($light_grey, 5%); 
+	font-family: monospace;
+	max-width: inherit;
+	overflow: auto;
+}
+
+code{
+	font-family: monospace;
+	background-color: lighten($light_grey, 5%); 
+	padding: 3px; 
+}
+
+code.required{
+	background-color: $redish;
+	color: white; 
+}
+// *-------- tables --------* 
+
+table{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+tr{
+}
+tr:nth-child(even) {
+	background-color: lighten($light_grey, 10%);
+}
+tr:nth-child(odd) {
+	background-color: #FFF;
+}
+
+th{
+	background-color: $medium_grey;
+	color: white; 
+	padding-bottom: 0.2em;
+	padding-top: 0.2em;
+}
+td{
+	vertical-align: top;
+	padding: 5px 5px 5px 0;
 }
