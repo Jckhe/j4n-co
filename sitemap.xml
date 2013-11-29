@@ -2,217 +2,235 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://j4n.co/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/tag.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/googlece830a710ca5607b.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/base.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/lab/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/lab/flatland/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/lab/game_of_life/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/lab/scribbly-ladybugs/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/images/project_galleries/garamondieu/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/images/project_galleries/garamondieu/simulator/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/images/garamondieu/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/images/garamondieu/simulator/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/scattered/index.html</loc>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/ego_eco/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/skedx/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/skedx/skedx_gifcast/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/supersalon/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/work/bridge/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/the_internet_blues/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_drive/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/hello_world/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/safari_preloading/index.html</loc>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/progressive_enhancement/index.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/table-product.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/review.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/ex-product-min.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2013.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2013/11.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://j4n.co/2013/11/29.html</loc>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2013/11/13.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012/09.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012/09/13.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012/09/01.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012/07.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://j4n.co/2012/07/31.html</loc>
-    <lastmod>2013-11-27T00:00:00-05:00</lastmod>
+    <lastmod>2013-11-29T00:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
