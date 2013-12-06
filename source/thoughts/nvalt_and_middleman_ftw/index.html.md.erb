@@ -1,0 +1,83 @@
+---
+title: nvALT and Middleman FTW
+
+subtitle: A sane way of creating blog posts for static site generators. 
+
+Description: A sane way of creating blog posts for static site generators.
+
+date: 2013/12/06
+
+published: 2013/12/06
+---
+
+
+Static site generators are soooo hot right now. 
+---
+
+But let's face it. They're a pain in the ass. It's a fact. Anyone who's ever switched to a static site generator for the purposes of blogging has fallen off the face of the earth. It's been documented [here](http://wswld.net/2013/08/06/why-static-site-generators-arent-good-for-my-blog/), [here](http://www.kevindangoor.com/2012/03/wordpress-to-octopress-and-back/), and [here](http://mikerooney.rowk.com/2013/02/11/migrating-from-octopress-to-wordpress-really/). 
+
+Why? because **Fact Of The Day**: SSG's are a pain in the ass.  
+
+And why is that?
+ When people switch to SSG's, they tend to screw around with their site instead of focusing on writing:
+ 
+>"for several months I’ve been experimenting with static generators, I’ve hardly written half a post. It was a common problem, as I googled it. People dug so deep into the endless customization and switching that eventually they’ve stopped writing." - Vsevolod Glumov
+
+For me however, the point of my site is to have something to screw around with, and I write like once a month anyway. 
+
+What does bother me though, is **the fact that I have to start a web-server to write a blog post**. On the outset this might not seem like a big deal, "It's just one terminal command" you say. Yes, but given the fact that my dev environment is in an Ubuntu VM, it means I have to start the VM, ssh into the VM, cd into the folder, then start the web-server, open up SublimeText and start writing, then open a browser, go to the page I'm writing, and heaven forbid LiveReload isn't working for some reason, then it's save refresh save refresh every time I make a change. Even if LiveReload is working, it's still save reload, save reload, save reload,... so yeah, having to start a web-server to write a blog-post is kind of a big deal. 
+
+I also hear you saying, *"but Jan, you don't have to start a server to write a blog post, it's just a markdown file"*. But I think visually, and being able to see what my post looks like as I write is critical for me. 
+
+[Ghost](https://ghost.org/features/) seems to agree with this idea. They've made this dual-pane markdown/preview WYSIWYG writing experience a core part of their product. 
+
+<%= article_image_tag("Screen%20Shot%202013-12-06%20at%2012.49.13%20PM.png") %> 
+
+(markdown on the left, post preview on the right)
+
+Ghost however, is just a blogging platform, and being that my blog is not the main focus of my site, Ghost is not the solution for me. 
+
+Drumroll... enter nvALT
+---
+<a href="http://brettterpstra.com/projects/nvalt/">
+<%= article_image_tag("nvalticonnew-300x300-150x150.png") %>  
+</a>
+With [nvALT](http://brettterpstra.com/projects/nvalt/), I've discovered an amazing way to write *that works with my SSG* (I'm using [Middleman](http://middlemanapp.com), btw). 
+
+[Middleman](http://middlemanapp.com), like [Jekyll](http://jekyllrb.com) or [Octopress](http://octopress.org) and even [Ghost](https://ghost.org), uses markdown for blog posts. 
+
+There are many markdown editors for the mac, and most let you customize the CSS. But I wanted more. I wanted the full WYSIWYG experience, like Ghost. 
+
+This is where nvALT really delivers. nvALT let's you customize the entire HTML/CSS/JS  preview of your markdown files, *so you see what your posts look like, as your writing them*. You don't even have to press save, nvALT saves as you type.  
+
+And for the icing on the cake, *the preview window is responsive*. 
+
+
+<%= article_image_tag("Screen%20Shot%202013-12-06%20at%201.27.38%20PM.png") %>
+
+nvALT preview window: mobile size 
+
+<%= article_image_tag("Screen%20Shot%202013-12-06%20at%201.27.54%20PM.png") %>
+
+nvALT preview window: desktop size. 
+
+
+
+*( ... I just put a picture of my blog post in my blog post... that just got kinda meta )*
+
+The default template files, [template.html](https://github.com/ttscoff/nv/blob/master/template.html) and [custom.css](https://github.com/ttscoff/nv/blob/master/custom.css), have recently been excluded from nvALT, but it's enough to copy them from the github repo, stick them in <code>~/Library/Application Support/nvALT/</code> and you're off to the races. 
+
+The Current Workflow
+---
+
+as it stands:
+
+1. Create the post in nvALT using markdown.
+2. Export the file to the Middleman blog directory, ending it it 'html.md' for markdown.
+4. Use the [Middleman Github Pages  gem](https://github.com/neo/middleman-gh-pages) to one-step-commit-and-publish the site to github pages. 
+
+I don't even have to start the web-server because I'm using the same CSS and HTML in the preview as I am on my live site, so I'm 100% sure posts will look the same in production as they do in the preview. Heck, I can even symlink the production CSS file from my site directory to the nvALT template directory so that nvALT always has the most current CSS file as my site. 
+
+
+
+
