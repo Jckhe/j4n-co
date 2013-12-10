@@ -1,255 +1,455 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://j4n.co/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/CNAME</loc>
+    <lastmod>2013-11-11</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/</loc>
+    <lastmod>2013-11-27</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/tag.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2012-08-07</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/googlece830a710ca5607b.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2012-10-01</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/base.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2012-06-26</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/lab/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/</loc>
+    <lastmod>2013-12-10</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/lab/flatland/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/flatland/icon.png</loc>
+    <lastmod>2013-09-30</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/lab/game_of_life/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/flatland/</loc>
+    <lastmod>2013-12-10</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/lab/scribbly-ladybugs/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/game_of_life/icon.png</loc>
+    <lastmod>2013-09-30</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/images/project_galleries/garamondieu/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/game_of_life/</loc>
+    <lastmod>2013-12-10</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/images/project_galleries/garamondieu/simulator/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/scribbly-ladybugs/icon.png</loc>
+    <lastmod>2013-11-27</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/images/garamondieu/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/lab/scribbly-ladybugs/</loc>
+    <lastmod>2013-12-10</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/images/garamondieu/simulator/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/</loc>
+    <lastmod>2013-11-14</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/scattered/</loc>
+    <lastmod>2013-11-29</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/scattered/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/scattered/icon.png</loc>
+    <lastmod>2013-10-26</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/ego_eco/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/scattered/scattered_screenshots_3.png</loc>
+    <lastmod>2013-11-29</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/scattered/scattered_screenshots_2.png</loc>
+    <lastmod>2013-11-29</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/skedx/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/scattered/scattered_screenshots_1.png</loc>
+    <lastmod>2013-11-29</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/skedx/skedx_gifcast/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/ego_eco_2.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/supersalon/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/ego_eco_3.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/work/bridge/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/ego_eco_1.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/the_internet_blues/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/icon.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/ego_eco_4.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/google_drive/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/ego_eco_5.png</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/hello_world/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas017.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/safari_preloading/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas003.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
   </url>
   <url>
-    <loc>http://j4n.co/thoughts/progressive_enhancement/index.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas015.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas016.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas008.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas028.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas024.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas019.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/phosphorframework.js</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_animationData.jsonp</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas012.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas023.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas007.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/README</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas027.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas022.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas000.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas005.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas029.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas010.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas006.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas001.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas030.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas020.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas009.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas021.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas025.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas014.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas026.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_animationData.json</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas013.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas002.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas011.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas004.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/egoecogifcast_atlas018.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/ego_eco/egoeco_gifcast/</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gallery_1.jpg</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_3.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_2_old.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/icon.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/icon-poop.jpg</loc>
+    <lastmod>2013-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_2.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/old_skedx.jpg</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_4.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_1.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_3_old.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas003.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas002.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/phosphorframework.js</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/README</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas006.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas001.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas005.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas007.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_animationData.jsonp</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas000.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_animationData.json</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas008.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast_atlas004.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/skedxgifcast.jpg</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/skedx/skedx_gifcast/</loc>
+    <lastmod>2013-10-04</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/supersalon/</loc>
+    <lastmod>2013-11-27</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/supersalon/supersalon_cart.png</loc>
+    <lastmod>2013-11-27</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/supersalon/supersalon_frontpage.png</loc>
+    <lastmod>2013-11-27</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/supersalon/icon.png</loc>
+    <lastmod>2013-11-27</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/supersalon/supersalon_product.png</loc>
+    <lastmod>2013-11-27</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/bridge/</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/bridge/icon.png</loc>
+    <lastmod>2013-11-13</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/work/bridge/bridge_1.png</loc>
+    <lastmod>2013-08-14</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/</loc>
+    <lastmod>2013-12-10</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/the_internet_blues.html</loc>
+    <lastmod>2013-10-01</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw.html</loc>
+    <lastmod>2013-12-06</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw/Screen Shot 2013-12-06 at 1.27.54 PM.png</loc>
+    <lastmod>2013-12-06</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw/nvalticonnew-300x300-150x150.png</loc>
+    <lastmod>2013-12-06</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw/Screen Shot 2013-12-06 at 1.27.38 PM.png</loc>
+    <lastmod>2013-12-06</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/nvalt_and_middleman_ftw/Screen Shot 2013-12-06 at 12.49.13 PM.png</loc>
+    <lastmod>2013-12-06</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/google_drive.html</loc>
+    <lastmod>2013-12-10</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/hello_world.html</loc>
+    <lastmod>2013-02-12</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/safari_preloading.html</loc>
+    <lastmod>2013-12-10</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/progressive_enhancement.html</loc>
+    <lastmod>2013-11-14</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/progressive_enhancement/distributed_networks.jpg</loc>
+    <lastmod>2013-11-13</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/table-product.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2013-11-20</lastmod>
+  </url>
+  <url>
+    <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/ref.txt</loc>
+    <lastmod>2013-11-18</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/review.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2013-11-29</lastmod>
   </url>
   <url>
     <loc>http://j4n.co/thoughts/google_rich_snippet_cheatsheet/ex-product-min.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013/12.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013/12/06.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013/11.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013/11/29.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2013/11/13.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012/09.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012/09/13.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012/09/01.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012/07.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://j4n.co/2012/07/31.html</loc>
-    <lastmod>2013-12-06T00:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2013-11-21</lastmod>
   </url>
 </urlset>
