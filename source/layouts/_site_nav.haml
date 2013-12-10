@@ -1,10 +1,10 @@
-%header.top_bar.dark_grey
-  %nav.sitenav
+%header.top_bar.dark_grey{:itemscope=>true, :itemtype=>"http://schema.org/WPHeader"}
+  %nav.sitenav{:itemscope=>true, :itemtype=>"http://schema.org/SiteNavigationElement"}
     %ul
       
-      %li.section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '' } 
-        %a.index_link{:href=>"/work"}
-          portfolio
+      %li.section.work.yellow{ :alt=>"portfolio", :class => current_page.url.match(/^\/work\/.*\/$/) ? "current_section" : '', :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb" } 
+        %a.index_link{:href=>"/work", :itemprop=>"url"}
+          %span{:itemprop=>"title"} portfolio
         - pages = sitemap.resources.find_all{|p| p.url == p.url.match(/^\/work\/.*?[\/]+/).to_s  }
         - pages.sort!{|a, b| a.data.order <=> b.data.order}
 
@@ -12,20 +12,26 @@
           %h2.small_heading.white_pixel_font
             portfolio 
           - pages.each do |page|
-            %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-              %img{:src=>page.url+"icon.png"}>
-
+            %span{:itemprop=>"child", :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb"}
+              %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "", :itemprop=>"url"  }>
+                %img{:src=>page.url+"icon.png"}>
+                %span.thumbnail_title.white_pixel_font{:itemprop=>"title"}
+                  = page.data.title
+                
     
-      %li.section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : ''}  
-        %a.index_link{:href=>"/lab"}
-          lab
+      %li.section.tools.aqua{:alt=>"lab", :class => current_page.url.match(/^\/lab\/.*\/$/) ? "current_section" : '',  :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb" }  
+        %a.index_link{:href=>"/lab", :itemprop=>"url"}
+          %span{:itemprop=>"title"} lab
         - projects = sitemap.resources.find_all{|p| p.url.match(/^\/lab\/.*\/$/)  }
         .dropdown
           %h2.small_heading.white_pixel_font
             lab 
           - projects.each do |page|
-            %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "" }>
-              %img{:src=>page.url+"icon.png"}>
+            %span{:itemprop=>"child", :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb"}
+              %a.thumbnail{:href=>page.url.chomp('/'), :class => page.url == current_page.url ? "current_page": "",  :itemprop=>"url"  }>
+                %img{:src=>page.url+"icon.png"}>
+                %span.thumbnail_title.white_pixel_font{:itemprop=>"title"}
+                  = page.data.title
 
       %li.section.blog.redish{:alt=>"blog", :class => current_page.url.match(/^\/thoughts\/.*\/$/) ? "current_section" : ''} 
         %a.index_link{:href=>"/thoughts"}
@@ -35,21 +41,23 @@
             blog 
           - blog.articles[0...5].each do |article|
             %a.white{:href=>article.url, :class => article.url == current_page.url ? "current_page": "" }
-              = article.title
+              %span.thumbnail_title.white_pixel_font
+                = article.title
       
-      %li.section.light_green.about
+      %li.section.light_green.about{:itemscope => true, :itemtype=>"http://data-vocabulary.org/Person"}
         %a.index_link{:href=>"#about_me"}
         
         .dropdown.white_pixel_font
-          %h2.small_heading.white_pixel_font
-            Jan Drewniak (that's me)
+          %h2.small_heading.white_pixel_font{:itemprop=>"name"}
+            Jan Drewniak
           %p#about_me.about_me.white_pixel_font
             %a#my_face_avatar{:href=>"https://plus.google.com/+JanDrewniak?rel=author"}
-              %img{:src=>'/images/avatar.png'}
-            I make the netting in your internettings. UI Design, front-end development & such. Residing in the WAW and hailing from the YYZ. 
+              %img{:src=>'/images/avatar.png',:itemprop =>"photo"}
+            I'm a <span itemprop="title">User Interface Designer</span> currently residing in <span itemprop="address" itemscope
+            itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Warsaw</span>, <span itemprop="country-name">Poland</span></span> and hailing from Toronto. 
               
       .background_mask.has_shadow
   
   %a.tagline.iblock{:href=>'/'}
-    %h1
-      Jan Drewniak | Art + Code for fun and profit
+    %h1{:itemprop=>"headline"}
+      Jan Drewniak | <span itemprop="description">Art + Code for fun and profit</span>

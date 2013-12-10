@@ -2,7 +2,7 @@
 	
 	= partial "layouts/header_element"
 
-	%body{:class=> page_classes}
+	%body{:class=> page_classes, :itemscope=>true, :itemtype=>"http://schema.org/WebPage"}
 
 		= partial "layouts/site_nav"
 
