@@ -1,0 +1,129 @@
+--- 
+title: From Kindle to Calibre to iBooks
+
+subtitle: A sane way of creating blog posts for static site generators. 
+
+Description: A sane way of creating blog posts for static site generators.
+
+date: 2014/01/02
+
+published: 2014/01/02 
+---
+
+epubs and mobis and azws oh my!
+
+Let's face it, the Kindle For Mac app is horrible. It's not optimized for retina displays, and hasn't been [for over a year](http://www.amazon.com/gp/help/customer/forums/kindleqna/ref=cm_cd_pg_pg4?ie=UTF8&cdForum=Fx1GLDPZMNR1X53&cdPage=4&cdThread=Tx21CPVYII8PIYM), making it essentially useless on my retina macbook pro. Also, you cannot *copy and paste* from it. However, like many people, I own a kindle, and so that's what I'm stuck with. 
+
+iBooks for Mac on the other hand, is a much better reading experience, and it supports copy and
+paste.
+
+So today's mission is to get books *from* the Kindle for Mac app *into* iBooks *through* Calibre. The following workflow is not as automated as I'd like it to be, but it's good enough for now: 
+
+1. We locate the folder that the Kindle For Mac app uses to store downloaded books. 
+2. We use Automator to automatically copy those books into another folder.\*
+3. We setup Calibre to automatically add the books from the copied folder and convert them to ePubs. 
+4. We drag the files from Calibre into iBooks (this is the manual labour). 
+
+\*The reason for step 2 -- copying the books into another folder with automator -- is that Calibre deletes items from the source folder after it automatically adds them to the Calibre library. The reason for this behaviour is outlined [here](http://www.mobileread.com/forums/showthread.php?t=199242). 
+
+Step 1: Locate the Kindle Data Folder
+---
+
+It's here: 
+
+<code style="max-width:100%;word-break:break-word;">
+~/Library/Containers/com.amazon.Kindle/Data/Library/Application Support/Kindle/My Kindle Content/
+</code>
+
+You can easily go to this folder by pressing Command+Shift+G in the Finder, then copying and pasting the above path into the textfield and pressing 'Go'. 
+
+You should see a bunch of .azw and .apnx  files. These are your kindle books. 
+<%= article_image_tag("kindle_folder.jpg") %> 
+
+Step 2: Setup Automator to Automatically Copy the Kindle Books 
+---
+
+This is really easy. Some other tutorials use a third-party app for this, but automator is perfect for the job.  
+
+
+- Open Automator. 
+- Select ' Folder Action'. <%= article_image_tag("automator_folder_action_1.jpg") %> 
+- Where it says 'Choose folder', select the folder with the Kindle books. Again, an easy way to go the this folder is Command+Shift+G <%= article_image_tag("automator_folder_action_2.jpg") %>
+- Select 'Copy Finder Items' as the folder action. You can set the destination folder to whatever and wherever you want. Mine is called 'Kindle 4 Mac Items' and is located in my Documents folder.
+	<%= article_image_tag("automator_folder_action_4.jpg") %>
+
+
+There we go. Now, whenever you double click on a book in the Kindle for Mac app, the app downloads the book into the Kindle content folder, and Automator automatically copies the book into a different folder. 
+
+Step 3: Calibre, Taming the Beast
+---
+
+First, download [Calibre](http://calibre-ebook.com). Then clean up the cruddy Calibre interface a bit. 
+
+Bad
+<%= article_image_tag("prettying_up_calibre_1.jpg") %>
+
+Less bad 
+<%= article_image_tag("prettying_up_calibre_7.jpg") %>
+
+Follow the steps in the gallery below to go from bad to less bad. 
+
+
+<div class='gallery items-6'>
+
+<% (2..7).each do |item_index| %>
+<div id="item-<%= item_index %>" class="control-operator" > </div>
+<% end %> 
+
+<% (2..7).each do |item_index| %>
+<figure class="item">
+<%= article_image_tag("prettying_up_calibre_"+item_index.to_s+".jpg") %> 
+</figure>
+<% end %>
+
+<div class="controls">
+<% (2..7).each do |item_index| %>
+<a class="control-button" href="#item-<%= item_index%>"> </a>
+<% end %> 
+</div>
+
+</div> 
+
+Step 4: DeDRMing Kindle books with Calibre
+---
+
+Now we get down to business. Download the [DeDRM plugin for Calibre](https://apprenticealf.wordpress.com/) and follow the instructions to get it installed. The plugin will automatically strip DRM from Kindle books when they are added to Calibre.  
+
+Step 5: Automatically adding books into Calibre
+---
+
+First we need to set the preferred output format in Calibre, then we need to set up the automatic adding. 
+
+To set the preferred output format. From the top menu, we go to:
+
+Calibre → Preferences → Behavior
+<%= article_image_tag("calibre_automatic_adding_1.jpg") %> 
+
+
+And there we select EPUB as the preferred output format. 
+<%= article_image_tag("calibre_default_output_format.jpg") %> 
+
+Now for the automatic adding. From the top menu, we go to:
+
+Calibre → Preferences → Adding Books → Automatic Adding
+<%= article_image_tag("calibre_automatic_adding_2.jpg") %> 
+
+From here, we select the folder that we copied the kindle books into with Automator.  My folder is named "Kindle 4 Mac Items". __It's important that 'automatically convert added files to the current output format' is checked__. We click apply. 
+
+Now after we hit apply, Calibre will automatically add the kindle books, strip the DRM off them, and convert them to ePubs. Not bad. 
+
+Step 6: Getting from Calibre to iBooks
+---
+
+Unfortunately, I was unable to get the books from Calibre to iBooks automatically, so I just drag them into iBooks from Calibre. There's a thread on this topic [here](http://www.mobileread.com/forums/showthread.php?t=225516), but that workflow didn't worked for me, so I'm sticking to dragging for now. 
+
+But hey, the books convert nicely from Kindle to ePub, along with images and table of contents and all that jazz. 
+
+<%= article_image_tag("ibooks_2.jpg") %> 
+<%= article_image_tag("ibooks_1.jpg") %> 
+

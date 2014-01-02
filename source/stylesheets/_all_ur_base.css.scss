@@ -82,15 +82,18 @@ strong{
 	font-weight: bold;
 }
 
-ul {
+ul, ol {
 	text-indent: 0;
 	padding-left: 2em;
 }
-li{
+ul li{
 	margin-bottom: 0.5em;
 	list-style: inside square;
 }
-
+ol li{
+	margin-bottom: 0.5em;
+	list-style: inside decimal;
+}
 article{
 	font-size: 18px;
 	padding: 0.1px;

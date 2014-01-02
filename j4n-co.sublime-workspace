@@ -91,6 +91,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "source/thoughts/kindle_to_ibooks/index.html.md.erb",
+			"settings":
+			{
+				"buffer_size": 5742,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/modules/_variables.css.scss",
+			"settings":
+			{
+				"buffer_size": 492,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/modules/_gallery.css.scss",
+			"settings":
+			{
+				"buffer_size": 2481,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/modules/_gallery.theme.css.scss",
+			"settings":
+			{
+				"buffer_size": 675,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/stylesheets/site.css.scss",
+			"settings":
+			{
+				"buffer_size": 568,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -136,6 +176,25 @@
 	"file_history":
 	[
 		"/Volumes/sandbox/root/j4n-co/source/stylesheets/_all_ur_base.css.scss",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/nvalt_and_middleman_ftw/index.html.md.erb",
+		"/Volumes/sandbox/root/j4n-co/source/stylesheets/modules/_gallery.css.scss",
+		"/Volumes/sandbox/root/j4n-co/source/stylesheets/modules/_sitenav.css.scss",
+		"/Volumes/sandbox/root/j4n-co/source/stylesheets/_layout.css.scss",
+		"/Volumes/sandbox/root/j4n-co/source/layouts/index.haml",
+		"/Volumes/sandbox/root/j4n-co/source/layouts/_header_element.haml",
+		"/Volumes/sandbox/root/j4n-co/source/sitemap.xml.builder",
+		"/Volumes/sandbox/root/j4n-co/source/robots.txt",
+		"/Volumes/sandbox/root/j4n-co/source/layouts/_site_nav.haml",
+		"/Volumes/sandbox/root/j4n-co/build/sitemap.xml",
+		"/Volumes/sandbox/root/j4n-co/build/index.html",
+		"/Volumes/sandbox/root/j4n-co/source/lab/scribbly-ladybugs/index.html.md",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/index.html.haml",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/safari_preloading/index.html.haml",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/google_drive/index.md",
+		"/Volumes/sandbox/root/j4n-co/source/lab/index.html.haml",
+		"/Volumes/sandbox/root/j4n-co/source/lab/game_of_life/index.html.md",
+		"/Volumes/sandbox/root/j4n-co/source/lab/flatland/index.html.md",
+		"/Volumes/sandbox/root/j4n-co/data/site.yml",
 		"/Volumes/sandbox/root/j4n-co/source/stylesheets/site.css.scss",
 		"/Volumes/sandbox/root/j4n-co/source/thoughts/google_rich_snippet_cheatsheet/ex-product-min.html.haml",
 		"/Volumes/sandbox/root/j4n-co/source/thoughts/google_rich_snippet_cheatsheet/index.html.haml",
@@ -243,30 +302,11 @@
 		"/Volumes/sandbox/root/skedx/dev.env",
 		"/Volumes/sandbox/root/skedx/Procfile",
 		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_messages_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/views/account_mailer/password_reset_instructions.html.erb",
-		"/Volumes/sandbox/root/skedx/app/mailer_previews/wall_mailer_preview.rb",
-		"/Volumes/sandbox/root/skedx/Gemfile",
-		"/Volumes/sandbox/root/skedx/README",
-		"/Volumes/sandbox/root/skedx/config/environments/test.rb",
-		"/Volumes/sandbox/root/skedx/config/environments/development.rb",
-		"/Volumes/sandbox/root/skedx/db/migrate/20130702142128_create_thread_unsubscriptions.rb",
-		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/filters_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/ui/autocomplete.js",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_filter_form.html.haml",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_tag_filter.html.haml",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_first_post.html.haml",
-		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_message_threads_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/assets/javascripts/parameter_signing.js",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_edit_profile.html.haml",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_new_post.html.haml",
-		"/Volumes/sandbox/root/skedx/config/routes.rb",
-		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/resources/resources.js",
-		"/Volumes/sandbox/root/skedx/app/views/wall/_threads.html.haml",
-		"/Volumes/sandbox/root/skedx/app/views/companies/_edit_all_tags.html.haml"
+		"/Volumes/sandbox/root/skedx/app/views/account_mailer/password_reset_instructions.html.erb"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -339,6 +379,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"background",
+			"backgroundg",
+			"background",
+			"gallery",
+			"mixin",
+			"item-count",
+			"$item-count",
+			"opacity",
+			"li",
+			"index.html",
 			"bread",
 			"description",
 			"IfShowCopyrightInFooter",
@@ -456,17 +506,7 @@
 			"formatAvailable",
 			"format",
 			"availableFilterTags",
-			"availableFilterTag",
-			"push",
-			"autoCom",
-			"handleFilterChange",
-			"$scope.filterItems",
-			"filterItems",
-			"items",
-			"filter",
-			"ng-model",
-			"scope",
-			"new_filter"
+			"availableFilterTag"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -486,8 +526,374 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "source/thoughts/kindle_to_ibooks/index.html.md.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5741,
+								5741
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2311.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "source/stylesheets/modules/_variables.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 492,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/stylesheets/modules/_gallery.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2481,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								15
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 155.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "source/stylesheets/modules/_gallery.theme.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/stylesheets/site.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -525,6 +931,10 @@
 	"output.exec":
 	{
 		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
 	},
 	"project": "j4n-co.sublime-project",
 	"replace":
@@ -570,12 +980,16 @@
 	},
 	"settings":
 	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 270.0,
+	"side_bar_width": 362.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
