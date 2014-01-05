@@ -1,0 +1,177 @@
+
+<canvas id="canvas">
+	
+</canvas>
+
+<script type="text/javascript" charset="utf-8" async defer>
+
+var canvas = document.getElementById('canvas');
+	canvas.width = document.width;
+    canvas.height = document.height;
+
+var ctx = canvas.getContext('2d');
+	ctx.font = 'normal 12pt Calibri';
+	ctx.fillStyle="rgba(0,0,0, 0.3)";
+	ctx.strokeStyle="rgba(0,0,0, 0.8)";
+
+
+var NEIGHBOURHOOD = 10
+
+var BOIDHEIGHT = 5
+
+var BOIDWIDTH = 5
+
+var DEFAULTX = 100
+
+var DEFAULTY = 100
+
+var DEFAULT_DIRECTION = 100
+
+var DEFAULT_VELOCITY = 3
+
+var BOID_COUNT = 700
+
+var BOID_RADIUS = 5
+
+var NEIGHBOURHOOD = BOID_RADIUS * 10
+
+var Rect = { 
+	x: DEFAULTX, 
+	y: DEFAULTY, 
+	height:BOIDHEIGHT,
+	width:BOIDWIDTH,
+	velocity: DEFAULT_VELOCITY,
+	directionInDegrees: DEFAULT_DIRECTION,
+	backgroundColor: '#'+Math.floor(Math.random()*16777215).toString(16), 
+
+	nextX: function(){
+		return this.velocity * Math.cos(this.directionInDegrees)
+	},
+	nextY: function(){
+		return this.velocity * Math.sin(this.directionInDegrees)
+	},
+
+	distanceToRect: function(otherRect){
+		var a = Math.abs(this.x - otherRect.x)
+		var b = Math.abs(this.y - otherRect.y)
+		var cSqr = (a*a)+(b*b)
+		var c = Math.sqrt(cSqr)
+		return c
+	} 
+
+} 
+
+Object.make = function(prototype, properties){
+	var o = Object.create(prototype)
+	for (var prop in properties){
+		o[prop] = properties[prop]
+	}
+	return o
+}
+
+function randomBetween(min, max) {
+    if (min < 0) {
+        return parseInt( min + Math.random() * (Math.abs(min)+max) );
+    }else {
+        return parseInt( min + Math.random() * max );
+    }
+}
+
+var rects = []
+for (var i=0; i<BOID_COUNT; i++){
+	rects.push(
+		Object.make(Rect, { 
+					x: randomBetween(10, canvas.width), 
+				 	y: randomBetween(10, canvas.height), 
+					velocity:randomBetween(DEFAULT_VELOCITY-(DEFAULT_VELOCITY/2), DEFAULT_VELOCITY+(DEFAULT_VELOCITY/2)),  
+					directionInDegrees:randomBetween(0, 180),
+					backgroundColor: "rgba("+randomBetween(0, 255)+","+randomBetween(0, 255)+","+randomBetween(0, 255)+",0.3)"
+				})
+		)
+}
+
+function doStuff(){
+	ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+	var j = BOID_COUNT
+	
+	while (j--){
+
+	var rect = rects[j]
+
+
+	ctx.beginPath();
+    ctx.arc(rect.x,rect.y,BOID_RADIUS,0,Math.PI*2,true);
+
+   	ctx.fillStyle = rect.backgroundColor
+    
+    ctx.fill();
+    ctx.stroke();
+
+	rect.x += rect.nextX() ;
+	rect.y += rect.nextY() ;
+
+
+ 	var neighbours = []
+
+	var averageDirection = 0
+
+ 	var i = BOID_COUNT;
+    
+    var hasNeighbours = false; 
+
+    var neighbourLength = 0;
+
+    while (i--){
+    	var otherBoid = rects[i]
+
+    	if ( otherBoid == rect ) continue;
+    	
+		var boidIsNeighbour = rect.distanceToRect(otherBoid) < NEIGHBOURHOOD    	    				
+		
+		if ( !boidIsNeighbour ){
+			continue
+		} else {
+			neighbours.push(rects[i])
+			averageDirection +=otherBoid.directionInDegrees + Math.sin(i*j*2)
+			hasNeighbours = true
+			neighbourLength += 1
+		}
+    	
+    }
+
+    
+    if ( hasNeighbours ){
+	    rect.directionInDegrees = averageDirection/neighbourLength
+	}
+
+	if (rect.x > canvas.width ) {
+		rect.x = 0;
+	}
+
+	if (rect.y > canvas.height) {
+		rect.y = 0;
+	}
+	if (rect.x < 0 ) {
+		rect.x = canvas.width;
+	}
+
+	if (rect.y < 0) {
+		rect.y = canvas.height;
+	}
+	}//while
+	
+
+	window.requestAnimationFrame(doStuff)
+}
+
+doStuff()
+
+
+</script>
+
+
+//front page, 
+//load a random experiment here!
+
+//- content_for :javascript do 
