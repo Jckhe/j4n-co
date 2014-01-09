@@ -1,25 +1,25 @@
 <html lang='en'>
   <head>
-  <meta charset='utf-8' />
-  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
-  <title>
-    Safari and The Case Of The Precocious Preloading | Jan Drewniak - User Experience Design & Development
-  </title>
-  <meta content='Jan Drewniak' name='author' />
-  <meta content='INDEX, FOLLOW' name='robots' />
-  <meta name='keywords' />
-  <meta content="So You're looking for a UX Design Ninja™? I eat ninjas for breakfast." name='description' />
-  <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
-  <meta content='B936EB2BEE226ABAD7EC6968E75B5014' name='msvalidate.01' />
-  <link href='/images/favicon.png' rel='icon' type='image/png' />
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css' />
-  <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
-  <link href="../stylesheets/site.css?1388663074" media="screen" rel="stylesheet" type="text/css" />
-  <script src="../javascripts/jquery.min.js?1389273384" type="text/javascript"></script>
-  <script src="../javascripts/script.js?1385741654" type="text/javascript"></script>
-  
-</head>
-  <body class='thoughts thoughts_safari_preloading'>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title>
+      Structuring CSS - A Question of Process | Jan Drewniak - User Experience Design & Development
+    </title>
+    <meta content='Jan Drewniak' name='author' />
+    <meta content='INDEX, FOLLOW' name='robots' />
+    <meta name='keywords' />
+    <meta content="So You're looking for a UX Design Ninja™? I eat ninjas for breakfast." name='description' />
+    <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport' />
+    <meta content='B936EB2BEE226ABAD7EC6968E75B5014' name='msvalidate.01' />
+    <link href='/images/favicon.png' rel='icon' type='image/png' />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css' />
+    <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
+    <link href="../stylesheets/site.css?1388663074" media="screen" rel="stylesheet" type="text/css" />
+    <script src="../javascripts/jquery.min.js?1389273384" type="text/javascript"></script>
+    <script src="../javascripts/script.js?1385741654" type="text/javascript"></script>
+    
+  </head>
+  <body class='thoughts thoughts_structuring-css'>
     <header class='top_bar dark_grey' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
   <nav class='sitenav' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement'>
     <ul>
@@ -87,7 +87,7 @@
           <h2 class='small_heading white_pixel_font'>
             blog
           </h2>
-          <a class='white' href='/thoughts/structuring-css.html'>
+          <a class='current_page white' href='/thoughts/structuring-css.html'>
             <span class='thumbnail_title white_pixel_font'>
               Structuring CSS - A Question of Process
             </span>
@@ -102,7 +102,7 @@
               nvALT and Middleman FTW
             </span>
           </a>
-          <a class='current_page white' href='/thoughts/safari_preloading.html'>
+          <a class='white' href='/thoughts/safari_preloading.html'>
             <span class='thumbnail_title white_pixel_font'>
               Safari and The Case Of The Precocious Preloading
             </span>
@@ -142,27 +142,56 @@
       <article>
         <div class='centered_measure with_top_margin with_bottom_margin'>
           <h1 class='text_shadow'>
-            Safari and The Case Of The Precocious Preloading
+            Structuring CSS - A Question of Process
           </h1>
-          <p class='intro'>
-            Safari does this strange thing where it starts loading a webpage before you finish typing a URL in the address bar.
-          </p>
-          <iframe class="embed" width="560" height="315" src="//www.youtube.com/embed/f0ypaOl-0-U" frameborder="0" allowfullscreen></iframe>
+          <p>A lot of thought has gone into how you should structure your CSS. OOCSS, SMACSS, DRY CSS and many others all offer solutions on how and where to place your styles.</p>
+
+<p>These are all great methodologies (and you should be following one of them) but all this attention on how to organize CSS begs the question, why does CSS get so messy in the first place?</p>
+
+<p>In my opinion, it&#8217;s a matter of process.</p>
+
+<p>Let&#8217;s look at an example, If you want turn this design into HTML, how would you go about it?</p>
+<img src='structuring-css/profile.jpg?1389273383' />
+<p>You would probably start by creating an HTML file in your text editor, adding all the boilerplate <code>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code> stuff.</p>
+
+<p>Then you would probably start with the layout. Creating a <code>&lt;div class=&#39;container&#39;&gt;</code> or something of that nature for the content.</p>
+
+<p>If your next step is to create a CSS file, and start styling the basic layout, then you have <strong>FAILED</strong>.</p>
+
+<p>Why? let&#8217;s see what happens when we extend this process.</p>
+
+<h2 id='the_tag__style_approach'>The Tag &amp; Style Approach</h2>
+
+<p>You style the layout, then you move on to the header. You create the <code>&lt;header&gt;&lt;/header&gt;</code> tag in your HTML, fill it with content, then style that. Then you repeat the process moving down the page, creating elements and styling them as you go.</p>
+
+<p>Your CSS will end up looking like this</p>
+<img src='structuring-css/avoid-mistakes-drawingpeople-1.jpg?1389273383' />
+<p>instead of this.</p>
+<img src='structuring-css/avoid-mistakes-drawingpeople.jpg?1389273383' />
+<p>The reason your CSS will get messy is the same reason the drawing is messy, because it doesn&#8217;t have a <em>skeleton</em>.</p>
+
+<h2 id='you_should_write_your_css_the_same_way_you_draw'>You should write your css the same way you draw</h2>
+
+<p><em>Always start with a skeleton</em></p>
+
+<p>In the context of writing websites, the skeleton is the bare HTML. You should never start writing CSS until <strong>ALL</strong> the HTML is already on the page.</p>
+
+<p>This approach has the added benefit of giving you good clean markup, which Google always appreciates. After you have the skeleton, it is also much easier to implement OOCSS or SMACSS into the design. In fact, trying to implement these practices without a skeleton is nearly impossible.</p>
+
+<p>So remember, <em>always start with the skeleton</em>.</p>
+<small>image credits <a href='http://www.explore-drawing-and-painting.com/how-to-draw-faces.html'>here</a></small>
         </div>
       </article>
       <div class='nav_flipper right'>
         <div class='next'>
           <!-- =image_tag 'arrow_previous-tiny.svg' -->
-          <a class='pixel_font' href='/thoughts/progressive_enhancement.html'>
+          <a class='pixel_font' href='/thoughts/kindle_to_ibooks.html'>
             >
           </a>
         </div>
       </div>
       <div class='nav_flipper left'>
         <div class='previous'>
-          <a class='pixel_font' href='/thoughts/nvalt_and_middleman_ftw.html'>
-            <
-          </a>
         </div>
       </div>
       <div class='clear'></div>
@@ -170,9 +199,9 @@
         <address>
           by Jan Drewniak
         </address>
-        <time datetime='2013/11/29'>
+        <time datetime='2014/01/09'>
           originally published:
-          2013/11/29
+          2014/01/09
         </time>
       </footer>
     </section>
