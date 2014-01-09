@@ -1,0 +1,52 @@
+---
+title: Structuring CSS - A Question of Process 
+subtitle: 
+Description: Part of well structured CSS is making sure all the HTML is in place first. 
+date: 2014/01/09
+---
+
+A lot of thought has gone into how you should structure your CSS. OOCSS, SMACSS, DRY CSS and many others all offer solutions on how and where to place your styles. 
+
+These are all great methodologies (and you should be following one of them) but all this attention on how to organize CSS begs the question, why does CSS get so messy in the first place? 
+
+In my opinion, it's a matter of process. 
+
+Let's look at an example, If you want turn this design into HTML, how would you go about it? 
+
+<%= article_image_tag("profile.jpg") %>
+
+You would probably start by creating an HTML file in your text editor, adding all the boilerplate `<html><head></head><body></body></html>` stuff. 
+
+Then you would probably start with the layout. Creating a `<div class='container'>` or something of that nature for the content. 
+
+If your next step is to create a CSS file, and start styling the basic layout, then you have **FAILED**.
+
+Why? let's see what happens when we extend this process. 
+
+The Tag & Style Approach
+----
+
+You style the layout, then you move on to the header. You create the `<header></header>` tag in your HTML, fill it with content, then style that. Then you repeat the process moving down the page, creating elements and styling them as you go. 
+
+Your CSS will end up looking like this
+
+<%= article_image_tag("avoid-mistakes-drawingpeople-1.jpg") %>
+
+instead of this. 
+
+<%= article_image_tag("avoid-mistakes-drawingpeople.jpg") %>
+
+The reason your CSS will get messy is the same reason the drawing is messy, because it doesn't have a *skeleton*. 
+
+You should write your css the same way you draw 
+---
+*Always start with a skeleton*
+
+In the context of writing websites, the skeleton is the bare HTML. You should never start writing CSS until **ALL** the HTML is already on the page. 
+
+This approach has the added benefit of giving you good clean markup, which Google always appreciates. After you have the skeleton, it is also much easier to implement OOCSS or SMACSS into the design. In fact, trying to implement these practices without a skeleton is nearly impossible. 
+
+So remember, *always start with the skeleton*. 
+
+<small>image credits <a href="http://www.explore-drawing-and-painting.com/how-to-draw-faces.html">here</a></small>
+

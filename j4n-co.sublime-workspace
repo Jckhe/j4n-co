@@ -135,6 +135,8 @@
 	},
 	"file_history":
 	[
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/progressive_enhancement/index.html.md.erb",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/structuring-css/index.html.md.erb",
 		"/Volumes/sandbox/root/j4n-co/source/index.html.erb",
 		"/Volumes/sandbox/root/j4n-co/source/lab/swarmy/index.html.erb",
 		"/Volumes/sandbox/root/j4n-co/source/stylesheets/site.css.scss",
@@ -260,9 +262,7 @@
 		"/Volumes/sandbox/root/skedx/app/models/api/v1/authenticated.rb",
 		"/Volumes/sandbox/root/skedx/app/models/worker/new_account.rb",
 		"/Volumes/sandbox/root/skedx/app/controllers/api/api_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/users_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/models/user.rb",
-		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account_by_user.html.erb"
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/users_controller.rb"
 	],
 	"find":
 	{
