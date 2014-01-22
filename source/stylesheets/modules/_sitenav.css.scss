@@ -67,8 +67,6 @@ nav ul{
 .section img {
 	display: block;
 	transition: opacity 0.1s ease-in;
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
 	opacity: 0.5;
 }
 
