@@ -3,7 +3,7 @@
     <meta charset='utf-8' />
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
     <title>
-      Hello World | Jan Drewniak - User Experience Design & Development
+      Resizing VirtualBox Hard Drives on a Mac | Jan Drewniak - User Experience Design & Development
     </title>
     <meta content='Jan Drewniak' name='author' />
     <meta content='INDEX, FOLLOW' name='robots' />
@@ -19,7 +19,7 @@
     <script src="../javascripts/script.js?1385741654" type="text/javascript"></script>
     
   </head>
-  <body class='thoughts thoughts_hello_world'>
+  <body class='thoughts thoughts_virtualbox_resizing_on_mac'>
     <header class='top_bar dark_grey' itemscope='itemscope' itemtype='http://schema.org/WPHeader'>
   <nav class='sitenav' itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement'>
     <ul>
@@ -87,7 +87,7 @@
           <h2 class='small_heading white_pixel_font'>
             blog
           </h2>
-          <a class='white' href='/thoughts/virtualbox_resizing_on_mac.html'>
+          <a class='current_page white' href='/thoughts/virtualbox_resizing_on_mac.html'>
             <span class='thumbnail_title white_pixel_font'>
               Resizing VirtualBox Hard Drives on a Mac
             </span>
@@ -142,27 +142,84 @@
       <article>
         <div class='centered_measure with_top_margin with_bottom_margin'>
           <h1 class='text_shadow'>
-            Hello World
+            Resizing VirtualBox Hard Drives on a Mac
           </h1>
-          <p>I&#8217;m not much of a writer (yet) so when it came time to write this first post, I did what any self respecting hacker would. I googled it. To be sure, there&#8217;s no shortage of tips and tricks, advice, how-to&#8217;s and simple steps.</p>
-          
-          <p>Most posts offer advice like <a href='http://www.fuelyourblogging.com/what-to-write-for-your-very-first-blog-post/'>start with a mission statement</a>, some even instruct you on the slightly creepy approach of <a href='http://www.incomediary.com/step-by-step-guide-writing-blog-post'>conducting keyword research</a> before you start writing, because nothing could be more important than achieving that <a href='http://www.seo.com/blog/keyword-density-frequency-prominence-proximity/'>optimal keyword density</a>, right?</p>
-          
-          <p>After looking through what google had to offer on this topic, I came to the only logical conclusion that anyone would: <em>That some things in life you just can&#8217;t google</em>, and those are the important things, the things you just have to figure out for yourself.</p>
-          
-          <p>So I invite you to join me in this little experiment. I&#8217;m probably going to be write about web-related things, some from a bird&#8217;s-eye view, some from a worm&#8217;s-eye view, some designy things, or maybe bicycles things. We&#8217;ll figure it out as we go along.</p>
+          <p>I do all my web-development through VirtualBox on my mac. This lets me run Ubuntu Server on my local machine and gets me a little closer to replicating a production server on my mac. Occasionally though, the VirtualBox hard drive gets full and I need to expand it. This is how I do it.</p>
+
+<p><em>Disclaimer: back up your virtual machine before attempting this. Nothing bad should happen, but resizing partitions can (though usually doesn&#8217;t) result in a lose of data.</em></p>
+
+<h2 id='step_1'>Step 1</h2>
+
+<p>Open Terminal, it&#8217;s in <code>/Applications/Utilities/Terminal.app </code></p>
+
+<p>(or just type &#8216;terminal&#8217; into Spotlight).</p>
+
+<h2 id='step_2'>Step 2</h2>
+
+<p>Type the following command into terminal to navigate to your VirtualBox VMs folder. <pre>
+cd ~/VirtualBox\ VMs/{your VM folder}
+</pre></p>
+
+<p>Replace {your VM folder} with the name of the folder containing the VirtualBox VDI file, in my case, this folder is called &#8216;ubuntu&#8217;.</p>
+
+<h2 id='step_3'>Step 3</h2>
+
+<p>Now we&#8217;ll use the VirtualBox command line tool to resize the drive image. <pre>
+VBoxManage modifyhd {yourVDIFile.vdi} --resize {new hd size}
+</pre></p>
+
+<p>Replace {yourVDIFile.vdi} with the name of the VDI file, and replace {new hd size} with the new hard drive size.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.09.29%20PM.jpg' />
+<p>This size is measured in megabytes, but the size you want in probably in gigabytes, so multiply the number of gigabytes you want by 1024, i.e. if you want 15gb, thats 15 * 1024.</p>
+
+<p>After hitting enter, you should see something like this, this is the computer telling you everything is going extremely well, <a href='http://www.youtube.com/watch?v=HwBmPiOmEGQ'>Dave</a>.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.09.37%20PM.jpg' />
+<h2 id='step_4'>Step 4</h2>
+
+<p>Now that we&#8217;ve resized the hard drive, we have to resize the partition. This is where GParted, a partition manager for linux, comes in real handy, so download the GParted Live CD <a href='http://gparted.org/download.php'>from here</a>.</p>
+
+<h2 id='step_5'>Step 5</h2>
+
+<p>Mount GParted onto your VirtualBox image so that it boots up when you start your virtual machine.</p>
+
+<ol>
+<li>Open VirtualBox</li>
+
+<li>Right click on your virtual machine</li>
+
+<li>Click on Settings</li>
+
+<li>Click Storage</li>
+
+<li>Click the CD icon beside the IDE Controller.</li>
+
+<li>Select the GParted file we just download</li>
+</ol>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.15.54%20PM.jpg' />
+<p>Now when you start the virtual machine, it will boot into GParted. GParted gives us some settings when it starts, but just clicking enter will give us the defaults.</p>
+
+<p>Once we have GParted up and running, resizing the partition is just a few clicks away.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.19.07%20PM.jpg' />
+<p>Select the main partition, and click <strong>resize/move</strong> . Drag the slider to fill the hard drive with all the available space.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.19.39%20PM.jpg' />
+<p>GParted warns us that this could potentially set our house of fire, but we click apply anyway. <em>BTW, if this warning freaks you out, back up your virtual machine folder</em>.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.19.55%20PM.jpg' />
+<p>But in the end everything works out just fine.</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.20.09%20PM.jpg' />
+<p>Now it&#8217;s safe to shutdown the virtual machine. The only thing left to do is remove GParted from the virtual machine. We do this in the same way we added the image, except now we just right click &#8216;Remove Attachment&#8217; and we&#8217;re all done!</p>
+<img src='virtualbox_resizing_on_mac/Screen%20Shot%202014-01-27%20at%2011.35.13%20PM.jpg' />
         </div>
       </article>
       <div class='nav_flipper right'>
         <div class='next'>
           <!-- =image_tag 'arrow_previous-tiny.svg' -->
+          <a class='pixel_font' href='/thoughts/optimization and design.html'>
+            >
+          </a>
         </div>
       </div>
       <div class='nav_flipper left'>
         <div class='previous'>
-          <a class='pixel_font' href='/thoughts/the_internet_blues.html'>
-            <
-          </a>
         </div>
       </div>
       <div class='clear'></div>
@@ -170,9 +227,9 @@
         <address>
           by Jan Drewniak
         </address>
-        <time datetime='2012/07/31'>
+        <time datetime='2014/01/28'>
           originally published:
-          2012/07/31
+          2014/01/28
         </time>
       </footer>
     </section>
