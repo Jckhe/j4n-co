@@ -92,11 +92,21 @@
 	"buffers":
 	[
 		{
-			"file": "source/thoughts/virtualbox_resizing_on_mac/index.html.md.erb",
+			"file": ".htaccess",
 			"settings":
 			{
-				"buffer_size": 3696,
+				"buffer_size": 1362,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 697 files for \"mod_rewrite\"\n\n/Volumes/sandbox/root/j4n-co/.htaccess:\n    4  \n    5  # rewrite rules\n    6: <IfModule mod_rewrite.c>\n    7  \n    8  # enable awesome urls. i.e.: \n\n/Volumes/sandbox/root/j4n-co/kirby/modals/troubleshoot.php:\n    7  \n    8  $modules   = (function_exists('apache_get_modules')) ? apache_get_modules() : array(); \n    9: $rewrite   = in_array('mod_rewrite', $modules);\n   10  $subfolder = ltrim(dirname(server::get('script_name')), '/');\n   11  $root      = c::get('root');\n   ..\n  167    <dd>url rewriting is enabled</dd>  \n  168    <?php elseif(c::get('rewrite')): ?>\n  169:   <dd><strong>mod_rewrite seems not to be available</strong></dd>  \n  170    <?php else: ?>\n  171    <dd>url rewriting is disabled</dd>    \n\n/Volumes/sandbox/root/j4n-co/panel/changelog.mdown:\n   71  - fixed a bug with flipped pages on the homepage\n   72  - removed the cancel button from the edit info form\n   73: - made it possible to run the panel without mod_rewrite\n   74  - added hungarian translation\n   75  - required fields and field validation\n\n/Volumes/sandbox/root/j4n-co/readme.mdown:\n   42  	c::set('subfolder', 'mySubfolderName');\n   43  \n   44: You probably also need to adjust the RewriteBase in the `.htaccess` file if you want to use mod_rewrite. You will find more information about all this in the default config file and the `.htaccess` file.\n   45  \n   46  \n   47  ### URL Rewriting\n   48  \n   49: If you are not allowed to have your own `.htaccess` file or to use mod_rewrite, go to `site/config/config.php` and search for the part where you can switch off url rewriting. \n   50  \n   51  \n   52  #### Trouble with URL Rewriting?\n   53  \n   54: If you're seeing 404 errors for pages other than your index page, you may need to make sure Apache is allowing mod_rewrite configuration in your `.htaccess` file.\n   55  \n   56  Open up your site's VirtualHost file and make sure that the `AllowOverride` directive is set to `All`, or at least that it contains `FileInfo` and  `Options` for your site's directory.\n\n/Volumes/sandbox/root/j4n-co/site/config/config.php:\n   83  ---------------------------------------\n   84  \n   85: Kirby uses apache's mod_rewrite to build nice \n   86  urls like http://yourdomain.com/about by default. \n   87: If you can't use mod_rewrite disable rewriting here.\n   88  Kirby will then switch to urls like this:\n   89  \n\n9 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 2409,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
 			}
 		}
 	],
@@ -143,6 +153,10 @@
 	},
 	"file_history":
 	[
+		"/Volumes/sandbox/root/j4n-co/config/deploy.rb",
+		"/Volumes/sandbox/root/j4n-co/.gitignore",
+		"/Volumes/sandbox/root/j4n-co/.htaccess",
+		"/Volumes/sandbox/root/j4n-co/source/thoughts/virtualbox_resizing_on_mac/index.html.md.erb",
 		"/Volumes/sandbox/root/j4n-co/source/stylesheets/modules/_sitenav.css.scss",
 		"/Volumes/sandbox/root/j4n-co/source/thoughts/progressive_enhancement/index.html.md.erb",
 		"/Volumes/sandbox/root/j4n-co/source/thoughts/structuring-css/index.html.md.erb",
@@ -266,11 +280,7 @@
 		"/Volumes/sandbox/root/skedx/app/mailer_previews/account_mailer_preview.rb",
 		"/Volumes/sandbox/root/skedx/app/views/account_mailer/new_account.html.erb",
 		"/Volumes/sandbox/root/skedx/db/schema.rb",
-		"/Volumes/sandbox/root/skedx/app/mailers/user_account_mailer.rb",
-		"/Volumes/sandbox/root/skedx/app/models/api/v1/authenticated.rb",
-		"/Volumes/sandbox/root/skedx/app/models/worker/new_account.rb",
-		"/Volumes/sandbox/root/skedx/app/controllers/api/api_controller.rb",
-		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/users_controller.rb"
+		"/Volumes/sandbox/root/skedx/app/mailers/user_account_mailer.rb"
 	],
 	"find":
 	{
@@ -281,6 +291,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Volumes/sandbox/root/j4n-co",
 			"/Volumes/sandbox/root/spree2/app",
 			"/Volumes/sandbox/root/spree2/app/views",
 			"<project>",
@@ -347,6 +358,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mod_rewrite",
 			"disk",
 			"virtualbox",
 			"background",
@@ -473,8 +485,7 @@
 			"filters",
 			"availableFilterTag",
 			"availableFilterTags",
-			"formatAvailable",
-			"format"
+			"formatAvailable"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -495,24 +506,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "source/thoughts/virtualbox_resizing_on_mac/index.html.md.erb",
-					"semi_transient": false,
+					"file": ".htaccess",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3696,
+						"buffer_size": 1362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								706,
-								706
+								70,
+								81
 							]
 						],
 						"settings":
@@ -520,14 +531,14 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -536,32 +547,154 @@
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
-								"bh_double_quote_close"
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
 							],
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2409,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										127,
+										138
+									],
+									[
+										381,
+										392
+									],
+									[
+										628,
+										639
+									],
+									[
+										973,
+										984
+									],
+									[
+										1267,
+										1278
+									],
+									[
+										1502,
+										1513
+									],
+									[
+										1793,
+										1804
+									],
+									[
+										2181,
+										2192
+									],
+									[
+										2290,
+										2301
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

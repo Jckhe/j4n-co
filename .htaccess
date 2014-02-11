@@ -1,5 +1,7 @@
 # Kirby .htaccess
 
+Options +FollowSymLinks
+
 # rewrite rules
 <IfModule mod_rewrite.c>
 
