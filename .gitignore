@@ -1,6 +1,6 @@
 .DS_Store
 ._*
-.*
+.sass-cache
 panel/
 site/panel
 docs
