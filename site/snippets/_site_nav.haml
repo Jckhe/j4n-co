@@ -1,0 +1,54 @@
+%header.top_bar.dark_grey{:itemscope=>true, :itemtype=>"http://schema.org/WPHeader"}
+  %nav.sitenav{:itemscope=>true, :itemtype=>"http://schema.org/SiteNavigationElement"}
+    %ul
+      
+      %li.section.work.yellow{ :alt=>"portfolio", :class =>"current_section", :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb" } 
+        %a.index_link{:href=>"/work", :itemprop=>"url"}
+          %span{:itemprop=>"title"} portfolio
+
+        .dropdown
+          %h2.small_heading.white_pixel_font
+            portfolio 
+            %span{:itemprop=>"child", :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb"}
+              %a.thumbnail{:href=>"", :class => "current_page", :itemprop=>"url"  }>
+                %img{:src=>"icon.png"}>
+                %span.thumbnail_title.white_pixel_font{:itemprop=>"title"}
+                
+    
+      %li.section.tools.aqua{:alt=>"lab", :class => "current_section",  :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb" }  
+        %a.index_link{:href=>"/lab", :itemprop=>"url"}
+          %span{:itemprop=>"title"} lab
+        .dropdown
+          %h2.small_heading.white_pixel_font
+            lab 
+            %span{:itemprop=>"child", :itemscope=>true, :itemtype=>"http://data-vocabulary.org/Breadcrumb"}
+              %a.thumbnail{:href=>"", :class =>"current_page",  :itemprop=>"url"  }>
+                %img{:src=>"icon.png"}>
+                %span.thumbnail_title.white_pixel_font{:itemprop=>"title"}
+
+      %li.section.blog.redish{:alt=>"blog", :class =>"current_section"} 
+        %a.index_link{:href=>"/thoughts"}
+          blog
+        .dropdown.white_pixel_font
+          %h2.small_heading.white_pixel_font
+            blog 
+            %a.white{:href=>"", :class =>"current_page" }
+              %span.thumbnail_title.white_pixel_font
+      
+      %li.section.light_green.about{:itemscope => true, :itemtype=>"http://data-vocabulary.org/Person"}
+        %a.index_link{:href=>"#about_me"}
+        
+        .dropdown.white_pixel_font
+          %h2.small_heading.white_pixel_font{:itemprop=>"name"}
+            Jan Drewniak
+          %p#about_me.about_me.white_pixel_font
+            %a#my_face_avatar{:href=>"https://plus.google.com/+JanDrewniak?rel=author"}
+              %img{:src=>'/images/avatar.png',:itemprop =>"photo"}
+            I'm a <span itemprop="title">User Interface Designer</span> currently residing in <span itemprop="address" itemscope
+            itemtype="http://data-vocabulary.org/Address"><span itemprop="locality">Warsaw</span>, <span itemprop="country-name">Poland</span></span> and hailing from Toronto. 
+              
+      .background_mask.has_shadow
+  
+  %a.tagline.iblock{:href=>'/'}
+    %h1{:itemprop=>"headline"}
+      Jan Drewniak | <span itemprop="description">Art + Code for fun and profit</span>

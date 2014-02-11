@@ -1,0 +1,822 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"can",
+				"can_change_tag_scope"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"toggel",
+				"toggleActiveGroup"
+			],
+			[
+				"availa",
+				"available_tags"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"sortUse",
+				"sortUsersIntoGroups"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"thre",
+				"threshold"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"newPostA",
+				"newPostAttachmentForm"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"resp",
+				"response"
+			],
+			[
+				"key",
+				"keyCode"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"LastMe",
+				"lastMessageID"
+			],
+			[
+				"time",
+				"timeout	setTimeout function"
+			],
+			[
+				"table",
+				"table-row"
+			],
+			[
+				"title",
+				"haxisTitle"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"tool",
+				"toolbar_bg"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"getFront",
+				"getFrontPageDescriptions"
+			],
+			[
+				"front",
+				"front_page_description"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"center",
+				"center_banner_container"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "site/templates/portfolio.php",
+			"settings":
+			{
+				"buffer_size": 3044,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "site/templates/fullscreen_experiment.php",
+			"settings":
+			{
+				"buffer_size": 100,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 132.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"urllib.request.install_opener( urllib.request.build_opener( ",
+			"ipp = sublime.installed_packages_path(); ",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/sandbox/root/kirbycms/site/templates/fullscreen_iframe.php",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/game_of_life/fullscreen_iframe.txt",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/fullscreen_iframe.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/portfolio.php",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/flatland/fullscreen_iframe.txt",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/01-game_of_life/fullscreen_iframe.txt",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/02-flatland/fullscreen_iframe.txt",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/03-scribbly-ladybugs/fullscreen_iframe.txt",
+		"/Volumes/sandbox/root/kirbycms/assets/sass/_all_ur_base.scss",
+		"/Volumes/sandbox/root/kirbycms/content/02-lab/04-swarmy/fullscreen_experiment.txt",
+		"/Volumes/sandbox/root/kirbycms/site/snippets/site_nav.php",
+		"/Volumes/sandbox/root/kirbycms/site/snippets/header.php",
+		"/Volumes/sandbox/root/j4n-co/build/index.html",
+		"/Volumes/sandbox/root/kirbycms/assets/sass/modules/_sitenav.scss",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/project.php",
+		"/Volumes/sandbox/root/kirbycms/kirby/lib/files.php",
+		"/Volumes/sandbox/root/j4n-co/build/work/supersalon/index.html",
+		"/Volumes/sandbox/root/j4n-co/source/work/supersalon/index.html.haml",
+		"/Volumes/sandbox/root/kirbycms/assets/sass/modules/_project_gallery.scss",
+		"/Volumes/sandbox/root/j4n-co/build/work/bridge/index.html",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/scattered/project.txt",
+		"/Volumes/sandbox/root/kirbycms/site/templates/project.php",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/skedx/index.txt",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/03-ego_eco/project.txt",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/ego_eco/project.txt",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/supersalon/project.txt",
+		"/Volumes/sandbox/root/kirbycms/content/01-portfolio/supersalon/supersalon_cart.png",
+		"/Volumes/sandbox/root/j4n-co/build/work/index.html",
+		"/Volumes/sandbox/root/kirbycms/site/templates/portfolio.php",
+		"/Volumes/sandbox/root/kirbycms/site/templates/blog_index.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/blog_index.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/fullscreen_experiment.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/default.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/post.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/projects.php",
+		"/Volumes/sandbox/root/kirbycms/content/05-about/contact.txt",
+		"/Volumes/sandbox/root/kirbycms/content/06-umm/portfolio.txt",
+		"/Volumes/sandbox/root/kirbycms/content/02-umm/portfolio.txt",
+		"/Volumes/sandbox/root/kirbycms/panel/defaults/config/config.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/projects_index.php",
+		"/Volumes/sandbox/root/kirbycms/site/templates/projects_index.php",
+		"/Volumes/sandbox/root/kirbycms/content/03-blog/blog.txt",
+		"/Volumes/sandbox/root/kirbycms/site/templates/blog_article.php",
+		"/Volumes/sandbox/root/kirbycms/site/templates/default.php",
+		"/Volumes/sandbox/root/kirbycms/site/templates/fullscreen_experiment.php",
+		"/Volumes/sandbox/root/kirbycms/content/home.txt",
+		"/Volumes/sandbox/root/kirbycms/content/home/fullscreen_experiment.txt",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/blog_article.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/blueprints/blog.php",
+		"/Volumes/sandbox/root/kirbycms/content/03-blog/01-blog-article/blog_article.txt",
+		"/Volumes/sandbox/root/kirbycms/site/templates/blog.php",
+		"/Volumes/sandbox/root/kirbycms/site/panel/accounts/root.php",
+		"/Volumes/sandbox/root/kirbycms/site/templates/fullscreen.php",
+		"/Volumes/sandbox/root/j4n-co/source/layouts/project.haml",
+		"/Volumes/sandbox/root/kirbycms/.htaccess",
+		"/Volumes/sandbox/root/kirbycms/site/templates/projects.php",
+		"/Volumes/sandbox/root/skedx/bridge_web_app.sublime-project",
+		"/Volumes/sandbox/root/kirbycms/site/templates/projects.haml",
+		"/Volumes/sandbox/root/kirbycms/site/templates/none.php",
+		"/Volumes/sandbox/root/skedx/config/routes.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/sessions_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/users_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_message_threads_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/api_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/companies_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/wall_messages_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/filters_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/api/v1/profiles_controller.rb",
+		"/Volumes/sandbox/root/skedx/Gemfile",
+		"/Volumes/sandbox/root/skedx/doc/apipie_examples.yml",
+		"/Volumes/sandbox/root/skedx/config/apipie.rb",
+		"/Volumes/sandbox/root/skedx/app/controllers/experiments_controller.rb",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/exception_report.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/users/_missed_shifts.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/users/edit.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/users/_form.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/report.csv.csvbuilder",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/selfsignup_step_2.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/login_page.css.scss",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/selfsignup_step_1.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/bridge.css.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_base.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_form_elements.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/resources/resources.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_wall.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/styleguide.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/sprite.css",
+		"/Volumes/sandbox/root/skedx/app/assets/images/sprite/sprite.css",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/sass/sprites/_sprites.scss",
+		"/Volumes/sandbox/root/skedx/config/application.rb",
+		"/Volumes/sandbox/root/skedx/app/models/user.rb",
+		"/Volumes/sandbox/root/skedx/app/views/api/v1/profiles/_profile.json.rabl",
+		"/Volumes/sandbox/root/skedx/lib/tasks/wall_message_threads.rake",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/parameter_signing.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/api/v1/wall_message_threads.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/company.js",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_profile.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/wall.js",
+		"/Volumes/sandbox/root/skedx/app/views/companies/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/profile.js",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_utilities.scss",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_reply.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/accounts/profile.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/shared/bridge/_nav.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/companies/_edit_all_tags.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/wall/_first_post.html.haml",
+		"/Volumes/sandbox/root/skedx/app/models/wall_message_thread.rb",
+		"/Volumes/sandbox/root/skedx/app/views/wall/show.html.haml",
+		"/Volumes/sandbox/root/skedx/app/models/wall_message.rb",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_layout.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_box.scss",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/profile_v2.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/experiments/grouped_tags.html.haml",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_wall.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_tag_groups.css.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_cardflip.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_tables.scss",
+		"/Volumes/sandbox/root/skedx/app/views/layouts/login.html.haml",
+		"/Volumes/sandbox/root/skedx/app/views/user_sessions/login_as.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/user_sessions/new.html.erb",
+		"/Volumes/sandbox/root/skedx/app/views/devise/sessions/new.html.erb",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_tags.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules/_tooltip.scss",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/angular-table.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/angular.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/ui/bgDraggable.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/ui/bg-paginated.js",
+		"/Volumes/sandbox/root/skedx/app/assets/javascripts/angularjs/ui/autocomplete.js"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/sandbox/root/kirbycms/assets/sass",
+			"/Volumes/sandbox/root/skedx",
+			"/Volumes/sandbox/root/skedx/app",
+			"<project>",
+			"/Volumes/sandbox/root/skedx/app/assets/javascripts",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/_layout.scss,/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/javascripts",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/javascripts",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets",
+			"/Volumes/sandbox/root/skedx",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/models",
+			"/Volumes/sandbox/root/skedx/db/migrate",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/models",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers/api/v1",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets/modules",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/views",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app/views/wall",
+			"/Volumes/sandbox/root/skedx/app/views",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app/assets/stylesheets",
+			"/Volumes/sandbox/root/skedx/app",
+			"/Volumes/sandbox/root/skedx/",
+			"/Volumes/sandbox/root/skedx/app/",
+			"/Volumes/sandbox/root/skedx/app/controllers",
+			"/Volumes/sandbox/root/skedx/app/assets/javascripts",
+			"/Volumes/ego_eco/root/opencart/catalog/controller",
+			"/Volumes/ego_eco/root/opencart/admin",
+			"/Volumes/ego_eco/root/opencart/catalog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"iframe",
+			"url",
+			"images",
+			"visible",
+			"addContent",
+			"visible",
+			"alt",
+			" echo",
+			"<?php",
+			"shift",
+			"shifts",
+			"POST",
+			"apipie",
+			"input",
+			"api",
+			"inac",
+			"background",
+			"attachmenticon",
+			"compass",
+			"tag",
+			"tagga",
+			"redis",
+			"profile",
+			"availableTags",
+			"current_api",
+			"resetPost",
+			"current_api",
+			"resetPostTags",
+			"editing ",
+			"tag_ad",
+			"debugger",
+			"console",
+			"groupedt",
+			"profile",
+			"resetPostTags",
+			"postTags",
+			"resetPostTags",
+			"postTags",
+			"post!",
+			"post",
+			"pending",
+			"tag_list",
+			"scope.tag_list",
+			"available_tags",
+			"availableTags",
+			"toggleEditProfile",
+			"updateProfile",
+			"updateUser",
+			"show_edit",
+			"showEditTags",
+			"updateTags",
+			"handleTagSelection",
+			"handleAddTagChange",
+			"toggle",
+			"addHasTag",
+			"handleAddTagChange",
+			"addHasTag",
+			"image_spinner",
+			"showEdi",
+			"toggleEditProfile",
+			"\n		",
+			"tag",
+			"tagg",
+			"current_api_user",
+			"//",
+			"updateProfile",
+			"profile",
+			"profileg",
+			"profile",
+			"modal_box",
+			"overlay",
+			"edit pro",
+			"grouped_tags",
+			"required",
+			"profile_pic",
+			"logo",
+			"exper",
+			"hidden_inpu",
+			"crown",
+			"label",
+			"checkbo",
+			"tag",
+			"hidden_input",
+			"icon",
+			"all user",
+			"all users",
+			"no_padding",
+			"console",
+			"usersDe",
+			"add",
+			"scroll",
+			"sear",
+			"phil",
+			"activeView",
+			"tag.user",
+			"thead",
+			"icon_pencil",
+			"overlay",
+			"pagi",
+			"page",
+			"pag",
+			"currentPag",
+			"paginate",
+			"showCreateNew",
+			"showCreate",
+			"table",
+			"page_nav",
+			"odd",
+			"filteredPaginatedAllUsers",
+			"audiencema",
+			"fuse",
+			"$filter",
+			"current",
+			"philter",
+			"filter",
+			"updateTag",
+			"updatePro",
+			"update",
+			"tag",
+			"handleTag",
+			"addTag",
+			"paginate",
+			"paginat",
+			"modal",
+			"hasTag",
+			"newTag",
+			"create",
+			"activeG"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"=",
+			"<?",
+			"show_edit_tags",
+			"[disabled='disabled']",
+			"\"",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "site/templates/portfolio.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3044,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "site/templates/fullscreen_experiment.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "j4n.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"development",
+				"config/environments/development.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Volumes/sandbox/root/skedx/bridge_web_app.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
