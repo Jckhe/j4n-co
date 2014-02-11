@@ -50,4 +50,5 @@ RewriteRule ^(.*) index.php [L]
 # 
 # AddDefaultCharset UTF-8
 #
-php_flag short_open_tag on 
+# doesn't work on webfaction, using php.ini for this instead
+#php_flag short_open_tag on 
