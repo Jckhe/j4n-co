@@ -16,8 +16,8 @@ RewriteEngine on
 # 
 # RewriteBase /mysite
 # 
-RewriteCond %{REQUEST_HOST} ^localhost
-RewriteBase /j4n-co
+# RewriteCond %{REQUEST_HOST} ^localhost
+# RewriteBase /j4n-co
 
 
 # block text files in the content folder from being accessed directly
