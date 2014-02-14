@@ -16,8 +16,11 @@ RewriteEngine on
 # 
 # RewriteBase /mysite
 # 
-# RewriteCond %{REQUEST_HOST} ^localhost
-# RewriteBase /j4n-co
+
+# RewriteBase equivalent - Development
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule . - [E=REWRITEBASE:/j4n-co]
+
 
 
 # block text files in the content folder from being accessed directly
