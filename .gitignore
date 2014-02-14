@@ -7,3 +7,4 @@ Capfile
 config/
 *.sublime-project
 *.sublime-workspace
+site/panel/accounts/*
