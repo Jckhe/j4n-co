@@ -768,14 +768,19 @@ nav ul {
   -moz-transition: font-size 0.2s ease-in, left 0.2s ease-in;
   -ms-transition: font-size 0.2s ease-in, left 0.2s ease-in;
   transition: font-size 0.2s ease-in, left 0.2s ease-in;
+  opacity: 0.2;
+}
+
+.nav_flipper:hover {
+  opacity: 1;
 }
 
 .nav_flipper.right {
-  right: 15px;
+  right: 5%;
 }
 
 .nav_flipper.left {
-  left: 15px;
+  left: 5%;
 }
 
 .next, .previous {
