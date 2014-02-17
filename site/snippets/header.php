@@ -11,6 +11,7 @@
   <meta content='<?= $desciption ?>' name='description'>
   <meta content='width = device-width, initial-scale = 1, user-scalable = yes' name='viewport'>
   <meta content='B936EB2BEE226ABAD7EC6968E75B5014' name='msvalidate.01'>
+  <meta name="google-site-verification" content="DFQLfNinhEBioZnQP-rPioRQz6DZmXZ2ymNfCGu1LuY" />
   <link href='/images/favicon.png' rel='icon' type='image/png'>
   <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css'>
   <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
