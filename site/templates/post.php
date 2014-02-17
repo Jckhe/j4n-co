@@ -16,7 +16,7 @@
       </h1>
 
       <aside> 
-        <address class="author">Written by <a rel="author" href="<?=$home->url()?>">Jan Drewniak</a></address> 
+        <address class="author">Written by <a rel="author" href="https://plus.google.com/+JanDrewniak">Jan Drewniak</a></address> 
         on <time pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>"><?= $page->date('M d, Y')?></time>
       </aside>
 
