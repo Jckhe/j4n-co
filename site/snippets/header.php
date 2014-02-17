@@ -1,7 +1,6 @@
 <? $desciption = ($page->description() ? $page->description() : $site->description()); ?>
 <? $title = ($page->title() ? $page->title().' - '.$site->title() : $site->title()); ?>
 <? $keywords = ($page->keywords() ? $page->keywords().' '.$site->keywords() : $site->keywords()); ?>
-
 <head>
   <title><?= $title ?></title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

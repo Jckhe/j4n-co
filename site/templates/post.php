@@ -1,3 +1,4 @@
+<? $about = $pages->find('about') ?>
 <? snippet('header') ?>
 
 <style>
@@ -13,6 +14,12 @@
       <h1 class='text_shadow'>
         <?= $page->title() ?>
       </h1>
+
+      <aside> 
+        <address class="author">Written by <a rel="author" href="<?=$about->url()?>">Jan Drewniak</a></address> 
+        on <time pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>"><?= $page->date('M d, Y')?></time>
+      </aside>
+
       <?= kirbytext($page->text()) ?>
     </div>
   </article>

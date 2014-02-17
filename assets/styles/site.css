@@ -206,7 +206,7 @@ h1 {
   font-family: '04b_25';
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.5em;
   padding: 0;
   position: relative;
   line-height: 1em;
@@ -288,19 +288,21 @@ article a {
 }
 
 address {
-  text-align: right;
-  float: right;
+  display: inline;
 }
 
 aside {
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-indent: 0;
   letter-spacing: 1px;
-  font-style: italic;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #b3b3b3;
 }
 
-aside:first-child:first-letter {
-  font-family: Georgia;
+aside a {
+  color: #b3b3b3;
+  text-decoration: underline;
 }
 
 figure {
