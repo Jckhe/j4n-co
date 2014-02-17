@@ -6,7 +6,7 @@ header('Content-type: text/xml; charset="utf-8"');?>
 	<? foreach($pages->visible()->index() as $p): ?>
 	<? if(in_array($p->uri(), $ignore)) continue ?>
 	<url>
-		<loc><?= html($p->url()) ?></loc>
+		<loc>http://j4n.co<?= html($p->url()) ?></loc>
 		<lastmod><?php echo $p->modified('c') ?></lastmod>
 		<priority><?php echo ($p->isHomePage()) ? 1 : number_format(0.5/$p->depth(), 1) ?></priority>
 	</url>
