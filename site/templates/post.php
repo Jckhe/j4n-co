@@ -9,18 +9,19 @@
 
 
 <section class='main has_shadow'>
-  <article>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     <div class='centered_measure with_top_margin with_bottom_margin thoughts'>
-      <h1 class='text_shadow'>
+      <h1 itemprop='headline' class='text_shadow'>
         <?= $page->title() ?>
       </h1>
 
       <aside> 
-        <address class="author">Written by <a rel="author" href="https://plus.google.com/+JanDrewniak">Jan Drewniak</a></address> 
-        on <time pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>"><?= $page->date('M d, Y')?></time>
+        <address  class="author">Written by <a rel="author" href="https://plus.google.com/+JanDrewniak">Jan Drewniak</a></address> 
+        on <time itemprop="datePublished" pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>"><?= $page->date('M d, Y')?></time>
       </aside>
-
+      <div class="article-body" itemprop='articleBody'>
       <?= kirbytext($page->text()) ?>
+      </div>
     </div>
   </article>
 </section>
