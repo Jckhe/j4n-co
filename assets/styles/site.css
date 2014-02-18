@@ -197,7 +197,6 @@ body.thoughts *::selection {
 
 header {
   position: relative;
-  margin-bottom: 2em;
 }
 
 h1 {
@@ -445,14 +444,14 @@ body {
 .top_bar {
   height: 3em;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   z-index: 2;
 }
 
 .main {
-  margin: 5rem auto 0 auto;
+  margin: 5% auto 5% auto;
   width: 80%;
   max-width: 75em;
   background-color: white;
@@ -487,7 +486,7 @@ body {
 
 .main.projects {
   background-color: transparent;
-  margin-bottom: 5rem;
+  margin-bottom: 5%;
 }
 
 .article_content {
@@ -504,7 +503,7 @@ body {
 }
 
 .centered_measure.with_bottom_margin {
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .centered_measure.with_top_margin {
@@ -616,11 +615,11 @@ nav ul {
 .dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 0;
   background-color: inherit;
   padding: 0.5em;
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 0 0;
   white-space: nowrap;
 }
 
@@ -640,15 +639,17 @@ nav ul {
 
 .section a.thumbnail .thumbnail_title {
   position: absolute;
-  top: -100px;
+  top: 41px;
   font-size: 12px;
   max-width: 100%;
   word-wrap: break-word;
+  display: none;
 }
 
 .section a.thumbnail:hover .thumbnail_title {
   bottom: -1em;
   top: auto;
+  display: block;
 }
 
 .section a.index_link {

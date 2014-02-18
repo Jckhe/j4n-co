@@ -18,14 +18,14 @@ body{
 .top_bar{
 	height: 3em;
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	z-index: 2;
 }
 
 .main{
-	margin: 5rem auto 0 auto;
+	margin: 5% auto 5% auto;
 	width: 80%;
 	max-width: 75em;
 	background-color: white;
@@ -62,7 +62,7 @@ body{
 
 .main.projects{
 	background-color: transparent;
-	margin-bottom: 5rem;	
+	margin-bottom: 5%;	
 }
 
 .article_content{
@@ -79,7 +79,7 @@ body{
 }
 
 .centered_measure.with_bottom_margin{
-	margin-bottom: 8em;
+	margin-bottom: 4em;
 }
 
 .centered_measure.with_top_margin{
