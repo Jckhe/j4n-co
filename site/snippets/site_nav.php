@@ -32,7 +32,7 @@
                 <?= $c->title() ?>
               </a>
             <? else: ?>
-            <span itemprop='child' itemscope itemtype='http://data-vocabulary.org/Breadcrumb'>
+            <span itemprop='child' itemscope itemtype='http://data-vocabulary.org/Breadcrumb' class="dropdown_block">
               <a class='current_page thumbnail' href='<?= $c->url() ?>' itemprop='url'>
                 <img src='<?= $c->files()->find('icon.png')->url() ?>'/>
                 <span class='thumbnail_title white_pixel_font' itemprop='title'>

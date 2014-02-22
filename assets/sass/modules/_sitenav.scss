@@ -19,7 +19,7 @@ nav ul{
 
 }
 .top_bar{
-	transition: all 0.5s ease-in;
+	@include transition(all 0.5s ease-in);
 	a {
 		border: none;
 		cursor: pointer;
@@ -85,11 +85,12 @@ nav ul{
 	white-space: nowrap;
 }
 
-.blog .dropdown{
-	//width: 400px;
-}
 .blog .dropdown a{
 	display: block;
+}
+
+.dropdown_block{
+	display: inline-block;
 }
 
 .section:hover .dropdown, .dropdown:hover{

@@ -18,7 +18,7 @@
                 @extend %inactive-button;
 
                 text-align: center; text-decoration: none;
-                transition: color .1s;
+                @include transition('color', '0.1s');
 
                 &:hover { @extend %active-button; }
         }

@@ -11,7 +11,7 @@
 
 <? foreach ($page->children()->visible() AS $p): ?>
 <a class='thumbnail large_thumbnail has_shadow' href='<?= $p->url() ?>'>
-<p class='page_description white_pixel_font large'>
+<p class='page_description white_pixel_font'>
   <?= $p -> title() ?>
 </p>
 <img src='<?= $p->files()->find('icon.png')->url()?>' />

@@ -3,6 +3,11 @@
 	color: white;
 }
 
+*::-moz-selection{
+	background: #8ed9da;
+	color: white;
+}
+
 body {
 	line-height: 1.4em;
 	font-family: "pt-sans", sans-serif; 
@@ -94,7 +99,7 @@ ul, ol {
 }
 ul li{
 	margin-bottom: 0.5em;
-	list-style: inside square;
+	list-style: none;
 }
 ol li{
 	margin-bottom: 0.5em;
@@ -237,4 +242,9 @@ td{
 iframe.embed{
 	margin: 0 auto;
 	display: block;
+}
+
+.subhead{
+	font-size: 1.2em;
+	margin-top: 0.5em;
 }

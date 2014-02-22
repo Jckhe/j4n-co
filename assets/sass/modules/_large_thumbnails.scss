@@ -4,9 +4,8 @@
 	width: 120px;
 	height: 120px;
 	margin: 10px;
-	background-color: #e5ce49; 
 	vertical-align: top;
-	transition: top 0.1s ease-in, left 0.1s ease-in,  box-shadow 0.1s ease-in ;
+	@include transition(all 0.1s ease-in);
 }
 
 .large_thumbnail img{
@@ -17,6 +16,7 @@
 	left: -2px;
 	top: -2px; 
 	box-shadow: 4px 7px 7px -2px rgba(0, 0, 0, 0.3);
+	background-color: $aqua; 
 	img{
 		opacity: 0.4;
 	}
