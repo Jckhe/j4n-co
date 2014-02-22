@@ -21,6 +21,26 @@
 	dl dt, dl dd{
 		display: block;
 	}
+	input#expand_me:checked + .top_bar .my_face{
+		left: -140px;
+		height: 80%; 
+		bottom: 0;
+		top: auto; 
+	}
+	input#expand_me:checked + .top_bar .expanded_content{
+		left: 30%;
+		font-size: 14px; 
+		width: 70%; 
+		height: 100%; 
+		overflow: auto;
+		h1{
+			font-size: 36px;
+		}
+	}
+	input#expand_me:checked + .top_bar .me.section{
+		padding-left: 15px;
+	}
+
 }
 
 @media screen and (max-width: 460px) {
@@ -48,6 +68,13 @@
 	.project_gallery{
 			max-height: 350px;
 	}
+
+	input#expand_me:checked + .top_bar .expanded_content{
+
+		h1{
+			font-size: 32px; 
+		}
+	}
 }
 
 @media screen and (max-width: 430px) {
@@ -60,5 +87,10 @@
 	}
 	.dropdown{
 		max-width: 200px;
+	}
+	input#expand_me:checked + .top_bar .expanded_content{
+		h1{
+			font-size: 28px; 
+		}
 	}
 }
