@@ -19,6 +19,7 @@ nav ul{
 
 }
 .top_bar{
+	transition: all 0.5s ease-in;
 	a {
 		border: none;
 		cursor: pointer;
@@ -30,7 +31,7 @@ nav ul{
 }
 
 .section.current_section {
-	max-width: 20em;
+	max-width: 10em;
 }
 
 .section {
@@ -133,8 +134,17 @@ nav ul{
 }
 .thumbnail {
 	min-width: 3em;
-
 }
+
+.top_bar{
+	height: 3em;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+
 .section a:hover img,  .section a.current_page img{
 	position: relative;
 	top: -2px; 
@@ -180,3 +190,108 @@ nav ul{
 	-ms-transition: margin-left 0.2s ease-in;
 	transition: margin-left 0.2s ease-in;
 }
+
+.me.section{
+	width: 0px;
+	background-image: none;
+	height: 100%;
+	background-color: transparent;
+	max-width: 150px; 
+	transition: all 0.3s ease-in;
+	margin-left: 0.5em;
+}
+
+.my_face, .my_pixelated_face{
+	background-image: url(".././images/avatar_transparent.png");
+	height: 100%;
+	width: 50px;
+	background-size: cover;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+}
+.my_pixelated_face{
+	opacity: 1;
+	background-image: url(".././images/avatar_pixelated.png");
+}
+
+.my_face{
+	opacity: 0;
+}
+
+.me.section:hover .my_pixelated_face{
+	opacity: 0;
+}
+
+.me.section:hover .my_face{
+	opacity: 1;
+}
+
+
+.hidden_input{
+	position: absolute;
+	bottom:0;
+	right: 0;
+	font-size: 1px;
+	z-index: -1111;  
+}
+
+input#expand_me:checked + .top_bar{
+	height: 270px;
+}
+
+input#expand_me:checked + .top_bar	.me.section{
+padding-left: 60px;
+left: 0px;
+}
+input#expand_me:checked + .top_bar .my_pixelated_face{
+	opacity: 0; 
+}
+
+input#expand_me:checked + .top_bar .my_face{
+	opacity: 1; 
+	width: 180px; 
+	left: -50px;
+}
+
+.expanded_bar{
+	height: 150px;
+	display: inline-block;
+	background-color: #000;
+	vertical-align: bottom;
+	position: absolute;
+	bottom: -150px;
+	left: 0px;
+	width: 100%;
+	z-index: -1;
+	transition: all 0.5s ease-in;
+	opacity: 1; 
+}
+
+input#expand_me:checked + .top_bar .expanded_bar{
+	bottom:0px;
+	opacity: 1; 
+}
+
+.expanded_content{
+	position: absolute;
+	top: 100%; 
+	transition: all 0.5s ease-in;
+	left: 270px;
+	width: 60%;
+	z-index: 0;
+
+}
+
+input#expand_me:checked + .top_bar .expanded_content{
+	top: 22%;
+	transition: all 0.5s ease-in;
+}
+
+
+
+

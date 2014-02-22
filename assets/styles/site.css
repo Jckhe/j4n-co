@@ -121,6 +121,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 1px 1px 0 black;
 }
 
+.white_text {
+  color: white;
+}
+
+.white_text a {
+  color: #71c2c4;
+}
+
 .white_bg {
   background-color: white;
 }
@@ -180,6 +188,7 @@ a.white:hover {
 
 body {
   line-height: 1.4em;
+  font-family: "pt-sans", sans-serif;
 }
 
 body.lab *::selection {
@@ -214,7 +223,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -430,7 +439,6 @@ body * {
 
 body {
   background: url("../images/grid.png") repeat 0 0 white;
-  font-family: 'Titillium Web', sans-serif;
   position: absolute;
   top: 0;
   left: 0;
@@ -439,15 +447,6 @@ body {
   min-height: 100%;
   background-color: #E9E9E9;
   color: #535353;
-}
-
-.top_bar {
-  height: 3em;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
 }
 
 .main {
@@ -499,7 +498,7 @@ body {
   max-width: 50em;
   margin: 0 auto;
   padding: 0.1px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .centered_measure.with_bottom_margin {
@@ -507,7 +506,7 @@ body {
 }
 
 .centered_measure.with_top_margin {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .project_title {
@@ -558,6 +557,9 @@ nav ul {
   transition: margin-left 0.2s ease-in;
 }
 
+.top_bar {
+  transition: all 0.5s ease-in;
+}
 .top_bar a {
   border: none;
   cursor: pointer;
@@ -567,7 +569,7 @@ nav ul {
 }
 
 .section.current_section {
-  max-width: 20em;
+  max-width: 10em;
 }
 
 .section {
@@ -675,6 +677,15 @@ nav ul {
   min-width: 3em;
 }
 
+.top_bar {
+  height: 3em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 .section a:hover img, .section a.current_page img {
   position: relative;
   top: -2px;
@@ -718,6 +729,107 @@ nav ul {
   -moz-transition: margin-left 0.2s ease-in;
   -ms-transition: margin-left 0.2s ease-in;
   transition: margin-left 0.2s ease-in;
+}
+
+.me.section {
+  width: 0px;
+  background-image: none;
+  height: 100%;
+  background-color: transparent;
+  max-width: 150px;
+  transition: all 0.3s ease-in;
+  margin-left: 0.5em;
+}
+
+.my_face, .my_pixelated_face {
+  background-image: url(".././images/avatar_transparent.png");
+  height: 100%;
+  width: 50px;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.my_pixelated_face {
+  opacity: 1;
+  background-image: url(".././images/avatar_pixelated.png");
+}
+
+.my_face {
+  opacity: 0;
+}
+
+.me.section:hover .my_pixelated_face {
+  opacity: 0;
+}
+
+.me.section:hover .my_face {
+  opacity: 1;
+}
+
+.hidden_input {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1px;
+  z-index: -1111;
+}
+
+input#expand_me:checked + .top_bar {
+  height: 270px;
+}
+
+input#expand_me:checked + .top_bar .me.section {
+  padding-left: 60px;
+  left: 0px;
+}
+
+input#expand_me:checked + .top_bar .my_pixelated_face {
+  opacity: 0;
+}
+
+input#expand_me:checked + .top_bar .my_face {
+  opacity: 1;
+  width: 180px;
+  left: -50px;
+}
+
+.expanded_bar {
+  height: 150px;
+  display: inline-block;
+  background-color: #000;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: -150px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.5s ease-in;
+  opacity: 1;
+}
+
+input#expand_me:checked + .top_bar .expanded_bar {
+  bottom: 0px;
+  opacity: 1;
+}
+
+.expanded_content {
+  position: absolute;
+  top: 100%;
+  transition: all 0.5s ease-in;
+  left: 270px;
+  width: 60%;
+  z-index: 0;
+}
+
+input#expand_me:checked + .top_bar .expanded_content {
+  top: 22%;
+  transition: all 0.5s ease-in;
 }
 
 .large_thumbnail {
@@ -799,7 +911,7 @@ nav ul {
 }
 
 .article-body > p:first-of-type {
-  font-size: 21px;
+  font-size: 24px;
   color: #555;
   line-height: 1.5em;
 }

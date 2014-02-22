@@ -2,7 +2,6 @@ body * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing
 
 body{
 	background: url('../images/grid.png') repeat 0 0 #FFF;
-	font-family: 'Titillium Web', sans-serif;;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -11,17 +10,6 @@ body{
 	min-height: 100%;
 	background-color: #E9E9E9;
 	color: #535353;
-}
-
-
-
-.top_bar{
-	height: 3em;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	z-index: 2;
 }
 
 .main{
@@ -75,7 +63,7 @@ body{
 	max-width: 50em;
 	margin: 0 auto;
 	padding: 0.1px; 
-	font-size: 16px; 
+	font-size: 18px; 
 }
 
 .centered_measure.with_bottom_margin{
@@ -83,7 +71,7 @@ body{
 }
 
 .centered_measure.with_top_margin{
-	margin-top: 4em;
+	margin-top: 3em;
 }
 
 .project_title{

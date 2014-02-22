@@ -5,11 +5,11 @@ pages: true
 files: true
 
 fields:
-  
+
   title: 
     label: Title
     type:  text
-  
+
   text: 
     label: Text
     type:  textarea
@@ -25,7 +25,11 @@ fields:
     type:  textarea
     size:  large
 
-
+  display_on_home_page: 
+    label: show on home page? 
+    type:  checkbox
+    default: off
+    
 filefields: 
   description: 
     label: Description

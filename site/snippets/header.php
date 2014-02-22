@@ -18,6 +18,11 @@
   <?php echo css('assets/styles/site.css') ?>
   <?php echo js('assets/javascripts/jquery.min.js') ?>
   <?php echo js('assets/javascripts/script.js') ?>
+
+  <!-- typekit -->
+  <script type="text/javascript" src="//use.typekit.net/opd5xmp.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
   
 <body>
