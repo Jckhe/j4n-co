@@ -61,11 +61,11 @@
     <h1 class="white_text">Hi there, I'm Jan.</h1>
     <p class="white_text">
     I'm a designer/developer — let's pause on that for a second — You might be thinking "What? artsy people don't code" but the computer has always been my canvas. 
-    I enjoy <a href="#">experimenting</a> with HTML/CSS/JS and making engaging <a href="#">web-things</a> (sites/apps...whatever).
+    I enjoy <a href="<?= $pages->find("lab")->url() ?>">experimenting</a> with HTML/CSS/JS and making engaging <a href="<?= $pages->find("portfolio")->url() ?>">web-things</a> (sites/apps...whatever).
     </p>
   </div>
 
-  <a class='tagline iblock' href='<?= $site->url()?>'>
+  <a class='tagline iblock' href='<?= $pages->find("home")->url() ?>'>
     <h1 itemprop='headline'>
       Jan Drewniak | <span itemprop="description">Art + Code for fun and profit</span>
     </h1>
