@@ -64,11 +64,11 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 .hide{
 }
 .small_heading{
-	font-family: '04b';
+	font-family: '04b_03';
 	text-transform: uppercase; 
 }
 .white_pixel_font{
-	font-family: '04b';
+	font-family: '04b_03';
 	color: white;
 	@include text-shadow(1px 1px 0 black);
 }
@@ -83,7 +83,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	background-color: white;
 }
 .pixel_font{
-	font-family: '04b';	
+	font-family: '04b_03';	
 	@include text-shadow(1px 1px 0 white);
 }
 .has_shadow{
