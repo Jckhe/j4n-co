@@ -13,16 +13,13 @@
   <meta content='B936EB2BEE226ABAD7EC6968E75B5014' name='msvalidate.01'>
   <meta name="google-site-verification" content="DFQLfNinhEBioZnQP-rPioRQz6DZmXZ2ymNfCGu1LuY" />
   <link href='/images/favicon.png' rel='icon' type='image/png'>
-  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,700' rel='stylesheet' type='text/css'>
-  <!-- %link{:href=>'http://fonts.googleapis.com/css?family=Asap:400,700,400italic', :rel=>'stylesheet', :type=>'text/css'} -->
-  <?php echo css('assets/styles/site.css') ?>
-  <?php echo js('assets/javascripts/jquery.min.js') ?>
-  <?php echo js('assets/javascripts/script.js') ?>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 
-  <!-- typekit -->
-  <script type="text/javascript" src="//use.typekit.net/opd5xmp.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+  <?= css('assets/styles/site.css') ?>
+  <?= js('assets/javascripts/jquery.min.js') ?>
+  <script> 
+  <?= readfile("assets/javascripts/script.js"); ?>
+  </script> 
 </head>
   
 <body>
