@@ -30,8 +30,8 @@ header{
 
 h1{
 	font-size: 3em;
-	font-weight: normal;
-	font-family: '04b_25';
+	font-weight: 100;
+	font-family: 'Helvetica Neue' 'Helvetica' 'Arial' 'sans-serif';
 	text-transform: uppercase; 
 	margin: 0;
 	margin-bottom: 0.5em;
@@ -39,7 +39,8 @@ h1{
 	position: relative;
 	line-height: 1em;
 	color: $dark_grey; 
-	text-shadow: 1px 1px 0 white;
+	letter-spacing: 1px; 
+	//text-shadow: 1px 1px 0 white;
 }
 
 h2{
