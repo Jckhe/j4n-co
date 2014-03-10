@@ -1,21 +1,17 @@
-body{
-	background-color: white; 
-	background-image: none;
-}
+
 
 .home-container{
-	position: absolute;
-	width: 100%;
-	margin-top: 100px;
-	text-align: center;
-	background-color: #FFF;
-	padding-top: 2em;
-	padding-bottom: 1em;
-	height: 100%; 
+position: absolute;
+width: 100%;
+padding-top: 100px;
+text-align: center;
+background-color: #FFF;
+padding-bottom: 1em;
+height: 100%;
 }
 
 .parallax{
-    height: 2000px;
+    min-height: 1800px;
     overflow:hidden;
     margin-top: 200px;
     position: relative;
@@ -24,98 +20,141 @@ body{
 .parallax-item {
     position: fixed;
     -webkit-transition: width 0.3s ease-in, height 0.3s ease-in,  background-color 0.3s ease-in ;
+    -moz-transition: width 0.3s ease-in, height 0.3s ease-in,  background-color 0.3s ease-in ;
+    -ms-transition: width 0.3s ease-in, height 0.3s ease-in,  background-color 0.3s ease-in ;
+    transition: width 0.3s ease-in, height 0.3s ease-in,  background-color 0.3s ease-in ;
+
     z-index: 0;
     padding: 1em; 
 }
 
 .parallax-item.active{
-	width: 80%;
-	height: 80%;
+	width: 400px;
+	height: 300px;
 	background-color: grey; 
 	z-index: 1;
 	color: white; 
 	.front, .back{
 		box-shadow: none; 
 	}
+  .back{
+  width: 400px;
+  height: 300px; 
+  }
 	.parallax-item-description{
-		opacity: 1;
-		color: white; 
+		//opacity: 1;
+		//color: white; 
 	}
 	.flipper{
-		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
 	}
 }
-
-.parallax-headline{
-	text-align: center;
-	width: 100%; 
-	z-index: 0;
-
+.parallax-headline h1{
+    font-size: 72px; 
+    font-family: 'Helvetica Neue', 'helvetica', 'arial', 'sans-serif';
+    font-weight: 100; 
 }
-.parallax-headline *{
-	font-family: '04b_25';
-	font-weight: bold; 
-	font-size: 128px; 
-	opacity: 0.5;
+.parallax-headline{
 	width: 90%; 
 	margin: 0 auto;
-}
-.parallax-item:nth-child(2){
-	left: 2%; 
-	top: 101%;
+  text-align: center;
+  width: 100%; 
+  z-index: 0;
+  font-size: 3em; 
+  font-family: 'Helvetica Neue', 'helvetica', 'arial', 'sans-serif';
+  font-weight: 100; 
 }
 .parallax-item:nth-child(3){
-	left: 20%; 
-	top: 115%;
+	left: 2%; 
+	top: 150%;
 }
-
 .parallax-item:nth-child(4){
-	left: 60%; 
-	top: 125%;
-}
-.parallax-item:nth-child(5){
-	left: 40%; 
-	top: 135%;
+	left: 20%; 
+	top: 150%;
 }
 
+.parallax-item:nth-child(5){
+	left: 50%; 
+	top: 150%;
+}
 .parallax-item:nth-child(6){
+	left: 40%; 
+	top: 150%;
+}
+
+.parallax-item:nth-child(7){
 	left: 80%; 
-	top: 160%;
+	top: 150%;
 }
 
 .parallax-item-thumbnail{
 	height: 150px;
 	width: 150px;
+  cursor: pointer;
+  -webkit-ransition: all 0.3s ease-in; 
+  -moz-transition: all 0.3s ease-in; 
+  -ms-transition: all 0.3s ease-in; 
 	transition: all 0.3s ease-in; 
-	cursor: pointer;
-	-webkit-perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+	perspective: 1000;
+  float: left;
+  position: relative;
 }
 
+.parallax-item-thumbnail .back{
+  overflow: hidden;
+  position: relative;
+}
+.parallax-item-thumbnail .back h3{
+  position: absolute;
+  bottom: 0; 
+  width: 100%; 
+  text-align: center;
+  font-weight: bold; 
+}
 
+.parallax-item-thumbnail video{
+  position: absolute;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  height: 150px;
+  width: 267px;
+  opacity: 1;
+  overflow: hidden;   
+}
 .parallax-item-description{
 	opacity: 0;
-	 -webkit-transition: opacity 0.3s ease-in;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+	transition: opacity 0.3s ease-in;
 
 }
 
 /* flippers */
 
-@-webkit-keyframes rotateThis {
-0% { -webkit-transform:scale(1) rotateY(0deg); }
-50% { -webkit-transform:scale(1.2) rotateY(90deg); }
-100% {-webkit-transform:scale(1) rotateY(180deg); }
-}
-
 .flipper {
-	-webkit-transition: 0.6s;
-	-webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	position: relative;
 	width: 100%; 
 	height: 100%; 
 }
 
 .front, .back {
-	-webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -126,14 +165,82 @@ body{
 
 .front {
 	z-index: 2;
-	background-color: pink;
 }
 
 .back {
-	-webkit-transform: rotateY(180deg);
-	background-color: purple;
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+	background-color: darkGrey;
 }
 
 .parallax-item-thumbnail:hover .flipper, .parallax-item-thumbnail.hover .flipper {
 	-webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+
+//CAROUSEL 
+
+.tools-carousel figure {
+  display: inline-block;
+  width: 100px;
+  height: 75px;
+  left: 10px;
+  top: 10px;
+  text-align: center;
+}
+.tools-carousel figure img{
+  display: inline;
+  max-height: 100%; 
+}
+
+
+.parallax-bg{
+  position: fixed; 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0; 
+}
+
+.parallax-bg.first{
+  background-color: white; 
+}
+
+.parallax-bg.second{
+    background-color: lightGrey; 
+}
+
+.parallax-bg.third{
+    background-color: grey; 
+}
+
+a.large{
+  font-size: 18px;
+  font-weight: 400;
+  margin: 4em auto;
+  padding: 1.5em 1em;
+  width: 40%;
+  display: block;
+  background-color: #FFF;
+  border: 0;
+  font-family: 'Helvetica Neue', 'helvetica', 'arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  box-shadow: 0 4px 20px 0px #000;
+  color: #333;
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease-in;
+  -ms-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+a.large:hover{
+  background-color: $aqua;
+  color: white; 
 }
