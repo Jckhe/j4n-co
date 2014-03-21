@@ -14,6 +14,7 @@
   <meta name="google-site-verification" content="DFQLfNinhEBioZnQP-rPioRQz6DZmXZ2ymNfCGu1LuY" />
   <link href='/images/favicon.png' rel='icon' type='image/png'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="author" href="https://plus.google.com/+JanDrewniak"/>
 
   <?= css('assets/styles/site.css') ?>
   <?= js('assets/javascripts/jquery.min.js') ?>
