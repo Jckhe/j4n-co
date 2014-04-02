@@ -82,14 +82,17 @@ nav ul{
 }
 
 .dropdown{
-	display: none;
+	display: block;
 	position: absolute;
-	bottom: 100%;
+	bottom: -300%;
 	left: 0;
 	background-color: inherit;
 	padding: 0.5em;
 	border-radius:10px 10px 0 0 ; 
 	white-space: nowrap;
+  z-index: -2;
+  opacity: 0; 
+  transition: bottom 0.3s ease-in, opacity 0.3s ease-in; 
 }
 
 .blog .dropdown a{
@@ -102,6 +105,8 @@ nav ul{
 
 .section:hover .dropdown, .dropdown:hover{
 	display: block;
+  bottom: 100%; 
+  opacity: 1; 
 }
 .section a.thumbnail {
 	display: inline-block;
