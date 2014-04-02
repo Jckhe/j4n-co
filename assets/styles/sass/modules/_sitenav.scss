@@ -306,6 +306,35 @@ input#expand_me:checked + .top_bar .expanded_content{
 	transition: all 0.5s ease-in;
 }
 
+.icon-social{
+	height: 100%;
+	width: 26px; 
+	color: transparent;
+	overflow: hidden; 
+	display: inline-block;
+	background: url('../images/icons/social.svg') no-repeat 0px center transparent;
+	vertical-align: middle;
+	margin-left: 6px; 
+	margin-right: 6px; 
+	float: right; 
+	opacity: 0.7;
+	transition: opacity 0.2s ease-in; 
+}
 
+.icon-social:hover{
+	color: transparent;
+	opacity: 1;
+}
+.icon-social.twitter{
+	background-position: 0px center;
+}
 
-
+.icon-social.facebook{
+	background-position: -38px center;
+}
+.icon-social.linkedin{
+	background-position: -154px center;
+}
+.icon-social.github{
+	background-position: -112px center;
+}
