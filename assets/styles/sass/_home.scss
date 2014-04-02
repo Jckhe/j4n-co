@@ -260,7 +260,8 @@ height: 100%;
   border: 2px solid white; 
   display: inline-block; 
   text-align: center; 
-  margin-bottom: 0.5em; 
+  margin-bottom: 2em; 
+  margin-top: 2em; 
   background: url('../images/avatar_orig.jpg') center center transparent; 
   background-size: cover; 
   box-shadow: 0 2px 5px -2px black; 
@@ -274,7 +275,8 @@ height: 100%;
   margin: 0 auto;
   letter-spacing: 1px;
   position: relative; 
-  margin-top: -50px;
+  background-image: url('../images/home-backgrounds/dark-bubbly-background.jpg');
+  background-size: 100%; 
 }
 .home-description p{
   max-width:500px;

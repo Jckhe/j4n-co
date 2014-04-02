@@ -50,7 +50,7 @@
   <? endforeach ?>
 
 
-  <div class="parallax-item home-description" data-stellar-ratio="1" style="top: 70%;">
+  <div class="parallax-item home-description" data-stellar-ratio="1" style="top: 65%;">
     <div class="round-avatar"></div> 
     <p>
       Are you building a mobile or web app? Congratulations, so are millions of other people.
