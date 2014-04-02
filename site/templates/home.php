@@ -15,7 +15,7 @@
 
   <div class="parallax-bg change-opacity" data-stellar-ratio="1"></div>
 
-  <? $data_stellar_ration = array(1.5, 2, 1.2, 1.6, 1.7); ?>
+  <? $data_stellar_ration = array(1.1, 2, 0.9, 1.6, 1.2); ?>
   <? $ps =$pages->find('portfolio')->children(); ?>
   <? $j = 0; ?>
   
@@ -57,7 +57,7 @@
       If you want to make your app unique, then I'm the man you need. I'm Jan, and I make 
       interfaces that people enjoy and remember.     
     </p>
-    <a class='large' href="mailto:jan.drewniak@gmail.com">Let's Chat</a>
+    <a class='large' href="mailto:jan.drewniak@gmail.com">Hire Me (I'm available)</a>
   </div>
 
 </div>
