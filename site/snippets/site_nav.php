@@ -70,5 +70,18 @@
       Jan Drewniak | <span itemprop="description">Art + Code for fun and profit</span>
     </h1>
   </a>
-  
+ 
+   <a class="icon-social github" target="_BLANK" href="https://github.com/j4n-co">
+    github
+  </a>
+  <a class="icon-social linkedin" target="_BLANK" href="http://ca.linkedin.com/in/jandrewniak">
+    linkedin
+  </a>
+  <a class="icon-social facebook" target="_BLANK" href="https://www.facebook.com/J4N.co">
+    facebook
+  </a>
+  <a class="icon-social twitter" target="_BLANK" href="https://twitter.com/j4n_co">
+    twitter
+  </a> 
+
 </header>
