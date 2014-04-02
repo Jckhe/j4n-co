@@ -57,7 +57,7 @@
       If you want to make your app unique, then I'm the man you need. I'm Jan, and I make 
       interfaces that people enjoy and remember.     
     </p>
-    <a class='large' href="mailto:jan.drewniak@gmail.com">Hire Me (I'm available)</a>
+    <a class='large' href="mailto:jan.drewniak@gmail.com">Hire Me! <span class="small-button-text">(I'm available)</span></a>
   </div>
 
 </div>
@@ -87,7 +87,7 @@ $.stellar.positionProperty.position = {
 }
 
   $.stellar({
-    responsive: false,
+    responsive: true,
     hideDistantElements: false,
     parallaxBackgrounds: false,
     positionProperty: 'position'
