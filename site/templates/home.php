@@ -50,12 +50,12 @@
   <? endforeach ?>
 
 
-  <div class="parallax-item home-description" data-stellar-ratio="1" style="top: 60%;">
+  <div class="parallax-item home-description" data-stellar-ratio="1" style="top: 70%;">
     <div class="round-avatar"></div> 
     <p>
       Are you building a mobile or web app? Congratulations, so are millions of other people.
       If you want to make your app unique, then I'm the man you need. I'm Jan, and I make 
-      interfaces that people enjoy and remember.     
+      apps enjoyable and memberable.     
     </p>
     <a class='large' href="mailto:jan.drewniak@gmail.com">Hire Me! <span class="small-button-text">(I'm available)</span></a>
   </div>
@@ -70,7 +70,7 @@
 <script>
 $(document).ready(function(){
   
-  var docHeight = $(window).height()
+  var docHeight = $(window).height()*0.5
 
 
 $.stellar.positionProperty.position = {

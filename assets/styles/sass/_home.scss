@@ -5,8 +5,11 @@
   width: 100%;
   text-align: center;
   padding-bottom: 1em;
-  height: 200%;
+  height: 250%;
   background-color: #FFF;
+  background-image: url('../images/home-backgrounds/warsaw-background.jpg');
+  background-size: 150%; 
+  background-attachment: fixed;
 }
 
 .parallax{
@@ -103,25 +106,25 @@ height: 100%;
 
 .parallax-item:nth-child(3){
 	left: 2%; 
-	top: 50%;
+	top: 100%;
 }
 .parallax-item:nth-child(4){
 	left: 20%; 
-	top: 60%;
+	top: 120%;
 }
 
 .parallax-item:nth-child(5){
 	left: 50%; 
-	top: 40%;
+	top: 80%;
 }
 .parallax-item:nth-child(6){
 	left: 40%; 
-	top: 70%;
+	top: 140%;
 }
 
 .parallax-item:nth-child(7){
 	left: 80%; 
-	top: 50%;
+	top: 100%;
 }
 
 .parallax-item-thumbnail{
