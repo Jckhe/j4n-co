@@ -51,7 +51,12 @@
 
 
   <div class="parallax-item home-description" data-stellar-ratio="1" style="top: 65%;">
-    <div class="round-avatar"></div> 
+    <div class="parallax-item-thumbnail round-avatar-container">
+      <div class="flipper">
+        <div class="front round-avatar"></div> 
+        <div class="back"><h3><a href="<?= $pages->find('about')->url()?>">more about me</a></h3></div>
+      </div>
+    </div>
     <p>
       Are you building a mobile or web app? Congratulations, so are millions of other people.
       If you want to make your app unique, then I'm the man you need. I'm Jan, and I make 
