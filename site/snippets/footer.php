@@ -17,4 +17,17 @@
 
 </script>
 
+  
+<!-- ClickTale Bottom part -->
+
+<script type='text/javascript'>
+document.write(unescape("%3Cscript%20src='"+
+(document.location.protocol=='https:'?
+"https://cdnssl.clicktale.net/www07/ptc/c55e2a27-e01e-440b-8193-fa91916b11ad.js":
+"http://cdn.clicktale.net/www07/ptc/c55e2a27-e01e-440b-8193-fa91916b11ad.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- ClickTale end of Bottom part -->
+
+
 </html>
