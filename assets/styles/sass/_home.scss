@@ -146,6 +146,7 @@ height: 100%;
 .parallax-item-thumbnail .back{
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 .parallax-item-thumbnail .back h3{
   position: absolute;
@@ -157,7 +158,6 @@ height: 100%;
 
 .parallax-item-thumbnail video{
   position: absolute;
-  z-index: 0;
   top: 0px;
   left: 0px;
   height: 150px;
@@ -252,7 +252,17 @@ height: 100%;
   opacity: 0; 
   background-color: #333; 
 }
-
+.round-avatar-container{
+  float: none; 
+  margin: 2em auto; 
+}
+.round-avatar-container .back h3{
+  font-size: 42px; 
+  position: relative;
+  line-height: 0.7em; 
+  margin: 0; 
+  margin-top: 20%; 
+}
 .round-avatar{
   height: 150px; 
   width: 150px; 
@@ -260,8 +270,6 @@ height: 100%;
   border: 2px solid white; 
   display: inline-block; 
   text-align: center; 
-  margin-bottom: 2em; 
-  margin-top: 2em; 
   background: url('../images/avatar_orig.jpg') center center transparent; 
   background-size: cover; 
   box-shadow: 0 2px 5px -2px black; 
