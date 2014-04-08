@@ -4,7 +4,7 @@
 
 <?= $page->custom_js() ?>
 
-</body>
+
 <!-- google analytics --> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -28,5 +28,7 @@
   })();
 </script>
 <!-- END mouseflow analytics -->
+
+</body>
 
 </html>
