@@ -16,18 +16,17 @@
   ga('send', 'pageview');
 
 </script>
+<!-- END google analytics --> 
 
-  
-<!-- ClickTale Bottom part -->
-
-<script type='text/javascript'>
-document.write(unescape("%3Cscript%20src='"+
-(document.location.protocol=='https:'?
-"https://cdnssl.clicktale.net/www07/ptc/c55e2a27-e01e-440b-8193-fa91916b11ad.js":
-"http://cdn.clicktale.net/www07/ptc/c55e2a27-e01e-440b-8193-fa91916b11ad.js")+"'%20type='text/javascript'%3E%3C/script%3E"));
+<!-- mouseflow analytics -->
+<script type="text/javascript">
+    var _mfq = _mfq || [];
+    (function () {
+    var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/fcd1deaa-2770-4d91-826b-8a2631ac9d00.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
 </script>
-
-<!-- ClickTale end of Bottom part -->
-
+<!-- END mouseflow analytics -->
 
 </html>
