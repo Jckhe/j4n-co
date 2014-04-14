@@ -40,20 +40,20 @@ h1{
 	line-height: 1em;
 	color: $dark_grey; 
 	letter-spacing: 1px; 
-	//text-shadow: 1px 1px 0 white;
 }
 
 h2{
 	font-size: 1.5em;
 	font-weight: bold;
+	margin-top: 1.5em;
+	margin-bottom: 0.7em;
 }
 h3{
 	font-size: 1.2em;
 	font-weight: normal; 
 	letter-spacing: 2px;
-	font-variant: small-caps;
 	margin-bottom: 0.5em; 
-	margin-top: 0.2em;
+	margin-top: 1.2em;
 }
 small{
 	font-size: 0.75em;
@@ -77,12 +77,12 @@ a:hover{
 	color: $aqua_h;
 }
 
-p, ul {
+p, ul, pre {
 	margin-top: 0.7em;
 	margin-bottom: 1em;
 }
 p{
-
+	line-height: 1.5em; 
 }
 img{
 	vertical-align: top; 
@@ -191,22 +191,22 @@ p.large, span.large{
 }
 
 pre {
-
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
- background-color: lighten($light_grey, 5%); 
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	background-color: lighten($light_grey, 5%); 
 	font-family: monospace;
 	max-width: inherit;
 	overflow: auto;
+	font-size: 14px; 
 }
 
 code{
 	font-family: monospace;
 	background-color: lighten($light_grey, 5%); 
-	padding: 3px; 
+	font-size: inherit;
 }
 
 code.required{

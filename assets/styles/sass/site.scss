@@ -10,17 +10,14 @@
 @import "modules/sitenav";
 
 @import "modules/large_thumbnails";
-@import "modules/menu_portfolio";
 @import "modules/nav_arrows";
 
 @import "modules/blog";
 @import "modules/blog_index";
 @import "modules/post_meta";
-@import "modules/recent_articles";
 
 @import "modules/cv";
 
-@import "modules/portfolio";
 @import "modules/project_gallery";
 
 @import "modules/gallery";
@@ -29,3 +26,9 @@
 @import "home";
 
 @import "responsive";
+
+@import "highlight/css";
+@import "highlight/html";
+@import "highlight/js";
+@import "highlight/objc";
+@import "highlight/php";
