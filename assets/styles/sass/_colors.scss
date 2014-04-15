@@ -61,11 +61,12 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 	padding: 0;
 	font-size: 0;
 }
-.hide{
-}
+
 .small_heading{
 	font-family: '04b_03';
 	text-transform: uppercase; 
+	margin-top: 0.1em;
+	margin-bottom: 0.4em;
 }
 .white_pixel_font{
 	font-family: '04b_03';

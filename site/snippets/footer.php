@@ -20,12 +20,13 @@
 
 <!-- mouseflow analytics -->
 <script type="text/javascript">
-    var _mfq = _mfq || [];
+/*    var _mfq = _mfq || [];
     (function () {
     var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
     mf.src = "//cdn.mouseflow.com/projects/fcd1deaa-2770-4d91-826b-8a2631ac9d00.js";
     document.getElementsByTagName("head")[0].appendChild(mf);
   })();
+  */
 </script>
 <!-- END mouseflow analytics -->
 
