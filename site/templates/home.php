@@ -1,6 +1,8 @@
 <? snippet('header') ?>
 <? snippet('site_nav') ?>
 
+<? $portfolio_pages = $pages->findByUID('portfolio')->children()->visible(); ?> 
+
 
 <div class="home-column-left">
   <div class="home-title flip-container">
@@ -20,6 +22,7 @@
   </p>
   <p class="floating-p home-how animated bounceInLeft"> 
     I love creating rich interactions for the web and experimenting with interfaces, wether it be for desktop, mobile or screens we haven't yet imagined.     </br>
+
     <br/>
     <button class="green-contact aqua">
       <a href="#contact-me">get in touch</a>
@@ -30,67 +33,25 @@
 
 <div class="home-column-right">
   <div class="home-column-right-content">
-    <div class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          manage their schedules at work,
-        </span>
-      </p>
-      <div class="portfolio-image">
-        <img class="portfolio-hover-image" src="/j4n-co/assets/images/home-skedx-overlay.jpg"/>
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/home-skedx.png"/>
+    
+    <? foreach($portfolio_pages->visible() AS $p): ?>
+
+      <div class="home-portfolio">
+        <p class="right-headline first cf">
+          <span class='floating-p animated bounceInLeft'>
+            <?= $p->homepage_title() ?>
+          </span>
+        </p>
+        <div class="portfolio-image">
+          <img class="portfolio-hover-image" src="<?= $p->files()->find('home_original.jpg')->url() ?>"/>
+          <img class="portfolio-initial-image" src="<?= $p->files()->find('home_preview.svg')->url() ?>"/>
+        </div>
+        <a class="home-work-link" href="<?= $p->url() ?>">
+          Learn more about <?= $p->title() ?> &rarr;
+        </a>
       </div>
-    </div>
 
-    <div class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          share ideas with their co-workers,
-        </span>
-      </p>
-      <div class="portfolio-image">
-        <img class="portfolio-hover-image" src="/j4n-co/assets/images/home-skedx-overlay.jpg"/>
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/home-skedx.jpg"/>
-      </div>
-    </div>
-
-
-    <div class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          sell art & photography books online,
-        </span>
-      </p>
-      <div class="portfolio-image">
-        <img class="portfolio-hover-image" src="/j4n-co/assets/images/home-skedx-overlay.jpg"/>
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/home-skedx.jpg"/>
-      </div>
-    </div>
-
-    <div class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          promote local jewelery & fashion designers,
-        </span>
-      </p>
-      <div class="portfolio-image">
-        <img class="portfolio-hover-image" src="/j4n-co/assets/images/home-skedx-overlay.jpg"/>
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/home-skedx.jpg"/>
-      </div>
-    </div>
-
-    <div class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          create unique photoblogs, 
-        </span>
-      </p>
-      <div class="portfolio-image">
-        <img class="portfolio-hover-image" src="/j4n-co/assets/images/home-skedx-overlay.jpg"/>
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/home-skedx.jpg"/>
-      </div>
-    </div>
-
+    <? endforeach ?> 
 
     <div id="contact-me" class="home-portfolio">
       <p class="right-headline cf">
@@ -98,6 +59,9 @@
           like you.
         </span>
       </p>
+      <div class="portfolio-image" style="display: none;">
+        <img class="portfolio-initial-image" src="/j4n-co/assets/images/avatar.png" style="display: none; " />
+      </div>
       <?php snippet('contactform') ?>      
     </div>    
   </div>
@@ -109,54 +73,83 @@
 <script> 
 $(document).ready(function(){
 
-var didScroll = false;
- 
-var headlineOffsets = []
-var initialOffset = $('.home-column-right-content').offset().top
-var rightHeadlines = $('.right-headline')
-
-$('.right-headline').each(function(index, element){
-  headlineOffsets.push($(element).offset().top-11)
-})
-
-$(window).scroll(function(event) {
-  //didScroll = true;
-  scrollCallback()
-});
- 
-/*setInterval(function() {
-  if ( didScroll ) {
-    didScroll = false;
-    //scrollCallback()
-  }
-}, 250);
-*/
-function scrollCallback(){
-  
-  var currentOffset = $(window).scrollTop() + initialOffset; 
   var nearbyHeadline;
   var absoluteDiff;
   var diff; 
+  var headlineOffsets = []
+  var initialOffset = $('.home-column-right-content').offset().top
+  var rightHeadlines = $('.right-headline')
 
-  for (i=0; i<headlineOffsets.length; i++){
+  loadHeadlineOffsets();
 
-    diff = currentOffset - headlineOffsets[i]
+  function loadHeadlineOffsets(){
+    //reseting array
+    headlineOffsets = []
+    $('.portfolio-initial-image').load(function(){
+      loadHeadlinesInLoop(this)
+    })
     
-    absoluteDiff = Math.abs(diff)
-    
-    if (absoluteDiff < 50){
-      alert(i)
-      nearbyHeadline = rightHeadlines[i]
-      $(nearbyHeadline).css({
-        WebkitTransform: 'translateY('+diff+'px)',
-        MozTransform: 'translateY('+diff+'px)',
-        msTransform: 'translateY('+diff+'px)',
-        transform: 'translateY('+diff+'px)'
+    if ( headlineOffsets.length == 0 ){
+      $('.portfolio-initial-image').each(function( index ){
+        loadHeadlinesInLoop(this)
       })
-      break;
+    }
+
+    function loadHeadlinesInLoop(element){
+      var index = $(element).index('.portfolio-initial-image')
+      var correspondingHeadline =  $(element).parent().prev('.right-headline')
+      
+      correspondingHeadline.css({
+        WebkitTransform: 'translateY(0px)',
+        MozTransform: 'translateY(0px)',
+        msTransform: 'translateY(0px)',
+        transform: 'translateY(0px)'
+      })
+
+      var offset = correspondingHeadline.offset().top - 11
+      headlineOffsets[index] = offset 
     }
   }
-}
+
+
+  $(window).resize(function(){
+    loadHeadlineOffsets();
+  })
+
+  $(window).scroll(function(event) {
+    
+    var currentOffset = $(window).scrollTop() + initialOffset; 
+    
+    console.log(headlineOffsets)
+
+    for (i=0; i<headlineOffsets.length; i++){
+
+      diff = currentOffset - headlineOffsets[i]
+      
+      absoluteDiff = Math.abs(diff)
+      
+      if (diff < 200 && diff > -1){
+        nearbyHeadline = rightHeadlines[i]
+        break;
+      } else {
+        diff = 0
+        nearbyHeadline = false
+      }
+    }
+    //alternative approach
+    //rightHeadlines.removeClass('fixedHeadline')
+    //$(nearbyHeadline).addClass('fixedHeadline')
+    
+    $(nearbyHeadline).css({
+      WebkitTransform: 'translateY('+diff+'px)',
+      MozTransform: 'translateY('+diff+'px)',
+      msTransform: 'translateY('+diff+'px)',
+      transform: 'translateY('+diff+'px)'
+    })
+    
+
+  }); //window.scroll
+
 
 });//document.ready
 </script> 

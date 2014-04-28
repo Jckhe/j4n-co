@@ -15,6 +15,11 @@ fields:
     type:  textarea
     size:  large
 
+  homepage_title: 
+    label: Homepage Title
+    type:  text
+    size:  small
+
 filefields: 
   description: 
     label: Description

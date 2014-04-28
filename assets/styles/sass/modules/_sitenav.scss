@@ -247,10 +247,14 @@ nav ul{
 
 .hidden_input{
 	position: absolute;
-	bottom:0;
+	bottom: 0;
 	right: 0;
 	font-size: 1px;
-	z-index: -1111;  
+	z-index: -1111;
+	left: -9999px;
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
 }
 
 input#expand_me:checked + .top_bar{

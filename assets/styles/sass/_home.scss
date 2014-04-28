@@ -29,6 +29,7 @@ body{
   min-height: 100%;  
   width: 50%;
   background-color: white; 
+  z-index: 0;
 }
 
 .home-column-left{
@@ -166,6 +167,7 @@ padding: 5px 10px;
   padding-bottom: 10px; 
   z-index: 3;
   position: relative;
+  margin-bottom: 0; 
 }
 
 .left-headline{
@@ -193,6 +195,12 @@ padding: 5px 10px;
 
 .right-headline{
   margin-right: -16px; 
+}
+
+.right-headline.fixedHeadline{
+  position: fixed;
+  top: 200px; 
+  left: 50%; 
 }
 .home-portfolio{
   margin-bottom: 5em; 
@@ -228,4 +236,15 @@ padding: 5px 10px;
 
 .portfolio-image:hover img:first-child{
   opacity: 0.9; 
+}
+
+
+.home-work-link{
+  background-color: rgba(255, 255, 255, 0.43);
+  float: right;
+  padding: 0.5em;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #797979;
 }
