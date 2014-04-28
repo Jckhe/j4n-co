@@ -2,9 +2,10 @@
   //outline: 1px dotted black; 
 }
 body{
-background-color: white;
-//background-image: url('../images/poz-pix.jpg'); 
-background-image: none; 
+  background-image: url('../images/poz-pix.jpg'); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-position: 0 0; 
 }
 .cf:before,
 .cf:after {
@@ -36,36 +37,70 @@ background-image: none;
   z-index: 1;
 }
 .home-column-right{
-  height: 5000px; 
+  height: 100%; 
   background-image: none;
   position: absolute; 
   right: 0 ;
-  top: 45%; 
   background-color: transparent;
   padding-left: 10px; 
   padding-right: 10px; 
-z-index: 0;
+  z-index: 0;
 }
-.home-avatar{
+.home-title .flipper {
+  animation: flipAvatar 0.7s;
+  animation-timing-function: linear;  
+  animation-delay: 2s; 
+}
+
+@keyframes flipAvatar {
+  0%{
+    transform: rotateY(0deg); 
+  }
+  50%{
+    transform: rotateY(180deg); 
+  }
+  100%{
+    transform: rotateY(0deg); 
+  }
+}
+
+.home-column-right-content{
+  position: absolute;
+  top: 200px;
+  width: 95%;
+}
+
+.home-avatar-front, .home-avatar-back{
   width: 70px; 
   height: 70px; 
   background: url('../images/avatar_orig.jpg');
   background-size: cover;
   display: inline-block;
   border-radius: 50%; 
+  border: 4px solid #FFF;
 }
 
-.home-title{
-width: 140px;
-right:-75px;
-position: absolute;
-text-align: center;
-z-index: 3;
+.home-avatar-back{
+  background-image: none; 
+  background-color: gray; 
 }
-.home-title h1{
-  font-size: 24px; 
-  display: block;
-  background-color: white; 
+.about-link{
+  line-height: 1em;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  position: relative;
+  top: 12px;
+}
+.home-title{
+  width: 70px;
+  right: -35px;
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 30px;
 }
 
 .white-clip{
@@ -78,36 +113,84 @@ z-index: 3;
   z-index: 1;
 }
 
-.home-intro{
-  margin-bottom: 1em; 
-  background-color: white; 
-  width: 80%; 
-  padding: 1em;
-  padding-left: 3em;
-  position: absolute;
-  top: 25%; 
+.floating-p{
+  background-color: #FFF;
+  padding: 10px;
+  box-shadow: 0 3px 12px 0px rgba(0, 0, 0, 0.26); 
+  font-size: 18px;
+  max-width: 80%; 
 }
 
+.home-intro{
+  position: absolute;
+  width: 80%;
+  top: 120px;
+  left: 50%;
+  margin-left: -40%;
+}
+
+.home-how{
+  position: absolute;
+  top: 280px; 
+  left: 5%; 
+  animation-delay: 0.2s; 
+}
+.green-contact{
+position: absolute;
+right: 20px;
+bottom: -17px;
+font-size: 14px;
+font-family: 'PT Sans';
+text-transform: uppercase;
+letter-spacing: 1px;
+border: none; 
+padding: 5px 10px;  
+}
+
+.green-contact a{
+  color: white; 
+}
+.green-contact{
+  position:  absolute;
+}
+
+.home-act{
+  position: absolute;
+  top: 500px; 
+}
 
 .left-headline, .right-headline{
   display: block;
   width: 100%;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  z-index: 3;
+  position: relative;
 }
+
 .left-headline{
   position: absolute;
-  top: 45%;
+  top: 200px;
   right: 0;
+  overflow: hidden; 
+  animation-delay: 0.1s; 
+
 }
 .left-headline span, .right-headline span{
-  background-color: white; 
-  font-size: 28px;
-  padding: 0.5em 0.5em 0.5em 0; 
-  float: left;
+  background-color: #FFF;
+  font-size: 18px;
   margin-left: -10px;
+  padding: 10px;
+  float: left;
 }
 .left-headline span{
   float: right;
 }
+.right-headline span{
+  padding-left: 0;
+  animation-delay: 0.3s; 
+}
+
 .right-headline{
   margin-right: -16px; 
 }
@@ -117,17 +200,32 @@ z-index: 3;
 
 .portfolio-image{
   position: relative;
-  height: 270px; 
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px -2px black; 
+  border-radius: 3px; 
+  cursor: pointer;
+  border: 1px solid white; 
 }
 
-.portfolio-image img{
+.portfolio-image .portfolio-hover-image, 
+.portfolio-image .portfolio-initial-image{
   width: 100%;
   position: absolute;
   top:0; 
   transition: opacity 0.3s ease-in; 
   z-index: 0;
 }
-
+.portfolio-image .portfolio-initial-image {
+  position: relative;
+}
 .portfolio-image:hover img:last-child{
   opacity: 0;
+}
+.portfolio-image img:first-child{
+  opacity: 0; 
+}
+
+.portfolio-image:hover img:first-child{
+  opacity: 0.9; 
 }
