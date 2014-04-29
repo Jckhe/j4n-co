@@ -24,9 +24,7 @@
     I love creating rich interactions for the web and experimenting with interfaces, wether it be for desktop, mobile or screens we haven't yet imagined.     </br>
 
     <br/>
-    <button class="green-contact aqua">
-      <a href="#contact-me">get in touch</a>
-    </button>
+    <a class="green-contact aqua" href="#contact-me">get in touch</a>
   </p>
 
 </div>
@@ -78,7 +76,17 @@ $(document).ready(function(){
   var diff; 
   var headlineOffsets = []
   var initialOffset = $('.home-column-right-content').offset().top
-  var rightHeadlines = $('.right-headline')
+  var rightHeadlines = []
+  var portfolioImages = []
+  var portfolioImagesJq = $('.portfolio-image')
+
+  $('.right-headline').each(function(){
+    rightHeadlines.push($(this))
+  })
+  
+  $('.portfolio-image').each(function(){
+    portfolioImages.push($(this))
+  })
 
   loadHeadlineOffsets();
 
@@ -86,10 +94,13 @@ $(document).ready(function(){
     //reseting array
     headlineOffsets = []
     $('.portfolio-initial-image').load(function(){
-      loadHeadlinesInLoop(this)
+      
+      //if ( !($(window).width() < 700) ) {
+        loadHeadlinesInLoop(this)
+      //}
     })
     
-    if ( headlineOffsets.length == 0 ){
+    if ( headlineOffsets.length == 0 && !($(window).width() < 700) ){
       $('.portfolio-initial-image').each(function( index ){
         loadHeadlinesInLoop(this)
       })
@@ -132,7 +143,8 @@ $(document).ready(function(){
       absoluteDiff = Math.abs(diff)
       
       if (diff < 200 && diff > -20){
-        nearbyHeadline = $(rightHeadlines[i])
+        nearbyHeadline = rightHeadlines[i]
+        corespondingImage = portfolioImages[i]
         //previousHeadline = $(rightHeadlines[i-1])
         //nextHeadline = $(rightHeadlines[i+1])
         break;
@@ -155,6 +167,11 @@ $(document).ready(function(){
         msTransform: 'translate3d(0,'+diff+'px, 0)',
         transform: 'translate3d(0,'+diff+'px, 0)'
       })
+    }
+
+    if(corespondingImage){
+      portfolioImagesJq.removeClass('hover')
+      corespondingImage.addClass('hover')
     }
 
   }); //window.scroll

@@ -45,6 +45,54 @@
 		width: 70px;
 		height: 70px; 
 	}
+}
+
+@media screen and (max-width: 700px) {
+	
+	.home-column-left{
+		position: absolute;
+		height: 522px;
+		min-height: 50%;
+		width: 100%;
+
+	}
+	
+	.home-column-right{
+		height: 490px;
+		width: 100%;
+		min-height: 50%; 
+		top: 550px;
+	}
+	
+	.home-column-right-content{
+		top: 0;
+		position: static;
+	}
+
+	.home-title {
+		width: 120px;
+		right: 50%;
+		position: absolute;
+		text-align: center;
+		z-index: 3;
+		top: 30px;
+		margin-right: -60px;
+	}
+
+	.left-headline{
+		top: 450px; 
+		margin-left: 0;
+	}
+	.left-headline span{
+		float: left; 
+		margin-left: 0;
+	}
+	.home-how{
+		top: 235px;
+	}
+	.right-headline span {
+		margin-left: 0; 
+	}
 
 }
 
