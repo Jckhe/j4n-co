@@ -1,5 +1,8 @@
 # Kirby .htaccess
 
+php_flag display_errors off
+php_flag log_errors off
+
 # rewrite rules
 <IfModule mod_rewrite.c>
 
