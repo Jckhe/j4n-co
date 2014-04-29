@@ -9,7 +9,7 @@
     <div class="flipper animated">
       <div class="home-avatar-front flipper-front">
       </div>
-      <div class="home-avatar-back flipper-back"><a class="about-link" href="#about-me">more about me</a></div>
+      <div class="home-avatar-back flipper-back"><a class="about-link" href="/jan-drewniak">more about me</a></div>
     </div>
   </div>
   <p class="home-intro floating-p animated bounceInLeft">
@@ -58,7 +58,7 @@
         </span>
       </p>
       <div class="portfolio-image" style="display: none;">
-        <img class="portfolio-initial-image" src="/j4n-co/assets/images/avatar.png" style="display: none; " />
+        <img class="portfolio-initial-image" src="/assets/images/avatar.png" style="display: none; " />
       </div>
       <?php snippet('contactform') ?>      
     </div>    
