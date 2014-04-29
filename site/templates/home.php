@@ -58,7 +58,8 @@
         </span>
       </p>
       <div class="portfolio-image" style="display: none;">
-        <img class="portfolio-initial-image" src="/assets/images/avatar.png" style="display: none; " />
+        <!--
+        <img class="portfolio-initial-image" src="/assets/images/avatar.png" style="display: none; " /> -->
       </div>
       <?php snippet('contactform') ?>      
     </div>    
@@ -69,6 +70,7 @@
 <? snippet('footer') ?>
 
 <script> 
+
 $(document).ready(function(){
 
   var nearbyHeadline;
@@ -77,56 +79,68 @@ $(document).ready(function(){
   var initialOffset = $('.home-column-right-content').offset().top
   var $rightHeadlines = $('.right-headline')
   var $portfolioImages = $('.portfolio-image')
-
-  loadHeadlineOffsets();
-
-  function loadHeadlineOffsets(){
-    //reseting array
-    headlineOffsets = []
-    $('.portfolio-initial-image').load(function(){
-      loadHeadlinesInLoop(this)
-    })
-    
-    if ( headlineOffsets.length == 0 ){
-      $('.portfolio-initial-image').each(function( index ){
-        loadHeadlinesInLoop(this)
-      })
-    }
-
-    $('#contact-me').css({minHeight: $(window).height()-250+'px' })
-  }
-
-  function loadHeadlinesInLoop(element){
-    var index = $(element).index('.portfolio-initial-image')
-    var correspondingHeadline =  $(element).parent().prev('.right-headline')
-    
-    correspondingHeadline.css({
-      WebkitTransform: 'translateY(0px)',
-      MozTransform: 'translateY(0px)',
-      msTransform: 'translateY(0px)',
-      transform: 'translateY(0px)'
-    })
-    
-    var offset = correspondingHeadline.offset().top - 11
-    headlineOffsets[index] = offset 
-  }
-
-
-  $(window).resize(function(){
-    loadHeadlineOffsets();
-  })
-
-  var previousHeadline; 
-  var nextHeadline
+  var $homePortfilios = $('.home-portfolio')
+  var $contactMe = $('#contact-me')
 
   var latestKnownScrollY = 0;
   var ticking = false;
 
+  //adjusting contact form height
+  $contactMe.css({minHeight: $(window).height()-250+'px' })
+
+  resetHeadlineOffsets();
+
+  $(window).resize(function(){
+    resetHeadlineOffsets();
+  })
+
   $(window).scroll(onScroll)
+
+
+  function resetHeadlineOffsets(){
+    headlineOffsets = []
+    $homePortfilios.each(function( index ){
+      checkForImages($(this), $homePortfilios)
+    })
+  }
+
+
+  function checkForImages($element, $elements){
+    var index = $elements.index($element[0])
+
+    var waitForImages = $element.find('img').length > 0 
+
+    if (waitForImages){
+      $element.find('img').load(CalculateHeadlineOffsets)
+    } else {
+      CalculateHeadlineOffsets()
+    }
+  }
+
+  function CalculateHeadlineOffsets(){
+    $homePortfilios.each(function(){
+      var portfolioHeadline =  $(this).find('.right-headline')
+      
+      var index = $homePortfilios.index($(this)[0])
+
+      portfolioHeadline.css({
+        WebkitTransform: 'translateY(0px)',
+        MozTransform: 'translateY(0px)',
+        msTransform: 'translateY(0px)',
+        transform: 'translateY(0px)'
+      })
+
+      var offset = portfolioHeadline.offset().top - 11
+      headlineOffsets[index] = offset 
+    })
+  }
+
+  
   function onScroll() {
     latestKnownScrollY = window.scrollY;
     requestTick();
   }
+  
   function requestTick() {
     if(!ticking) { requestAnimationFrame(update); };
     ticking = true;
