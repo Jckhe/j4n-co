@@ -95,6 +95,8 @@ $(document).ready(function(){
       })
     }
 
+    $('#contact-me').css({minHeight: $(window).height()-250+'px' })
+
     function loadHeadlinesInLoop(element){
       var index = $(element).index('.portfolio-initial-image')
       var correspondingHeadline =  $(element).parent().prev('.right-headline')
@@ -105,7 +107,7 @@ $(document).ready(function(){
         msTransform: 'translateY(0px)',
         transform: 'translateY(0px)'
       })
-
+      
       var offset = correspondingHeadline.offset().top - 11
       headlineOffsets[index] = offset 
     }
@@ -116,37 +118,44 @@ $(document).ready(function(){
     loadHeadlineOffsets();
   })
 
+  var previousHeadline; 
+  var nextHeadline
+
   $(window).scroll(function(event) {
     
     var currentOffset = $(window).scrollTop() + initialOffset; 
     
-    console.log(headlineOffsets)
-
     for (i=0; i<headlineOffsets.length; i++){
 
       diff = currentOffset - headlineOffsets[i]
       
       absoluteDiff = Math.abs(diff)
       
-      if (diff < 200 && diff > -1){
-        nearbyHeadline = rightHeadlines[i]
+      if (diff < 200 && diff > -20){
+        nearbyHeadline = $(rightHeadlines[i])
+        //previousHeadline = $(rightHeadlines[i-1])
+        //nextHeadline = $(rightHeadlines[i+1])
         break;
       } else {
         diff = 0
         nearbyHeadline = false
+        //nearbyHeadline = nextHeadline
       }
     }
-    //alternative approach
-    //rightHeadlines.removeClass('fixedHeadline')
-    //$(nearbyHeadline).addClass('fixedHeadline')
-    
-    $(nearbyHeadline).css({
-      WebkitTransform: 'translateY('+diff+'px)',
-      MozTransform: 'translateY('+diff+'px)',
-      msTransform: 'translateY('+diff+'px)',
-      transform: 'translateY('+diff+'px)'
-    })
-    
+    //alternative approach - not worth it - eh, i guess it works...
+    //rightHeadlines.removeClass('fixedHeadline fixedPreviousHeadline fixedNextHeadline')
+    //nearbyHeadline.addClass('fixedHeadline')
+    //previousHeadline.addClass('fixedPreviousHeadline')
+    //nextHeadline.addClass('fixedNextHeadline')
+
+    if (nearbyHeadline){
+      nearbyHeadline.css({
+        WebkitTransform: 'translate3d(0,'+diff+'px, 0)',
+        MozTransform: 'translate3d(0,'+diff+'px, 0)',
+        msTransform: 'translate3d(0,'+diff+'px, 0)',
+        transform: 'translate3d(0,'+diff+'px, 0)'
+      })
+    }
 
   }); //window.scroll
 

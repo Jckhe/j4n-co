@@ -22,7 +22,7 @@ $form = new contactform(array(
   
   <?php else: ?>
 
-  <h1>Contact Me</h1>
+  <h1 style="margin-bottom: 1em; ">Contact Me</h1>
   
   <form action="#contactform" method="post">
     
