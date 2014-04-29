@@ -1,4 +1,4 @@
-<input class="hidden_input" type="checkbox" id="expand_me" />
+<!--<input class="hidden_input" type="checkbox" id="expand_me" /> -->
 
 <header class='top_bar dark_grey' itemscope itemtype='http://schema.org/WPHeader'>
 
@@ -47,14 +47,18 @@
       </li>
     <? $color_i = min($color_i+1, count($colors)-1 ); ; ?>
     <? endforeach ?>
+      <!--
       <li class="me section">
         <label for="expand_me" class="my_pixelated_face"></label>
         <label for="expand_me" class="my_face"></label>
       </li>
+      -->
     </ul>
 
 
   </nav>        
+  
+  <!--
   
   <div class="expanded_bar"></div>
 
@@ -65,14 +69,16 @@
     I enjoy <a href="<?= $pages->find("lab")->url() ?>">experimenting</a> with HTML/CSS/JS and making engaging <a href="<?= $pages->find("portfolio")->url() ?>">web-things</a> (sites/apps...whatever).
     </p>
   </div>
-
+-->
   <a class='tagline iblock' href='<?= $pages->find("home")->url() ?>'>
     <h1 itemprop='headline'>
       Jan Drewniak | <span itemprop="description">Art + Code for fun and profit</span>
     </h1>
   </a>
- 
-   <a class="icon-social github" target="_BLANK" href="https://github.com/j4n-co">
+  
+  
+   
+  <a class="icon-social github" target="_BLANK" href="https://github.com/j4n-co">
     github
   </a>
   <a class="icon-social linkedin" target="_BLANK" href="http://ca.linkedin.com/in/jandrewniak">

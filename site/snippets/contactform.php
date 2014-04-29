@@ -42,7 +42,6 @@ $form = new contactform(array(
   
       <div class="contactform-field-half">
         <label class="contactform-label" for="contactform-name">Your Name 
-        <?php if($form->isRequired('name')) echo '*' ?> 
         </label>
         <?php if($form->isError('name')): ?>
           <small class="error">Please enter a name</small>
@@ -52,8 +51,7 @@ $form = new contactform(array(
   
       <div class="contactform-field-half">
         <label class="contactform-label" for="contactform-email">
-        Your Email adresse 
-        <?php if($form->isRequired('email')) echo '*' ?> 
+        Your Email address 
         </label>
         <?php if($form->isError('email')): ?>
           <small class="error">Please enter a valid email address</small>
@@ -63,7 +61,6 @@ $form = new contactform(array(
   
       <div class="contactform-field">
         <label class="contactform-label" for="contactform-text">Message 
-        <?php if($form->isRequired('text')) echo '*' ?> 
         </label>
         <?php if($form->isError('text')): ?>
           <small class="error">Please enter your text</small>

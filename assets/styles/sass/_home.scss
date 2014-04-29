@@ -94,15 +94,16 @@ body{
   background-repeat: no-repeat;
 }
 .about-link{
-  line-height: 1em;
+  line-height: 1.2em;
   text-decoration: none;
-  font-size: 32px;
-  font-weight: normal;
+  font-size: 18px;
   text-transform: uppercase;
   position: relative;
-  top: 12px;
+  top: 30px;
   text-shadow: 1px 1px 0 #000;
   color: #FFF;
+  letter-spacing: 9px;
+  font-weight: 900;
 }
 .home-title{
   width: 120px;
@@ -210,7 +211,8 @@ color: white;
   animation-delay: 0.3s; 
   padding-left: 1%;
 }
-/* --- fixed headline appproach 
+
+// --- fixed headline appproach 
 
 .right-headline.fixedHeadline{
   position: fixed;
@@ -237,7 +239,7 @@ color: white;
   position: absolute;
 }
 
---- */
+// ---  END Fixed headline approach//
 
 .home-portfolio{
   margin-bottom: 5em; 
@@ -248,7 +250,7 @@ color: white;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px -2px black; 
-  border-radius: 3px; 
+  border-radius: 5px; 
   cursor: pointer;
   border: 1px solid white; 
 }

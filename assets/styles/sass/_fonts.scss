@@ -21,3 +21,52 @@
     font-style: normal;
 
 }
+
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirLTStd-Black.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Avenir/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Avenir/AvenirLTStd-Black.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Avenir/AvenirLTStd-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Avenir/AvenirLTStd-Black.svg#2d55e36446b90be6f85f84e74f83cb6c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  800;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirLTStd-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Avenir/AvenirLTStd-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Avenir/AvenirLTStd-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Avenir/AvenirLTStd-Oblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Avenir/AvenirLTStd-Oblique.svg#3940793a09c3eddee1217f9201c66bf9') format('svg'); /* Legacy iOS */
+       
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirLTStd-Roman.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Avenir/AvenirLTStd-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Avenir/AvenirLTStd-Roman.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Avenir/AvenirLTStd-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Avenir/AvenirLTStd-Roman.svg#1297092b477b7e1dcddfcf3bbb416185') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Ultra Light';
+  src: url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.svg#127711851060d024028a66ca1446ddd8') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  100;
+}

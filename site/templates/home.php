@@ -9,7 +9,7 @@
     <div class="flipper animated">
       <div class="home-avatar-front flipper-front">
       </div>
-      <div class="home-avatar-back flipper-back"><a class="about-link" href="#about-me">more about me...</a></div>
+      <div class="home-avatar-back flipper-back"><a class="about-link" href="#about-me">more about me</a></div>
     </div>
   </div>
   <p class="home-intro floating-p animated bounceInLeft">
@@ -21,8 +21,8 @@
     </span>
   </p>
   <p class="floating-p home-how animated bounceInLeft"> 
-    I love creating rich interactions for the web and experimenting with interfaces, wether it be for desktop, mobile or screens we haven't yet imagined.     </br>
-
+    and I love working on new products and startups. If you're looking for someone to take your idea to the next level, then we should talk.      
+    <br/>
     <br/>
     <a class="green-contact aqua" href="#contact-me">get in touch</a>
   </p>
@@ -54,7 +54,7 @@
     <div id="contact-me" class="home-portfolio">
       <p class="right-headline cf">
         <span class='floating-p animated bounceInLeft'>
-          like you.
+          like you
         </span>
       </p>
       <div class="portfolio-image" style="display: none;">
@@ -72,21 +72,11 @@
 $(document).ready(function(){
 
   var nearbyHeadline;
-  var absoluteDiff;
   var diff; 
   var headlineOffsets = []
   var initialOffset = $('.home-column-right-content').offset().top
-  var rightHeadlines = []
-  var portfolioImages = []
-  var portfolioImagesJq = $('.portfolio-image')
-
-  $('.right-headline').each(function(){
-    rightHeadlines.push($(this))
-  })
-  
-  $('.portfolio-image').each(function(){
-    portfolioImages.push($(this))
-  })
+  var $rightHeadlines = $('.right-headline')
+  var $portfolioImages = $('.portfolio-image')
 
   loadHeadlineOffsets();
 
@@ -94,34 +84,31 @@ $(document).ready(function(){
     //reseting array
     headlineOffsets = []
     $('.portfolio-initial-image').load(function(){
-      
-      //if ( !($(window).width() < 700) ) {
-        loadHeadlinesInLoop(this)
-      //}
+      loadHeadlinesInLoop(this)
     })
     
-    if ( headlineOffsets.length == 0 && !($(window).width() < 700) ){
+    if ( headlineOffsets.length == 0 ){
       $('.portfolio-initial-image').each(function( index ){
         loadHeadlinesInLoop(this)
       })
     }
 
     $('#contact-me').css({minHeight: $(window).height()-250+'px' })
+  }
 
-    function loadHeadlinesInLoop(element){
-      var index = $(element).index('.portfolio-initial-image')
-      var correspondingHeadline =  $(element).parent().prev('.right-headline')
-      
-      correspondingHeadline.css({
-        WebkitTransform: 'translateY(0px)',
-        MozTransform: 'translateY(0px)',
-        msTransform: 'translateY(0px)',
-        transform: 'translateY(0px)'
-      })
-      
-      var offset = correspondingHeadline.offset().top - 11
-      headlineOffsets[index] = offset 
-    }
+  function loadHeadlinesInLoop(element){
+    var index = $(element).index('.portfolio-initial-image')
+    var correspondingHeadline =  $(element).parent().prev('.right-headline')
+    
+    correspondingHeadline.css({
+      WebkitTransform: 'translateY(0px)',
+      MozTransform: 'translateY(0px)',
+      msTransform: 'translateY(0px)',
+      transform: 'translateY(0px)'
+    })
+    
+    var offset = correspondingHeadline.offset().top - 11
+    headlineOffsets[index] = offset 
   }
 
 
@@ -132,50 +119,42 @@ $(document).ready(function(){
   var previousHeadline; 
   var nextHeadline
 
-  $(window).scroll(function(event) {
-    
-    var currentOffset = $(window).scrollTop() + initialOffset; 
-    
-    for (i=0; i<headlineOffsets.length; i++){
+  var latestKnownScrollY = 0;
+  var ticking = false;
 
+  $(window).scroll(onScroll)
+  function onScroll() {
+    latestKnownScrollY = window.scrollY;
+    requestTick();
+  }
+  function requestTick() {
+    if(!ticking) { requestAnimationFrame(update); };
+    ticking = true;
+  }
+
+  function update() {
+    ticking = false;
+    var currentOffset = latestKnownScrollY + initialOffset; 
+    diff = 0
+    nearbyHeadline = false;
+    var i = headlineOffsets.length;
+    while(i--){
       diff = currentOffset - headlineOffsets[i]
-      
-      absoluteDiff = Math.abs(diff)
-      
       if (diff < 200 && diff > -20){
-        nearbyHeadline = rightHeadlines[i]
-        corespondingImage = portfolioImages[i]
-        //previousHeadline = $(rightHeadlines[i-1])
-        //nextHeadline = $(rightHeadlines[i+1])
+        nearbyHeadline = $rightHeadlines.eq(i)
+        corespondingImage = $portfolioImages.eq(i)
         break;
-      } else {
-        diff = 0
-        nearbyHeadline = false
-        //nearbyHeadline = nextHeadline
       }
     }
-    //alternative approach - not worth it - eh, i guess it works...
-    //rightHeadlines.removeClass('fixedHeadline fixedPreviousHeadline fixedNextHeadline')
-    //nearbyHeadline.addClass('fixedHeadline')
-    //previousHeadline.addClass('fixedPreviousHeadline')
-    //nextHeadline.addClass('fixedNextHeadline')
-
     if (nearbyHeadline){
-      nearbyHeadline.css({
-        WebkitTransform: 'translate3d(0,'+diff+'px, 0)',
-        MozTransform: 'translate3d(0,'+diff+'px, 0)',
-        msTransform: 'translate3d(0,'+diff+'px, 0)',
-        transform: 'translate3d(0,'+diff+'px, 0)'
-      })
+      $rightHeadlines.removeClass('fixedHeadline')
+      nearbyHeadline.addClass('fixedHeadline')      
     }
-
     if(corespondingImage){
-      portfolioImagesJq.removeClass('hover')
+      $portfolioImages.removeClass('hover')
       corespondingImage.addClass('hover')
     }
-
-  }); //window.scroll
-
+  }
 
 });//document.ready
 </script> 
