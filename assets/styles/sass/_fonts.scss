@@ -60,6 +60,19 @@
 }
 
 @font-face {
+  font-family: 'Glypha';
+  src: url('../fonts/Glypha/GlyphaLTStd-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Glypha/GlyphaLTStd-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Glypha/GlyphaLTStd-Thin.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Glypha/GlyphaLTStd-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Glypha/GlyphaLTStd-Thin.svg#2d55e36446b90be6f85f84e74f83cb6c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+
+@font-face {
   font-family: 'Helvetica Neue Ultra Light';
   src: url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.eot'); /* IE9 Compat Modes */
   src: url('../fonts/Helvetica/HelveticaNeueLTStd-UltLt.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */

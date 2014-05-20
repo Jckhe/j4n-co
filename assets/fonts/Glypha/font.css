@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Glypha LT Std Thin';
+  src: url('GlyphaLTStd-Thin.eot'); /* IE9 Compat Modes */
+  src: url('GlyphaLTStd-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GlyphaLTStd-Thin.woff') format('woff'), /* Modern Browsers */
+       url('GlyphaLTStd-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GlyphaLTStd-Thin.svg#1183ffbcec692aec50a43f4748c7de8e') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+

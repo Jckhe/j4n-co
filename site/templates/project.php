@@ -27,7 +27,7 @@
 
 <section class='main projects'>
   <article>
-    <div class='project_gallery'>
+    <div class='project_gallery active'>
       <? foreach($gallery_images AS $index=>$i): ?>
       <div class='gallery_operator' id='gallery_<?= $index ?>'>
       </div>

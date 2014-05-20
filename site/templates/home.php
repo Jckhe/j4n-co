@@ -37,7 +37,9 @@
       <div class="home-portfolio">
         <p class="right-headline first cf">
           <span class='floating-p animated bounceInLeft'>
-            <?= $p->homepage_title() ?>
+            <a href="<?= $p->url() ?>">
+              <?= $p->homepage_title() ?> &rarr;
+            </a>
           </span>
         </p>
         <div class="portfolio-image">
