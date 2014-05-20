@@ -93,14 +93,7 @@ $light_green_h: saturate(lighten($light_green, 10%), 10%);
 .has_top_shadow{
 	@include box-shadow(0 -2px 4px -2px rgba(0, 0, 0, 0.52));	
 }
-.text_shadow{
-  //color: $medium_grey;
-  //-webkit-text-fill-color: transparent;
-  //background: -webkit-linear-gradient($dark_grey, $dark_grey) repeat;
-  //background: -o-linear-gradient($dark_grey, $dark_grey);
-  //-webkit-background-clip: text;
-  //text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
-}
+
 .right{
 	float: right;
 	vertical-align: middle;
@@ -121,7 +114,3 @@ a.white{
 a.white:hover{
 	color: $aqua_h
 }
-
-//a.white:visited{
-//	color: inherit; 
-//}
