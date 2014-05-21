@@ -5,6 +5,7 @@ docs
 content
 Capfile
 /config/
+/thumbs/
 *.sublime-project
 *.sublime-workspace
 site/panel/accounts/*
