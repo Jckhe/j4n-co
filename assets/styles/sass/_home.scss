@@ -22,96 +22,50 @@ body{
 }
 
 .home-column-left, .home-column-right{
-  background-image: url('../images/poz.jpg'); 
-  background-attachment: fixed; 
-  background-size: cover; 
-  background-position: 0 0; 
   min-height: 100%;  
   width: 50%;
-  background-color: white; 
   z-index: 0;
 }
 
 .home-column-left{
-  background-image: url('../images/poz.jpg'); 
   position: fixed;
   z-index: 1;
+  padding-top: 150px; 
 }
 .home-column-right{
   height: 100%; 
-  background-image: none;
   position: absolute; 
   right: 0 ;
   background-color: transparent;
   z-index: 0;
 }
-.home-title .flipper {
-  animation: flipAvatar 1.5s;
-  animation-timing-function: linear;  
-  animation-delay: 1.5s; 
-}
 
-@keyframes flipAvatar {
-  0%{
-    transform: rotateY(0deg); 
-  }
-  45%{
-    transform: rotateY(180deg); 
-  }  
-  50%{
-    transform: rotateY(180deg); 
-  }
-  55%{
-    transform: rotateY(180deg); 
-  }  
-  100%{
-    transform: rotateY(0deg); 
-  }
-}
 
 .home-column-right-content{
   position: absolute;
-  top: 200px;
+  top: 150px;
   width: 92%;
   margin: 0 auto;
   left: 4%;
 }
 
-.home-avatar-front, .home-avatar-back{
-  width: 120px; 
-  height: 120px; 
-  background: url('../images/monogram.png');
-  background-size: cover;
-  display: inline-block;
-  border-radius: 50%; 
-  border: none;
+.initilal-flipper-animation {
+  animation: flipDropAvatar 0.7s;
+  animation-timing-function: ease-out;  
+  animation-delay: 0.5s; 
+  animation-fill-mode: both;
+  transform: translateY(-140px) rotateY(-180deg); 
+  animation-iteration-count: 1; 
 }
 
-.home-avatar-back{
-  background-image: url('../images/avatar_orig.jpg'); 
-  background-color: gray;
-  background-position: 0px -16px;
-  background-repeat: no-repeat;
-}
-.about-link{
-  line-height: 1.2em;
-  text-decoration: none;
-  font-size: 18px;
-  text-transform: uppercase;
-  position: relative;
-  top: 30px;
-  text-shadow: 1px 1px 0 #000;
-  color: #FFF;
-  letter-spacing: 9px;
-  font-weight: 900;
-}
-.home-title{
-  width: 120px;
-  right: -60px;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  top: 30px;
+@keyframes flipDropAvatar {
+  0%{
+    transform: rotateY(180deg) translateY(-140px); 
+  }
+
+  100%{
+    transform: rotateY(0deg) translateY(0px); 
+  }
 }
 
 .white-clip{
@@ -129,7 +83,7 @@ body{
   padding: 10px;
   box-shadow: 0 3px 12px 0px rgba(0, 0, 0, 0.26); 
   font-size: 18px;
-  max-width: 80%; 
+  max-width: 90%; 
 }
 
 .home-intro{
@@ -141,11 +95,24 @@ body{
 }
 
 .home-how{
-  position: absolute;
-  top: 280px; 
+//  position: absolute;
+  position: relative;
   left: 5%; 
   animation-delay: 0.2s; 
 }
+
+
+.drop-cap{
+display: inline-block;
+font-size: 56px;
+float: left;
+margin-top: 17px;
+color: maroon;
+}
+#contact-me{
+  white-space: normal;
+}
+
 .green-contact{
 position: absolute;
 right: 20px;
@@ -174,75 +141,30 @@ color: white;
   top: 500px; 
 }
 
-.left-headline, .right-headline{
+.left-headline{
   display: block;
-  width: 100%;
   padding-top: 10px; 
   padding-bottom: 10px; 
   z-index: 3;
-  position: absolute;
-  margin-bottom: 0; 
   backface-visibility: hidden; 
-}
-
-.left-headline{
-  position: absolute;
-  top: 200px;
-  right: 0;
-  overflow: hidden; 
+  position: relative;
   animation-delay: 0.1s; 
-
+  margin-top: 54px;
+  z-index: 2; 
+  position: relative;
+  left: 20%; 
 }
-
-.left-headline span, .right-headline span{
-  background-color: #FFF;
-  font-size: 18px;
-  margin-left: -5%;
-  padding: 10px;
-  float: left;
+.subtext{
+  border-bottom: 1px dotted; 
 }
-
 .left-headline span{
-  float:right;
-  padding-right: 0.25em; 
+  font-size: 18px;
+  background-color: white; 
 }
-
-.right-headline span{
-  animation-delay: 0.3s; 
-  padding-left: 1%;
-}
-
-// --- fixed headline appproach 
-
-.right-headline.fixedHeadline{
-  position: fixed;
-  top: 200px; 
-  left: 49%; 
-}
-
-.right-headline.fixedHeadline span{
-  margin-left: 0; 
-}
-
-.right-headline.fixedPreviousHeadline, 
-.right-headline.fixedNextHeadline{
-  position: absolute;
-  transform: translateY(200px);
-}
-.right-headline.fixedPreviousHeadline{
-  transform: translateY(200px);
-  position: absolute;
-  }
-
-.right-headline.fixedNextHeadline{
-  transform: translateY(0px);
-  position: absolute;
-}
-
-// ---  END Fixed headline approach//
 
 .home-portfolio{
   margin-bottom: 5em; 
+  position: relative;
 }
 
 .portfolio-image{
@@ -250,7 +172,6 @@ color: white;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px -2px black; 
-  border-radius: 5px; 
   cursor: pointer;
   border: 1px solid white; 
 }
@@ -279,13 +200,11 @@ color: white;
   opacity: 0.9; 
 }
 
+.portfolio-hover-image.hover{
+  opacity: 1 !important; 
+  z-index: 1;
+}
 
-.home-work-link{
-  background-color: rgba(255, 255, 255, 0.43);
-  float: right;
-  padding: 0.5em;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #797979;
+.home-portfolio-link{
+  white-space: nowrap;
 }

@@ -4,27 +4,50 @@
 <? $portfolio_pages = $pages->findByUID('portfolio')->children()->visible(); ?> 
 
 
-<div class="home-column-left">
-  <div class="home-title flip-container">
+<div class="home-title flip-container">
+  <div class="initilal-flipper-animation">
     <div class="flipper animated">
       <div class="home-avatar-front flipper-front">
       </div>
-      <div class="home-avatar-back flipper-back"><a class="about-link" href="/jan-drewniak">more about me</a></div>
+      <div class="home-avatar-back flipper-back">
+        <a class="about-link" href="/jan-drewniak">more about me</a>
+      </div>
     </div>
   </div>
-  <p class="home-intro floating-p animated bounceInLeft">
-    Hey there, I’m Jan. I design and build stuff for the web. 
-  </p>
-  <p class="left-headline  animated bounceInLeft">
-    <span class="floating-p">
-      In the past I’ve helped people
-    </span>
-  </p>
+</div>
+
+
+<div class="ribbon-wrapper">
+  <span class="ribbon-end start"></span>
+  <div class="ribbon">
+    <h2 class="ribbon-text has_shadow">
+      <a href="<?= $pages->findByTitle('home');?>">
+        Creative Pixels
+      </a>
+    </h2>
+    <h3 class="ribbon-subhead">
+      for the web
+    </h3>
+  </div>
+  <span class="ribbon-end end"></span>
+</div>
+
+
+<div class="home-column-left">
   <p class="floating-p home-how animated bounceInLeft"> 
-    and I love working on new products and startups. If you're looking for someone to take your idea to the next level, then we should talk.      
+    <span class="drop-cap">J</span>an Drewniak is a UI designer with an front-end skills.
+    <br/>
+    If you're looking for someone to take your web-app to the next level, you should totally talk to him.      
     <br/>
     <br/>
     <a class="green-contact aqua" href="#contact-me">get in touch</a>
+  </p>
+
+  <p class="left-headline  animated bounceInLeft">
+    <span class="floating-p home-portfolio-link">
+      Recently, I've helped people
+      <a href="#" class="subtext"></a>
+    </span>
   </p>
 
 </div>
@@ -35,35 +58,22 @@
     <? foreach($portfolio_pages->visible() AS $p): ?>
 
       <div class="home-portfolio">
-        <p class="right-headline first cf">
-          <span class='floating-p animated bounceInLeft'>
-            <a href="<?= $p->url() ?>">
-              <?= $p->homepage_title() ?> &rarr;
-            </a>
-          </span>
-        </p>
         <div class="portfolio-image">
-          <img class="portfolio-hover-image" src="<?= $p->files()->find('home_original.jpg')->url() ?>"/>
+          <a href="<?= $p->url() ?>">
+            <img alt="<?= $p->homepage_title()?> &rarr;" class="portfolio-hover-image" src="<?= $p->files()->find('home_original.jpg')->url() ?>"/>
+          </a>
           <img class="portfolio-initial-image" src="<?= $p->files()->find('home_preview.svg')->url() ?>"/>
         </div>
-        <a class="home-work-link" href="<?= $p->url() ?>">
-          Learn more about <?= $p->title() ?> &rarr;
         </a>
       </div>
 
     <? endforeach ?> 
 
-    <div id="contact-me" class="home-portfolio">
-      <p class="right-headline cf">
-        <span class='floating-p animated bounceInLeft'>
-          like you
-        </span>
+    <div id="contact-me" class="home-portfolio" >
+      <p class="right-headline cf" >
       </p>
-      <div class="portfolio-image" style="display: none;">
-        <!--
-        <img class="portfolio-initial-image" src="/assets/images/avatar.png" style="display: none; " /> -->
-      </div>
       <?php snippet('contactform') ?>      
+      <div class="portfolio-hover-image" alt="like you"></div>
     </div>    
   </div>
 </div>
@@ -75,6 +85,45 @@
 
 $(document).ready(function(){
 
+
+function elementInParentViewport(el, parent){
+  var top = $(el).offset().top;
+  var left = $(el).offset().left;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  return (
+    top >= parent.offset().top &&
+    left >= parent.offset().left &&
+    (top + height) <= (parent.offset().top + parent.innerHeight()) &&
+    (left + width) <= (parent.offset().left + parent.innerWidth())
+  );
+
+}
+
+function elementInViewport(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+  
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+  
+
+  return (
+    top >= window.pageYOffset &&
+    left >= window.pageXOffset &&
+    (top + height) <= (window.pageYOffset + window.innerHeight) &&
+    (left + width) <= (window.pageXOffset + window.innerWidth)
+  );
+}
+
+
   var nearbyHeadline;
   var diff; 
   var headlineOffsets = []
@@ -83,28 +132,34 @@ $(document).ready(function(){
   var $portfolioImages = $('.portfolio-image')
   var $homePortfilios = $('.home-portfolio')
   var $contactMe = $('#contact-me')
+  var leftHeadlineSubtext = $('.left-headline .subtext')
+  var leftHeadlineXOffset = $('.left-headline').offset().top-11; 
+  var portfolioHeight = $('.home-portfolio').height(); 
+  var $portfolioInitialImages = $('.portfolio-hover-image')
+  var $portfolioParent = $('.home-column-right-content')
 
+  var elementInView = function(el){
+    if (window.outerWidth < 700 ) {
+      return elementInParentViewport( el, $portfolioParent )  
+    } else {
+      return elementInViewport( el )
+    }
+  }
+  
   var latestKnownScrollY = 0;
   var ticking = false;
 
   //adjusting contact form height
   $contactMe.css({minHeight: $(window).height()-250+'px' })
 
-  resetHeadlineOffsets();
+  //resetHeadlineOffsets();
 
   $(window).resize(function(){
-    resetHeadlineOffsets();
+    //resetHeadlineOffsets();
   })
 
   $(window).scroll(onScroll)
-
-
-  function resetHeadlineOffsets(){
-    headlineOffsets = []
-    $homePortfilios.each(function( index ){
-      checkForImages($(this), $homePortfilios)
-    })
-  }
+  $('.home-column-right-content').scroll(onScroll)
 
 
   function checkForImages($element, $elements){
@@ -118,26 +173,9 @@ $(document).ready(function(){
       CalculateHeadlineOffsets()
     }
   }
-
-  function CalculateHeadlineOffsets(){
-    $homePortfilios.each(function(){
-      var portfolioHeadline =  $(this).find('.right-headline')
-      
-      var index = $homePortfilios.index($(this)[0])
-
-      portfolioHeadline.css({
-        WebkitTransform: 'translateY(0px)',
-        MozTransform: 'translateY(0px)',
-        msTransform: 'translateY(0px)',
-        transform: 'translateY(0px)'
-      })
-
-      var offset = portfolioHeadline.offset().top - 11
-      headlineOffsets[index] = offset 
-    })
-  }
-
   
+
+
   function onScroll() {
     latestKnownScrollY = window.scrollY;
     requestTick();
@@ -147,28 +185,29 @@ $(document).ready(function(){
     if(!ticking) { requestAnimationFrame(update); };
     ticking = true;
   }
+  
+  update()
 
   function update() {
     ticking = false;
-    var currentOffset = latestKnownScrollY + initialOffset; 
-    diff = 0
-    nearbyHeadline = false;
-    var i = headlineOffsets.length;
+    var activeImage = false; 
+
+    var i = $portfolioInitialImages.length;
     while(i--){
-      diff = currentOffset - headlineOffsets[i]
-      if (diff < 200 && diff > -20){
-        nearbyHeadline = $rightHeadlines.eq(i)
-        corespondingImage = $portfolioImages.eq(i)
-        break;
+      if ( elementInView( $portfolioInitialImages.eq(i)[0] ) ) {
+        activeImage = $portfolioInitialImages.eq(i)
+        altText = activeImage.attr('alt')
+        break; 
       }
     }
-    if (nearbyHeadline){
-      $rightHeadlines.removeClass('fixedHeadline')
-      nearbyHeadline.addClass('fixedHeadline')      
-    }
-    if(corespondingImage){
-      $portfolioImages.removeClass('hover')
-      corespondingImage.addClass('hover')
+
+    if(activeImage){
+      leftHeadlineSubtext.text(altText)
+
+      leftHeadlineSubtext.attr('href', activeImage.parents('a').attr('href'))
+
+      $portfolioInitialImages.removeClass('hover')
+      activeImage.addClass('hover')
     }
   }
 

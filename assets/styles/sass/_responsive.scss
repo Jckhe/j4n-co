@@ -49,54 +49,70 @@
 
 @media screen and (max-width: 700px) {
 	
-	.home-column-left{
-		position: absolute;
-		height: 522px;
-		min-height: 50%;
-		width: 100%;
-
-	}
-	
+	.home-column-left, 
 	.home-column-right{
-		height: 490px;
 		width: 100%;
-		min-height: 50%; 
-		top: 550px;
+		position: relative;
+		height: auto; 
+		min-height: 0;
+	}
+	.home-column-left{
+		padding-top: 5px; 
+	}
+	.left-headline{
+		left: 1em; 
+		max-width: 90%; 
+		line-height: 3em; 
 	}
 	
-	.home-column-right-content{
-		top: 0;
-		position: static;
+	.home-column-right-content {
+    	position: relative;
+    	top: 0;
+    	width: 100%;
+    	margin: 0px auto;
+    	left: 0;
+		white-space: nowrap;
+		overflow: auto;
+
 	}
 
-	.home-title {
-		width: 120px;
-		right: 50%;
-		position: absolute;
-		text-align: center;
-		z-index: 3;
-		top: 30px;
-		margin-right: -60px;
+	.home-portfolio{
+		display: inline-block;
+		width: 70%;
+		margin-left: 10%;
+		vertical-align: top; 
 	}
-
-	.left-headline{
-		top: 450px; 
-		margin-left: 0;
+	.home-portfolio-link{
+		white-space: normal;
 	}
-	.left-headline span{
-		float: left; 
-		margin-left: 0;
+	.home-portfolio-link a{
+		padding-left: 10px; 
+		padding-right: 10px;
+		margin-top: 5px; 
 	}
-	.home-how{
-		top: 235px;
+	.ribbon-wrapper, .home-title.flip-container{
+		position: relative;
 	}
-	.right-headline span {
-		margin-left: 0; 
+	.ribbon-wrapper {
+		margin-top: -10px; 
 	}
-
+	.home-portfolio#contact-me{
+		h1{
+			font-size: 18px; 
+		}
+	}
 }
 
 @media screen and (max-width: 460px) {
+	h1{
+		font-size: 32px; 
+	}
+
+	.article-body > p:first-of-type {
+		font-size: 1em; 
+		font-weight: bold; 
+	}
+
 	.main{
 		width: 100%; 
 	}
