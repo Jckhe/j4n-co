@@ -35,9 +35,9 @@
 
 <div class="home-column-left">
   <p class="floating-p home-how animated bounceInLeft"> 
-    <span class="drop-cap">J</span>an Drewniak is a UI designer with an front-end skills.
+    <span class="drop-cap">J</span>an Drewniak is a UI designer with a passion for creating engaging interactions on the web.
     <br/>
-    If you're looking for someone to take your web-app to the next level, you should totally talk to him.      
+    If you're looking for someone to take your app (wether it's mobile or web) to the next level, you should totally talk to him.      
     <br/>
     <br/>
     <a class="green-contact aqua" href="#contact-me">get in touch</a>
