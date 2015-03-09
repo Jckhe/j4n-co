@@ -1,0 +1,91 @@
+$bg: #444; 
+$color1: $contentSection1;
+$color2: $contentSection2; 
+$color3: $contentSection3; 
+
+.sandwich-nav{
+  top: 5px; 
+  left: 5px; 
+  position: fixed; 
+  margin: 0; 
+  padding: 0;
+  width: 5em; 
+  z-index: 3; 
+}
+
+.sandwich-item, .sandwich-label{
+  float: left; 
+  list-style-type: none; 
+  margin: 0 0 0.4em 0; 
+  padding: 0.3em 1em; 
+  text-align: center; 
+  width: 4em; 
+  text-transform: uppercase; 
+  font-size: 0.7em; 
+  color: transparent; 
+  transition: all 0.4s ease-out; 
+  opacity: 1; 
+  height: 0.2em; 
+  letter-spacing: 1px; 
+  font-family: 'Glypha'; 
+  font-weight: 800; 
+}
+
+.sandwich-item{
+  vertical-align: middle; 
+  line-height: 0.5em; 
+  background-color: #222; 
+}
+.sandwich-item a, .sandwich-label a {
+  color: white; 
+  text-decoration: none; 
+  font-size: 0.7em;
+  display: none; 
+  font-weight: 800; 
+  &:hover{
+  	background-color: transparent;
+  }
+}
+
+.sandwich-nav:hover .sandwich-item, 
+.sandwich-nav:hover .sandwich-label {
+  height: 2em; 
+  margin-bottom: 0; 
+  width: 6em;
+  line-height: 1.5em; 
+  font-size: 1.2em; 
+  opacity: 1; 
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5); 
+  a {
+  	display: block;
+  }
+}
+
+.sandwich-nav:hover .sandwich-label {
+  background-color: $bg;  
+  &:hover {
+      background-color: lighten($bg, 15%);
+  }
+  
+}
+
+.sandwich-nav:hover .top{
+  background-color: $color1;  
+  &:hover {
+      background-color: lighten($color1, 15%);
+  }
+}
+
+.sandwich-nav:hover .middle{
+  background-color: $color2;
+  &:hover {
+      background-color: lighten($color2, 15%);
+  }
+}
+
+.sandwich-nav:hover .bottom{
+  background-color: $color3;
+  &:hover {
+      background-color: lighten($color3, 15%);
+  }
+}

@@ -1,0 +1,117 @@
+body.home, body.portfolio, body.blog {
+	background-color: $homeBodyBG;
+}
+
+.glitch {
+	animation:RGBshift 2s infinite alternate;
+}
+
+@keyframes RGBshift{
+	0%{
+		transform:rotate(0deg);
+    	text-shadow:5px 10px 0px white;
+    	opacity:1;
+	}
+	1%{
+		transform:rotate(0deg) scale(1.01);
+		text-shadow:
+	 	1px 0px 0px $contentSection1,
+	 	-5px 0px 0px $contentSection2,
+	 	-2px 0px 0px $contentSection3;
+		opacity:1;
+	}
+	5%{
+    	transform:rotate(0deg);
+    	text-shadow:
+     	8px 0px 0px $contentSection1,
+     	-5px 0px 0px $contentSection2,
+     	2px 0px 0px $contentSection3;
+    	opacity:0.6;
+  }
+  6%{
+    	text-shadow:none;
+    	opacity:1;
+  }
+  7%{
+    	transform:rotate(0deg);
+    	text-shadow:none;
+    	opacity:1;
+  }
+
+}
+
+
+
+.home .headline{
+	text-indent: -1.5em; 
+	
+	@media screen and (max-width: 900px){
+		text-indent: 0rem; 
+	}
+	@media screen and (max-width: 600px){
+		margin-top: 0px; 
+		font-size: 32px; 
+	}
+}
+
+
+.blog-link-section{
+	margin-top:40px; 
+	float: left; 
+	color: white; 
+	width: 80%; 
+	@media screen and (max-width: 930px){
+		margin-top:40px; 
+	}
+	@media screen and (max-width: 600px){
+		margin-top: 0; 
+		width: 100%; 
+	}
+}
+
+
+.blog-link{
+	margin: 0;
+	margin-bottom: 0.3em; 
+	padding-top: .5em;
+	padding-bottom: .7em;
+	font-size: 1.2em;
+	letter-spacing: 0.4vw; 
+	display: block;
+	padding-left: 0.5em;
+	padding-right: 0.5em; 
+	transition: background-color 0.15s ease-in; 
+	
+	@media screen and (max-width: 600px){
+		font-size: 1em; 
+	}
+}
+
+
+#map-canvas{
+	width: 100%; 
+	height: 100%; 
+	position: absolute;
+	top: 0; 
+	left: 0; 
+}
+
+.svg-angle{
+	position: absolute;
+	font-size: 100px; 
+	bottom: 100%;
+	height: 50px;
+	width: 100%;
+	left: 0;
+	margin-bottom: -0.5px;
+}
+
+
+#canvas{
+	position: fixed;
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: -2;
+}

@@ -1,0 +1,35 @@
+.prevnext-nav{
+	position: fixed;
+	left: 10px; 
+	top: 35%; 
+	font-size: 6em; 
+	color: white;
+	font-weight: 800;  
+	font-family:  monospace; 
+	z-index: 11; 
+	transform: scaleY(1.4); 
+	transition: color 0.3s ease-out, opacity 0.3s ease-out; 
+	@media screen and (max-width:600px){
+		font-size: 3em; 
+		position: absolute;
+	}
+}
+
+.prevnext-nav:hover{
+	background-color: transparent;
+	color: $contentSection1; 
+}
+.prevnext-nav.next{
+	left: auto; 
+	right: 10px;
+}
+
+
+.prevnext-nav.active, .prevnext-nav.active-static {
+	color: $contentSection1; 
+	opacity: 0.2; 
+}
+
+.prevnext-nav.active:hover, .prevnext-nav.active-static:hover{
+	opacity: 1;  
+}

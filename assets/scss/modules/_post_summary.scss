@@ -1,0 +1,55 @@
+.post-summary{
+	
+	clear: both; 
+	margin-bottom: 1em; 
+	float: left; 
+	width: 100%;
+
+	.blog-link{
+		display: inline-block;
+		margin-bottom: 0; 
+		clear: right; 
+		padding: 0.7em; 
+		float: left; 
+		vertical-align: middle; 
+		margin-top: 0px; 
+		max-width: 80%;
+		background-color:darken($contentSection3, 5%)  ; 
+	
+		&:hover {
+			background-color:rgba(0, 197, 255, 0.44);
+		}
+	}
+	
+	time {
+		background-color: darken($contentSection3, 10%) ; 
+		display: inline-block;
+		padding: .5em .5em .55em .5em;
+		float: left; 
+		text-align: center; 
+		vertical-align: middle; 
+		span{
+			display: block; 
+			font-size: 14px;
+		}
+	}
+	img {
+		display: none; 
+		margin: 0 !important; 
+	}
+	p {
+		padding: .5em .5em .7em;
+		float: left; 
+		margin-left: 4em;
+		clear: both;
+		font-size: 16px; 
+		opacity: 0.8; 
+		a {
+			background-color: transparent;
+			padding: 0; 
+		}
+	}
+	.blue_block {
+		display: none; 
+	}
+}

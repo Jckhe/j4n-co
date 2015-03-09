@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="87px" height="87px" viewBox="0 0 87 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>play-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-6.000000, -6.000000)" fill="#FBFBFB">
+            <path d="M49.5,93 C73.5243866,93 93,73.5243866 93,49.5 C93,25.4756134 73.5243866,6 49.5,6 C25.4756134,6 6,25.4756134 6,49.5 C6,73.5243866 25.4756134,93 49.5,93 Z M79.25,49.5 L35.75,76 L35.75,23 L79.25,49.5 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

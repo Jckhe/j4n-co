@@ -1,22 +1,13 @@
 <?php
-class kirbytextExtended extends kirbytext {
-
-  function __construct($text, $markdown=true) {
+kirbytext::$tags['fileURL'] = array(
+  'html' => function($tag) {
     
-    parent::__construct($text, $markdown);
-    
-    // define custom tags
-    $this->addTags('fileURL');
-                
-  }  
+    $filename = $tag->attr('fileURL');
+    $file = $tag->file($filename);
 
-  function fileURL($params) {
-  	$url    = @$params['fileURL'];
-    $target = self::target($params);
-
-    return $this->url($url);
+    return $file->url();
   }
 
-}
+);
 
 ?>

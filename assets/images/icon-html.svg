@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="47px" height="63px" viewBox="0 0 47 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-html</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-45.000000, -175.000000)">
+            <g id="icon-html-2" sketch:type="MSLayerGroup" transform="translate(46.000000, 176.000000)">
+                <circle id="Oval-16" stroke="#FFFFFF" stroke-width="2" fill="#BE5C5C" sketch:type="MSShapeGroup" cx="22.7083333" cy="22.5" r="22.5"></circle>
+                <path d="M5.38285982,23.5976316 L5.38285982,22.595 L14.7474387,16.7797369 L15.8904387,18.5844737 L8.59128084,22.9960526 L15.8904387,27.3073684 L14.7474387,29.1121052 L5.38285982,23.5976316 Z M25.2951228,15.2356843 L27.2602807,16.1180001 L20.1014913,32.3205262 L18.1363334,31.3981052 L25.2951228,15.2356843 Z M30.5890175,29.1121052 L29.4460175,27.3073684 L36.7451753,22.9960526 L29.4460175,18.5844737 L30.5890175,16.7797369 L39.9535963,22.595 L39.9535963,23.5976316 L30.5890175,29.1121052 Z" id="&lt;/&gt;-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <text id="HTML" sketch:type="MSTextLayer" font-family="PT Mono" font-size="13" font-weight="bold" letter-spacing="1.72727275" fill="#FFFFFF">
+                    <tspan x="5" y="61">HTM</tspan>
+                    <tspan x="33.5818182" y="61" letter-spacing="1.49173558">L</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

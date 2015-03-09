@@ -1,65 +1,54 @@
 <?php snippet('header') ?>
-<?php snippet('site_nav') ?>
 
-<section class="main has_shadow">
-  <article class="centered_measure with_top_margin with_bottom_margin">
+<header class="block--header">
+	
+	<div class="block--fixed">
+		<div class="overlay" style="background-image: url('<?php echo $page->file('header.jpg')->url()?>');"></div> 
 
-  <h1><?= html($page->title()) ?></h1>
-  <?= kirbytext($page->text()) ?>
-  
-  <? $posts = $page->children()->visible()->sortBy('date', 'desc') ?>
-  
-  <? $grouped_posts = array() ?> 
-  
-  <?foreach ($posts as $p) {
-    
-    $year = $p->date('Y');
-    $month = $p->date('F');
-    $post = $p;
+		<div class="block--headlines">
+			<h1 class="headline"><?php echo $page->headline() ?></h1>
+			<h2 class="subhead"><?php echo $page->subhead() ?></h2>
+		</div>
+	</div>
+</header>
 
-    if ( !isset($year, $grouped_posts[$year]) ) {
-      $grouped_posts[$year] = array() ;
-    } 
+<main class="main" role="main">
 
-    if ( !isset($month, $grouped_posts[$year][$month]) ) {
-      $grouped_posts[$year][$month] = array() ;
-    } 
+<section class="content-block--below-fixed blog-section">
 
-    if ( !in_array($post, $grouped_posts[$year][$month]) ) {
-      $grouped_posts[$year][$month][] = $post;
-    } 
+	<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="50px" viewBox="0 0 50 50" preserveAspectRatio="none">
+		<polygon points="50,0 0,50 50,50" fill="inherit" />
+	</svg>
 
-  }; ?>
+	<div class="content-wrapper">
+		<h2 class="headline--vertical">Blog</h2>
 
+		<div class="blog-link-section" style="float:left;margin-top: 40px; ">
+			<?php 
+			function getFirstPara($string){
+			    $string = substr($string,0, strpos($string, "</p>")+4);
+			    //$string = str_replace("<p>", "", str_replace("<p/>", "", $string));
+			    return $string;
+			};
+			?>
 
-  <? foreach(array_keys($grouped_posts) as $year): ?>
-    <ul class='year_list'>
-      <li class='year_item'>
-        <div class='dotted_underline redish_text'>
-        <?= $year ?>
-        </div>
-        <ul class='month_list'>
-        <? foreach(array_keys($grouped_posts[$year]) as $month): ?>
-        <li class='month_item'>
-          <strong>
-            <?= $month ?>
-          </strong>
-          <ul class='article_list'>
-          <? foreach($grouped_posts[$year][$month] as $post): ?>
-              <li class='article_item'>
-                  <a href="<?= $post->url() ?>">
-                  <?= $post->title() ?></a>
-              </li>
-          <? endforeach ?>
-          </ul>
-        </li>
-        <? endforeach ?>
-        </ul>
-      </li>
-    </ul>  
-  <? endforeach ?>
-
-  </article>
+			<?php $blog = $pages->find('blog')->children()->visible(); ?> 
+			<?php foreach( $blog as $item): ?>
+				<article class="post-summary">
+					<time itemprop="datePublished" pubdate datetime="<?= $item->date('m/d/Y')?>" title="<?= $item->date('M d, Y')?>"><span class="date"> <?= $item->date('m/d')?></span><span class="year"><?= $item->date('Y')?></span></time>
+					<a class="blog-link" href="<?php echo $item->url();?>"><?php echo $item->title(); ?></a>
+					<?php 
+						$string = $item->text();
+					    $text = getFirstPara( kirbytext( $string ) );
+					?> 
+					<?php echo $text; ?>
+						
+				</article>
+			<?php endforeach ?> 
+		</div>
+	</div>
 </section>
 
-<?php snippet('footer') ?>
+</main>
+
+<? snippet('footer') ?>

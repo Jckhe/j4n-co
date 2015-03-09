@@ -1,0 +1,16 @@
+$gridColor:lighten($contentSection2, 40%); 
+
+
+.lab-iframe{
+	width: 100%; 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	border: none; 
+	background-color: white;
+	overflow: hidden; 
+	background-image: 
+	linear-gradient(0deg, transparent 24%, $gridColor 25%, $gridColor 26%, transparent 27%, transparent 74%, $gridColor 75%, $gridColor 76%, transparent 77%, transparent), 
+	linear-gradient(90deg, transparent 24%, $gridColor 25%, $gridColor 26%, transparent 27%, transparent 74%, $gridColor 75%, $gridColor 76%, transparent 77%, transparent);
+	background-size:50px 50px;
+}

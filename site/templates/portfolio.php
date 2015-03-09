@@ -1,124 +1,96 @@
-<? snippet('header') ?>
-<? snippet('site_nav') ?>
+<?php snippet('header') ?>
 
-<section class="main has_shadow">
-
-<div class="centered_measure with_top_margin with_bottom_margin"> 
-<header>
-<h1 class='text_shadow project_title'>Jan Drewniak</h1>
-<h2 class='subhead'>UX Design + Development Ninja Assassin</h2>
+<header class="block--header">
+	
+	<div class="block--fixed">
+		<div class="overlay" style="background-image: url('<?php echo $page->file('header.jpg')->url()?>');"></div> 
+		<div class="block--headlines">
+			<h1 class="headline"><?php echo $page->headline() ?></h1>
+			<h2 class="subhead"><?php echo $page->subhead() ?></h2>
+		</div>
+	</div>
 </header>
-<p>
-Jan Drewniak is a UX design/developer from Toronto. He like art, code and combining the two.He dislikes writing in the third person. I specialize in interface design, specifically web interfaces.I'm adept at web-technologies (HTML/CSS/JS) and I know enough back-end code to be dangerous.
-The thing that drives me is my love for designing interactions, wether it be for fun or for profit.
-</p>
 
-<section>
-  <h3>
-    experience
-  </h3>
-  <dl>
-    <dt>
-      Algrin Technologies Inc.
-    </dt>
-    <dd>
-      <span class='underline'>
-        Interface Designer (2009 - present)
-      </span>
-      <br>
-        At Algrin Technologies I'm in charge of product design, web design and front-end development. I design and develop user interface for our web apps, SkedX and Bridge.
-      </br>
-    </dd>
-  </dl>
-  <dl>
-    <dt>
-      SWARM
-    </dt>
-    <dd>
-      <span class='underline'>
-        Partner (2009)
-      </span>
-      <br>
-        At SWARM I produced an integrated advertising campaign and related marketing material for a high-end furniture retailer in downtown Toronto.
-      </br>
-    </dd>
-  </dl>
-  <dl>
-    <dt>
-      Smith Roberts
-      <br />
-      Creative Co.
-    </dt>
-    <dd>
-      <span class='underline'>
-        Art Director (2008-2009)
-      </span>
-      <br>
-        At Smith Roberts I was responsible for generating advertising campaign ideas and producing the visual look and feel for many local clients.
-      </br>
-    </dd>
-  </dl>
-  <dl>
-    <dt>
-      Mobile Digital Commons Network
-    </dt>
-    <dd>
-      <span class='underline'>
-        Intern (2007-2008)
-      </span>
-      <br>
-        At the M.D.C.N. I assisted in organizing a national conference on Mobile technology and assisted in projects involving GSP enabled mobile gaming (before we had iPhones).
-      </br>
-    </dd>
-  </dl>
-</section>
+<main class="main" role="main">
 
-<section>
-  <h3>
-    education
-  </h3>
-  <dl>
-    <dt>
-      Ontario College
-      <br />
-      Of Art And Design
-    </dt>
-    <dd>
-      <span class='underline'>
-        Bachelor in Design - Advertising Art Direction (2003 - 2007)
-      </span>
-    </dd>
-  </dl>
+<section class="content-block--below-fixed work-section">
+
+	<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
+		<polygon points="50,0 0,50 50,50" fill="inherit" />
+	</svg>
+
+
+	<div class="content-wrapper">
+		<h2 class="headline--vertical" data-50="transform:translate(0px,200px);" data-500="transform:translate(0px,0px);">work</h2>
+
+		<div class="tiles" data-50="transform:translate(0px,400px);" data-500="transform:translate(0px,0px);">
+			<?php $work = $pages->find('portfolio')->children()->visible(); ?> 
+
+			<?php foreach( $work as $item): ?>
+				<label for="<?php echo $item->title(); ?>">
+					<div class="tile" style="background-image:url(<?php echo $item->files()->find('icon.jpg', 'icon.png')->first()->url(); ?>);"></div>
+					<?php echo $item->title(); ?>
+				</label>
+			<?php endforeach ?> 
+			<a href="#" class="tile--button">
+				download <strong>CV</strong>
+			</a>
+
+		</div>
+
+		<div class="tiles-showcase" data-50="transform:translate(0px,600px);" data-500="transform:translate(0px,0px);">
+
+			<?php $work_index = 0; ?>
+
+			<?php foreach( $work as $item): ?>
+
+				<?php 
+				$work_index+= 1; 
+
+				if ( $work_index >= $work->count() ){
+					$work_index = 0; 
+				}
+
+				?>
+
+
+				<?php if($item->title() == $work->first()->title() ): ?>
+					<input class="tab-toggle" type="radio" name="showcase-item" id="<?php echo $item->title(); ?>" checked />
+				<?php else: ?>
+					<input class="tab-toggle" type="radio" name="showcase-item" id="<?php echo $item->title(); ?>" />
+				<?php endif; ?>  
+
+				<article class="tile-showcase"  class="tile-showcase-item"> 
+					<div class="showcase-gallery">
+						
+						<h1 style="margin-left:30px;"> 
+							<?php echo $item->title(); ?> 
+						</h1>
+						<p>
+						 	Staff Scheduling Made Simple. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur blanditiis numquam, illum eveniet deleniti, culpa nihil labore autem officiis, maiores eius earum nemo quod totam. Reiciendis in, quasi natus cum.
+								<?#= kirbytext($item->text()); ?>
+						</p> 
+						<a href="<?= $item->url() ?>" class="button" style="margin-left:30px;">
+							Read more 
+						</a>
+						
+						<div data-50="transform:translate(0px,600px);" data-600="transform:translate(0px,0px);">
+							<img src="<?php echo $item->images()->find('home_original.jpg')->url() ?>" class="flat3D"/>
+						</div>
+
+						<label for="<?php echo $work->nth($work_index)->title(); ?>" class="icon-next"></label>
+
+		
+
+					</div>
+				</article>
+			<?php endforeach ?> 
+		</div>
+
+	</div>
+
 </section>
 
-<section>
-  <h3>
-    recognition
-  </h3>
-  <ul>
-    <li>
-      2007 Student Gold, Advertising & Design Club of Canada
-    </li>
-    <li>
-      2006 Student Silver, Marketing Awards
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h3 class='text_shadow'>
-    projects:
-  </h3> 
-  <? foreach ($page->children()->visible() AS $p): ?>
-  <a class='thumbnail large_thumbnail has_shadow' href='<?= $p->url() ?>'>
-    <p class='page_description white_pixel_font'>
-      <?= $p -> title() ?>
-    </p>
-    <img src='<?= $p->files()->find('icon.png')->url()?>' />
-  </a>
-  <? endforeach ?> 
-</section>
-</div>
-</section>
+</main>
 
 <? snippet('footer') ?>

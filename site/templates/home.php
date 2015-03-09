@@ -1,215 +1,150 @@
-<? snippet('header') ?>
-<? snippet('site_nav') ?>
+<?php snippet('header') ?>
 
-<? $portfolio_pages = $pages->findByUID('portfolio')->children()->visible(); ?> 
+<header class="block--header">
 
+	<canvas id="canvas" resize="true"></canvas>
 
-<div class="home-title flip-container">
-  <div class="initilal-flipper-animation">
-    <div class="flipper animated">
-      <div class="home-avatar-front flipper-front">
-      </div>
-      <div class="home-avatar-back flipper-back">
-        <a class="about-link" href="/jan-drewniak">more about me</a>
-      </div>
-    </div>
-  </div>
-</div>
+	<div class="block--fixed">
+		<div data-0="transform:translate(0px,0px);opacity:1;" data-200="transform:translate(0px,-50px);opacity:0;" class="content-wrapper">
+			<article class="right-textbox">
+				<h1 class="headline glitch"><?php echo $page->headline() ?></h1>
+				<h2 class="subhead"><?php echo $page->subhead() ?></h2>
+				<?php echo kirbytext($page->text()) ?>
+				<a href="#contact" class="button">
+					Get In Touch
+				</a>
+			</article>
+		</div>
+	</div>
 
+</header>
 
-<div class="ribbon-wrapper">
-  <span class="ribbon-end start"></span>
-  <div class="ribbon">
-    <h2 class="ribbon-text has_shadow">
-      <a href="<?= $pages->findByTitle('home');?>">
-        Creative Pixels
-      </a>
-    </h2>
-    <h3 class="ribbon-subhead">
-      for the web
-    </h3>
-  </div>
-  <span class="ribbon-end end"></span>
-</div>
+<main class="main" role="main">
+
+	<section class="content-block--below-fixed work-section">
+
+		<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
+			<polygon points="50,0 0,50 50,50" fill="inherit" />
+		</svg>
 
 
-<div class="home-column-left">
-  <p class="floating-p home-how animated bounceInLeft"> 
-    <span class="drop-cap">J</span>an Drewniak is a UI designer/developer with a passion for creating engaging interactions on the web.
-    <br/>
-    If you're looking for someone to take your app (wether it's mobile or web) to the next level, you should totally talk to him.      
-    <br/>
-    <br/>
-    <a class="green-contact aqua" href="#contact-me">get in touch</a>
-  </p>
+		<div class="content-wrapper">
+			<h2 class="headline--vertical" data-50="transform:translate(0px,200px);" data-500="transform:translate(0px,0px);">work</h2>
 
-  <p class="left-headline  animated bounceInLeft">
-    <span class="floating-p home-portfolio-link">
-      Recently, I've helped people
-      <a href="#" class="subtext"></a>
-    </span>
-  </p>
+			<div class="tiles" data-50="transform:translate(0px,400px);" data-500="transform:translate(0px,0px);">
+				<?php $work = $pages->find('portfolio')->children()->visible(); ?> 
 
-</div>
+				<?php foreach( $work as $item): ?>
+					<label for="<?php echo $item->title(); ?>">
+						<div class="tile" style="background-image:url(<?php echo $item->files()->find('icon.jpg', 'icon.png')->first()->url(); ?>);"></div>
+						<?php echo $item->title(); ?>
+					</label>
+				<?php endforeach ?> 
+				<a href="<?= $page->file('jan_drewniak_resume.pdf')->url();?>" class="tile--button">
+					download <strong>CV</strong>
+				</a>
 
-<div class="home-column-right">
-  <div class="home-column-right-content">
-    
-    <? foreach($portfolio_pages->visible() AS $p): ?>
+			</div>
 
-      <div class="home-portfolio">
-        <div class="portfolio-image">
-          <a href="<?= $p->url() ?>">
-            <img alt="<?= $p->homepage_title()?> &rarr;" class="portfolio-hover-image" src="<?= $p->files()->find('home_original.jpg')->url() ?>"/>
-          </a>
-          <img class="portfolio-initial-image" src="<?= $p->files()->find('home_preview.svg')->url() ?>"/>
-        </div>
-        </a>
-      </div>
+			<div class="tiles-showcase" data-50="transform:translate(0px,600px);" data-500="transform:translate(0px,0px);">
 
-    <? endforeach ?> 
+				<?php $work_index = 0; ?>
 
-    <div id="contact-me" class="home-portfolio" >
-      <p class="right-headline cf" >
-      </p>
-      <?php snippet('contactform') ?>      
-      <div class="portfolio-hover-image" alt="like you"></div>
-    </div>    
-  </div>
-</div>
+				<?php foreach( $work as $item): ?>
+
+					<?php 
+					$work_index+= 1; 
+
+					if ( $work_index >= $work->count() ){
+						$work_index = 0; 
+					}
+
+					?>
 
 
-<? snippet('footer') ?>
+					<?php if($item->title() == $work->first()->title() ): ?>
+						<input class="tab-toggle" type="radio" name="showcase-item" id="<?php echo $item->title(); ?>" checked />
+					<?php else: ?>
+						<input class="tab-toggle" type="radio" name="showcase-item" id="<?php echo $item->title(); ?>" />
+					<?php endif; ?>  
 
-<script> 
+					<article class="tile-showcase"  class="tile-showcase-item"> 
+						<div class="showcase-gallery">
+							
+							<h1> 
+								<?php echo $item->title(); ?> 
+							</h1>
+							<?= kirbytext($item->showcase_description()); ?>
+							<a href="<?= $item->url() ?>" class="button--subtle">
+								read more 
+							</a>
+							
+							<div data-50="transform:translate(0px,400px);" data-600="transform:translate(0px,0px);">
+								<div style="background-image:url(<?php echo $item->images()->find('home_original.jpg')->url() ?>)" class="flat3D">
+									<a class="button" href="<?= $item->url() ?>">Read more about <?php echo $item->title(); ?> </a>
+								</div>
+							</div>
 
-$(document).ready(function(){
+							<label for="<?php echo $work->nth($work_index)->title(); ?>" class="icon-next"></label>
 
+			
 
-function elementInParentViewport(el, parent){
-  var top = $(el).offset().top;
-  var left = $(el).offset().left;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
+						</div>
+					</article>
+				<?php endforeach ?> 
+			</div>
 
-  return (
-    top >= parent.offset().top &&
-    left >= parent.offset().left &&
-    (top + height) <= (parent.offset().top + parent.innerHeight()) &&
-    (left + width) <= (parent.offset().left + parent.innerWidth())
-  );
+		</div>
 
-}
-
-function elementInViewport(el) {
-  var top = el.offsetTop;
-  var left = el.offsetLeft;
-  var width = el.offsetWidth;
-  var height = el.offsetHeight;
-  
-
-  while(el.offsetParent) {
-    el = el.offsetParent;
-    top += el.offsetTop;
-    left += el.offsetLeft;
-  }
-  
-
-  return (
-    top >= window.pageYOffset &&
-    left >= window.pageXOffset &&
-    (top + height) <= (window.pageYOffset + window.innerHeight) &&
-    (left + width) <= (window.pageXOffset + window.innerWidth)
-  );
-}
+	</section>
 
 
-  var nearbyHeadline;
-  var diff; 
-  var headlineOffsets = []
-  var initialOffset = $('.home-column-right-content').offset().top
-  var $rightHeadlines = $('.right-headline')
-  var $portfolioImages = $('.portfolio-image')
-  var $homePortfilios = $('.home-portfolio')
-  var $contactMe = $('#contact-me')
-  var leftHeadlineSubtext = $('.left-headline .subtext')
-  var leftHeadlineXOffset = $('.left-headline').offset().top-11; 
-  var portfolioHeight = $('.home-portfolio').height(); 
-  var $portfolioInitialImages = $('.portfolio-hover-image')
-  var $portfolioParent = $('.home-column-right-content')
+	<section class="content-block--below-fixed lab-section" style="margin-bottom:0;">
 
-  var elementInView = function(el){
-    if (window.outerWidth < 700 ) {
-      return elementInParentViewport( el, $portfolioParent )  
-    } else {
-      return elementInViewport( el )
-    }
-  }
-  
-  var latestKnownScrollY = 0;
-  var ticking = false;
+		<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
+			<polygon points="0,50 50,50 0,0" fill="inherit" />
+		</svg>
 
-  //adjusting contact form height
-  $contactMe.css({minHeight: $(window).height()-250+'px' })
+		<div class="content-wrapper--vertical-flex" style="padding-top: 0px;padding-bottom:0px;margin-bottom:0;">
+			<h2 class="headline--vertical">Lab</h2>
 
-  //resetHeadlineOffsets();
+			<?php $lab = $pages->find('lab')->children()->visible(); ?> 
+			<?php foreach( $lab as $item): ?>
+				<a href="<?php echo $item->url(); ?>" class="tile lab <?php echo $item->template();?>" style="top:<?php echo rand(50, -50);?>px; background-image:url(<?php echo $item->files()->find('icon.jpg', 'icon.png')->first()->url(); ?>);"></a>
+			<?php endforeach ?> 
 
-  $(window).resize(function(){
-    //resetHeadlineOffsets();
-  })
-
-  $(window).scroll(onScroll)
-  $('.home-column-right-content').scroll(onScroll)
+		</div>
+	</section>
 
 
-  function checkForImages($element, $elements){
-    var index = $elements.index($element[0])
+	<section class="content-block--below-fixed blog-section">
 
-    var waitForImages = $element.find('img').length > 0 
+		<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="50px" viewBox="0 0 50 50" preserveAspectRatio="none">
+			<polygon points="50,0 0,50 50,50" fill="inherit" />
+		</svg>
 
-    if (waitForImages){
-      $element.find('img').load(CalculateHeadlineOffsets)
-    } else {
-      CalculateHeadlineOffsets()
-    }
-  }
-  
+		<div class="content-wrapper">
+			<h2 class="headline--vertical">Blog</h2>
 
+			<div class="blog-link-section" style="float:left;margin-top: 40px; ">
+				<?php $blog = $pages->find('blog')->children()->visible()->limit(7); ?> 
+				<?php foreach( $blog as $item): ?>
+					<a class="blog-link" href="<?php echo $item->url();?>"><?php echo $item->title(); ?></a>
+				<?php endforeach ?> 
+				<a href="/blog" class='button'>
+					more articles over here
+				</a>
+			</div>
+		</div>
+	</section>
 
-  function onScroll() {
-    latestKnownScrollY = window.scrollY;
-    requestTick();
-  }
-  
-  function requestTick() {
-    if(!ticking) { requestAnimationFrame(update); };
-    ticking = true;
-  }
-  
-  update()
+</main>
 
-  function update() {
-    ticking = false;
-    var activeImage = false; 
+<?php snippet('footer', array('page_scripts' => 
+							array($page->file('paper-core.js')->url(), 
+								  $page->file('paperscript.js')->url(),  
+								  $page->file('scrollr.min.js')->url() 
+								  ) 
+							)
+			  ) ?>
 
-    var i = $portfolioInitialImages.length;
-    while(i--){
-      if ( elementInView( $portfolioInitialImages.eq(i)[0] ) ) {
-        activeImage = $portfolioInitialImages.eq(i)
-        altText = activeImage.attr('alt')
-        break; 
-      }
-    }
-
-    if(activeImage){
-      leftHeadlineSubtext.text(altText)
-
-      leftHeadlineSubtext.attr('href', activeImage.parents('a').attr('href'))
-
-      $portfolioInitialImages.removeClass('hover')
-      activeImage.addClass('hover')
-    }
-  }
-
-});//document.ready
-</script> 

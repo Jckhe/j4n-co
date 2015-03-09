@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="55px" height="63px" viewBox="0 0 55 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-sketch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icons" sketch:type="MSArtboardGroup" transform="translate(-256.000000, -175.000000)">
+            <g id="icon-sketch-2" sketch:type="MSLayerGroup" transform="translate(256.000000, 176.000000)">
+                <circle id="Oval-17" stroke="#FFFFFF" stroke-width="2" fill="#EDBF52" sketch:type="MSShapeGroup" cx="27.5" cy="22.5" r="22.5"></circle>
+                <path d="M32.9068693,15.8188272 L22.2450969,15.8188272 L22.2450969,15.8188272 L19.2598445,21.8538918 L36.1033189,21.8538918 L32.9068693,15.8188272 Z M34.4325048,15.3344935 L39.2332317,13.4326516 L39.0109673,12.8716004 L42.7914223,17.3893925 L37.6125991,21.3386786 L34.4325048,15.3344935 Z M20.667044,15.4569814 L16.0951264,13.2652924 L16.4260224,12.5750351 L16.4109151,12.5821316 L12.6252444,17.1385018 L12.6252444,17.1385018 L17.8136449,21.2254883 L20.667044,15.4569814 L20.667044,15.4569814 Z M18.4974245,21.8538918 L18.3385037,21.8538918 L18.8257724,22.0227574 L18.8037707,22.0054263 L18.4974245,21.8538918 L18.4974245,21.8538918 Z M13.5249297,19.8520256 L27.8581592,39.0739735 L41.5584808,20.3101924 L37.6804713,23.2674992 L37.4689637,23.4287914 L37.2029738,23.4287914 L18.3385037,23.4287914 L18.0656087,23.4287914 L17.851235,23.2599258 L13.5249297,19.8520256 L13.5249297,19.8520256 Z M17.3717689,12.1307799 L22.0653277,9.92602646 L33.4888984,9.92602646 L37.9148634,12.2609521 L32.7696054,14.2992825 L33.05963,14.2439275 L21.6008553,14.2439275 L21.9412519,14.3213017 L17.3717689,12.1307799 Z" id="Path-34" fill="#FBFBFB" sketch:type="MSShapeGroup"></path>
+                <text id="Sketch" sketch:type="MSTextLayer" font-family="PT Mono" font-size="13" font-weight="bold" letter-spacing="1.72727287" fill="#FFFFFF">
+                    <tspan x="0" y="61">Sketc</tspan>
+                    <tspan x="47.6363643" y="61" letter-spacing="1.72030807">h</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
