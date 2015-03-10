@@ -79,7 +79,7 @@
 								read more 
 							</a>
 							
-							<div data-50="transform:translate(0px,400px);" data-600="transform:translate(0px,0px);">
+							<div class="flat3D-scrollwrapper" data-50="transform:translate(0px,400px);" data-600="transform:translate(0px,0px);">
 								<div style="background-image:url(<?php echo $item->images()->find('home_original.jpg')->url() ?>)" class="flat3D">
 									<a class="button" href="<?= $item->url() ?>">Read more about <?php echo $item->title(); ?> </a>
 								</div>

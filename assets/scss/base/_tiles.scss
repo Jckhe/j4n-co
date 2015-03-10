@@ -90,7 +90,6 @@ $overlayBG: #2E345A;
 
 }
 
-}
 .tile--button{
 	@extend .tile; 
 	background-color: rgba(255,255,255,0.4);
@@ -122,20 +121,27 @@ $overlayBG: #2E345A;
 }
 
 .tiles-showcase{
-	width: 75%; 
+	width: 70%; 
 	float: left; 
 	margin-left:3px;
 	padding-top: 45px; 
 	perspective: 4000px;
+	height: 500px;
 
 	@media screen and (max-width: 930px){
+		width: 85%; 
 		padding-top: 0;
-		width: 80%; 
-		min-height: 500px;
 	}
+
+	@media screen and (max-width: 800px){
+		width: 80%; 
+		padding-top: 0;
+		height: 400px;
+	}
+
 	@media screen and (max-width: 600px){
 		width: 100%; 
-		min-height: 400px;
+		height: 400px;
 		float:none;
 	}
 }
@@ -143,7 +149,7 @@ $overlayBG: #2E345A;
 .showcase-gallery{
 	padding-bottom: 2em; 
 	margin-left: 30px; 
-
+	height: 100%; 
 	h1{
 		margin: 0;
 		text-transform: uppercase;
@@ -170,6 +176,10 @@ $overlayBG: #2E345A;
 	text-indent:-9999px;
 	font-size: 0; 
 	display: none; 
+}
+
+.tile-showcase{
+	height: 100%; 
 }
 
 .tab-toggle + .tile-showcase{

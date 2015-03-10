@@ -1,3 +1,7 @@
+.flat3D-scrollwrapper {
+  height: 100%; 
+}
+
 .flat3D_clip{
 	width: 100%; 
 	overflow: hidden;
@@ -6,20 +10,34 @@
   box-shadow: -50px 50px 30px -20px rgba(0,0,0,0.2); 
   transition: transform 1s, box-shadow 0.3s;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg); 
-  transform-origin: 60% 20%;
+  transform-origin: 60% 40%;
   background-size: cover; 
   background-position: center center; 
   z-index: 1;
   width: 85%;
   display: block;
-  margin-bottom: -100%; 
-  height: 500px; 
+  height: 100%; 
   text-align: center; 
   vertical-align: middle;
   color: #333; 
-  @media all and (max-width:600px) {
-      transform-origin: 40% 30%;
+  margin-top: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+
+  @media all and (max-width:928px) {
+    transform-origin: 30% 50%;
   }
+
+  @media all and (max-width:600px) {
+      transform-origin: 40% 20%;
+      width: 70%; 
+      height: 70%; 
+  }
+
+  @media all and (max-width:515px) {
+    transform-origin: 10% 35%;
+  }
+
   .button{
     opacity: 0; 
     margin-left: 0; 
@@ -30,8 +48,8 @@
 }
 
 .flat3D:hover {
-	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(10px) translateX(30px); 
-  
+	transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateY(0px) translateX(0px); 
+  box-shadow: 0px 30px 30px -20px rgba(0,0,0,0.2); 
   .button {
     opacity: 1; 
     &:hover {
