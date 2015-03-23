@@ -1,34 +1,69 @@
-.button{
+
+
+$button-rotation: 0deg; 
+.button {
 	display: inline-block;
-	border: 2px solid;
-	color: inherit; 
-	padding: 0.5rem 1.3rem;
-	font-weight: 400; 
-	margin-top: 1rem;
-	text-decoration: none; 
-	transition-property: border-color, color, background-color; 
-	transition-duration: 0.2s; 
 	background-color: transparent;
+	border: 2px solid white; 
+	color: white; 
+	transform: rotate($button-rotation); 
+	padding: 1em 2em;
+	line-height: 1em;
+	transition: transform 0.2s ease-in, background-color 0.2s ease-in; 
+	margin-top: 2em; 
+	text-align: center; 
 
-	&:hover, &--hover{
-		@extend .button;
-		border-color: transparent; 
-		color: white; 
-		background-color:rgba(0, 197, 255, 0.44); 
-		
+	.button-text {
+		display: inline-block;
+		transition: transform 0.2s ease-in, background-color 0.2s ease-in; 
+		transform: rotate(-$button-rotation); 
 	}
+	&:hover {
+		transform: rotate(0deg); 
+		background-color: rgba(0,0,0, 0.4);	
+		.button-text{
+			transform: rotate(0deg); 
+		}
+	}
+}
+
+.button--dark {
+	@extend .button; 
+	background-color: rgba(0,0,0, 0.4);	
+
+	&:hover {
+		background-color: rgba(0,0,0, 0.8);	
+	}
+}
+
+.icon-next, .icon-prev, .owl-prev, .owl-next{
+	display: block; 
+	background-color: transparent; 
+	height: 100px; 
+	width: 70px; 
 	
-	&--long{
-		@extend .button;
-		width: 100%; 
-	}
+	right: -90px;
+	bottom: 20%;
 
-	&--subtle:before {
-		content: "("; 
-	}
-	&--subtle:after {
-		content: ")"; 
-	}
+	position: absolute;
+	
+	background-image: url('../images/icon-arrow-next-large.svg'); 
+	background-size: 90% auto; 
+	background-repeat: no-repeat;
+	background-position: center center; 
+	cursor: pointer; 
+	opacity: 0.5; 
+	color: transparent;
 
 }
+
+.icon-next:hover, .icon-prev:hover, .owl-prev:hover, .owl-next:hover{
+	opacity: 1; 
+}
+
+.icon-prev, .owl-prev{
+	left:  -90px;
+	background-image: url('../images/icon-arrow-prev-large.svg'); 
+}
+
 

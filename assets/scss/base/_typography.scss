@@ -67,16 +67,32 @@ a:hover{
 	text-align: center; 
 	word-break: break-all;
 	text-transform: uppercase;
-	margin: 20px 0.5em 0 0; 
-	position: relative; 
-	float: left;
-	font: 100 64px/1.5em "Glypha";
+	margin: 0;
+	position: absolute; 
+	font: 800 140px/0.8em Avenir;
 	color: white; 
-	@media screen and (max-width: 600px){
-		width: 100%; 
-		line-height: 1em; 
-		font-size: 32px; 
+	opacity: 0.1; 
+	@media screen and (max-width: 880px){
+		width: 100%;
+		font-size: 72px;
+		top: 0;
+		position: relative;
 	}
+
+	@media screen and (max-width: 600px){
+		font-size: 42px; 
+	}
+
+}
+
+.headline--medium{
+	font-size: 32px; 
+	font-weight: bold; 
+	text-transform: uppercase; 
+	margin: 0; 
+	padding-top: 1.5em; 
+	padding-bottom: 0.5em; 
+	letter-spacing: 2px; 
 }
 
 .bodycopy--large{

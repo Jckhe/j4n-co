@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<header class="block--header">
+<header class="container--header">
 	
 	<div class="block--fixed">
 		<div class="overlay" style="background-image: url('<?php echo $page->file('header.jpg')->url()?>');"></div> 

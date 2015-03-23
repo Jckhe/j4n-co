@@ -1,6 +1,6 @@
-<ul class="sandwich-nav"> 
-  <li class="sandwich-label"><a href="/"> home</a></li> 
-  <li class="sandwich-item top"><a href="/portfolio">work</a></li>
-  <li class="sandwich-item middle"><a href="/lab">lab</a></li>
-  <li class="sandwich-item bottom"><a href="/blog">blog</a></li>
-</ul> 
+<nav class="site-nav"> 
+  <a href="/#home"> home</a> 
+  <a href="/#portfolio">work</a>
+  <a href="/#lab">lab</a>
+  <a href="/blog">blog</a>
+</nav> 

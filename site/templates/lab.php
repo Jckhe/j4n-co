@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<header class="block--header">
+<header class="container--header">
 	
 	<div class="block--fixed" style="background-image: url('/assets/images/poz.jpg');">
 		<div class="block--headlines">

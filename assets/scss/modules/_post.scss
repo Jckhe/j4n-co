@@ -1,12 +1,14 @@
 .post{
-	margin-top: 4em; 
 	color: #444; 
+	max-width: 700px; 
 
 	h2, h3 {
 		margin-top: 0.4em;
 		margin-bottom: 0.2em; 
 	}
-	
+	p {
+		font-size: 20px; 
+	}
 	blockquote{
 		padding-left: 1em;
 		padding-right: 1em;
@@ -22,11 +24,22 @@
 	pre{
 		padding: 1em; 
 	}
+
+	time{
+		font-style: italic; 
+		color: darkGrey; 
+		display: block; 
+		margin-top: 2em; 
+		margin-bottom: 1em;
+		border-top: 1px solid lightGrey; 
+		padding-top: 1em; 
+	}
 }
 
 .post p:first-of-type{
 	font-size: 2em; 
 	font-weight: 800; 
+	line-height: 1.2em; 
 }
 
 .max-width-image{

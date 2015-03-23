@@ -5,7 +5,6 @@
 .lab-section {
 	background-color: $contentSection2;
 	fill: $contentSection2;	
-	padding-bottom: 50px; 
 }
 .blog-section{
 	background-color: $contentSection3;
@@ -26,4 +25,9 @@
 	p {
 		font-size: 18px; 
 	}
+}
+
+.post-section{
+	background-color: white; 
+	fill: white; 
 }

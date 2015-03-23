@@ -101,17 +101,17 @@
 
 
 .icon--social {
-height: 28px;
-width: 26px;
-color: rgba(0, 0, 0, 0);
-overflow: hidden;
-display: inline-block;
-background: url("../images/social.svg") no-repeat 0px center rgba(0, 0, 0, 0);
-vertical-align: middle;
-margin-left: 6px;
-margin-right: 6px;
-opacity: 0.7;
-transition: opacity 0.2s ease-in;
+	height: 28px;
+	width: 26px;
+	color: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	display: inline-block;
+	background: url("../images/social.svg") no-repeat 0px center rgba(0, 0, 0, 0);
+	vertical-align: middle;
+	margin-left: 6px;
+	margin-right: 6px;
+	opacity: 0.7;
+	transition: opacity 0.2s ease-in;
 	&:hover {
 		background-color: transparent;
 		opacity: 1; 

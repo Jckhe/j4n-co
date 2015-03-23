@@ -15,6 +15,7 @@
   <? $prevPageUrl = $page->siblings()->visible()->last()->url() ?>
 <? endif ?>
 
+<? $headerImage = $page->file('header.jpg', 'header.png')->first() ?>
 
 <style>
 <?= $page->custom_css() ?>
@@ -24,7 +25,10 @@
 
 <a class='prevnext-nav next' href='<?= $nextPageUrl ?>'>&gt;</a>
 
-<header class="block--header post--header">
+<header class="container--header post--header">
+  <?php if ($headerImage): ?> 
+    <div class="overlay" style="background-image: url('<?php echo $headerImage->url()?>');"></div> 
+  <?php endif ?>
   <div class="block--headlines">
     <h1 class="headline overlay-shadow"><?= $page->title(); ?></h1>
   </div>
@@ -32,15 +36,17 @@
 
 <main class='main'>
 
-  <article class="content-block--below-fixed project-section" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post-section container--below-fixed" itemscope itemtype="http://schema.org/BlogPosting">
     <svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" preserveAspectRatio="none">
       <polygon points="50,0 0,50 50,50" fill="inherit" />
     </svg>     
   
-    <time class="content-wrapper--narrow" itemprop="datePublished" pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>"><?= $page->date('M d, Y')?></time>
 
-    <div class="content-wrapper--narrow post">
-    <?= kirbytext($page->text()) ?>
+    <div class="row post">
+      <?= kirbytext($page->text()) ?>
+      
+      <time itemprop="datePublished" pubdate datetime="<?= $page->date('m/d/Y')?>" title="<?= $page->date('M d, Y')?>">published <?= $page->date('M d, Y')?></time>
+
     </div>
   </article>
 </main>

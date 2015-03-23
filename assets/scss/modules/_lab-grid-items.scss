@@ -1,0 +1,20 @@
+.lab-grid-item__front, .lab-grid-item__back {
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center center; 
+	transition: opacity 0.2s ease-in;
+}
+.lab-grid-item__back{
+	opacity: 0; 
+	position: absolute;
+	top:0;
+	left: 0; 
+}
+.lab-grid-item:hover{
+	.lab-grid-item__back, .lab-grid-item__front{
+		opacity: 1; 
+	}
+}

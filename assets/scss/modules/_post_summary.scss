@@ -1,7 +1,7 @@
 .post-summary{
 	
 	clear: both; 
-	margin-bottom: 1em; 
+	margin-bottom: 0; 
 	float: left; 
 	width: 100%;
 
@@ -9,28 +9,39 @@
 		display: inline-block;
 		margin-bottom: 0; 
 		clear: right; 
-		padding: 0.7em; 
+		padding: 15px; 
 		float: left; 
 		vertical-align: middle; 
 		margin-top: 0px; 
 		max-width: 80%;
+		font-size: 1.4em; 
 		background-color:darken($contentSection3, 5%)  ; 
-	
+		margin-left: 66px;	
 		&:hover {
 			background-color:rgba(0, 197, 255, 0.44);
 		}
+
+		@media screen and (max-width: 600px){
+			font-size: 1em; 
+		}
+
 	}
 	
 	time {
+		position: absolute;
+		top: 0; 
+		left: 0; 
+		height: 100%; 
 		background-color: darken($contentSection3, 10%) ; 
 		display: inline-block;
-		padding: .5em .5em .55em .5em;
+		padding: 15px;
 		float: left; 
 		text-align: center; 
 		vertical-align: middle; 
 		span{
 			display: block; 
 			font-size: 14px;
+			opacity: 0.8; 
 		}
 	}
 	img {

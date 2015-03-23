@@ -3,9 +3,56 @@ $color1: $contentSection1;
 $color2: $contentSection2; 
 $color3: $contentSection3; 
 
+.site-nav{
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  z-index: 3;
+  a {
+    padding: 5px 5px 5px 15px; 
+    color: rgba(255,255,255,0.6); 
+    float: left; 
+    font-size: 14px; 
+    transition: color 0.2s ease-in; 
+  } 
+  a:after{
+    content: " ";
+    display: block; 
+    position: absolute;
+    right: -10px; 
+    top: 0; 
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 10px 0 0;
+    border-color: inherit transparent transparent transparent;
+    z-index: 1; 
+  }
+  a:hover{
+    color: white; 
+  }
+  a:nth-child(1){
+    border-color: $homeBodyBG; 
+    background-color: $homeBodyBG; 
+  }
+  a:nth-child(2){
+    border-color: $contentSection1; 
+    background-color: $contentSection1; 
+  }
+  a:nth-child(3){
+    border-color: $contentSection2; 
+    background-color: $contentSection2; 
+  }
+  a:nth-child(4){
+    border-color: $contentSection3; 
+    background-color: $contentSection3; 
+  }
+
+}
+
 .sandwich-nav{
-  top: 5px; 
-  left: 5px; 
+  top: 0px; 
+  left: 0px; 
   position: fixed; 
   margin: 0; 
   padding: 0;
@@ -14,21 +61,7 @@ $color3: $contentSection3;
 }
 
 .sandwich-item, .sandwich-label{
-  float: left; 
-  list-style-type: none; 
-  margin: 0 0 0.4em 0; 
-  padding: 0.3em 1em; 
-  text-align: center; 
-  width: 4em; 
-  text-transform: uppercase; 
-  font-size: 0.7em; 
-  color: transparent; 
-  transition: all 0.4s ease-out; 
-  opacity: 1; 
-  height: 0.2em; 
-  letter-spacing: 1px; 
-  font-family: 'Glypha'; 
-  font-weight: 800; 
+
 }
 
 .sandwich-item{

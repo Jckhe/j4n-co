@@ -12,6 +12,6 @@
   <?php echo css('assets/css/all.min.css') ?>
   
 </head>
-<body class="grid-wrapper <?php echo $page->uid(); ?>">
+<body class="<?php echo $page->uid(); ?>">
 	
 <?php snippet('site-nav') ?>

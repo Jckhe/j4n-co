@@ -28,5 +28,13 @@
 @import "modules/post";
 @import "modules/post_summary";
 
+@import "modules/lab-grid-items";
+@import "modules/carousel-description";
+
+
+@import "methods/acts_as_tabbable";
+@import "methods/acts_as_flat3D";
+
+@import "owl.carousel";
 
 @import "prism.css";

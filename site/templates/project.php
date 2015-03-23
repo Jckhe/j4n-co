@@ -27,7 +27,7 @@
 <? endforeach ?>
 
 
-<header class="block--header">
+<header class="container--header">
   
   <div class="block--fixed with-video">
     <div class="overlay"></div>

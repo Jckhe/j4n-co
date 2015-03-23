@@ -1,24 +1,3 @@
-.contact-form{
-	margin: 0 auto; 
-	width: 70%; 
-	padding: 3rem; 
-	color: white; 
-
-	.headline--section{
-		top: -1.2em; 
-		color: $darkGrey; 
-	}
-	
-	@media screen and (max-width:600px) {
-		width: auto; 
-		padding: 1rem; 
-
-	}
-
-	@media screen and (max-width:480px) {
-	}
-}
-
 .input-text, .textarea{
 	width: 100%; 
 	padding: 0.5em; 

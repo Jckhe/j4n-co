@@ -1,65 +1,42 @@
 
 $(document).ready(function(){
 
-	var $sandwich = $('.sandwich');
-	var $flipcube = $('.flip-cube')
-
-	var onHamSandwich = function(){
-	   $flipcube.toggleClass('hover')
-	}
-
-	$sandwich.each(function(index, sandwich){
-		
-		var ham_sandwich = new Hammer( sandwich );
-		
-		ham_sandwich.on('tap', onHamSandwich)
-
-	})
-	
-
-	$('.bubble-menu').on('touchstart focus', function(){
-
-		$(this).toggleClass('active'); 
-	})
 
 
-	$('.tiles label').on('mouseover', function(){
-		$(this).trigger('click')
-	})
+	 var owl = $(".owl-carousel")
+
+	 var owlItems = $('owl-item')
+	 owl.owlCarousel({
+	 	navigation : true,
+	 	smartSpeed : 1000,
+	 	singleItem:true, 
+	 	items : 1, 
+	 	itemsDesktop : false,
+	 	itemsDesktopSmall : false,
+	 	itemsTablet: false,
+	 	itemsMobile : false, 
+	 	loop:true
+	 });
+
+	 owl.on('translated.owl.carousel', function(event) {
+	     var href = $('.owl-item.active').find('.js-carousel-link').attr('href')
+	     $(href).siblings('.js-carousel-description').removeClass('active'); 
+	     $(href).addClass('active'); 
+	 })
+
+	 $('.js-carousel-link').on('click', function(){
+	 	$('.js-carousel-description-container').toggleClass('active')
+	 	var href = $(this).attr('href'); 
+	 	$(href).siblings('.js-carousel-description').removeClass('active'); 
+	 	$(href).addClass('active'); 
+	 })
+
 
 	/*Home Parallax Scroll
 	====================*/
 
-	$('.icon--play').on('mouseover mouseleave', function(){
-
-		var vid = $(this).prev()[0]
-
-		if (vid.paused ) {
-			vid.play(); 
-			$(this).addClass('hidden')
-		} else {
-			vid.pause();
-			$(this).removeClass('hidden')
-		}
-
-	})
-
-	function toggleInput(){
-
-		var thisID = $(this).attr('id')
-		
-		if ( !thisID ) {
-			thisID = $('.tiles label').first().attr('for')
-		}
-
-		$('label .tile').removeClass('active')
-		$("label[for='"+thisID+"'] .tile").addClass('active')
-	}
-	toggleInput()
-
-	$("input[name='showcase-item']").change(toggleInput); 
-
 	$.localScroll();
+
 
 	function prevNext(){
 
@@ -83,6 +60,10 @@ $(document).ready(function(){
 
 	}
 	prevNext();
+
+
+	/*sandwich nav
+	====================*/
 
 	function is_touch_device() {
 	  return !!('ontouchstart' in window);
