@@ -10,3 +10,4 @@ Capfile
 *.sublime-workspace
 site/panel/accounts/*
 j4n-co.esproj
+site/cache

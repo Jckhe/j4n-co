@@ -63,15 +63,15 @@ a:hover{
 }
 
 .headline--vertical{
-	width: 1em;
+	width: 1.1em;
 	text-align: center; 
 	word-break: break-all;
 	text-transform: uppercase;
 	margin: 0;
 	position: absolute; 
-	font: 800 140px/0.8em Avenir;
+	font: 800 120px/1em Avenir;
 	color: white; 
-	opacity: 0.1; 
+	opacity: 0.9; 
 	@media screen and (max-width: 880px){
 		width: 100%;
 		font-size: 72px;
