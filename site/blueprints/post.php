@@ -2,45 +2,54 @@
 
 # default blueprint
 
-title: post 
-pages: true 
+title: post
+pages: true
 files: true
 
 fields:
-  
-  title: 
+
+  title:
     label: Title
     type:  text
-  
+
   description:
     label: Description
     type:  text
-  
+
   keywords:
     label: Keywords
     type:  text
-  
-  date: 
+
+  tags:
+    label: Tags
+    type: tags
+
+  date:
     label:  date
     type:   date
     format: dd.mm.yy
-  
-  text: 
+
+  snippet:
+    label: Snippet
+    type:  textarea
+    size:  small
+
+  text:
     label: Text
     type:  textarea
     size:  large
-  
-  custom_css: 
+
+  custom_css:
     label: Custom CSS
     type:  textarea
     size:  large
-  
-  custom_js: 
+
+  custom_js:
     label: Custom JS
     type:  textarea
     size:  large
 
-filefields: 
-  description: 
+filefields:
+  description:
     label: Description
     type:  text

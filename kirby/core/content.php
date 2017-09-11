@@ -20,6 +20,9 @@ abstract class ContentAbstract {
 
   /**
    * Constructor
+   * 
+   * @param Page $page
+   * @param string $root
    */
   public function __construct($page, $root) {
 
@@ -47,10 +50,8 @@ abstract class ContentAbstract {
       // add the key to the fields list
       $this->fields[] = $key;
 
-      $this->data[$key] = new Field;
-      $this->data[$key]->page  = $this->page;
-      $this->data[$key]->key   = $key;
-      $this->data[$key]->value = trim(substr($field, $pos+1));
+      // add the key object
+      $this->data[$key] = new Field($this->page, $key, trim(substr($field, $pos+1)));
     }
 
   }
@@ -124,26 +125,54 @@ abstract class ContentAbstract {
     if(isset($this->data[$key])) {
       return $this->data[$key];
     } else {
-
-      // return an empty field on demand
-      $field        = new Field();
-      $field->key   = $key;
-      $field->page  = $this->page;
-      $field->value = '';
-
-      return $this->data[$key] = $field;
-
+      // return an empty field as default
+      return new Field($this->page, $key);
     }
+
   }
 
+  /**
+   * Checks if a field exists
+   * 
+   * @param string $key
+   * @return boolean
+   */
+  public function has($key) {
+    return isset($this->data[strtolower($key)]);
+  }
+
+  /**
+   * Magic getter
+   * 
+   * @param string $method
+   * @param array $arguments Not used
+   * @return Field
+   */
   public function __call($method, $arguments = null) {
     return $this->get($method, $arguments);
   }
 
+  /**
+   * Returns all fields as plain array
+   * 
+   * @return array
+   */
   public function toArray() {
     return array_map(function($item) {
       return $item->value;
     }, $this->data);
+  }
+
+  /**
+   * Improved var_dump() output
+   * 
+   * @return array
+   */
+  public function __debuginfo() {
+    return [
+      'root'   => $this->root(),
+      'fields' => $this->toArray(),
+    ];
   }
 
 }

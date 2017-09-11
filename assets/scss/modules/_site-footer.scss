@@ -1,0 +1,14 @@
+.site-footer {
+	max-width: 38rem;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	p {
+		font-weight: 400;
+	}
+	small {
+		bottom: 1rem;
+	}
+}

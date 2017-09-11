@@ -1,0 +1,17 @@
+.button {
+	background-color: #88b7c3;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.5em;
+	margin: 0.5rem;
+	opacity: 0.7;
+	transition: opacity 50ms ease-out;
+}
+
+.button:hover {
+	opacity: 1;
+	text-decoration: none;
+	color: #fff;
+}

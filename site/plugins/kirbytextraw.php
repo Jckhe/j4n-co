@@ -1,0 +1,1 @@
+../../vendor/kirby-plugin-kirbytextRaw/kirbytextraw.php

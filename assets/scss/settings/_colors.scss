@@ -1,0 +1,24 @@
+/**
+* Color Variables
+**/
+$colors: (
+	paper: #fff,
+	background: #b2d2da,
+	background-dark: #88b7c3,
+	content-background: #deeaea,
+	text: #333,
+	text-light: #868282,
+	text-highlight: #a23636,
+	primary: #00D4D5,
+	secondary: #7E00D5,
+	ternary: #FF4B00
+);
+
+@function colors($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}

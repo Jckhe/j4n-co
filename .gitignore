@@ -11,3 +11,7 @@ Capfile
 site/panel/accounts/*
 j4n-co.esproj
 site/cache
+test-content
+site.php
+site/accounts/*.php
+node_modules

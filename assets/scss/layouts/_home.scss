@@ -1,0 +1,119 @@
+/**
+ * Layout classes act as wrappers in which
+ * Layout classes are site specific, which is why these 'settings'
+ * are defined locally.
+ * Layout rules include position, display, height, width
+ **/
+
+
+.content-container--home {
+	@extend .content-container;
+	background-position: -280px 100%;
+	background-size: 540px;
+	background-color: #f3f3f3;
+}
+.content-container--home:before{
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' preserveAspectRatio='none'><polygon points='50,0 0,50 50,50' fill='#f3f3f3'></polygon></svg>");
+}
+ .ł-content-section {
+	width: 100%;
+	position: relative;
+	margin-top: ms(5);
+	margin-bottom: ms(5);
+}
+
+.ł-content-section:first-child {
+	margin-top:0;
+}
+
+.ł-flex-thumbs {
+	display: flex;
+	flex-direction: row;
+	min-width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.ł {
+	// dev
+	outline: 1px solid red;
+	min-height: 10vh;
+	min-width: 10px;
+}
+
+.ł-hero {
+	height: 70vh;
+	width: 100%;
+	position: fixed;
+	background-position: top center;
+	background-size: cover;
+}
+.ł-main--home {
+	position: relative;
+	top: 70vh;
+	padding: $pagePadding;
+}
+
+.ł-logo {
+	text-align: center;
+	top: -94px;
+	margin-bottom: -94px;
+	display: flex;
+	align-items: center;
+}
+
+
+.ł-main--home + .ł-footer {
+	top: 70vh;
+}
+
+.ł-footer {
+	position: relative;
+	min-height: 320px;
+	width: 100%;
+	background-color: colors(text-light);
+	align-self: flex-end;
+	display: flex;
+	background-image: url(/assets/images/me.png);
+	background-size: auto 280px;
+	background-repeat: no-repeat;
+	background-position: -80px 50px;
+}
+
+.ł-site-social {
+	right: 0;
+	order: 3;
+	width: 250px;
+	text-align: right;
+}
+@media (min-width:426px) {
+	.ł-content-sections {
+		margin-top: 0;
+	}
+}
+
+@media (min-width:700px) {
+
+	.ł-content-sections {
+		flex-direction: row;
+		.ł-intro {
+			order: 0;
+		}
+		.ł-recent-articles {
+			min-width: 100%;
+			order: 2;
+			flex-grow: 1;
+		}
+
+		.ł-recent-experiments {
+			max-width: 100%;
+			min-width: 100%;
+			order: 1;
+			flex-grow: 1;
+			flex-wrap: wrap;
+		}
+
+	}
+}

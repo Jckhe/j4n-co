@@ -2,6 +2,8 @@
 
 class HeadlineField extends BaseField {
 
+  public $numbered = true;
+
   static public $assets = array(
     'css' => array(
       'headline.css'
@@ -17,12 +19,13 @@ class HeadlineField extends BaseField {
   }
 
   public function content() {
-    return '<h2 class="hgroup hgroup-single-line hgroup-compressed cf"><span class="hgroup-title">' . html($this->label) . '</span></h2>';
+    return '<h2 class="hgroup hgroup-single-line hgroup-compressed cf"><span class="hgroup-title">' . html($this->i18n($this->label)) . '</span></h2>';
   }
 
   public function element() {
     $element = parent::element();
     $element->addClass('field-with-headline');
+    if($this->numbered()) $element->addClass('field-with-headline-numbered');
     return $element;
   }
 

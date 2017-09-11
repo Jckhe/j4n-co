@@ -1,0 +1,62 @@
+
+.expanding-button {
+	text-align: center;
+	margin: 0 auto;
+	padding: ms(0)  ms(2);
+	max-width:46em;
+	background-color: colors(background);
+	color: colors(paper);
+}
+.expanding-button-activator {
+	height: 0;
+	width: 0;
+	margin: 0;
+	opacity: 0;
+	overflow: hidden;
+	display: block;
+}
+.expanding-button__text p {
+	font-size: font-sizes(x-large);
+	margin-bottom: 0;
+	letter-spacing: -0.2px;
+	font-weight: 200;
+	color: colors(text-light);
+}
+.expanding-button__text p::first-letter {
+	color: colors(text-highlight);
+	font-size: ms(6);
+	font-weight: 800;
+	line-height: 33px;
+}
+@mixin expandedButton {
+		background-color: colors(paper);
+		color: colors(text);
+	.expanding-button__text {
+		display: block;
+	}
+}
+.expanding-button-activator:checked + .expanding-button{
+ 	@include expandedButton;
+}
+
+.expanding-button__label {
+	text-transform: uppercase;
+	font-size: font-sizes(medium);
+	font-weight: bold;
+	letter-spacing: 1px;
+	display: inline-block;
+}
+
+.expanding-button__text {
+	display: none;
+}
+
+@media (min-width:426px) {
+	.expanding-button {
+		@include expandedButton;
+		background-color: transparent;
+	}
+	.expanding-button__label {
+		display: none;
+	}
+}

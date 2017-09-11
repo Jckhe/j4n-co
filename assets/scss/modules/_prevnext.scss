@@ -1,0 +1,30 @@
+.prevnext {
+	display: flex;
+	.prevnext__next,
+	.prevnext__prev,
+	.prevnext__all{
+		width: 33%;
+		height: 2rem;
+		line-height: 2rem;
+		padding: 0.5em;
+		color: colors(text-light);
+	}
+	.prevnext__all {
+		text-align: center;
+	}
+	.prevnext__prev {
+		text-align: right;
+	}
+	.arrow-next, .arrow-prev {
+		font-size: 5em;
+		position: relative;
+		top: -3px;
+		vertical-align: middle;
+	}
+	.prevnext__next:hover,
+	.prevnext__prev:hover,
+	.prevnext__all:hover{
+		text-decoration: none;
+		color: colors(text-highlight);
+	}
+}

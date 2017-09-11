@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>stackoverflow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPad" transform="translate(-669.000000, -281.000000)" fill="#000">
+            <g id="stackoverflow" transform="translate(669.000000, 281.000000)">
+                <path d="M9.3696,14.6432 L9.3696,8.6272 L10.7008,8.6272 L10.7008,16 L0,16 L0,8.6272 L1.3312,8.6272 L1.3312,14.6432 L9.3696,14.6432 Z M12.2112,5.4272 L9.9328,0.5632 L11.1616,0 L13.4144,4.864 L12.2112,5.4272 Z M10.624,6.656 L7.3216,2.432 L8.3712,1.6128 L11.6736,5.8368 L10.624,6.656 Z M9.344,8.2176 L5.1968,4.8384 L6.0416,3.8144 L10.1888,7.168 L9.344,8.2176 Z M8.4736,10.0096 L3.6608,7.68 L4.2496,6.4768 L9.0624,8.8064 L8.4736,10.0096 Z M8.0128,11.9808 L2.816,10.7776 L3.0976,9.472 L8.32,10.6752 L8.0128,11.9808 Z M8.0128,13.9776 L2.6624,13.9776 L2.6624,12.6464 L8.0128,12.6464 L8.0128,13.9776 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

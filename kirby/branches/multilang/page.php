@@ -25,13 +25,24 @@ class Page extends PageAbstract {
   }
 
   /**
-   * Returns the cache id
-   *
+   * Returns the URL key from the content file
+   * if available and otherwise returns the page UID
+   * 
+   * @param string $lang
    * @return string
    */
-  public function cacheId($lang = null) {
-    if(is_null($lang)) $lang = $this->site->language->code;
-    return $lang . '.' . parent::cacheId();
+  public function urlKey($lang = null) {
+
+    if($content = $this->content($lang)) {
+      // search for a translated url_key in that language
+      if($key = (string)a::get((array)$content->data(), 'url_key')) {
+        // if available, use the translated url key as slug
+        return $key;
+      }
+    } 
+
+    return $this->uid();
+
   }
 
   /**
@@ -60,11 +71,8 @@ class Page extends PageAbstract {
         return $this->cache['slug'] = $this->uid();
       }
 
-      // geth the translated url key if available
-      $key = (string)a::get((array)$this->content()->data(), 'url_key');
-
-      // return the translated slug or otherwise the uid
-      return (empty($key)) ? $this->uid() : $key;
+      // get the translated url key 
+      return $this->urlKey();
 
     } else {
 
@@ -79,17 +87,8 @@ class Page extends PageAbstract {
         return $this->uid();
       }
 
-      // search for content in the specified language
-      if($content = $this->content($lang)) {
-        // search for a translated url_key in that language
-        if($slug = a::get((array)$content->data(), 'url_key')) {
-          // if available, use the translated url key as slug
-          return str::slug($slug);
-        }
-      }
-
-      // use the uid if no translation could be found
-      return $this->uid();
+      // get the translated url key 
+      return $this->urlKey($lang);
 
     }
 
@@ -116,9 +115,16 @@ class Page extends PageAbstract {
 
     // Kirby is trying to remove the home folder name from the url
     if($this->isHomePage()) {
-      return $this->site->url($lang);
+      $url = $this->site->url($lang);
+
+      // append a query param if the new language is on another domain
+      if($this->site->language->host() !== $this->site->language($lang)->host()) {
+        $url = url::build(['query' => ['language' => 'switch']], $url);
+      }
+
+      return $url;
     } else if($this->parent->isHomePage()) {
-      return $this->site->url($lang) . '/' . $this->parent->uid() . '/' . $this->slug($lang);
+      return $this->site->url($lang) . '/' . $this->parent->slug($lang) . '/' . $this->slug($lang);
     } else {
       return $this->parent->url($lang) . '/' . $this->slug($lang);
     }
@@ -145,16 +151,27 @@ class Page extends PageAbstract {
       preg_match($expression, $content, $match);
 
       $file = $match[1];
-      $lang = isset($match[3]) ? $match[3] : $defaultLang;
+      $lang = isset($match[3]) ? $match[3] : null;
 
       if(in_array($file, $inventory['files'])) {
         $inventory['meta'][$file][$lang] = $content;
       } else {
+
+        if(is_null($lang)) {
+          $lang = f::extension($file);
+          if(empty($lang)) $lang = $defaultLang;
+        }
+
         $inventory['content'][$lang] = $content;
       }
 
       unset($inventory['content'][$key]);
 
+    }
+
+    // try to fill the default language with something else
+    if(!isset($inventory['content'][$defaultLang])) {
+      $inventory['content'][$defaultLang] = a::first($inventory['content']);
     }
 
     return $inventory;
@@ -186,7 +203,7 @@ class Page extends PageAbstract {
 
         // replace all missing fields with values from the default content
         foreach($defaultContent->data as $key => $field) {
-          if(empty($content->data[$key]->value)) {
+          if(!isset($content->data[$key]) || $content->data[$key]->value == '') {
             $content->data[$key] = $field;
           }
         }
@@ -222,7 +239,7 @@ class Page extends PageAbstract {
     }
 
     // find and cache the content for this language
-    return new Content($this, $this->root() . DS . $content);
+    return new Content($this, $this->root() . DS . $content, $lang);
 
   }
 
@@ -242,19 +259,47 @@ class Page extends PageAbstract {
    *
    * @param array $data
    */
-  public function update($data = array(), $lang = null) {
+  public function update($input = array(), $lang = null) {
 
-    $data = array_merge($this->content()->toArray(), $data);
+    // normalize keys to make sure that fields are updated correctly
+    $normalizer = data::$adapters['kd']['_normalizeKeys'];
+    $current    = $normalizer($this->content($lang)->toArray());
+    $input      = $normalizer($input);
+
+    $data = a::update($current, $input);
 
     if(!data::write($this->textfile(null, $lang), $data, 'kd')) {
       throw new Exception('The page could not be updated');
     }
 
-    cache::flush();
+    $this->kirby->cache()->flush();
     $this->reset();
     $this->touch();
     return true;
 
+  }
+
+  /**
+   * Returns the name of the content text file / intended template
+   * So even if there's no such template it will return the intended name.
+   *
+   * @return string
+   */
+  public function intendedTemplate() {
+    if(isset($this->cache['intendedTemplate'])) return $this->cache['intendedTemplate'];
+
+    // check each language's content file
+    // prefer the default language's one (check that one first)
+    foreach($this->site->languages()->sortBy('isDefault', 'desc') as $lang) {
+      $content = $this->content($lang->code());
+
+      // the content file exists, use its file name
+      if($content->exists()) {
+        return $this->cache['intendedTemplate'] = $content->name();
+      }
+    }
+
+    return $this->cache['intendedTemplate'] = 'default';
   }
 
 }

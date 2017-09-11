@@ -1,56 +1,91 @@
-.post{
-	color: #444; 
-	max-width: 700px; 
-
-	h2, h3 {
-		margin-top: 0.4em;
-		margin-bottom: 0.2em; 
-	}
-	p {
-		font-size: 20px; 
-	}
-	blockquote{
-		padding-left: 1em;
-		padding-right: 1em;
-
-		p:first-of-type {
-			font-size: 1.4em;
-			line-height: 1.4em; 
-			font-style: italic;
-			font-weight: normal; 
-		} 
-	}
-
-	pre{
-		padding: 1em; 
-	}
-
-	time{
-		font-style: italic; 
-		color: darkGrey; 
-		display: block; 
-		margin-top: 2em; 
-		margin-bottom: 1em;
-		border-top: 1px solid lightGrey; 
-		padding-top: 1em; 
+.post-title {
+	margin-top: ms(4);
+	margin-bottom: ms(3);
+	font-weight: 800;
+}
+.post-subtitle {
+	text-align: center;
+}
+.post {
+	article {
+		max-width: 38rem;
 	}
 }
 
-.post p:first-of-type{
-	font-size: 2em; 
-	font-weight: 800; 
-	line-height: 1.2em; 
+.post pre {
+	position: relative;
+	padding: 1em 0;
+	z-index: 1;
+	background-color: transparent;
+	color: white;
+	white-space: pre-wrap;
+}
+.post pre:after {
+	content: "";
+	position: absolute;
+	background-color: #282c34;
+	left: calc(50% - 50vw);
+	right: calc(50% - 50vw);
+	top: 0;
+	bottom: 0;
+	z-index: -1;
 }
 
-.max-width-image{
-	text-align: center; 
-	display: block; 
-	max-width: 100%; 
-	margin-left: auto; 
-	margin-right: auto; 
+.post pre code {
+	position: relative;
+	padding: 1em 0;
+	color: white;
+  }
+
+.post p a {
+	text-decoration: none;
+	border-bottom: 1px solid;
 }
 
-.cp_embed_iframe {
-	margin-bottom: 1em; 
+.post p code {
+	background-color: colors(content-background);
 }
 
+.post blockquote {
+	border-left: 0.5rem solid colors(text-light);
+	padding-left: 1rem;
+	font-style: italic;
+	font-family: georgia;
+}
+.post table {
+	margin-bottom: 1rem;
+}
+.post thead {
+	background-color: colors(background);
+}
+.post td {
+	padding: 0.3em;
+}
+
+.post img, .post iframe {
+	max-width: 100%;
+}
+
+.post iframe {
+	margin-bottom: 2rem;
+}
+
+.post .pull-left {
+	box-shadow: 0 2px 25px -3px rgba(0,0,0,0.2);
+	margin-left: -3rem;
+}
+
+.post .pull-right {
+	box-shadow: 0 2px 25px -3px rgba(0,0,0,0.2);
+	margin-right: -3rem;
+}
+.post figure {
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+
+.post .pop {
+	box-shadow: 0 2px 25px -3px rgba(0,0,0,0.2);
+	max-width: calc(100% + 2rem);
+	margin-bottom: 2rem;
+}

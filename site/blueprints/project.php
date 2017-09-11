@@ -11,18 +11,15 @@ fields:
   subtitle:
       label: Subtitle
       type:  text
-  year:
-    label: Year
-    type:  text
+  hero:
+      label: Hero image
+      type: image
   text:
     label: Text
     type:  textarea
-  tags:
-    label: Tags
-    type:  tags
-  showcase:
-    label: Display in showcase? 
-    type: checkbox
-  showcase_description: 
-    label: showcase description
-    type: text
+  thumbnail:
+    label: thumbnail
+    type:  image
+  thumbnailCustom:
+    label: custom thumbnail
+    type:  textarea

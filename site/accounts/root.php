@@ -8,9 +8,8 @@ language: en
 role: admin
 token: 33f0fb89db71dbec3211cd80f406537ca838ec83
 history:
-  - >
-    blog/how-i-learned-to-stop-worrying-and-love-css-frameworks
-  - portfolio/ego_eco
+  - portfolio
+  - portfolio/labour-uk
+  - portfolio/wikipedia-homepage
   - portfolio/supersalon
-  - portfolio/skedx
-  - portfolio/scattered
+  - lab/hudl-demo

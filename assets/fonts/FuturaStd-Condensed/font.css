@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Futura Std Condensed';
+  src: url('FuturaStd-Condensed.eot'); /* IE9 Compat Modes */
+  src: url('FuturaStd-Condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('FuturaStd-Condensed.woff') format('woff'), /* Modern Browsers */
+       url('FuturaStd-Condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('FuturaStd-Condensed.svg#081ef6506410d8417d95a859863bc480') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

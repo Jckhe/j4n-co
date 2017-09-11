@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('Sofia Pro Light.eot'); /* IE9 Compat Modes */
+  src: url('Sofia Pro Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('Sofia Pro Light.woff') format('woff'), /* Modern Browsers */
+        url('Sofia Pro Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('Sofia Pro Light.svg#65943740c25c4cb0404f4736aa9282c9') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  200;
+}
+

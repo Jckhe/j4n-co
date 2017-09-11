@@ -1,0 +1,61 @@
+.logo {
+	text-decoration: none;
+	order: 2;
+	flex-grow: 1;
+	position: relative;
+	top: 12px;
+	.logo__first-name,
+	.logo__last-name {
+		display: block;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		font-weight: 800;
+		font-size: ms(7);
+		line-height: 0.5em;
+		position: relative;
+	}
+
+	.logo__first-name {
+		color: colors(paper);
+		z-index: 1;
+		left: -0.79em;
+		transition: all 150ms linear 0ms;
+	}
+	.logo__last-name {
+		color: colors(background);
+		transition: all 150ms linear 100ms;
+	}
+	.logo__subtitle {
+		color: colors(background);
+		font-size: ms(1);
+		transition: all 150ms linear 170ms;
+	}
+}
+.logo:hover {
+	text-decoration: none;
+}
+.logo:hover .logo__first-name {
+	color: colors(background);
+	text-shadow: 2px 2px 2px colors(paper);
+}
+.logo:hover .logo__last-name {
+	color: colors(paper);
+	text-shadow: 2px 2px 2px colors(background);
+}
+
+.logo:hover .logo__subtitle {
+	color: colors(text-highlight);
+}
+
+
+	/*
+	h1, h2 {
+		height: 0;
+		overflow: hidden;
+		margin: 0;
+	}
+	img {
+		width: 100%;
+		max-width: 320px;
+	}*/

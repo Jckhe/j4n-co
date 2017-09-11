@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> Jan Drewniak </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--[if lte IE 9]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+	<div class="ł-hero site-header">
+		<canvas id="canvasOne" width="500" height="500">
+ 			Your browser does not support HTML5 Canvas.
+		</canvas>
+		<script type="text/javascript">
+			window.addEventListener('load', eventWindowLoaded, false);
+			function eventWindowLoaded() {
+			canvasApp();
+
+			}
+
+			function canvasSupport () {
+				return true;
+			}
+
+			function canvasApp() {
+
+				if (!canvasSupport()) {
+					return;
+					}
+
+			function  drawScreen () {
+
+				context.fillStyle = 'transparent';
+				context.fillRect(0, 0, theCanvas.width, theCanvas.height);
+				//Box
+
+				update();
+				testWalls();
+				collide();
+				render();
+
+			}
+
+			function update() {
+				for (var i = 0; i <balls.length; i++) {
+					ball = balls[i];
+					//Friction
+					ball.velocityx = ball.velocityx - ( ball.velocityx*friction);
+					ball.velocityy = ball.velocityy - ( ball.velocityy*friction);
+
+					ball.nextx = (ball.x += ball.velocityx);
+					ball.nexty = (ball.y += ball.velocityy);
+				}
+
+			}
+
+			function testWalls() {
+				var ball;
+				var testBall;
+
+				for (var i = 0; i <balls.length; i++) {
+					ball = balls[i];
+
+					if (ball.nextx+ball.radius > theCanvas.width) {
+						ball.velocityx = ball.velocityx*-1;
+						ball.nextx = theCanvas.width - ball.radius;
+
+					} else if (ball.nextx-ball.radius < 0 ) {
+						ball.velocityx = ball.velocityx*-1;
+						ball.nextx = ball.radius;
+
+					} else if (ball.nexty+ball.radius > theCanvas.height ) {
+						ball.velocityy = ball.velocityy*-1;
+						ball.nexty = theCanvas.height - ball.radius;
+
+					} else if(ball.nexty-ball.radius < 0) {
+						ball.velocityy = ball.velocityy*-1;
+						ball.nexty = ball.radius;
+					}
+
+				}
+
+			}
+
+			function getRndColor() {
+				var h = 30*Math.random()|20,
+					s = 100,
+					l = 80*Math.random()|40;
+				return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+			}
+
+			function render() {
+				var ball;
+
+				for (var i = 0; i <balls.length; i++) {
+					ball = balls[i];
+					ball.x = ball.nextx;
+					ball.y = ball.nexty;
+
+					var my_gradient=context.createRadialGradient(ball.x, ball.y, ball.radius, ball.x + 90, ball.y + 90, ball.radius + 90);
+						my_gradient.addColorStop(0,ball.fillColor);
+						my_gradient.addColorStop(1,"black");
+
+					context.fillStyle = my_gradient;
+					context.beginPath();
+					context.arc(ball.x,ball.y,ball.radius,0,Math.PI*2,true);
+					context.closePath();
+					context.fill();
+				}
+
+			}
+
+			function collide() {
+				var ball;
+				var testBall;
+				for (var i = 0; i <balls.length; i++) {
+					ball = balls[i];
+					for (var j = i+1; j < balls.length; j++) {
+							testBall = balls[j];
+							if (hitTestCircle(ball,testBall)) {
+								collideBalls(ball,testBall);
+							}
+						}
+					}
+				}
+
+			function hitTestCircle(ball1,ball2) {
+				var retval = false;
+				var dx = ball1.nextx - ball2.nextx;
+				var dy = ball1.nexty - ball2.nexty;
+				var distance = (dx * dx + dy * dy);
+				if (distance <= (ball1.radius + ball2.radius) * (ball1.radius + ball2.radius)
+					) {
+						retval = true;
+					}
+					return retval;
+				}
+
+			function collideBalls(ball1,ball2) {
+
+				var dx = ball1.nextx - ball2.nextx;
+				var dy = ball1.nexty - ball2.nexty;
+
+				var collisionAngle = Math.atan2(dy, dx);
+
+				var speed1 = Math.sqrt(ball1.velocityx * ball1.velocityx +
+					ball1.velocityy * ball1.velocityy);
+				var speed2 = Math.sqrt(ball2.velocityx * ball2.velocityx +
+					ball2.velocityy * ball2.velocityy);
+
+				var direction1 = Math.atan2(ball1.velocityy, ball1.velocityx);
+				var direction2 = Math.atan2(ball2.velocityy, ball2.velocityx);
+
+				var velocityx_1 = speed1 * Math.cos(direction1 - collisionAngle);
+				var velocityy_1 = speed1 * Math.sin(direction1 - collisionAngle);
+				var velocityx_2 = speed2 * Math.cos(direction2 - collisionAngle);
+				var velocityy_2 = speed2 * Math.sin(direction2 - collisionAngle);
+
+				var final_velocityx_1 = ((ball1.mass - ball2.mass) * velocityx_1 +
+					(ball2.mass + ball2.mass) * velocityx_2)/(ball1.mass + ball2.mass);
+				var final_velocityx_2 = ((ball1.mass + ball1.mass) * velocityx_1 +
+					(ball2.mass - ball1.mass) * velocityx_2)/(ball1.mass + ball2.mass);
+
+				var final_velocityy_1 = velocityy_1;
+				var final_velocityy_2 = velocityy_2;
+
+				ball1.velocityx = Math.cos(collisionAngle) * final_velocityx_1 +
+					Math.cos(collisionAngle + Math.PI/2) * final_velocityy_1;
+				ball1.velocityy = Math.sin(collisionAngle) * final_velocityx_1 +
+					Math.sin(collisionAngle + Math.PI/2) * final_velocityy_1;
+				ball2.velocityx = Math.cos(collisionAngle) * final_velocityx_2 +
+					Math.cos(collisionAngle + Math.PI/2) * final_velocityy_2;
+				ball2.velocityy = Math.sin(collisionAngle) * final_velocityx_2 +
+					Math.sin(collisionAngle + Math.PI/2) * final_velocityy_2;
+
+				ball1.nextx = (ball1.nextx += ball1.velocityx);
+				ball1.nexty = (ball1.nexty += ball1.velocityy);
+				ball2.nextx = (ball2.nextx += ball2.velocityx);
+				ball2.nexty = (ball2.nexty += ball2.velocityy);
+			}
+			var numBalls = 25 ;
+			var maxSize = 12;
+			var minSize = 3;
+			var maxSpeed = maxSize+5;
+			var balls = new Array();
+			var tempBall;
+			var tempX;
+			var tempY;
+			var tempSpeed;
+			var tempAngle;
+			var tempRadius;
+			var tempRadians;
+			var tempvelocityx;
+			var tempvelocityy;
+			var friction = .02;
+
+			theCanvas = document.getElementById("canvasOne");
+			context = theCanvas.getContext("2d");
+
+			theCanvas.width = window.innerWidth;
+			theCanvas.height = window.innerHeight / 1.5;
+
+			for (var i = 0; i < numBalls; i++) {
+				tempRadius = Math.floor(Math.random()*maxSize)+minSize;
+				var placeOK = false;
+				while (!placeOK) {
+					tempX = tempRadius*3 + (Math.floor(Math.random()*theCanvas.width)
+						-tempRadius*3);
+					tempY = tempRadius*3 + (Math.floor(Math.random()*theCanvas.height)
+						-tempRadius*3);
+					tempSpeed = maxSpeed-tempRadius;
+					tempAngle = Math.floor(Math.random()*360);
+					tempRadians = tempAngle * Math.PI/ 180;
+					tempvelocityx = Math.cos(tempRadians) * tempSpeed;
+					tempvelocityy = Math.sin(tempRadians) * tempSpeed;
+
+					tempBall = {x:tempX,y:tempY,radius:tempRadius, speed:tempSpeed,
+						angle:tempAngle, velocityx:tempvelocityx, velocityy:tempvelocityy,
+						mass:tempRadius*8, nextx: tempX, nexty:tempY, fillColor: getRndColor()};
+					placeOK = canStartHere(tempBall);
+				}
+				balls.push(tempBall);
+			}
+
+			function canStartHere(ball) {
+				var retval = true;
+				for (var i = 0; i <balls.length; i++) {
+					if (hitTestCircle(ball, balls[i])) {
+						retval = false;
+					}
+				}
+				return retval;
+			}
+			function gameLoop() {
+				window.setTimeout(gameLoop, 20);
+				drawScreen()
+			}
+			gameLoop();
+
+			}
+
+			</script>
+
+
+	</div>
+
+	<main role="main" class="content-container ł-main">
+
+		<header class="site-logo ł-logo">
+			<img src="images/logo.svg"/>
+			<h1> Jan Drewniak </h1>
+			<h2> UX Design + Development </h2>
+		</header>
+
+		<div class="ł-content-sections">
+
+			<div class="ł-intro">
+				<input type="checkbox" id="about-me-activator" class="expanding-button-activator">
+				<section class="expanding-button about-me">
+					<div class="expanding-button__text">
+						<!--<img src="#" class="author-thumb"/>-->
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quos, vitae repellendus nihil rerum atque libero, numquam eius aliquid assumenda nostrum ex maiores eligendi saepe dicta. Aspernatur, possimus consequatur quos.
+						</p>
+						<!--<p>
+							I love crafting rich web experiencs from my homebase in Warsaw, Poland. I've worked with clients around the world and I'm currently a UX Engineer at the <a href="https://wikimedia.org">Wikimedia Foundation</a>, where I have the privilege of helping build <a href="https://www.wikipedia.org">wikipedia.org</a>.
+						</p>-->
+					</div>
+					<label for="about-me-activator" class="expanding-button__label">
+						more about me
+					</label>
+				</section>
+			</div>
+
+			<h2 class="section-title"> selected work </h2>
+
+			<div class="ł-feature-carousel">
+				<section class="feature-carousel">
+					<a href="#">
+						wikipedia.org
+					</a>
+					<a href="#">
+						wikipedia search results
+					</a>
+					<a href="#">
+						peerio
+					</a>
+					<a href="#">
+						UK Labour
+					</a>
+					<a href="#">
+						supersalon.org
+					</a>
+				</section>
+			</div>
+
+			<h2 class="section-title"> meanwhile...</h2>
+
+			<section class="ł-recent-articles">
+					<!--<h3 class="section-title"> Recent Articles </h3>-->
+
+					<article class="post-summary">
+						<h1> <a href="#"> My first web component </a> </h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						</p>
+						<aside class="ł-post-meta">
+							<time datetime="2016-05-15">May 15</time>
+							<a class="tag" href="#">PhantomJS</a>
+							<a class="tag" href="#">CSS</a>
+						</aside>
+					</article>
+
+					<article class="post-summary">
+						<h1> <a href="#"> My first web component </a> </h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ducimus quos earum explicabo incidunt ipsa aliquam.
+						</p>
+						<aside class="ł-post-meta">
+							<time datetime="2016-05-15">May 15</time>
+							<a class="tag" href="#">PhantomJS</a>
+							<a class="tag" href="#">HTML</a>
+						</aside>
+					</article>
+
+					<article class="post-summary">
+						<h1> <a href="#"> My first web component </a> </h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut recusandae dignissimos repellat! Assumenda aspernatur iusto provident reiciendis distinctio omnis pariatur, velit perferendis.
+						</p>
+						<aside class="ł-post-meta">
+							<time datetime="2016-05-15">May 15</time>
+							<a class="tag" href="#">HTML</a>
+							<a class="tag" href="#">CSS</a>
+						</aside>
+					</article>
+
+					<a href="#">more posts</a>
+			</section>
+
+			<section class="ł-recent-experiments">
+				<!--<h3 class="section-title"> Recent Experiments </h3>-->
+						<a class="experiment-item" href="#">
+							<img src="#">
+						</a>
+
+						<a class="experiment-item"  href="#">
+							<img src="#">
+						</a>
+
+						<a class="experiment-item" href="#">
+							<img src="#">
+						</a>
+
+						<a class="experiment-item" href="#">
+							<img src="#">
+						</a>
+			</section>
+
+		</div>
+
+	<div class="ł-footer">
+		<footer class="ł-footer site-footer">
+			<small>
+				copyright 2015-2017 Jan Drewniak
+			</small>
+		</footer>
+	</div>
+	</main>
+
+</body>
+</html>

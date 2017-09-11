@@ -1,0 +1,44 @@
+.project-thumb {
+	@extend .scalable-thumb;
+	height: 200px;
+	width: 33%;
+	perspective: 600px;
+	padding: 0 $grid-gutter;
+	box-shadow: none;
+	overflow: hidden;
+	min-width: 300px;
+	margin-bottom: ms(0);
+}
+
+.project-thumb img {
+	position: absolute;
+	transform-style: preserve-3d;
+	max-width: 100%;
+}
+
+.project-thumb__title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: $secondary-font-stack;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: colors(text-highlight);
+	background-color: colors(paper);
+	opacity: 0;
+	transition: opacity 170ms ease-in, transform 150ms ease-out;
+	font-size: font-sizes(large);
+}
+
+.project-thumb__title:hover {
+	border-bottom: 2px solid;
+
+}
+
+.project-thumb:hover img {
+	transform: scale(1.1);
+}
+.project-thumb:hover .project-thumb__title {
+	opacity: 1;
+	//text-shadow: 0 0 1px rgba( 0,0,0,0.5 ), 0 0 30px rgba( 0,0,0,0.4 );
+}

@@ -1,44 +1,30 @@
 <?php snippet('header') ?>
 
-<header class="container--header">
-	
-	<div class="container--fixed">
-		<div class="overlay" style="background-image: url('<?php echo $page->file('header.jpg')->url()?>');"></div> 
+<main role="main" class="content-container ł-main">
+	<?= snippet( 'site-logo' ) ?>
 
-		<div class="block--headlines">
-			<h1 class="headline"><?php echo $page->headline() ?></h1>
-			<h2 class="subhead"><?php echo $page->subhead() ?></h2>
-		</div>
+
+	<div class="ł-content-sections--thin">
+		<h1 class="page-title"><a href="/blog">Blog</a></h1>
+
+		<section class="ł-content-section">
+			<span class="section-title"> tags</span>
+
+			<p>
+				<?= snippet( 'post-tags', array('tags' => str::split( $tags ), 'active_tag' => $tag ) ); ?>
+			</p>
+		</section>
+		<?php foreach($years as $year => $items): ?>
+			<section class="ł-content-section">
+
+				<h2 class="section-title"><?php echo $year ?></h2>
+				<?php foreach ($items as $post): ?>
+						<?= snippet('post-summary-list',['post' => $post] ) ?>
+				<?php endforeach ?>
+			</section>
+		<?php endforeach ?>
+		</section>
 	</div>
-
-</header>
-
-<main class="main" role="main">
-
-<section id="blog" class="container--below-fixed blog-section skin--white">
-
-	<svg class="svg-angle" xmlns="http://www.w3.org/2000/svg" width="100%" height="50px" viewBox="0 0 50 50" preserveAspectRatio="none">
-		<polygon points="50,0 0,50 50,50" fill="inherit" />
-	</svg>
-	
-	<h2 class="headline--vertical">Blog</h2>
-
-	<div class="row">
-
-		<?php $blog = $pages->find('blog')->children()->visible(); ?> 
-		<?php foreach( $blog as $item): ?>
-			
-			<article class="post-summary">
-				<time itemprop="datePublished" pubdate datetime="<?= $item->date('m/d/Y')?>" title="<?= $item->date('M d, Y')?>"><span class="date"> <?= $item->date('m/d')?></span><span class="year"><?= $item->date('Y')?></span></time>
-				<a class="blog-link" href="<?php echo $item->url();?>"><?php echo $item->title(); ?></a>
-			</article>
-
-		<?php endforeach ?> 
-	
-	</div>
-
-</section>
-
 </main>
 
-<? snippet('footer') ?>
+<?php snippet('footer') ?>

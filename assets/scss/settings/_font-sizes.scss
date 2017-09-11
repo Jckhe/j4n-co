@@ -1,0 +1,62 @@
+@import 'modularscale';
+@import 'font-face-mixin';
+
+@import '../fonts/Sofia-Pro-Bold/font.css';
+@import '../fonts/Sofia-Pro-Light/font.css';
+@import '../fonts/Sofia-Pro-Regular/font.css';
+
+
+
+$primary-font-stack: 'Sofia Pro', sans-serif;
+$secondary-font-stack: 'Sofia Pro', sans-serif;
+$mono-font-stack: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+
+$ratio: $minor-third;
+
+$modularscale: (
+  base: 1rem,
+  ratio:$ratio
+);
+
+$font-sizes: (
+        xx-small:ms(-3),
+        x-small: ms(-2),
+        small: ms(-1),
+        medium: ms(0),
+        large: ms(1),
+        x-large: ms(2),
+        xx-large: ms(3),
+);
+// generic font-size helper class.
+// outputs classes like:
+// .font-size--xx-large
+@each $item, $size in $font-sizes {
+	.font-size--#{$item} {
+		font-size: $size;
+	}
+}
+
+@function font-sizes($key) {
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($font-sizes, $key);
+  }
+  @warn "Unknown `#{$key}` in $font-size.";
+  @return null;
+}
+
+//https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+html {
+  font-size: 18px;
+  line-height: strip-unit( ms(1) );
+}
+
+body {
+  font-family: $primary-font-stack;
+}

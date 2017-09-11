@@ -1,0 +1,60 @@
+@import '../modules/angle-border';
+@import '../settings/colors';
+
+.content-container {
+	background-color: colors(paper);
+	padding: $pagePadding;
+	background-repeat: no-repeat;
+}
+
+.content-container:before {
+	$height: 80px;
+	content: ' ';
+	position: absolute;
+	top: -$height;
+	left: 0;
+	fill: colors(paper);
+	@include angle-border($height, colors(paper));
+}
+
+.ł-content-sections {
+	display: flex;
+	margin: 0 auto;
+	width: 100%;
+	max-width: $grid-content-width;
+	//padding: $pagePadding;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	margin-top: 10vh;
+}
+
+.ł-content-sections--thin,
+.ł-content-sections--thin--dark,
+.ł-content-sections--thin--light {
+	max-width: 36rem; // should be half of grid width;
+	margin: 0 auto;
+}
+.ł-content-sections--thin--dark {
+	background-color: colors(text-light);
+	color: colors(paper);
+}
+.ł-content-sections--thin--light {
+	background-color: #fff;
+	padding: 1rem;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ł-logo ~ .ł-content-sections,
+.ł-logo ~ .ł-content-sections--thin,
+.ł-logo ~ .ł-content-sections--thin--light {
+	margin-top: ms(5);
+}
+
+.ł-main {
+	position: relative;
+	top: 16vh;
+	padding: $pagePadding;
+}
+.ł-main ~ .ł-footer {
+	top: 16vh;
+}

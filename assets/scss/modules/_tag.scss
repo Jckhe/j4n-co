@@ -1,0 +1,40 @@
+.tag {
+
+	padding: 0.3em 0.5em;
+	background-color: colors( background-dark );
+	color: colors(paper);
+	margin-right: 0.5rem;
+	margin-left: 0.7em;
+	display: inline-block;
+	height: 0.7em;
+	border-radius: 0 2px 2px 0;
+	position: relative;
+	white-space: nowrap;
+	line-height: 0.9em;
+	text-decoration: none;
+	font-weight: 800;
+	font-size: 0.9em;
+	opacity: 0.7;
+	transition: opacity 100ms ease-out;
+}
+.tag:hover, .tag--active {
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+}
+.tag:before {
+	content: ' ';
+	display: block;
+	background-image: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg width='73px' height='107px' viewBox='0 0 73 107' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><path d='M40.8441992,25.6332735 L86,94 L-21,94 L24.1558008,25.6332735 L24.1558008,25.6332735 C27.1996034,21.0248996 33.4029181,19.7565638 38.0112921,22.8003664 C39.1370228,23.5439046 40.100661,24.5075428 40.8441992,25.6332735 L40.8441992,25.6332735 Z M32.5,81 C40.5081289,81 47,74.5081289 47,66.5 C47,58.4918711 40.5081289,52 32.5,52 C24.4918711,52 18,58.4918711 18,66.5 C18,74.5081289 24.4918711,81 32.5,81 Z' fill='#{rgba(colors(background-dark), 0.99)}' transform='translate(32.500000, 53.500000) rotate(-90.000000) translate(-32.500000, -53.500000)'></path></g></svg>");
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 1em;
+	position: absolute;
+	top: 0;
+	left: -1em;
+}
+.tag:last-child {
+	margin-right: 0;
+}

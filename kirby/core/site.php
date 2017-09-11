@@ -14,6 +14,9 @@ abstract class SiteAbstract extends Page {
   // the current page
   public $page = null;
 
+  // Content representation (file extension)
+  public $representation = null;
+
   /**
    * Constructor
    *
@@ -45,6 +48,15 @@ abstract class SiteAbstract extends Page {
   }
 
   /**
+   * The id is an empty string in case of the site object
+   *
+   * @return string
+   */
+  public function id() {
+    return '';
+  }
+
+  /**
    * The base diruri is bascially just an empty string
    *
    * @return string
@@ -60,6 +72,15 @@ abstract class SiteAbstract extends Page {
    */
   public function url() {
     return $this->url;
+  }
+
+  /**
+   * Returns the full URL for the content folder
+   * 
+   * @return string
+   */
+  public function contentUrl() {
+    return $this->kirby()->urls()->content();
   }
 
   /**
@@ -128,10 +149,24 @@ abstract class SiteAbstract extends Page {
 
     $uri = trim($uri, '/');
 
+    // alternate version without file extension
+    $baseUri = f::name($uri);
+    $parent  = dirname($uri);
+    if($parent !== '.') $baseUri = $parent . '/' . $baseUri;
+
     if(empty($uri)) {
       return $this->page = $this->homePage();
     } else {
       if($page = $this->children()->find($uri)) {
+        return $this->page = $page;
+      }
+
+      // store the representation for $page->representation()
+      if($uri !== $baseUri) $this->representation = f::extension($uri);
+
+      if($baseUri === '') {
+        return $this->page = $this->homePage();
+      } else if($page = $this->children()->find($baseUri)) {
         return $this->page = $page;
       } else {
         return $this->page = $this->errorPage();
@@ -294,6 +329,18 @@ abstract class SiteAbstract extends Page {
   }
 
   /**
+   * Gets the last modification date of all pages
+   * in the content folder. 
+   * 
+   * @param mixed $format 
+   * @param mixed $handler
+   * @return mixed
+   */
+  public function modified($format = null, $handler = null) {
+    return dir::modified($this->root, $format, $handler ? $handler : $this->kirby->options['date.handler']);
+  }
+
+  /**
    * Checks if any content of the site has been
    * modified after the given unix timestamp
    * This is mainly used to auto-update the cache
@@ -302,6 +349,27 @@ abstract class SiteAbstract extends Page {
    */
   public function wasModifiedAfter($time) {
     return dir::wasModifiedAfter($this->root(), $time);
+  }
+
+  /**
+   * Improved var_dump() output
+   * 
+   * @return array
+   */
+  public function __debuginfo() {
+    return [
+      'title'      => $this->title()->toString(),
+      'url'        => $this->url(),      
+      'page'       => $this->page() ? $this->page()->id() : false,
+      'content'    => $this->content(),
+      'children'   => $this->pages(),
+      'files'      => $this->files(),
+      'multilang'  => $this->multilang(),
+      'locale'     => $this->locale(),
+      'user'       => $this->user() ? $this->user()->username() : false,
+      'users'      => $this->users(),
+      'roles'      => $this->roles(),
+    ];
   }
 
 }

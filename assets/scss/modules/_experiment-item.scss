@@ -1,0 +1,12 @@
+.feature-carousel--experiments {
+	min-height: 120px;
+	width: 100%;
+	margin: 0 -0.5em;
+}
+
+.experiment-item {
+	@extend .scalable-thumb;
+	height: col-count(1.5);
+	width: col-count(1.5);
+	margin: 0.5em;
+}
