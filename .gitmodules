@@ -7,3 +7,6 @@
 [submodule "vendor/kirby-v2-scss"]
 	path = vendor/kirby-v2-scss
 	url = https://github.com/bartvandebiezen/kirby-v2-scssphp.git
+[submodule "vendor/kirby-plugin-kirbytextRaw"]
+	path = vendor/kirby-plugin-kirbytextRaw
+	url = https://github.com/jbeyerstedt/kirby-plugin-kirbytextRaw.git
