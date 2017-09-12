@@ -13,5 +13,5 @@ j4n-co.esproj
 site/cache
 test-content
 site.php
-site/accounts/*.php
+/site/accounts/*.php
 node_modules
